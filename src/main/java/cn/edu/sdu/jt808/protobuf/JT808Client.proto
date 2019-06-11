@@ -1,0 +1,238 @@
+syntax = "proto2";
+
+package protobuf;
+
+option optimize_for = SPEED;
+option java_package = "cn.edu.sdu.jt808.protobuf";
+option java_outer_classname = "ClientData";
+
+message Protocol {
+
+    required int32 protoType = 1;
+    optional string terminalPhone = 2;
+    optional int32 flowId = 3;
+    oneof dataBody {
+        RetransmissionRequestMsg retransmissionRequestMsg = 4;
+        ParameterSetting parameterSetting = 5;
+        TerminalControl terminalControl = 6;
+        ManualConfirmAlarmMsg manualConfirmAlarmMsg = 7;
+        TextMsg textMsg = 8;
+        CameraPhoto cameraPhoto = 9;
+        VoiceRecord voiceRecord = 10;
+        TempLocationTrack tempLocationTrack = 11;
+        AppointParamQuery appointParamQuery = 12;
+        VehicleControl vehicleControl = 13;
+        EventSetting eventSetting = 14;
+        RealTimeMedia realTimeMedia = 15;
+        RealTimeMediaControl realTimeMediaControl = 16;
+    }
+}
+
+message RealTimeMediaControl {
+    optional int32 logicalChannelId = 1;
+    optional int32 controlCOde = 2;
+    optional int32 closeMediaType = 3;
+    optional int32 changeCode = 4;
+}
+
+message RealTimeMedia {
+    optional int32 hostAddressLength = 1;
+    optional string hostAddress = 2;
+    optional int32 videoPortTCP = 3;
+    optional int32 videoPortUDP = 4;
+    optional int32 logicalChannelId = 5;
+    optional int32 dataType = 6;
+    optional int32 codeType = 7;
+}
+
+message VehicleControl {
+    optional int32 sign = 1;
+}
+
+message VoiceRecord {
+    optional int32 command = 1;
+    optional int32 parameter = 2;
+    optional int32 saveSign = 3;
+    optional int32 audioSampleRate = 4;
+}
+
+message CameraPhoto {
+    optional int32 channelId = 1;
+    optional int32 command = 2;
+    optional int32 parameter = 3;
+    optional int32 saveSign = 4;
+    optional int32 resolution = 5;
+    optional int32 quality = 6;
+    optional int32 brightness = 7;
+    optional int32 contrast = 8;
+    optional int32 saturation = 9;
+    optional int32 chroma = 10;
+}
+
+message TextMsg {
+    optional int32 sign = 1;
+    optional string content = 2;
+}
+
+message ManualConfirmAlarmMsg {
+    optional int32 alarmFlowId = 1;
+    optional int32 manualConfirmAlarmType = 2;
+}
+
+message TempLocationTrack {
+    optional int32 interval = 1;
+    optional int32 validityPeriod = 2;
+}
+
+message TerminalControl {
+    optional int32 command = 1;
+    optional string parameter = 2;
+}
+
+message AppointParamQuery {
+    optional int32 paramNumber = 1;
+    repeated int32 paramIdList = 2;
+}
+
+message RetransmissionRequestMsg {
+    optional int32 originFlowId = 1;
+    optional int32 retransmissionNum = 2;
+    repeated int32 retransmissionIdList = 3;
+}
+
+message ParameterSetting {
+    optional int32 paramNum = 1;
+    repeated ParamList paramList = 2;
+
+    message ParamList {
+        optional int32 paramId = 1;
+        optional int32 paramLength = 2;
+        optional Param param = 3;
+
+        message Param {
+            optional int32 beatInterval = 1;
+            optional int32 TCPTimeout = 2;
+            optional int32 TCPretransTimes = 3;
+            optional int32 UDPTimeout = 4;
+            optional int32 UDPretransTimes = 5;
+            optional int32 SMSTimeout = 6;
+            optional int32 SMSretransTimes = 7;
+            optional string mainServerAPN = 8;
+            optional string mainServerUsername = 9;
+            optional string mainServerPassword = 10;
+            optional string mainServerHost = 11;
+            optional string backupServerAPN = 12;
+            optional string backupServerUsername = 13;
+            optional string backupServerPassword = 14;
+            optional string backupServerHost =15;
+            optional int32 serverTCPport = 16;
+            optional int32 serverUDPport = 17;
+            optional string ICverifyMainServerHost =18;
+            optional int32 ICverifyServerTCPport = 19;
+            optional int32 ICverifyServerUDPport = 20;
+            optional string ICverifyBackupServerHost = 21;
+            optional int32 locatonInfoStrategy = 22;
+            optional int32 locatonInfoPlan = 23;
+            optional int32 unloginTimeInterval = 24;
+            optional int32 sleepTimeInterval = 25;
+            optional int32 warningTimeInterval = 26;
+            optional int32 defaultInterval = 27;
+            optional int32 defaultDistanceInterval = 28;
+            optional int32 unloginDistanceInterval = 29;
+            optional int32 sleepDistanceInterval = 30;
+            optional int32 warningDistanceInterval = 31;
+            optional int32 retransmissionAngle = 32;
+            optional int32 electronicFenceRadius = 33;
+            optional string platformPhoneNum = 34;
+            optional string resetPhoneNum = 35;
+            optional string restorePhoneNum = 36;
+            optional string platformSMSphoneNum = 37;
+            optional string alarmSMSphoneNum = 38;
+            optional int32 phoneStrategy = 39;
+            optional int32 longestPhoneTime = 40;
+            optional int32 monthLongestPhoneTime = 41;
+            optional string monitorPhone = 42;
+            optional string platformPrivilegeSMS = 43;
+            optional int32 alarmShieldingWord = 44;
+            optional bool alarmSMS = 45;
+            optional bool alarmPhoto = 46;
+            optional bool alarmPhotoSave = 47;
+            optional bool keyFlag = 48;
+            optional int32 highestSpeed = 49;
+            optional int32 speedingTime = 50;
+            optional int32 driverTimeLimit = 51;
+            optional int32 todayDriverTime = 52;
+            optional int32 leastRestTime = 53;
+            optional int32 longestPortTime = 54;
+            optional int32 speedingWarningDifferenceValue = 55;
+            optional int32 tiredDriveWarningDifferenceValue = 56;
+            optional int32 rolloverParam = 57;
+            optional TimingPhotoControlBit timingPhotoControlBit= 58;
+            optional FixedPictureControlBit fixedPictureControlBit = 59;
+            optional int32 cameraQuality = 60;
+            optional int32 light = 61;
+            optional int32 contrast = 62;
+            optional int32 saturation = 63;
+            optional int32 color = 64;
+            optional int32 mileage = 65;
+            optional int32 provinceId = 66;
+            optional int32 cityId = 67;
+            optional string licensePlate = 68;
+            optional int32 licensePlateColor = 69;
+            optional GNSS gnss = 70;
+            optional int32 GNSSbaudRatio = 71;
+            optional int32 GNSSdataOutputFrequency = 72;
+            optional int32 GNSSdataFrequency = 73;
+
+            message GNSS {
+                optional bool GPS = 1;
+                optional bool beidou = 2;
+                optional bool GLONASS = 3;
+                optional bool Galileo = 4;
+            }
+
+            message TimingPhotoControlBit {
+                optional bool cameraChannelTiming1 = 1;
+                optional bool cameraChannelTiming2 = 2;
+                optional bool cameraChannelTiming3 = 3;
+                optional bool cameraChannelTiming4 = 4;
+                optional bool cameraChannelTiming5 = 5;
+                optional bool cameraChannelTimingSave1 = 6;
+                optional bool cameraChannelTimingSave2 = 7;
+                optional bool cameraChannelTimingSave3 = 8;
+                optional bool cameraChannelTimingSave4 = 9;
+                optional bool cameraChannelTimingSave5 = 10;
+                optional int32 TimingUnit = 11;
+                optional int32 TimingInterval = 12;
+            }
+
+            message FixedPictureControlBit {
+                optional bool cameraChannelFixed1 = 1;
+                optional bool cameraChannelFixed2 = 2;
+                optional bool cameraChannelFixed3 = 3;
+                optional bool cameraChannelFixed4 = 4;
+                optional bool cameraChannelFixed5 = 5;
+                optional bool cameraChannelFixedSave1 = 6;
+                optional bool cameraChannelFixedSave2 = 7;
+                optional bool cameraChannelFixedSave3 = 8;
+                optional bool cameraChannelFixedSave4 = 9;
+                optional bool cameraChannelFixedSave5 = 10;
+                optional int32 FixedUnit = 11;
+                optional int32 FixedInterval = 12;
+            }
+        }
+    }
+}
+
+message EventSetting {
+    optional int32 type = 1;
+    optional int32 total = 2;
+
+    repeated Event list = 3;
+
+    message Event {
+        optional int32 id = 1;
+        optional int32 length = 2;
+        optional string content = 3;
+    }
+}

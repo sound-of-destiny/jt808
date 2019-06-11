@@ -1,0 +1,827 @@
+syntax = "proto2";
+
+package protobuf;
+
+option optimize_for = SPEED;
+option java_package = "cn.edu.sdu.jt808.protobuf";
+option java_outer_classname = "ServerData";
+
+message Protocol {
+
+    required int32 protoType = 1;
+    optional string terminalPhone = 2;
+    optional int32 flowId = 3;
+
+    oneof dataBody {
+        DriverIdentity driverIdentity = 4;
+        ParamQueryResponse paramQueryResponse = 5;
+        DigitWaybill digitWaybill = 6;
+        CameraPhotoResponse cameraPhotoResponse = 7;
+        AttributeQueryResponse attributeQueryResponse = 8;
+        Location location = 9;
+        MediaData mediaData = 10;
+        BulkLocation terminalBulkLocationMsg = 11;
+        TerminalUploadMediaAttributeMsg terminalUploadMediaAttributeMsg = 12;
+        TerminalUploadMediaResourcesMsg terminalUploadMediaResourcesMsg = 13;
+        TerminalSavedMediaRetrievalResponseMsg terminalSavedMediaRetrievalResponseMsg = 14;
+        CommonResponse commonResponse = 15;
+    }
+
+}
+
+message CommonResponse {
+    optional int32 replyFlowId = 1;
+    // 应答ID byte[2-3] 对应的终端消息的ID
+    optional int32 replyId = 2;
+    /**
+     * 0：成功∕确认<br>
+     * 1：失败<br>
+     * 2：消息有误<br>
+     * 3：不支持<br>
+     */
+    optional int32 replyCode = 3;
+}
+
+message DriverIdentity {
+    optional int32 state = 1;
+    optional string time = 2;
+    optional int32 ICCardInfo = 3;
+    optional string driverName = 4;
+    optional string qualificationCode = 5;
+    optional string authorityName = 6;
+    optional string cardValidityTerm = 7;
+}
+
+message AttributeQueryResponse {
+
+    optional TerminalType terminalType = 1;
+    optional string manufacturerId = 2;
+    optional string terminalModel = 3;
+    optional string terminalId = 4;
+    optional string ICCID = 5;
+    optional string terminalHardwareVersion = 6;
+    optional string terminalFirmwareVersion = 7;
+    optional GNSSAttribute gnssAttribute = 8;
+    optional CommunicationModuleAttribute communicationModuleAttribute = 9;
+
+    message TerminalType {
+        optional bool passengerVehicles = 1;
+        optional bool dangerousGoodsVehicles = 2;
+        optional bool commonFreightVehicle = 3;
+        optional bool taxi = 4;
+        optional bool supportingHardDiskVideo = 5;
+        optional bool integratedMachine = 6;
+    }
+
+    message GNSSAttribute {
+        optional bool GPS = 1;
+        optional bool beidou = 2;
+        optional bool GLONASS = 3;
+        optional bool Galileo = 4;
+    }
+
+    message CommunicationModuleAttribute {
+        optional bool GPSCommunication = 1;
+        optional bool CDMA = 2;
+        optional bool TDSCMA = 3;
+        optional bool WCDMA = 4;
+        optional bool CDMA2000 = 5;
+        optional bool TDLTE = 6;
+        optional bool otherCommunication = 7;
+    }
+}
+
+message CameraPhotoResponse {
+    optional int32 replyFlowId = 1;
+    optional int32 result = 2;
+    optional int32 mediaIdNum = 3;
+    repeated int32 mediaIdList = 4;
+}
+
+message DigitWaybill {
+    optional string digitWaybillData = 1;
+}
+
+message ParamQueryResponse {
+    optional int32 replyParamNumber = 1;
+    repeated TerminalParam terminalParams = 2;
+
+    message TerminalParam {
+        optional int32 beatInterval = 1;
+        optional int32 TCPTimeout = 2;
+        optional int32 TCPretransTimes = 3;
+        optional int32 UDPTimeout = 4;
+        optional int32 UDPretransTimes = 5;
+        optional int32 SMSTimeout = 6;
+        optional int32 SMSretransTimes = 7;
+        optional string mainServerAPN = 8;
+        optional string mainServerUsername = 9;
+        optional string mainServerPassword = 10;
+        optional string mainServerHost = 11;
+        optional string backupServerAPN = 12;
+        optional string backupServerUsername = 13;
+        optional string backupServerPassword = 14;
+        optional string backupServerHost =15;
+        optional int32 serverTCPport = 16;
+        optional int32 serverUDPport = 17;
+        optional string ICverifyMainServerHost =18;
+        optional int32 ICverifyServerTCPport = 19;
+        optional int32 ICverifyServerUDPport = 20;
+        optional string ICVerifyBackupServerHost = 21;
+        optional int32 locationInfoStrategy = 22;
+        optional int32 locationInfoPlan = 23;
+        optional int32 unloginTimeInterval = 24;
+        optional int32 sleepTimeInterval = 25;
+        optional int32 warningTimeInterval = 26;
+        optional int32 defaultInterval = 27;
+        optional int32 defaultDistanceInterval = 28;
+        optional int32 unloginDistanceInterval = 29;
+        optional int32 sleepDistanceInterval = 30;
+        optional int32 warningDistanceInterval = 31;
+        optional int32 retransmissionAngle = 32;
+        optional int32 electronicFenceRadius = 33;
+        optional string platformPhoneNum = 34;
+        optional string resetPhoneNum = 35;
+        optional string restorePhoneNum = 36;
+        optional string platformSMSphoneNum = 37;
+        optional string alarmSMSphoneNum = 38;
+        optional int32 phoneStrategy = 39;
+        optional int32 longestPhoneTime = 40;
+        optional int32 monthLongestPhoneTime = 41;
+        optional string monitorPhone = 42;
+        optional string platformPrivilegeSMS = 43;
+        optional int32 alarmShieldingWord = 44;
+        optional int32 alarmSMS = 45;
+        optional int32 alarmPhoto = 46;
+        optional int32 alarmPhotoSave = 47;
+        optional int32 keyFlag = 48;
+        optional int32 highestSpeed = 49;
+        optional int32 speedingTime = 50;
+        optional int32 driverTimeLimit = 51;
+        optional int32 todayDriverTime = 52;
+        optional int32 leastRestTime = 53;
+        optional int32 longestPortTime = 54;
+        optional int32 speedingWarningDifferenceValue = 55;
+        optional int32 tiredDriveWarningDifferenceValue = 56;
+        optional int32 rolloverParam = 57;
+        optional int32 timingPhotoControlBit= 58;
+        optional int32 fixedPictureControlBit = 59;
+        optional int32 cameraQuality = 60;
+        optional int32 light = 61;
+        optional int32 contrast = 62;
+        optional int32 saturation = 63;
+        optional int32 color = 64;
+        optional int32 mileage = 65;
+        optional int32 provinceId = 66;
+        optional int32 cityId = 67;
+        optional string licensePlate = 68;
+        optional int32 licensePlateColor = 69;
+        optional int32 gnss = 70;
+        optional int32 GNSSbaudRatio = 71;
+        optional int32 GNSSdataOutputFrequency = 72;
+        optional int32 GNSSdataFrequency = 73;
+        optional int32 locationUploadType = 74;
+        optional int32 locationUploadSetting = 75;
+        optional int32 CAN1CatchTimeInterval = 76;
+        optional int32 CAN1UploadTimeInterval = 77;
+        optional int32 CAN2CatchTimeInterval = 78;
+        optional int32 CAN2UploadTimeInterval = 79;
+        optional int32 CANIDParam = 80;
+
+        optional bool GPS = 81;
+        optional bool beidou = 82;
+        optional bool GLONASS = 83;
+        optional bool Galileo = 84;
+
+            optional bool cameraChannelTiming1 = 85;
+            optional bool cameraChannelTiming2 = 86;
+            optional bool cameraChannelTiming3 = 87;
+            optional bool cameraChannelTiming4 = 88;
+            optional bool cameraChannelTiming5 = 89;
+            optional bool cameraChannelTimingSave1 = 90;
+            optional bool cameraChannelTimingSave2 = 91;
+            optional bool cameraChannelTimingSave3 = 92;
+            optional bool cameraChannelTimingSave4 = 93;
+            optional bool cameraChannelTimingSave5 = 94;
+            optional bool TimingUnit = 95;
+            optional int32 TimingInterval = 96;
+
+            optional bool cameraChannelFixed1 = 97;
+            optional bool cameraChannelFixed2 = 98;
+            optional bool cameraChannelFixed3 = 99;
+            optional bool cameraChannelFixed4 = 100;
+            optional bool cameraChannelFixed5 = 101;
+            optional bool cameraChannelFixedSave1 = 102;
+            optional bool cameraChannelFixedSave2 = 103;
+            optional bool cameraChannelFixedSave3 = 104;
+            optional bool cameraChannelFixedSave4 = 105;
+            optional bool cameraChannelFixedSave5 = 106;
+            optional bool FixedUnit = 107;
+            optional int32 FixedInterval = 108;
+
+        optional MediaParam mediaParam = 109;
+        optional MediaChannelList mediaChannelList = 110;
+        optional VideoChannelsParam videoChannelsParam = 111;
+        optional UniqueAlarmVideoParam uniqueAlarmVideoParam = 112;
+        optional int32 videoSheildBits = 113;
+        optional PictureAlarmingParam pictureAlarmingParam = 114;
+        optional TerminalWakeUpModel terminalWakeUpModel = 115;
+
+        message MediaParam {
+            optional int32 realTimeStreamCode = 1;
+            optional int32 realTimeStreamResovling = 2;
+            optional int32 realTimeKeyFrameInterval = 3;
+            optional int32 realTimeStreamGoalFrameRate = 4;
+            optional int32 realTimeStreamGoalCodeRate = 5;
+            optional int32 savedStreamCode = 6;
+            optional int32 savedStreamResovling = 7;
+            optional int32 savedKeyFrameInterval = 8;
+            optional int32 savedStreamGoalFrameRate = 9;
+            optional int32 savedStreamGoalCodeRate = 10;
+            optional int32 OSDSubtitle = 11;
+            optional int32 openVoice = 12;
+        }
+
+        message MediaChannelList {
+            // 音视频通道总数
+            optional int32 mediaChannelNum = 1;
+            // 音频通道总数
+            optional int32 voiceChannelNum = 2;
+            // 视频通道总数
+            optional int32 videoChannelNum = 3;
+            // 音视频通道对照表
+            repeated MediaChannel mediaChannelList = 4;
+
+            message MediaChannel {
+                // 物理通道号
+                optional int32 physicalChannelId = 1;
+                // 逻辑通道号
+                optional int32 logicalChannelId = 2;
+                // 通道类型
+                optional int32 channelType = 3;
+                // 是否连接云台
+                optional int32 linkTable = 4;
+            }
+        }
+
+        message VideoChannelsParam {
+            // 需要单独设置视频参数的通道数量
+            optional int32 VideoChannelNumber = 1;
+            // 单独通道视频参数设置列表
+            repeated VideoChannelParam VideoChannelParams = 2;
+
+            message VideoChannelParam {
+                // 逻辑通道号
+                optional int32 channelId = 1;
+                // 实时流编码模式
+                optional int32 realTimeStreamCode = 2;
+                // 实时流分辨率
+                optional int32 realTimeStreamResovling = 3;
+                // 实时流关键帧间隔
+                optional int32 realTimeKeyFrameInterval = 4;
+                // 实时流目标帧率
+                optional int32 realTimeStreamGoalFrameRate = 5;
+                // 实时流目标码率
+                optional int32 realTimeStreamGoalCodeRate = 6;
+                // 存储流编码模式
+                optional int32 savedStreamCode = 7;
+                // 存储流分辨率
+                optional int32 savedStreamResovling = 8;
+                // 存储流关键帧间隔
+                optional int32 savedKeyFrameInterval = 9;
+                // 存储流目标帧率
+                optional int32 savedStreamGoalFrameRate = 10;
+                // 存储流目标码率
+                optional int32 savedStreamGoalCodeRate = 11;
+                // OSD字幕叠加设置
+                optional int32 OSDSubtitle = 12;
+            }
+        }
+
+        message UniqueAlarmVideoParam{
+            optional int32 uniqueAlarmVideoSaveMax = 1;
+            optional int32 uniqueAlarmVideoGoingTime = 2;
+            optional int32 uniqueAlarmVideoStartTime = 3;
+        }
+
+        message PictureAlarmingParam {
+            optional int32 vehiclePassengerNum = 1;
+            optional int32 tiredMax = 2;
+        }
+
+        message TerminalWakeUpModel {
+            optional int32 awakenMode = 1;
+            optional int32 awakenType = 2;
+            optional int32 awakenDay = 3;
+            optional AwakenDayParam awakenDayParam = 4;
+
+            message AwakenDayParam {
+                optional int32 flag = 1;
+                optional string awakenTime1 = 2;
+                optional string stopTime1 = 3;
+                optional string awakenTime2 = 4;
+                optional string stopTime2 = 5;
+                optional string awakenTime3 = 6;
+                optional string stopTime3 = 7;
+                optional string awakenTime4 = 8;
+                optional string stopTime4 = 9;
+            }
+        }
+
+        optional AdvancedDrivingAssistance advancedDrivingAssistance = 116;
+        optional DriverConditionMonitoring driverConditionMonitoring = 117;
+        optional TirePressureMonitoring tirePressureMonitoring = 118;
+        optional BlindAreaMonitoring blindAreaMonitoring = 119;
+
+        message AdvancedDrivingAssistance {
+            // 报警判断速度阈值
+            optional int32 alarmSpeedThreshold = 1;
+            // 报警提示音量
+            optional int32 alarmVolume = 2;
+            // 主动拍照策略
+            optional int32 activePhotoStrategy = 3;
+            // 主动定时拍照时间间隔
+            optional int32 activeTimePhotoInterval = 4;
+            // 主动定距拍照距离间隔
+            optional int32 activeDistancePhotoInterval = 5;
+            // 单次主动拍照张数
+            optional int32 activePhotoNum = 6;
+            // 单次主动拍照时间间隔
+            optional int32 activePhotoInterval = 7;
+            // 拍照分辨率
+            optional int32 photoResolution = 8;
+            // 视频录制分辨率
+            optional int32 videoResolution = 9;
+            // 报警使能
+            optional int32 alarmType = 10;
+            // 事件使能
+            optional int32 eventType = 11;
+            // 障碍物报警距离阈值
+            optional int32 barrierAlarmDistanceThreshold = 12;
+            // 障碍物报警分级速度阈值
+            optional int32 barrierAlarmClassificationThreshold = 13;
+            // 障碍物报警前后视频录制时间
+            optional int32 barrierAlarmVideoTime = 14;
+            // 障碍物报警拍照张数
+            optional int32 barrierAlarmPhotoNum = 15;
+            // 障碍物报警拍照间隔
+            optional int32 barrierAlarmPhotoInterval = 16;
+            // 频繁变道报警判断时间段
+            optional int32 frequentChannelChangeAlarmTime = 17;
+            // 频繁变道报警判断次数
+            optional int32 frequentChannelChangeAlarmNum = 18;
+            // 频繁变道报警分级速度阈值
+            optional int32 frequentChannelChangeAlarmSpeedThreshold = 19;
+            // 频繁变道报警前后视频录制时间
+            optional int32 frequentChannelChangeAlarmVideoTime = 20;
+            // 频繁变道报警拍照张数
+            optional int32 frequentChannelChangeAlarmPhotoNum = 21;
+            // 频繁变道报警拍照间隔
+            optional int32 frequentChannelChangeAlarmPhotoInterval = 22;
+            // 车道偏离报警分级速度阈值
+            optional int32 laneDepartureSpeedThreshold = 23;
+            // 车道偏离报警前后视频录制时间
+            optional int32 laneDepartureVideoTime = 24;
+            // 车道偏离报警拍照张数
+            optional int32 laneDeparturePhotoNum = 25;
+            // 车道偏离报警拍照间隔
+            optional int32 laneDeparturePhotoInterval = 26;
+            // 前向碰撞报警时间阈值
+            optional int32 forwardCollisionTimeThreshold = 27;
+            // 前向碰撞报警速度阈值
+            optional int32 forwardCollisionSpeedThreshold = 28;
+            // 前向碰撞报警前后视频录制时间
+            optional int32 forwardCollisionVideoTime = 29;
+            // 前向碰撞报警拍照张数
+            optional int32 forwardCollisionPhotoNum = 30;
+            // 前向碰撞报警拍照间隔
+            optional int32 forwardCollisionPhotoInterval = 31;
+            // 行人碰撞报警时间阈值
+            optional int32 pedestrianCollisionTimeThreshold = 32;
+            // 行人碰撞报警速度阈值
+            optional int32 pedestrianCollisionSpeedThreshold = 33;
+            // 行人碰撞报警前后视频录制时间
+            optional int32 pedestrianCollisionVideoTime = 34;
+            // 行人碰撞报警拍照张数
+            optional int32 pedestrianCollisionPhotoNum = 35;
+            // 行人碰撞报警拍照间隔
+            optional int32 pedestrianCollisionPhotoInterval = 36;
+            // 车距监控报警距离阈值
+            optional int32 vehicleDistanceSpeedThreshold = 37;
+            // 车距监控报警分级速度阈值
+            optional int32 vehicleDistanceClassificationThreshold = 38;
+            // 车距监控报警分级速度阈值
+            optional int32 vehicleDistanceVideoTime = 39;
+            // 车距过近报警拍照张数
+            optional int32 vehicleDistancePhotoNum = 40;
+            // 车距过近报警拍照间隔
+            optional int32 vehicleDistancePhotoInterval = 41;
+            // 道路标志识别拍照张数
+            optional int32 roadSignRecognitionPhotoNum = 42;
+            // 道路标志识别拍照间隔
+            optional int32 roadSignRecognitionPhotoInterval = 43;
+        }
+
+        message DriverConditionMonitoring {
+            // 报警判断速度阈值
+            optional int32 alarmSpeedThreshold = 1;
+            // 报警提示音量
+            optional int32 alarmVolume = 2;
+            // 主动拍照策略
+            optional int32 activePhotoStrategy = 3;
+            // 主动定时拍照时间间隔
+            optional int32 activeTimePhotoInterval = 4;
+            // 主动定距拍照距离间隔
+            optional int32 activeDistancePhotoInterval = 5;
+            // 单次主动拍照张数
+            optional int32 activePhotoNum = 6;
+            // 单次主动拍照时间间隔
+            optional int32 activePhotoInterval = 7;
+            // 拍照分辨率
+            optional int32 photoResolution = 8;
+            // 视频录制分辨率
+            optional int32 videoResolution = 9;
+            // 报警使能
+            optional int32 alarmType = 10;
+            // 事件使能
+            optional int32 eventType = 11;
+            // 吸烟报警判断时间间隔
+            optional int32 smokingAlarmInterval = 12;
+            // 接打电话报警判断时间间隔
+            optional int32 phoneCallAlarmInterval = 13;
+            // 预留字段
+            optional bytes save = 14;
+            // 疲劳驾驶报警分级速度阈值
+            optional int32 tiredAlarmClassificationSpeedThreshold = 15;
+            // 疲劳驾驶报警前后视频录制时间
+            optional int32 tiredDriveVideoTime = 16;
+            // 疲劳驾驶报警拍照张数
+            optional int32 tiredDrivePhotoNum = 17;
+            // 疲劳驾驶报警拍照间隔时间
+            optional int32 tiredDrivePhotoInterval = 18;
+            //接打电话报警分级速度阈值
+            optional int32 phoneCallAlarmClassificationSpeedThreshold = 19;
+            // 接打电话报警前后视频录制时间
+            optional int32 phoneCallVideoTime = 20;
+            // 接打电话报警拍驾驶员面部特征照片张数, 拍几张
+            optional int32 phoneCallShotNum = 21;
+            // 接打电话报警拍驾驶员面部特征照片间隔时间
+            optional int32 phoneCallShotInterval = 22;
+            // 抽烟报警分级车速阈值
+            optional int32 smokingAlarmClassificationSpeedThreshold = 23;
+            // 抽烟报警前后视频录制时间
+            optional int32 smokingVideoTime = 24;
+            // 抽烟报警拍驾驶员面部特征照片张数, 拍几张
+            optional int32 smokingShotNum = 25;
+            // 抽烟报警拍驾驶员面部特征照片间隔时间
+            optional int32 smokingShotInterval = 26;
+            // 分神报警分级车速阈值
+            optional int32 distractionAlarmClassificationSpeedThreshold = 27;
+            // 分神报警前后视频录制时间
+            optional int32 distractionVideoTime = 28;
+            // 分神报警拍驾驶员面部特征照片张数, 拍几张
+            optional int32 distractionShotNum = 29;
+            // 分神报警拍驾驶员面部特征照片间隔时间
+            optional int32 distractionShotInterval = 30;
+            // 驾驶行为异常报警分级车速阈值
+            optional int32 exceptDrivingAlarmClassificationSpeedThreshold = 31;
+            // 驾驶行为异常报警前后视频录制时间
+            optional int32 exceptDrivingVideoTime = 32;
+            // 驾驶行为异常报警拍驾驶员面部特征照片张数, 拍几张
+            optional int32 exceptDrivingShotNum = 33;
+            // 驾驶行为异常报警拍驾驶员面部特征照片间隔时间
+            optional int32 exceptDrivingShotInterval = 34;
+            // 驾驶员身份识别触发
+            optional int32 driverIdentityRecognitionTrigge = 35;
+        }
+
+        message TirePressureMonitoring {
+            // 轮胎规格型号
+            optional bytes tyreSpecificationAndType = 1;
+            // 胎压单位
+            optional int32 tirePressureUnit = 2;
+            // 正常胎压值
+            optional int32 normalTirePressure = 3;
+            // 胎压不平衡门限
+            optional int32 tirePressureUnbalanceThreshold = 4;
+            // 慢漏气门限
+            optional int32 slowLeakageThreshold = 5;
+            // 低压阈值
+            optional int32 lowPressureThreshold = 6;
+            // 高压阈值
+            optional int32 highPressureThreshold = 7;
+            // 高温阈值
+            optional int32 highTemperatureThreshold = 8;
+            // 电压阈值
+            optional int32 voltageThreshold = 9;
+            // 定时上报时间间隔
+            optional int32 timingUploadInterval = 10;
+        }
+
+        message BlindAreaMonitoring {
+            // 后方接近报警时间阈值
+            optional int32 rearApproachAlarmTimeThreshold = 1;
+            // 侧后方接近报警时间阈值
+            optional int32 lateralRearApproachAlarmTimeThreshold = 2;
+        }
+    }
+}
+
+message Location {
+    optional int32 warningFlag = 1;
+    optional int32 status = 2;
+
+    optional double latitude = 3;
+    optional double longitude = 4;
+    optional int32 elevation = 5;
+    optional double speed = 6;
+    optional int32 direction = 7;
+    optional string time = 8;
+    optional TerminalExtraLocationMsg terminalExtraLocationMsg = 9;
+
+    message WarningFlag {
+        optional bool warningFlag = 1;
+        optional bool overSpeeding = 2;
+        optional bool overTired = 3;
+        optional bool dangerous = 4;
+        optional bool GNSSFault = 5;
+        optional bool GNSSAntennaFault = 6;
+        optional bool GNSSAntennaShortCircuit = 7;
+        optional bool terminalMainPowerUnderVoltage = 8;
+        optional bool terminalMainPowerFailure = 9;
+        optional bool TerminalLCDFault = 10;
+        optional bool TTSFault = 11;
+        optional bool cameraFault = 12;
+        optional bool ICCardFault = 13;
+        optional bool speeding = 14;
+        optional bool tired = 15;
+        optional bool driveTimeout = 16;
+        optional bool parkingOvertime = 17;
+        optional bool throughArea = 18;
+        optional bool throughRoad = 19;
+        optional bool roadTimeout = 20;
+        optional bool roadFault = 21;
+        optional bool VSSFault = 22;
+        optional bool vehicleOilException = 23;
+        optional bool vehicleTheft = 24;
+        optional bool vehicleIllegalIgnition = 25;
+        optional bool vehicleIllegalShift = 26;
+        optional bool collisionWarning = 27;
+        optional bool rolloverWarning = 28;
+        optional bool illegalOpenDoor = 29;
+    }
+
+    message Status {
+        optional bool ACC = 1;
+        optional bool isLocation = 2;
+        optional bool latitude = 3;
+        optional bool longitude = 4;
+        optional bool isRunning = 5;
+        optional bool encrypt = 6;
+        optional int32 goodsStatus = 7;
+        optional bool vehicleOil = 8;
+        optional bool vehicleCircut = 9;
+        optional bool doorLock = 10;
+        optional bool frontDoorOpen = 11;
+        optional bool middleDoorOpen = 12;
+        optional bool endDoorOpen = 13;
+        optional bool driverDoorOpen = 14;
+        optional bool otherDoorOpen = 15;
+        optional bool GPS = 16;
+        optional bool beidou = 17;
+        optional bool GLONASS = 18;
+        optional bool Galileo = 19;
+    }
+
+    message TerminalExtraLocationMsg {
+        optional int32 mileage = 1;
+        optional int32 oilQuantity = 2;
+        optional int32 carSpeed = 3;
+        optional int32 warningId = 4;
+        optional SpeedingExtraData speedingExtraData = 5;
+        optional LocationExtraData locationExtraData = 6;
+        optional LocationInfoExtraData locationInfoExtraData = 7;
+        optional ExtraCarState extraCarState = 8;
+        optional IOState ioState = 9;
+        optional int32 simulation = 10;
+        optional int32 wirelessIntensity = 11;
+        optional int32 satellitesNum = 12;
+        optional VideoAlarm videoAlarm = 13;
+        optional VideoLostFlag videoLostFlag = 14;
+        optional VideoShelterFlag videoShelterFlag = 15;
+        optional StorageFaultFlag storageFaultFlag = 16;
+        optional ExceptBehavior exceptBehavior = 17;
+
+        message SpeedingExtraData {
+            optional int32 locationType = 1;
+            optional string locationId = 2;
+        }
+
+        message LocationExtraData {
+            optional int32 locationType = 1;
+            optional string locationId = 2;
+            optional int32 direction = 3;
+        }
+
+        message LocationInfoExtraData {
+            optional string roadId = 1;
+            optional int32 runTime = 2;
+            optional int32 result = 3;
+        }
+
+        message ExtraCarState {
+            optional bool lowLightSignal = 1;
+            optional bool farLightSignal = 2;
+            optional bool rightLightSignal = 3;
+            optional bool leftLightSignal = 4;
+            optional bool brakingSignal = 5;
+            optional bool reverseSignal = 6;
+            optional bool fogLampSignal = 7;
+            optional bool outlineLamp = 8;
+            optional bool hornSignal = 9;
+            optional bool airCondition = 10;
+            optional bool neutralSignal = 11;
+            optional bool retarderOperation = 12;
+            optional bool ABSOperation = 13;
+            optional bool heaterOperation = 14;
+            optional bool clutchState = 15;
+        }
+
+        message IOState {
+            optional bool deepDormancy = 1;
+            optional bool dormancy = 2;
+        }
+
+        message VideoAlarm {
+            optional bool videoLost = 1;
+            optional bool videoShelter = 2;
+            optional bool storageFault = 3;
+            optional bool otherFault = 4;
+            optional bool overcrowding = 5;
+            optional bool exceptBehavior = 6;
+            optional bool videoStorageOver = 7;
+        }
+
+        message VideoLostFlag {
+            optional bool logicChannel1 = 1;
+            optional bool logicChannel2 = 2;
+            optional bool logicChannel3 = 3;
+            optional bool logicChannel4 = 4;
+            optional bool logicChannel5 = 5;
+            optional bool logicChannel6 = 6;
+            optional bool logicChannel7 = 7;
+            optional bool logicChannel8 = 8;
+            optional bool logicChannel9 = 9;
+            optional bool logicChannel10 = 10;
+            optional bool logicChannel11 = 11;
+            optional bool logicChannel12 = 12;
+            optional bool logicChannel13 = 13;
+            optional bool logicChannel14 = 14;
+            optional bool logicChannel15 = 15;
+            optional bool logicChannel16 = 16;
+            optional bool logicChannel17 = 17;
+            optional bool logicChannel18 = 18;
+            optional bool logicChannel19 = 19;
+            optional bool logicChannel20 = 20;
+            optional bool logicChannel21 = 21;
+            optional bool logicChannel22 = 22;
+            optional bool logicChannel23 = 23;
+            optional bool logicChannel24 = 24;
+            optional bool logicChannel25 = 25;
+            optional bool logicChannel26 = 26;
+            optional bool logicChannel27 = 27;
+            optional bool logicChannel28 = 28;
+            optional bool logicChannel29 = 29;
+            optional bool logicChannel30 = 30;
+            optional bool logicChannel31 = 31;
+            optional bool logicChannel32 = 32;
+        }
+
+        message VideoShelterFlag {
+            optional bool logicChannel1 = 1;
+            optional bool logicChannel2 = 2;
+            optional bool logicChannel3 = 3;
+            optional bool logicChannel4 = 4;
+            optional bool logicChannel5 = 5;
+            optional bool logicChannel6 = 6;
+            optional bool logicChannel7 = 7;
+            optional bool logicChannel8 = 8;
+            optional bool logicChannel9 = 9;
+            optional bool logicChannel10 = 10;
+            optional bool logicChannel11 = 11;
+            optional bool logicChannel12 = 12;
+            optional bool logicChannel13 = 13;
+            optional bool logicChannel14 = 14;
+            optional bool logicChannel15 = 15;
+            optional bool logicChannel16 = 16;
+            optional bool logicChannel17 = 17;
+            optional bool logicChannel18 = 18;
+            optional bool logicChannel19 = 19;
+            optional bool logicChannel20 = 20;
+            optional bool logicChannel21 = 21;
+            optional bool logicChannel22 = 22;
+            optional bool logicChannel23 = 23;
+            optional bool logicChannel24 = 24;
+            optional bool logicChannel25 = 25;
+            optional bool logicChannel26 = 26;
+            optional bool logicChannel27 = 27;
+            optional bool logicChannel28 = 28;
+            optional bool logicChannel29 = 29;
+            optional bool logicChannel30 = 30;
+            optional bool logicChannel31 = 31;
+            optional bool logicChannel32 = 32;
+        }
+
+        message StorageFaultFlag {
+            optional bool storage1 = 1;
+            optional bool storage2 = 2;
+            optional bool storage3 = 3;
+            optional bool storage4 = 4;
+            optional bool storage5 = 5;
+            optional bool storage6 = 6;
+            optional bool storage7 = 7;
+            optional bool storage8 = 8;
+            optional bool storage9 = 9;
+            optional bool storage10 = 10;
+            optional bool storage11 = 11;
+            optional bool storage12 = 12;
+            optional bool backupStorage1 = 13;
+            optional bool backupStorage2 = 14;
+            optional bool backupStorage3 = 15;
+            optional bool backupStorage4 = 16;
+        }
+
+        message ExceptBehavior {
+            optional ExceptBehaviorType exceptBehaviorType = 1;
+            optional int32 tiredLevel = 2;
+
+            message ExceptBehaviorType {
+                optional bool tired = 1;
+                optional bool phone = 2;
+                optional bool smoking = 3;
+            }
+        }
+
+    }
+
+}
+
+message BulkLocation {
+    optional int32 dataNum = 1;
+    optional int32 dataType = 2;
+    repeated Location location = 3;
+}
+
+message MediaData {
+    optional int32 mediaId = 1;
+    optional int32 mediaType = 2;
+    optional int32 mediaCode = 3;
+    optional int32 eventCode = 4;
+    optional int32 channelId = 5;
+    optional Location location = 6;
+    optional bytes data = 7;
+}
+
+message TerminalUploadMediaAttributeMsg {
+    optional int32 voiceCode = 1;
+    optional int32 voiceChannelNum = 2;
+    optional int32 voiceSamplingRate = 3;
+    optional int32 voiceSamplingBit = 4;
+    optional int32 voiceFrameLength = 5;
+    optional int32 voiceOutput = 6;
+    optional int32 videoCode = 7;
+    optional int32 maxVoiceChannelNum = 8;
+    optional int32 maxVideoChannelNum = 9;
+}
+
+message TerminalUploadMediaResourcesMsg {
+    optional int32 replyFlowId = 1;
+    optional int32 mediaResourcesNum = 2;
+    repeated MediaResources mediaResources = 3;
+
+    message MediaResources {
+        optional int32 logicChannelNum = 1;
+        optional string startTime = 2;
+        optional string endTime = 3;
+        optional int64 alarmFlag = 4;
+        optional int32 mediaResourcesType = 5;
+        optional int32 bitStreamType = 6;
+        optional int32 storageTYpe = 7;
+        optional int32 fileSize = 8;
+    }
+}
+
+message TerminalSavedMediaRetrievalResponseMsg {
+    optional int32 replyFlowId = 1;
+    optional int32 mediaRetrievalNum = 2;
+
+    repeated TerminalRetrievalDataMsg terminalRetrievalDataMsg = 3;
+
+    message TerminalRetrievalDataMsg {
+        optional int32 mediaId = 1;
+        optional int32 mediaType = 2;
+        optional int32 eventCode = 3;
+        optional int32 passagewayId = 4;
+        optional Location location = 5;
+    }
+}

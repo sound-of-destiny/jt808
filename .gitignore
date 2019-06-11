@@ -1,0 +1,13 @@
+# IDE
+.idea/
+
+# gradle
+.gradle/
+gradle/
+
+# else
+build/
+logs/
+out/
+jt808OriginData/
+jt808.pid
