@@ -55,35 +55,35 @@ public class Location extends PackageData<Header> {
     public void setWarningFlag(Integer warningFlag) {
         this.warningFlag = warningFlag;
 
-        this.flag = ((warningFlag >>> 31) & 0x01) == 1;
-        this.overSpeeding = ((warningFlag >>> 30) & 0x01) == 1;
-        this.overTired = ((warningFlag >>> 29) & 0x01) == 1;
-        this.dangerous = ((warningFlag >>> 28) & 0x01) == 1;
-        this.GNSSFault = ((warningFlag >>> 27) & 0x01) == 1;
-        this.GNSSAntennaFault = ((warningFlag >>> 26) & 0x01) == 1;
-        this.GNSSAntennaShortCircuit = ((warningFlag >>> 25) & 0x01) == 1;
-        this.terminalMainPowerUnderVoltage = ((warningFlag >>> 24) & 0x01) == 1;
-        this.terminalMainPowerFailure = ((warningFlag >>> 23) & 0x01) == 1;
-        this.terminalLCDFault = ((warningFlag >>> 22) & 0x01) == 1;
-        this.TTSFault = ((warningFlag >>> 21) & 0x01) == 1;
-        this.cameraFault = ((warningFlag >>> 20) & 0x01) == 1;
-        this.ICCardFault = ((warningFlag >>> 19) & 0x01) == 1;
-        this.speeding = ((warningFlag >>> 18) & 0x01) == 1;
+        this.flag = (warningFlag & 0x01) == 1;
+        this.overSpeeding = ((warningFlag >>> 1) & 0x01) == 1;
+        this.overTired = ((warningFlag >>> 2) & 0x01) == 1;
+        this.dangerous = ((warningFlag >>> 3) & 0x01) == 1;
+        this.GNSSFault = ((warningFlag >>> 4) & 0x01) == 1;
+        this.GNSSAntennaFault = ((warningFlag >>> 5) & 0x01) == 1;
+        this.GNSSAntennaShortCircuit = ((warningFlag >>> 6) & 0x01) == 1;
+        this.terminalMainPowerUnderVoltage = ((warningFlag >>> 7) & 0x01) == 1;
+        this.terminalMainPowerFailure = ((warningFlag >>> 8) & 0x01) == 1;
+        this.terminalLCDFault = ((warningFlag >>> 9) & 0x01) == 1;
+        this.TTSFault = ((warningFlag >>> 10) & 0x01) == 1;
+        this.cameraFault = ((warningFlag >>> 11) & 0x01) == 1;
+        this.ICCardFault = ((warningFlag >>> 12) & 0x01) == 1;
+        this.speeding = ((warningFlag >>> 13) & 0x01) == 1;
         this.tired = ((warningFlag >>> 14) & 0x01) == 1;
-        this.driveTimeout = ((warningFlag >>> 13) & 0x01) == 1;
-        this.parkingOvertime = ((warningFlag >>> 12) & 0x01) == 1;
-        this.throughArea = ((warningFlag >>> 11) & 0x01) == 1;
-        this.throughRoad = ((warningFlag >>> 10) & 0x01) == 1;
-        this.roadTimeout = ((warningFlag >>> 9) & 0x01) == 1;
-        this.roadFault = ((warningFlag >>> 8) & 0x01) == 1;
-        this.VSSFault = ((warningFlag >>> 7) & 0x01) == 1;
-        this.vehicleOilException = ((warningFlag >>> 6) & 0x01) == 1;
-        this.vehicleTheft = ((warningFlag >>> 5) & 0x01) == 1;
-        this.vehicleIllegalIgnition = ((warningFlag >>> 4) & 0x01) == 1;
-        this.vehicleIllegalShift = ((warningFlag >>> 3) & 0x01) == 1;
-        this.collisionWarning = ((warningFlag >>> 2) & 0x01) == 1;
-        this.rolloverWarning = ((warningFlag >>> 1) & 0x01) == 1;
-        this.illegalOpenDoor = ((warningFlag) & 0x01) == 1;
+        this.driveTimeout = ((warningFlag >>> 18) & 0x01) == 1;
+        this.parkingOvertime = ((warningFlag >>> 19) & 0x01) == 1;
+        this.throughArea = ((warningFlag >>> 20) & 0x01) == 1;
+        this.throughRoad = ((warningFlag >>> 21) & 0x01) == 1;
+        this.roadTimeout = ((warningFlag >>> 22) & 0x01) == 1;
+        this.roadFault = ((warningFlag >>> 23) & 0x01) == 1;
+        this.VSSFault = ((warningFlag >>> 24) & 0x01) == 1;
+        this.vehicleOilException = ((warningFlag >>> 25) & 0x01) == 1;
+        this.vehicleTheft = ((warningFlag >>> 26) & 0x01) == 1;
+        this.vehicleIllegalIgnition = ((warningFlag >>> 27) & 0x01) == 1;
+        this.vehicleIllegalShift = ((warningFlag >>> 28) & 0x01) == 1;
+        this.collisionWarning = ((warningFlag >>> 29) & 0x01) == 1;
+        this.rolloverWarning = ((warningFlag >>> 30) & 0x01) == 1;
+        this.illegalOpenDoor = ((warningFlag >>> 31) & 0x01) == 1;
 
     }
 
@@ -95,25 +95,25 @@ public class Location extends PackageData<Header> {
     public void setStatus(Integer status) {
         this.status = status;
 
-        this.ACC = ((status >>> 31) & 0x01) == 1;
-        this.isLocation = ((status >>> 30) & 0x01) == 1;
-        this.hasLatitude = ((status >>> 29) & 0x01) == 1;
-        this.hasLongitude = ((status >>> 28) & 0x01) == 1;
-        this.isRunning = ((status >>> 27) & 0x01) == 1;
-        this.encrypt = ((status >>> 26) & 0x01) == 1;
-        this.goodsStatus =  (status >>> 31) & 0x03;
-        this.vehicleOil = ((status >>> 22) & 0x01) == 1;
-        this.vehicleCircut = ((status >>>20) & 0x01) == 1;
-        this.doorLock = ((status >>> 19) & 0x01) == 1;
-        this.frontDoorOpen = ((status >>> 18) & 0x01) == 1;
-        this.middleDoorOpen = ((status >>> 17) & 0x01) == 1;
-        this.endDoorOpen = ((status >>> 16) & 0x01) == 1;
-        this.driverDoorOpen = ((status >>> 15) & 0x01) == 1;
-        this.otherDoorOpen = ((status >>> 14) & 0x01) == 1;
-        this.GPS = ((status >>> 13) & 0x01) == 1;
-        this.beidou = ((status >>> 12) & 0x01) == 1;
-        this.GLONASS = ((status >>> 11) & 0x01) == 1;
-        this.Galileo = ((status >>> 10) & 0x01) == 1;
+        this.ACC = (status & 0x01) == 1;
+        this.isLocation = ((status >>> 1) & 0x01) == 1;
+        this.hasLatitude = ((status >>> 2) & 0x01) == 1;
+        this.hasLongitude = ((status >>> 3) & 0x01) == 1;
+        this.isRunning = ((status >>> 4) & 0x01) == 1;
+        this.encrypt = ((status >>> 5) & 0x01) == 1;
+        this.goodsStatus = (status >>> 8) & 0x03;
+        this.vehicleOil = ((status >>> 10) & 0x01) == 1;
+        this.vehicleCircut = ((status >>> 11) & 0x01) == 1;
+        this.doorLock = ((status >>> 12) & 0x01) == 1;
+        this.frontDoorOpen = ((status >>> 13) & 0x01) == 1;
+        this.middleDoorOpen = ((status >>> 14) & 0x01) == 1;
+        this.endDoorOpen = ((status >>> 15) & 0x01) == 1;
+        this.driverDoorOpen = ((status >>> 16) & 0x01) == 1;
+        this.otherDoorOpen = ((status >>> 17) & 0x01) == 1;
+        this.GPS = ((status >>> 18) & 0x01) == 1;
+        this.beidou = ((status >>> 19) & 0x01) == 1;
+        this.GLONASS = ((status >>> 20) & 0x01) == 1;
+        this.Galileo = ((status >>> 21) & 0x01) == 1;
     }
 
     @Property(index = 8, type = DataType.DWORD, desc = "纬度")

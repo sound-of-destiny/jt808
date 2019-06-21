@@ -537,63 +537,63 @@ message Location {
     optional double speed = 6;
     optional int32 direction = 7;
     optional string time = 8;
-    optional TerminalExtraLocationMsg terminalExtraLocationMsg = 9;
+    repeated ExtraLocation extraLocations = 9;
 
-    message WarningFlag {
-        optional bool warningFlag = 1;
-        optional bool overSpeeding = 2;
-        optional bool overTired = 3;
-        optional bool dangerous = 4;
-        optional bool GNSSFault = 5;
-        optional bool GNSSAntennaFault = 6;
-        optional bool GNSSAntennaShortCircuit = 7;
-        optional bool terminalMainPowerUnderVoltage = 8;
-        optional bool terminalMainPowerFailure = 9;
-        optional bool TerminalLCDFault = 10;
-        optional bool TTSFault = 11;
-        optional bool cameraFault = 12;
-        optional bool ICCardFault = 13;
-        optional bool speeding = 14;
-        optional bool tired = 15;
-        optional bool driveTimeout = 16;
-        optional bool parkingOvertime = 17;
-        optional bool throughArea = 18;
-        optional bool throughRoad = 19;
-        optional bool roadTimeout = 20;
-        optional bool roadFault = 21;
-        optional bool VSSFault = 22;
-        optional bool vehicleOilException = 23;
-        optional bool vehicleTheft = 24;
-        optional bool vehicleIllegalIgnition = 25;
-        optional bool vehicleIllegalShift = 26;
-        optional bool collisionWarning = 27;
-        optional bool rolloverWarning = 28;
-        optional bool illegalOpenDoor = 29;
-    }
 
-    message Status {
-        optional bool ACC = 1;
-        optional bool isLocation = 2;
-        optional bool latitude = 3;
-        optional bool longitude = 4;
-        optional bool isRunning = 5;
-        optional bool encrypt = 6;
-        optional int32 goodsStatus = 7;
-        optional bool vehicleOil = 8;
-        optional bool vehicleCircut = 9;
-        optional bool doorLock = 10;
-        optional bool frontDoorOpen = 11;
-        optional bool middleDoorOpen = 12;
-        optional bool endDoorOpen = 13;
-        optional bool driverDoorOpen = 14;
-        optional bool otherDoorOpen = 15;
-        optional bool GPS = 16;
-        optional bool beidou = 17;
-        optional bool GLONASS = 18;
-        optional bool Galileo = 19;
-    }
+        optional bool flag = 10;
+        optional bool overSpeeding = 11;
+        optional bool overTired = 12;
+        optional bool dangerous = 13;
+        optional bool GNSSFault = 14;
+        optional bool GNSSAntennaFault = 15;
+        optional bool GNSSAntennaShortCircuit = 16;
+        optional bool terminalMainPowerUnderVoltage = 17;
+        optional bool terminalMainPowerFailure = 18;
+        optional bool TerminalLCDFault = 19;
+        optional bool TTSFault = 20;
+        optional bool cameraFault = 21;
+        optional bool ICCardFault = 22;
+        optional bool speeding = 23;
+        optional bool tired = 24;
+        optional bool driveTimeout = 25;
+        optional bool parkingOvertime = 26;
+        optional bool throughArea = 27;
+        optional bool throughRoad = 28;
+        optional bool roadTimeout = 29;
+        optional bool roadFault = 30;
+        optional bool VSSFault = 31;
+        optional bool vehicleOilException = 32;
+        optional bool vehicleTheft = 33;
+        optional bool vehicleIllegalIgnition = 34;
+        optional bool vehicleIllegalShift = 35;
+        optional bool collisionWarning = 36;
+        optional bool rolloverWarning = 37;
+        optional bool illegalOpenDoor = 38;
 
-    message TerminalExtraLocationMsg {
+
+
+        optional bool ACC = 39;
+        optional bool isLocation = 40;
+        optional bool hasLatitude = 41;
+        optional bool hasLongitude = 42;
+        optional bool isRunning = 43;
+        optional bool encrypt = 44;
+        optional int32 goodsStatus = 45;
+        optional bool vehicleOil = 46;
+        optional bool vehicleCircut = 47;
+        optional bool doorLock = 48;
+        optional bool frontDoorOpen = 49;
+        optional bool middleDoorOpen = 50;
+        optional bool endDoorOpen = 51;
+        optional bool driverDoorOpen = 52;
+        optional bool otherDoorOpen = 53;
+        optional bool GPS = 54;
+        optional bool beidou = 55;
+        optional bool GLONASS = 56;
+        optional bool Galileo = 57;
+
+
+    message ExtraLocation {
         optional int32 mileage = 1;
         optional int32 oilQuantity = 2;
         optional int32 carSpeed = 3;
@@ -606,10 +606,10 @@ message Location {
         optional int32 simulation = 10;
         optional int32 wirelessIntensity = 11;
         optional int32 satellitesNum = 12;
-        optional VideoAlarm videoAlarm = 13;
-        optional VideoLostFlag videoLostFlag = 14;
-        optional VideoShelterFlag videoShelterFlag = 15;
-        optional StorageFaultFlag storageFaultFlag = 16;
+        optional int32 videoAlarm = 13;
+        optional int32 videoLostFlag = 14;
+        optional int32 videoShelterFlag = 15;
+        optional int32 storageFaultFlag = 16;
         optional ExceptBehavior exceptBehavior = 17;
 
         message SpeedingExtraData {
@@ -695,60 +695,6 @@ message Location {
             optional bool logicChannel30 = 30;
             optional bool logicChannel31 = 31;
             optional bool logicChannel32 = 32;
-        }
-
-        message VideoShelterFlag {
-            optional bool logicChannel1 = 1;
-            optional bool logicChannel2 = 2;
-            optional bool logicChannel3 = 3;
-            optional bool logicChannel4 = 4;
-            optional bool logicChannel5 = 5;
-            optional bool logicChannel6 = 6;
-            optional bool logicChannel7 = 7;
-            optional bool logicChannel8 = 8;
-            optional bool logicChannel9 = 9;
-            optional bool logicChannel10 = 10;
-            optional bool logicChannel11 = 11;
-            optional bool logicChannel12 = 12;
-            optional bool logicChannel13 = 13;
-            optional bool logicChannel14 = 14;
-            optional bool logicChannel15 = 15;
-            optional bool logicChannel16 = 16;
-            optional bool logicChannel17 = 17;
-            optional bool logicChannel18 = 18;
-            optional bool logicChannel19 = 19;
-            optional bool logicChannel20 = 20;
-            optional bool logicChannel21 = 21;
-            optional bool logicChannel22 = 22;
-            optional bool logicChannel23 = 23;
-            optional bool logicChannel24 = 24;
-            optional bool logicChannel25 = 25;
-            optional bool logicChannel26 = 26;
-            optional bool logicChannel27 = 27;
-            optional bool logicChannel28 = 28;
-            optional bool logicChannel29 = 29;
-            optional bool logicChannel30 = 30;
-            optional bool logicChannel31 = 31;
-            optional bool logicChannel32 = 32;
-        }
-
-        message StorageFaultFlag {
-            optional bool storage1 = 1;
-            optional bool storage2 = 2;
-            optional bool storage3 = 3;
-            optional bool storage4 = 4;
-            optional bool storage5 = 5;
-            optional bool storage6 = 6;
-            optional bool storage7 = 7;
-            optional bool storage8 = 8;
-            optional bool storage9 = 9;
-            optional bool storage10 = 10;
-            optional bool storage11 = 11;
-            optional bool storage12 = 12;
-            optional bool backupStorage1 = 13;
-            optional bool backupStorage2 = 14;
-            optional bool backupStorage3 = 15;
-            optional bool backupStorage4 = 16;
         }
 
         message ExceptBehavior {

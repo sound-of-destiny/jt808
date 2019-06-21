@@ -1039,29 +1039,29 @@ public class TerminalParam {
     public void setTimingPhotoControlBit(Integer timingPhotoControlBit) {
         this.timingPhotoControlBit = timingPhotoControlBit;
         // 摄像通道 1 定时拍照开关标志
-        this.cameraChannelTiming1 = ((timingPhotoControlBit >>> 31) & 0x01) == 1;
+        this.cameraChannelTiming1 = ((timingPhotoControlBit) & 0x01) == 1;
         // 摄像通道 2 定时拍照开关标志
-        this.cameraChannelTiming2 = ((timingPhotoControlBit >>> 30) & 0x01) == 1;
+        this.cameraChannelTiming2 = ((timingPhotoControlBit >>> 1) & 0x01) == 1;
         // 摄像通道 3 定时拍照开关标志
-        this.cameraChannelTiming3 = ((timingPhotoControlBit >>> 29) & 0x01) == 1;
+        this.cameraChannelTiming3 = ((timingPhotoControlBit >>> 2) & 0x01) == 1;
         // 摄像通道 4 定时拍照开关标志
-        this.cameraChannelTiming4 = ((timingPhotoControlBit >>> 28) & 0x01) == 1;
+        this.cameraChannelTiming4 = ((timingPhotoControlBit >>> 3) & 0x01) == 1;
         // 摄像通道 5 定时拍照开关标志
-        this.cameraChannelTiming5 = ((timingPhotoControlBit >>> 27) & 0x01) == 1;
+        this.cameraChannelTiming5 = ((timingPhotoControlBit >>> 4) & 0x01) == 1;
         // 摄像通道 1 定时拍照存储标志
-        this.cameraChannelTimingSave1  = ((timingPhotoControlBit >>> 23) & 0x01) == 1;
+        this.cameraChannelTimingSave1  = ((timingPhotoControlBit >>> 8) & 0x01) == 1;
         // 摄像通道 2 定时拍照存储标志
-        this.cameraChannelTimingSave2 = ((timingPhotoControlBit >>> 22) & 0x01) == 1;
+        this.cameraChannelTimingSave2 = ((timingPhotoControlBit >>> 9) & 0x01) == 1;
         // 摄像通道 3 定时拍照存储标志
-        this.cameraChannelTimingSave3 = ((timingPhotoControlBit >>> 21) & 0x01) == 1;
+        this.cameraChannelTimingSave3 = ((timingPhotoControlBit >>> 10) & 0x01) == 1;
         // 摄像通道 4 定时拍照存储标志
-        this.cameraChannelTimingSave4 = ((timingPhotoControlBit >>> 20) & 0x01) == 1;
+        this.cameraChannelTimingSave4 = ((timingPhotoControlBit >>> 11) & 0x01) == 1;
         // 摄像通道 5 定时拍照存储标志
-        this.cameraChannelTimingSave5 = ((timingPhotoControlBit >>> 19) & 0x01) == 1;
+        this.cameraChannelTimingSave5 = ((timingPhotoControlBit >>> 12) & 0x01) == 1;
         // 定时时间单位
-        this.TimingUnit = ((timingPhotoControlBit >>> 15) & 0x01) == 1;
+        this.TimingUnit = ((timingPhotoControlBit >>> 16) & 0x01) == 1;
         // 定时时间间隔
-        this.TimingInterval = timingPhotoControlBit & 0x007f;
+        this.TimingInterval = (timingPhotoControlBit >>> 17) & 0x007f;
     }
 
     @Property(index = 3, type = DataType.DWORD, enumType = 0x0065)
@@ -1073,29 +1073,29 @@ public class TerminalParam {
         this.fixedPictureControlBit = fixedPictureControlBit;
 
         // 摄像通道 1 定时拍照开关标志
-        this.cameraChannelFixed1 = ((fixedPictureControlBit >>> 31) & 0x01) == 1;
+        this.cameraChannelFixed1 = ((fixedPictureControlBit) & 0x01) == 1;
         // 摄像通道 2 定时拍照开关标志
-        this.cameraChannelFixed2 = ((fixedPictureControlBit >>> 30) & 0x01) == 1;
+        this.cameraChannelFixed2 = ((fixedPictureControlBit >>> 1) & 0x01) == 1;
         // 摄像通道 3 定时拍照开关标志
-        this.cameraChannelFixed3 = ((fixedPictureControlBit >>> 29) & 0x01) == 1;
+        this.cameraChannelFixed3 = ((fixedPictureControlBit >>> 2) & 0x01) == 1;
         // 摄像通道 4 定时拍照开关标志
-        this.cameraChannelFixed4 = ((fixedPictureControlBit >>> 28) & 0x01) == 1;
+        this.cameraChannelFixed4 = ((fixedPictureControlBit >>> 3) & 0x01) == 1;
         // 摄像通道 5 定时拍照开关标志
-        this.cameraChannelFixed5 = ((fixedPictureControlBit >>> 27) & 0x01) == 1;
+        this.cameraChannelFixed5 = ((fixedPictureControlBit >>> 4) & 0x01) == 1;
         // 摄像通道 1 定时拍照存储标志
-        this.cameraChannelFixedSave1  = ((fixedPictureControlBit >>> 23) & 0x01) == 1;
+        this.cameraChannelFixedSave1  = ((fixedPictureControlBit >>> 8) & 0x01) == 1;
         // 摄像通道 2 定时拍照存储标志
-        this.cameraChannelFixedSave2 = ((fixedPictureControlBit >>> 22) & 0x01) == 1;
+        this.cameraChannelFixedSave2 = ((fixedPictureControlBit >>> 9) & 0x01) == 1;
         // 摄像通道 3 定时拍照存储标志
-        this.cameraChannelFixedSave3 = ((fixedPictureControlBit >>> 21) & 0x01) == 1;
+        this.cameraChannelFixedSave3 = ((fixedPictureControlBit >>> 10) & 0x01) == 1;
         // 摄像通道 4 定时拍照存储标志
-        this.cameraChannelFixedSave4 = ((fixedPictureControlBit >>> 20) & 0x01) == 1;
+        this.cameraChannelFixedSave4 = ((fixedPictureControlBit >>> 11) & 0x01) == 1;
         // 摄像通道 5 定时拍照存储标志
-        this.cameraChannelFixedSave5 = ((fixedPictureControlBit >>> 19) & 0x01) == 1;
+        this.cameraChannelFixedSave5 = ((fixedPictureControlBit >>> 12) & 0x01) == 1;
         // 定时时间单位
-        this.FixedUnit = ((fixedPictureControlBit >>> 15) & 0x01) == 1;
+        this.FixedUnit = ((fixedPictureControlBit >>> 16) & 0x01) == 1;
         // 定距距离间隔
-        this.FixedInterval = fixedPictureControlBit & 0x007f;
+        this.FixedInterval = (fixedPictureControlBit >>> 17) & 0x007f;
     }
 
     @Property(index = 3, type = DataType.DWORD, enumType = 0x0070)
@@ -1197,13 +1197,13 @@ public class TerminalParam {
         this.gnss = gnss;
 
         // 0:未使用 GPS 卫星进行定位;1:使用 GPS 卫星进行定位
-        this.GPS = ((gnss >>> 7) & 0x01) == 1;
+        this.GPS = ((gnss) & 0x01) == 1;
         // 0:未使用北斗卫星进行定位;1:使用北斗卫星进行定位
-        this.beidou = ((gnss >>> 6) & 0x01) == 1;
+        this.beidou = ((gnss >>> 1) & 0x01) == 1;
         // 0:未使用 GLONASS 卫星进行定位;1:使用 GLONASS 卫星进行定位
-        this.GLONASS = ((gnss >>> 5) & 0x01) == 1;
+        this.GLONASS = ((gnss >>> 2) & 0x01) == 1;
         // 0:未使用 Galileo 卫星进行定位;1:使用 Galileo 卫星进行定位
-        this.Galileo = ((gnss >>> 4) & 0x01) == 1;
+        this.Galileo = ((gnss >>> 3) & 0x01) == 1;
     }
 
     @Property(index = 3, type = DataType.BYTE, enumType = 0x0091)

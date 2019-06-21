@@ -42,18 +42,18 @@ public class SessionManager {
 		}
 	}
 
-	public Session findBySessionId(String id) {
+	public synchronized Session findBySessionId(String id) {
 		return sessionIdMap.get(id);
 	}
 
-	public Session findByAuthenticationCode(String authenticationCode) {
+	public synchronized Session findByAuthenticationCode(String authenticationCode) {
 		String sessionId = this.authenticationCodeMap.get(authenticationCode);
 		if (sessionId == null)
 			return null;
 		return this.findBySessionId(sessionId);
 	}
 
-	public Session findByTerminalPhone(String phone) {
+	public synchronized Session findByTerminalPhone(String phone) {
 		String sessionId = phoneMap.get(phone);
 		if (sessionId == null)
 			return null;

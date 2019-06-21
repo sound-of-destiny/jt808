@@ -40,15 +40,14 @@ public class ClientHandler extends SimpleChannelInboundHandler<ClientData.Protoc
         int flowId = protocol.getFlowId();
         Session session = sessionManager.findByTerminalPhone(terminalPhone);
         if(session == null) {
-            log.info("session is null");
+            log.error("session is null");
             return;
         }
-
+        log.info("o {} {}", terminalPhone, type);
         Class<?> clazz = downMessageMapper.getDownMsg(type);
         PackageData<Header> packageData = NoBody.class.getDeclaredConstructor().newInstance();
         if (clazz != null) {
             String cName = clazz.getName().substring(clazz.getName().lastIndexOf('.') + 1);
-            log.info("o {}", cName);
             Object pObject = protocol.getClass().getMethod("get" + cName).invoke(protocol);
             Object jObject = clazz.getDeclaredConstructor().newInstance();
             packageData = (PackageData<Header>) ProtoBufCodec.protoBeanToJavaBean(pObject, jObject);
@@ -67,7 +66,7 @@ public class ClientHandler extends SimpleChannelInboundHandler<ClientData.Protoc
 
         ChannelFuture channelFuture = session.getChannel().writeAndFlush(allResultBuf.retain()).sync();
         if (!channelFuture.isSuccess()) {
-            log.info("message send failed");
+            log.error("message send failed");
             return;
         }
         String key = terminalPhone + (hasReplyFlowId ? header.getFlowId() : type);

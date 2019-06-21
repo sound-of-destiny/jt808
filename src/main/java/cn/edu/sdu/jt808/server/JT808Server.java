@@ -133,6 +133,7 @@ public class JT808Server {
         MQUtil.password = conf.getMqPassword();
 
         RedisUtil.REDIS_HOST = conf.getRedisHost();
+        RedisUtil.REDIS_PORT = conf.getRedisPort();
 
         MongoUtil.mongoServer = conf.getMongoServer();
         MongoUtil.mongodb = conf.getMongodb();

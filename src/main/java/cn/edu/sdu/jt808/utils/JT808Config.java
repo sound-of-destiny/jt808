@@ -11,6 +11,7 @@ public class JT808Config {
     private String mqPassword;
 
     private String redisHost;
+    private Integer redisPort;
 
     private String mongoServer;
     private String mongodb;
@@ -78,6 +79,14 @@ public class JT808Config {
 
     public void setRedisHost(String redisHost) {
         this.redisHost = redisHost;
+    }
+
+    public Integer getRedisPort() {
+        return redisPort;
+    }
+
+    public void setRedisPort(Integer redisPort) {
+        this.redisPort = redisPort;
     }
 
     public String getMongoServer() {

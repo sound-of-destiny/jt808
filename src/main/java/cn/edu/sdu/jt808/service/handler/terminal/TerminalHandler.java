@@ -51,7 +51,7 @@ public class TerminalHandler extends ChannelInboundHandlerAdapter {
 
             PackageData packageData = decoder.decode(byteBuf, targetClass);
 
-            log.info("i {}", handler.toString());
+
             PackageData<Header> result;
             if (types.length == 1) {
                 result = handler.invoke(packageData);
@@ -61,6 +61,7 @@ public class TerminalHandler extends ChannelInboundHandlerAdapter {
 
             // encode
             if (result == null) return;
+            log.info("i {} {}", result.getHeader().getTerminalPhone(), type);
             ByteBuf resultBuf = encoder.encode(result);
             ByteBuf allResultBuf = Unpooled.wrappedBuffer(Unpooled.wrappedBuffer(new byte[]{ 0x7e }),
                     resultBuf, Unpooled.wrappedBuffer(new byte[]{ 0x7e }));

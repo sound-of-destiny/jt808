@@ -48688,17 +48688,460 @@ public final class ServerData {
         getTimeBytes();
 
     /**
-     * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
      */
-    boolean hasTerminalExtraLocationMsg();
+    java.util.List<cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation> 
+        getExtraLocationsList();
     /**
-     * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
      */
-    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg getTerminalExtraLocationMsg();
+    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation getExtraLocations(int index);
     /**
-     * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
      */
-    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsgOrBuilder getTerminalExtraLocationMsgOrBuilder();
+    int getExtraLocationsCount();
+    /**
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+     */
+    java.util.List<? extends cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder> 
+        getExtraLocationsOrBuilderList();
+    /**
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+     */
+    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder getExtraLocationsOrBuilder(
+        int index);
+
+    /**
+     * <code>optional bool flag = 10;</code>
+     */
+    boolean hasFlag();
+    /**
+     * <code>optional bool flag = 10;</code>
+     */
+    boolean getFlag();
+
+    /**
+     * <code>optional bool overSpeeding = 11;</code>
+     */
+    boolean hasOverSpeeding();
+    /**
+     * <code>optional bool overSpeeding = 11;</code>
+     */
+    boolean getOverSpeeding();
+
+    /**
+     * <code>optional bool overTired = 12;</code>
+     */
+    boolean hasOverTired();
+    /**
+     * <code>optional bool overTired = 12;</code>
+     */
+    boolean getOverTired();
+
+    /**
+     * <code>optional bool dangerous = 13;</code>
+     */
+    boolean hasDangerous();
+    /**
+     * <code>optional bool dangerous = 13;</code>
+     */
+    boolean getDangerous();
+
+    /**
+     * <code>optional bool GNSSFault = 14;</code>
+     */
+    boolean hasGNSSFault();
+    /**
+     * <code>optional bool GNSSFault = 14;</code>
+     */
+    boolean getGNSSFault();
+
+    /**
+     * <code>optional bool GNSSAntennaFault = 15;</code>
+     */
+    boolean hasGNSSAntennaFault();
+    /**
+     * <code>optional bool GNSSAntennaFault = 15;</code>
+     */
+    boolean getGNSSAntennaFault();
+
+    /**
+     * <code>optional bool GNSSAntennaShortCircuit = 16;</code>
+     */
+    boolean hasGNSSAntennaShortCircuit();
+    /**
+     * <code>optional bool GNSSAntennaShortCircuit = 16;</code>
+     */
+    boolean getGNSSAntennaShortCircuit();
+
+    /**
+     * <code>optional bool terminalMainPowerUnderVoltage = 17;</code>
+     */
+    boolean hasTerminalMainPowerUnderVoltage();
+    /**
+     * <code>optional bool terminalMainPowerUnderVoltage = 17;</code>
+     */
+    boolean getTerminalMainPowerUnderVoltage();
+
+    /**
+     * <code>optional bool terminalMainPowerFailure = 18;</code>
+     */
+    boolean hasTerminalMainPowerFailure();
+    /**
+     * <code>optional bool terminalMainPowerFailure = 18;</code>
+     */
+    boolean getTerminalMainPowerFailure();
+
+    /**
+     * <code>optional bool TerminalLCDFault = 19;</code>
+     */
+    boolean hasTerminalLCDFault();
+    /**
+     * <code>optional bool TerminalLCDFault = 19;</code>
+     */
+    boolean getTerminalLCDFault();
+
+    /**
+     * <code>optional bool TTSFault = 20;</code>
+     */
+    boolean hasTTSFault();
+    /**
+     * <code>optional bool TTSFault = 20;</code>
+     */
+    boolean getTTSFault();
+
+    /**
+     * <code>optional bool cameraFault = 21;</code>
+     */
+    boolean hasCameraFault();
+    /**
+     * <code>optional bool cameraFault = 21;</code>
+     */
+    boolean getCameraFault();
+
+    /**
+     * <code>optional bool ICCardFault = 22;</code>
+     */
+    boolean hasICCardFault();
+    /**
+     * <code>optional bool ICCardFault = 22;</code>
+     */
+    boolean getICCardFault();
+
+    /**
+     * <code>optional bool speeding = 23;</code>
+     */
+    boolean hasSpeeding();
+    /**
+     * <code>optional bool speeding = 23;</code>
+     */
+    boolean getSpeeding();
+
+    /**
+     * <code>optional bool tired = 24;</code>
+     */
+    boolean hasTired();
+    /**
+     * <code>optional bool tired = 24;</code>
+     */
+    boolean getTired();
+
+    /**
+     * <code>optional bool driveTimeout = 25;</code>
+     */
+    boolean hasDriveTimeout();
+    /**
+     * <code>optional bool driveTimeout = 25;</code>
+     */
+    boolean getDriveTimeout();
+
+    /**
+     * <code>optional bool parkingOvertime = 26;</code>
+     */
+    boolean hasParkingOvertime();
+    /**
+     * <code>optional bool parkingOvertime = 26;</code>
+     */
+    boolean getParkingOvertime();
+
+    /**
+     * <code>optional bool throughArea = 27;</code>
+     */
+    boolean hasThroughArea();
+    /**
+     * <code>optional bool throughArea = 27;</code>
+     */
+    boolean getThroughArea();
+
+    /**
+     * <code>optional bool throughRoad = 28;</code>
+     */
+    boolean hasThroughRoad();
+    /**
+     * <code>optional bool throughRoad = 28;</code>
+     */
+    boolean getThroughRoad();
+
+    /**
+     * <code>optional bool roadTimeout = 29;</code>
+     */
+    boolean hasRoadTimeout();
+    /**
+     * <code>optional bool roadTimeout = 29;</code>
+     */
+    boolean getRoadTimeout();
+
+    /**
+     * <code>optional bool roadFault = 30;</code>
+     */
+    boolean hasRoadFault();
+    /**
+     * <code>optional bool roadFault = 30;</code>
+     */
+    boolean getRoadFault();
+
+    /**
+     * <code>optional bool VSSFault = 31;</code>
+     */
+    boolean hasVSSFault();
+    /**
+     * <code>optional bool VSSFault = 31;</code>
+     */
+    boolean getVSSFault();
+
+    /**
+     * <code>optional bool vehicleOilException = 32;</code>
+     */
+    boolean hasVehicleOilException();
+    /**
+     * <code>optional bool vehicleOilException = 32;</code>
+     */
+    boolean getVehicleOilException();
+
+    /**
+     * <code>optional bool vehicleTheft = 33;</code>
+     */
+    boolean hasVehicleTheft();
+    /**
+     * <code>optional bool vehicleTheft = 33;</code>
+     */
+    boolean getVehicleTheft();
+
+    /**
+     * <code>optional bool vehicleIllegalIgnition = 34;</code>
+     */
+    boolean hasVehicleIllegalIgnition();
+    /**
+     * <code>optional bool vehicleIllegalIgnition = 34;</code>
+     */
+    boolean getVehicleIllegalIgnition();
+
+    /**
+     * <code>optional bool vehicleIllegalShift = 35;</code>
+     */
+    boolean hasVehicleIllegalShift();
+    /**
+     * <code>optional bool vehicleIllegalShift = 35;</code>
+     */
+    boolean getVehicleIllegalShift();
+
+    /**
+     * <code>optional bool collisionWarning = 36;</code>
+     */
+    boolean hasCollisionWarning();
+    /**
+     * <code>optional bool collisionWarning = 36;</code>
+     */
+    boolean getCollisionWarning();
+
+    /**
+     * <code>optional bool rolloverWarning = 37;</code>
+     */
+    boolean hasRolloverWarning();
+    /**
+     * <code>optional bool rolloverWarning = 37;</code>
+     */
+    boolean getRolloverWarning();
+
+    /**
+     * <code>optional bool illegalOpenDoor = 38;</code>
+     */
+    boolean hasIllegalOpenDoor();
+    /**
+     * <code>optional bool illegalOpenDoor = 38;</code>
+     */
+    boolean getIllegalOpenDoor();
+
+    /**
+     * <code>optional bool ACC = 39;</code>
+     */
+    boolean hasACC();
+    /**
+     * <code>optional bool ACC = 39;</code>
+     */
+    boolean getACC();
+
+    /**
+     * <code>optional bool isLocation = 40;</code>
+     */
+    boolean hasIsLocation();
+    /**
+     * <code>optional bool isLocation = 40;</code>
+     */
+    boolean getIsLocation();
+
+    /**
+     * <code>optional bool hasLatitude = 41;</code>
+     */
+    boolean hasHasLatitude();
+    /**
+     * <code>optional bool hasLatitude = 41;</code>
+     */
+    boolean getHasLatitude();
+
+    /**
+     * <code>optional bool hasLongitude = 42;</code>
+     */
+    boolean hasHasLongitude();
+    /**
+     * <code>optional bool hasLongitude = 42;</code>
+     */
+    boolean getHasLongitude();
+
+    /**
+     * <code>optional bool isRunning = 43;</code>
+     */
+    boolean hasIsRunning();
+    /**
+     * <code>optional bool isRunning = 43;</code>
+     */
+    boolean getIsRunning();
+
+    /**
+     * <code>optional bool encrypt = 44;</code>
+     */
+    boolean hasEncrypt();
+    /**
+     * <code>optional bool encrypt = 44;</code>
+     */
+    boolean getEncrypt();
+
+    /**
+     * <code>optional int32 goodsStatus = 45;</code>
+     */
+    boolean hasGoodsStatus();
+    /**
+     * <code>optional int32 goodsStatus = 45;</code>
+     */
+    int getGoodsStatus();
+
+    /**
+     * <code>optional bool vehicleOil = 46;</code>
+     */
+    boolean hasVehicleOil();
+    /**
+     * <code>optional bool vehicleOil = 46;</code>
+     */
+    boolean getVehicleOil();
+
+    /**
+     * <code>optional bool vehicleCircut = 47;</code>
+     */
+    boolean hasVehicleCircut();
+    /**
+     * <code>optional bool vehicleCircut = 47;</code>
+     */
+    boolean getVehicleCircut();
+
+    /**
+     * <code>optional bool doorLock = 48;</code>
+     */
+    boolean hasDoorLock();
+    /**
+     * <code>optional bool doorLock = 48;</code>
+     */
+    boolean getDoorLock();
+
+    /**
+     * <code>optional bool frontDoorOpen = 49;</code>
+     */
+    boolean hasFrontDoorOpen();
+    /**
+     * <code>optional bool frontDoorOpen = 49;</code>
+     */
+    boolean getFrontDoorOpen();
+
+    /**
+     * <code>optional bool middleDoorOpen = 50;</code>
+     */
+    boolean hasMiddleDoorOpen();
+    /**
+     * <code>optional bool middleDoorOpen = 50;</code>
+     */
+    boolean getMiddleDoorOpen();
+
+    /**
+     * <code>optional bool endDoorOpen = 51;</code>
+     */
+    boolean hasEndDoorOpen();
+    /**
+     * <code>optional bool endDoorOpen = 51;</code>
+     */
+    boolean getEndDoorOpen();
+
+    /**
+     * <code>optional bool driverDoorOpen = 52;</code>
+     */
+    boolean hasDriverDoorOpen();
+    /**
+     * <code>optional bool driverDoorOpen = 52;</code>
+     */
+    boolean getDriverDoorOpen();
+
+    /**
+     * <code>optional bool otherDoorOpen = 53;</code>
+     */
+    boolean hasOtherDoorOpen();
+    /**
+     * <code>optional bool otherDoorOpen = 53;</code>
+     */
+    boolean getOtherDoorOpen();
+
+    /**
+     * <code>optional bool GPS = 54;</code>
+     */
+    boolean hasGPS();
+    /**
+     * <code>optional bool GPS = 54;</code>
+     */
+    boolean getGPS();
+
+    /**
+     * <code>optional bool beidou = 55;</code>
+     */
+    boolean hasBeidou();
+    /**
+     * <code>optional bool beidou = 55;</code>
+     */
+    boolean getBeidou();
+
+    /**
+     * <code>optional bool GLONASS = 56;</code>
+     */
+    boolean hasGLONASS();
+    /**
+     * <code>optional bool GLONASS = 56;</code>
+     */
+    boolean getGLONASS();
+
+    /**
+     * <code>optional bool Galileo = 57;</code>
+     */
+    boolean hasGalileo();
+    /**
+     * <code>optional bool Galileo = 57;</code>
+     */
+    boolean getGalileo();
   }
   /**
    * Protobuf type {@code protobuf.Location}
@@ -48714,6 +49157,7 @@ public final class ServerData {
     }
     private Location() {
       time_ = "";
+      extraLocations_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -48730,6 +49174,7 @@ public final class ServerData {
         throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
+      int mutable_bitField1_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -48782,16 +49227,252 @@ public final class ServerData {
               break;
             }
             case 74: {
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000100) != 0)) {
-                subBuilder = terminalExtraLocationMsg_.toBuilder();
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
+                extraLocations_ = new java.util.ArrayList<cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation>();
+                mutable_bitField0_ |= 0x00000100;
               }
-              terminalExtraLocationMsg_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(terminalExtraLocationMsg_);
-                terminalExtraLocationMsg_ = subBuilder.buildPartial();
-              }
+              extraLocations_.add(
+                  input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.PARSER, extensionRegistry));
+              break;
+            }
+            case 80: {
               bitField0_ |= 0x00000100;
+              flag_ = input.readBool();
+              break;
+            }
+            case 88: {
+              bitField0_ |= 0x00000200;
+              overSpeeding_ = input.readBool();
+              break;
+            }
+            case 96: {
+              bitField0_ |= 0x00000400;
+              overTired_ = input.readBool();
+              break;
+            }
+            case 104: {
+              bitField0_ |= 0x00000800;
+              dangerous_ = input.readBool();
+              break;
+            }
+            case 112: {
+              bitField0_ |= 0x00001000;
+              gNSSFault_ = input.readBool();
+              break;
+            }
+            case 120: {
+              bitField0_ |= 0x00002000;
+              gNSSAntennaFault_ = input.readBool();
+              break;
+            }
+            case 128: {
+              bitField0_ |= 0x00004000;
+              gNSSAntennaShortCircuit_ = input.readBool();
+              break;
+            }
+            case 136: {
+              bitField0_ |= 0x00008000;
+              terminalMainPowerUnderVoltage_ = input.readBool();
+              break;
+            }
+            case 144: {
+              bitField0_ |= 0x00010000;
+              terminalMainPowerFailure_ = input.readBool();
+              break;
+            }
+            case 152: {
+              bitField0_ |= 0x00020000;
+              terminalLCDFault_ = input.readBool();
+              break;
+            }
+            case 160: {
+              bitField0_ |= 0x00040000;
+              tTSFault_ = input.readBool();
+              break;
+            }
+            case 168: {
+              bitField0_ |= 0x00080000;
+              cameraFault_ = input.readBool();
+              break;
+            }
+            case 176: {
+              bitField0_ |= 0x00100000;
+              iCCardFault_ = input.readBool();
+              break;
+            }
+            case 184: {
+              bitField0_ |= 0x00200000;
+              speeding_ = input.readBool();
+              break;
+            }
+            case 192: {
+              bitField0_ |= 0x00400000;
+              tired_ = input.readBool();
+              break;
+            }
+            case 200: {
+              bitField0_ |= 0x00800000;
+              driveTimeout_ = input.readBool();
+              break;
+            }
+            case 208: {
+              bitField0_ |= 0x01000000;
+              parkingOvertime_ = input.readBool();
+              break;
+            }
+            case 216: {
+              bitField0_ |= 0x02000000;
+              throughArea_ = input.readBool();
+              break;
+            }
+            case 224: {
+              bitField0_ |= 0x04000000;
+              throughRoad_ = input.readBool();
+              break;
+            }
+            case 232: {
+              bitField0_ |= 0x08000000;
+              roadTimeout_ = input.readBool();
+              break;
+            }
+            case 240: {
+              bitField0_ |= 0x10000000;
+              roadFault_ = input.readBool();
+              break;
+            }
+            case 248: {
+              bitField0_ |= 0x20000000;
+              vSSFault_ = input.readBool();
+              break;
+            }
+            case 256: {
+              bitField0_ |= 0x40000000;
+              vehicleOilException_ = input.readBool();
+              break;
+            }
+            case 264: {
+              bitField0_ |= 0x80000000;
+              vehicleTheft_ = input.readBool();
+              break;
+            }
+            case 272: {
+              bitField1_ |= 0x00000001;
+              vehicleIllegalIgnition_ = input.readBool();
+              break;
+            }
+            case 280: {
+              bitField1_ |= 0x00000002;
+              vehicleIllegalShift_ = input.readBool();
+              break;
+            }
+            case 288: {
+              bitField1_ |= 0x00000004;
+              collisionWarning_ = input.readBool();
+              break;
+            }
+            case 296: {
+              bitField1_ |= 0x00000008;
+              rolloverWarning_ = input.readBool();
+              break;
+            }
+            case 304: {
+              bitField1_ |= 0x00000010;
+              illegalOpenDoor_ = input.readBool();
+              break;
+            }
+            case 312: {
+              bitField1_ |= 0x00000020;
+              aCC_ = input.readBool();
+              break;
+            }
+            case 320: {
+              bitField1_ |= 0x00000040;
+              isLocation_ = input.readBool();
+              break;
+            }
+            case 328: {
+              bitField1_ |= 0x00000080;
+              hasLatitude_ = input.readBool();
+              break;
+            }
+            case 336: {
+              bitField1_ |= 0x00000100;
+              hasLongitude_ = input.readBool();
+              break;
+            }
+            case 344: {
+              bitField1_ |= 0x00000200;
+              isRunning_ = input.readBool();
+              break;
+            }
+            case 352: {
+              bitField1_ |= 0x00000400;
+              encrypt_ = input.readBool();
+              break;
+            }
+            case 360: {
+              bitField1_ |= 0x00000800;
+              goodsStatus_ = input.readInt32();
+              break;
+            }
+            case 368: {
+              bitField1_ |= 0x00001000;
+              vehicleOil_ = input.readBool();
+              break;
+            }
+            case 376: {
+              bitField1_ |= 0x00002000;
+              vehicleCircut_ = input.readBool();
+              break;
+            }
+            case 384: {
+              bitField1_ |= 0x00004000;
+              doorLock_ = input.readBool();
+              break;
+            }
+            case 392: {
+              bitField1_ |= 0x00008000;
+              frontDoorOpen_ = input.readBool();
+              break;
+            }
+            case 400: {
+              bitField1_ |= 0x00010000;
+              middleDoorOpen_ = input.readBool();
+              break;
+            }
+            case 408: {
+              bitField1_ |= 0x00020000;
+              endDoorOpen_ = input.readBool();
+              break;
+            }
+            case 416: {
+              bitField1_ |= 0x00040000;
+              driverDoorOpen_ = input.readBool();
+              break;
+            }
+            case 424: {
+              bitField1_ |= 0x00080000;
+              otherDoorOpen_ = input.readBool();
+              break;
+            }
+            case 432: {
+              bitField1_ |= 0x00100000;
+              gPS_ = input.readBool();
+              break;
+            }
+            case 440: {
+              bitField1_ |= 0x00200000;
+              beidou_ = input.readBool();
+              break;
+            }
+            case 448: {
+              bitField1_ |= 0x00400000;
+              gLONASS_ = input.readBool();
+              break;
+            }
+            case 456: {
+              bitField1_ |= 0x00800000;
+              galileo_ = input.readBool();
               break;
             }
             default: {
@@ -48809,6 +49490,9 @@ public final class ServerData {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000100) != 0)) {
+          extraLocations_ = java.util.Collections.unmodifiableList(extraLocations_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -48826,5017 +49510,8 @@ public final class ServerData {
               cn.edu.sdu.jt808.protobuf.ServerData.Location.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.Builder.class);
     }
 
-    public interface WarningFlagOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:protobuf.Location.WarningFlag)
-        com.google.protobuf.MessageOrBuilder {
-
-      /**
-       * <code>optional bool warningFlag = 1;</code>
-       */
-      boolean hasWarningFlag();
-      /**
-       * <code>optional bool warningFlag = 1;</code>
-       */
-      boolean getWarningFlag();
-
-      /**
-       * <code>optional bool overSpeeding = 2;</code>
-       */
-      boolean hasOverSpeeding();
-      /**
-       * <code>optional bool overSpeeding = 2;</code>
-       */
-      boolean getOverSpeeding();
-
-      /**
-       * <code>optional bool overTired = 3;</code>
-       */
-      boolean hasOverTired();
-      /**
-       * <code>optional bool overTired = 3;</code>
-       */
-      boolean getOverTired();
-
-      /**
-       * <code>optional bool dangerous = 4;</code>
-       */
-      boolean hasDangerous();
-      /**
-       * <code>optional bool dangerous = 4;</code>
-       */
-      boolean getDangerous();
-
-      /**
-       * <code>optional bool GNSSFault = 5;</code>
-       */
-      boolean hasGNSSFault();
-      /**
-       * <code>optional bool GNSSFault = 5;</code>
-       */
-      boolean getGNSSFault();
-
-      /**
-       * <code>optional bool GNSSAntennaFault = 6;</code>
-       */
-      boolean hasGNSSAntennaFault();
-      /**
-       * <code>optional bool GNSSAntennaFault = 6;</code>
-       */
-      boolean getGNSSAntennaFault();
-
-      /**
-       * <code>optional bool GNSSAntennaShortCircuit = 7;</code>
-       */
-      boolean hasGNSSAntennaShortCircuit();
-      /**
-       * <code>optional bool GNSSAntennaShortCircuit = 7;</code>
-       */
-      boolean getGNSSAntennaShortCircuit();
-
-      /**
-       * <code>optional bool terminalMainPowerUnderVoltage = 8;</code>
-       */
-      boolean hasTerminalMainPowerUnderVoltage();
-      /**
-       * <code>optional bool terminalMainPowerUnderVoltage = 8;</code>
-       */
-      boolean getTerminalMainPowerUnderVoltage();
-
-      /**
-       * <code>optional bool terminalMainPowerFailure = 9;</code>
-       */
-      boolean hasTerminalMainPowerFailure();
-      /**
-       * <code>optional bool terminalMainPowerFailure = 9;</code>
-       */
-      boolean getTerminalMainPowerFailure();
-
-      /**
-       * <code>optional bool TerminalLCDFault = 10;</code>
-       */
-      boolean hasTerminalLCDFault();
-      /**
-       * <code>optional bool TerminalLCDFault = 10;</code>
-       */
-      boolean getTerminalLCDFault();
-
-      /**
-       * <code>optional bool TTSFault = 11;</code>
-       */
-      boolean hasTTSFault();
-      /**
-       * <code>optional bool TTSFault = 11;</code>
-       */
-      boolean getTTSFault();
-
-      /**
-       * <code>optional bool cameraFault = 12;</code>
-       */
-      boolean hasCameraFault();
-      /**
-       * <code>optional bool cameraFault = 12;</code>
-       */
-      boolean getCameraFault();
-
-      /**
-       * <code>optional bool ICCardFault = 13;</code>
-       */
-      boolean hasICCardFault();
-      /**
-       * <code>optional bool ICCardFault = 13;</code>
-       */
-      boolean getICCardFault();
-
-      /**
-       * <code>optional bool speeding = 14;</code>
-       */
-      boolean hasSpeeding();
-      /**
-       * <code>optional bool speeding = 14;</code>
-       */
-      boolean getSpeeding();
-
-      /**
-       * <code>optional bool tired = 15;</code>
-       */
-      boolean hasTired();
-      /**
-       * <code>optional bool tired = 15;</code>
-       */
-      boolean getTired();
-
-      /**
-       * <code>optional bool driveTimeout = 16;</code>
-       */
-      boolean hasDriveTimeout();
-      /**
-       * <code>optional bool driveTimeout = 16;</code>
-       */
-      boolean getDriveTimeout();
-
-      /**
-       * <code>optional bool parkingOvertime = 17;</code>
-       */
-      boolean hasParkingOvertime();
-      /**
-       * <code>optional bool parkingOvertime = 17;</code>
-       */
-      boolean getParkingOvertime();
-
-      /**
-       * <code>optional bool throughArea = 18;</code>
-       */
-      boolean hasThroughArea();
-      /**
-       * <code>optional bool throughArea = 18;</code>
-       */
-      boolean getThroughArea();
-
-      /**
-       * <code>optional bool throughRoad = 19;</code>
-       */
-      boolean hasThroughRoad();
-      /**
-       * <code>optional bool throughRoad = 19;</code>
-       */
-      boolean getThroughRoad();
-
-      /**
-       * <code>optional bool roadTimeout = 20;</code>
-       */
-      boolean hasRoadTimeout();
-      /**
-       * <code>optional bool roadTimeout = 20;</code>
-       */
-      boolean getRoadTimeout();
-
-      /**
-       * <code>optional bool roadFault = 21;</code>
-       */
-      boolean hasRoadFault();
-      /**
-       * <code>optional bool roadFault = 21;</code>
-       */
-      boolean getRoadFault();
-
-      /**
-       * <code>optional bool VSSFault = 22;</code>
-       */
-      boolean hasVSSFault();
-      /**
-       * <code>optional bool VSSFault = 22;</code>
-       */
-      boolean getVSSFault();
-
-      /**
-       * <code>optional bool vehicleOilException = 23;</code>
-       */
-      boolean hasVehicleOilException();
-      /**
-       * <code>optional bool vehicleOilException = 23;</code>
-       */
-      boolean getVehicleOilException();
-
-      /**
-       * <code>optional bool vehicleTheft = 24;</code>
-       */
-      boolean hasVehicleTheft();
-      /**
-       * <code>optional bool vehicleTheft = 24;</code>
-       */
-      boolean getVehicleTheft();
-
-      /**
-       * <code>optional bool vehicleIllegalIgnition = 25;</code>
-       */
-      boolean hasVehicleIllegalIgnition();
-      /**
-       * <code>optional bool vehicleIllegalIgnition = 25;</code>
-       */
-      boolean getVehicleIllegalIgnition();
-
-      /**
-       * <code>optional bool vehicleIllegalShift = 26;</code>
-       */
-      boolean hasVehicleIllegalShift();
-      /**
-       * <code>optional bool vehicleIllegalShift = 26;</code>
-       */
-      boolean getVehicleIllegalShift();
-
-      /**
-       * <code>optional bool collisionWarning = 27;</code>
-       */
-      boolean hasCollisionWarning();
-      /**
-       * <code>optional bool collisionWarning = 27;</code>
-       */
-      boolean getCollisionWarning();
-
-      /**
-       * <code>optional bool rolloverWarning = 28;</code>
-       */
-      boolean hasRolloverWarning();
-      /**
-       * <code>optional bool rolloverWarning = 28;</code>
-       */
-      boolean getRolloverWarning();
-
-      /**
-       * <code>optional bool illegalOpenDoor = 29;</code>
-       */
-      boolean hasIllegalOpenDoor();
-      /**
-       * <code>optional bool illegalOpenDoor = 29;</code>
-       */
-      boolean getIllegalOpenDoor();
-    }
-    /**
-     * Protobuf type {@code protobuf.Location.WarningFlag}
-     */
-    public  static final class WarningFlag extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:protobuf.Location.WarningFlag)
-        WarningFlagOrBuilder {
-    private static final long serialVersionUID = 0L;
-      // Use WarningFlag.newBuilder() to construct.
-      private WarningFlag(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-        super(builder);
-      }
-      private WarningFlag() {
-      }
-
-      @java.lang.Override
-      public final com.google.protobuf.UnknownFieldSet
-      getUnknownFields() {
-        return this.unknownFields;
-      }
-      private WarningFlag(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 8: {
-                bitField0_ |= 0x00000001;
-                warningFlag_ = input.readBool();
-                break;
-              }
-              case 16: {
-                bitField0_ |= 0x00000002;
-                overSpeeding_ = input.readBool();
-                break;
-              }
-              case 24: {
-                bitField0_ |= 0x00000004;
-                overTired_ = input.readBool();
-                break;
-              }
-              case 32: {
-                bitField0_ |= 0x00000008;
-                dangerous_ = input.readBool();
-                break;
-              }
-              case 40: {
-                bitField0_ |= 0x00000010;
-                gNSSFault_ = input.readBool();
-                break;
-              }
-              case 48: {
-                bitField0_ |= 0x00000020;
-                gNSSAntennaFault_ = input.readBool();
-                break;
-              }
-              case 56: {
-                bitField0_ |= 0x00000040;
-                gNSSAntennaShortCircuit_ = input.readBool();
-                break;
-              }
-              case 64: {
-                bitField0_ |= 0x00000080;
-                terminalMainPowerUnderVoltage_ = input.readBool();
-                break;
-              }
-              case 72: {
-                bitField0_ |= 0x00000100;
-                terminalMainPowerFailure_ = input.readBool();
-                break;
-              }
-              case 80: {
-                bitField0_ |= 0x00000200;
-                terminalLCDFault_ = input.readBool();
-                break;
-              }
-              case 88: {
-                bitField0_ |= 0x00000400;
-                tTSFault_ = input.readBool();
-                break;
-              }
-              case 96: {
-                bitField0_ |= 0x00000800;
-                cameraFault_ = input.readBool();
-                break;
-              }
-              case 104: {
-                bitField0_ |= 0x00001000;
-                iCCardFault_ = input.readBool();
-                break;
-              }
-              case 112: {
-                bitField0_ |= 0x00002000;
-                speeding_ = input.readBool();
-                break;
-              }
-              case 120: {
-                bitField0_ |= 0x00004000;
-                tired_ = input.readBool();
-                break;
-              }
-              case 128: {
-                bitField0_ |= 0x00008000;
-                driveTimeout_ = input.readBool();
-                break;
-              }
-              case 136: {
-                bitField0_ |= 0x00010000;
-                parkingOvertime_ = input.readBool();
-                break;
-              }
-              case 144: {
-                bitField0_ |= 0x00020000;
-                throughArea_ = input.readBool();
-                break;
-              }
-              case 152: {
-                bitField0_ |= 0x00040000;
-                throughRoad_ = input.readBool();
-                break;
-              }
-              case 160: {
-                bitField0_ |= 0x00080000;
-                roadTimeout_ = input.readBool();
-                break;
-              }
-              case 168: {
-                bitField0_ |= 0x00100000;
-                roadFault_ = input.readBool();
-                break;
-              }
-              case 176: {
-                bitField0_ |= 0x00200000;
-                vSSFault_ = input.readBool();
-                break;
-              }
-              case 184: {
-                bitField0_ |= 0x00400000;
-                vehicleOilException_ = input.readBool();
-                break;
-              }
-              case 192: {
-                bitField0_ |= 0x00800000;
-                vehicleTheft_ = input.readBool();
-                break;
-              }
-              case 200: {
-                bitField0_ |= 0x01000000;
-                vehicleIllegalIgnition_ = input.readBool();
-                break;
-              }
-              case 208: {
-                bitField0_ |= 0x02000000;
-                vehicleIllegalShift_ = input.readBool();
-                break;
-              }
-              case 216: {
-                bitField0_ |= 0x04000000;
-                collisionWarning_ = input.readBool();
-                break;
-              }
-              case 224: {
-                bitField0_ |= 0x08000000;
-                rolloverWarning_ = input.readBool();
-                break;
-              }
-              case 232: {
-                bitField0_ |= 0x10000000;
-                illegalOpenDoor_ = input.readBool();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_WarningFlag_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_WarningFlag_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag.Builder.class);
-      }
-
-      private int bitField0_;
-      public static final int WARNINGFLAG_FIELD_NUMBER = 1;
-      private boolean warningFlag_;
-      /**
-       * <code>optional bool warningFlag = 1;</code>
-       */
-      public boolean hasWarningFlag() {
-        return ((bitField0_ & 0x00000001) != 0);
-      }
-      /**
-       * <code>optional bool warningFlag = 1;</code>
-       */
-      public boolean getWarningFlag() {
-        return warningFlag_;
-      }
-
-      public static final int OVERSPEEDING_FIELD_NUMBER = 2;
-      private boolean overSpeeding_;
-      /**
-       * <code>optional bool overSpeeding = 2;</code>
-       */
-      public boolean hasOverSpeeding() {
-        return ((bitField0_ & 0x00000002) != 0);
-      }
-      /**
-       * <code>optional bool overSpeeding = 2;</code>
-       */
-      public boolean getOverSpeeding() {
-        return overSpeeding_;
-      }
-
-      public static final int OVERTIRED_FIELD_NUMBER = 3;
-      private boolean overTired_;
-      /**
-       * <code>optional bool overTired = 3;</code>
-       */
-      public boolean hasOverTired() {
-        return ((bitField0_ & 0x00000004) != 0);
-      }
-      /**
-       * <code>optional bool overTired = 3;</code>
-       */
-      public boolean getOverTired() {
-        return overTired_;
-      }
-
-      public static final int DANGEROUS_FIELD_NUMBER = 4;
-      private boolean dangerous_;
-      /**
-       * <code>optional bool dangerous = 4;</code>
-       */
-      public boolean hasDangerous() {
-        return ((bitField0_ & 0x00000008) != 0);
-      }
-      /**
-       * <code>optional bool dangerous = 4;</code>
-       */
-      public boolean getDangerous() {
-        return dangerous_;
-      }
-
-      public static final int GNSSFAULT_FIELD_NUMBER = 5;
-      private boolean gNSSFault_;
-      /**
-       * <code>optional bool GNSSFault = 5;</code>
-       */
-      public boolean hasGNSSFault() {
-        return ((bitField0_ & 0x00000010) != 0);
-      }
-      /**
-       * <code>optional bool GNSSFault = 5;</code>
-       */
-      public boolean getGNSSFault() {
-        return gNSSFault_;
-      }
-
-      public static final int GNSSANTENNAFAULT_FIELD_NUMBER = 6;
-      private boolean gNSSAntennaFault_;
-      /**
-       * <code>optional bool GNSSAntennaFault = 6;</code>
-       */
-      public boolean hasGNSSAntennaFault() {
-        return ((bitField0_ & 0x00000020) != 0);
-      }
-      /**
-       * <code>optional bool GNSSAntennaFault = 6;</code>
-       */
-      public boolean getGNSSAntennaFault() {
-        return gNSSAntennaFault_;
-      }
-
-      public static final int GNSSANTENNASHORTCIRCUIT_FIELD_NUMBER = 7;
-      private boolean gNSSAntennaShortCircuit_;
-      /**
-       * <code>optional bool GNSSAntennaShortCircuit = 7;</code>
-       */
-      public boolean hasGNSSAntennaShortCircuit() {
-        return ((bitField0_ & 0x00000040) != 0);
-      }
-      /**
-       * <code>optional bool GNSSAntennaShortCircuit = 7;</code>
-       */
-      public boolean getGNSSAntennaShortCircuit() {
-        return gNSSAntennaShortCircuit_;
-      }
-
-      public static final int TERMINALMAINPOWERUNDERVOLTAGE_FIELD_NUMBER = 8;
-      private boolean terminalMainPowerUnderVoltage_;
-      /**
-       * <code>optional bool terminalMainPowerUnderVoltage = 8;</code>
-       */
-      public boolean hasTerminalMainPowerUnderVoltage() {
-        return ((bitField0_ & 0x00000080) != 0);
-      }
-      /**
-       * <code>optional bool terminalMainPowerUnderVoltage = 8;</code>
-       */
-      public boolean getTerminalMainPowerUnderVoltage() {
-        return terminalMainPowerUnderVoltage_;
-      }
-
-      public static final int TERMINALMAINPOWERFAILURE_FIELD_NUMBER = 9;
-      private boolean terminalMainPowerFailure_;
-      /**
-       * <code>optional bool terminalMainPowerFailure = 9;</code>
-       */
-      public boolean hasTerminalMainPowerFailure() {
-        return ((bitField0_ & 0x00000100) != 0);
-      }
-      /**
-       * <code>optional bool terminalMainPowerFailure = 9;</code>
-       */
-      public boolean getTerminalMainPowerFailure() {
-        return terminalMainPowerFailure_;
-      }
-
-      public static final int TERMINALLCDFAULT_FIELD_NUMBER = 10;
-      private boolean terminalLCDFault_;
-      /**
-       * <code>optional bool TerminalLCDFault = 10;</code>
-       */
-      public boolean hasTerminalLCDFault() {
-        return ((bitField0_ & 0x00000200) != 0);
-      }
-      /**
-       * <code>optional bool TerminalLCDFault = 10;</code>
-       */
-      public boolean getTerminalLCDFault() {
-        return terminalLCDFault_;
-      }
-
-      public static final int TTSFAULT_FIELD_NUMBER = 11;
-      private boolean tTSFault_;
-      /**
-       * <code>optional bool TTSFault = 11;</code>
-       */
-      public boolean hasTTSFault() {
-        return ((bitField0_ & 0x00000400) != 0);
-      }
-      /**
-       * <code>optional bool TTSFault = 11;</code>
-       */
-      public boolean getTTSFault() {
-        return tTSFault_;
-      }
-
-      public static final int CAMERAFAULT_FIELD_NUMBER = 12;
-      private boolean cameraFault_;
-      /**
-       * <code>optional bool cameraFault = 12;</code>
-       */
-      public boolean hasCameraFault() {
-        return ((bitField0_ & 0x00000800) != 0);
-      }
-      /**
-       * <code>optional bool cameraFault = 12;</code>
-       */
-      public boolean getCameraFault() {
-        return cameraFault_;
-      }
-
-      public static final int ICCARDFAULT_FIELD_NUMBER = 13;
-      private boolean iCCardFault_;
-      /**
-       * <code>optional bool ICCardFault = 13;</code>
-       */
-      public boolean hasICCardFault() {
-        return ((bitField0_ & 0x00001000) != 0);
-      }
-      /**
-       * <code>optional bool ICCardFault = 13;</code>
-       */
-      public boolean getICCardFault() {
-        return iCCardFault_;
-      }
-
-      public static final int SPEEDING_FIELD_NUMBER = 14;
-      private boolean speeding_;
-      /**
-       * <code>optional bool speeding = 14;</code>
-       */
-      public boolean hasSpeeding() {
-        return ((bitField0_ & 0x00002000) != 0);
-      }
-      /**
-       * <code>optional bool speeding = 14;</code>
-       */
-      public boolean getSpeeding() {
-        return speeding_;
-      }
-
-      public static final int TIRED_FIELD_NUMBER = 15;
-      private boolean tired_;
-      /**
-       * <code>optional bool tired = 15;</code>
-       */
-      public boolean hasTired() {
-        return ((bitField0_ & 0x00004000) != 0);
-      }
-      /**
-       * <code>optional bool tired = 15;</code>
-       */
-      public boolean getTired() {
-        return tired_;
-      }
-
-      public static final int DRIVETIMEOUT_FIELD_NUMBER = 16;
-      private boolean driveTimeout_;
-      /**
-       * <code>optional bool driveTimeout = 16;</code>
-       */
-      public boolean hasDriveTimeout() {
-        return ((bitField0_ & 0x00008000) != 0);
-      }
-      /**
-       * <code>optional bool driveTimeout = 16;</code>
-       */
-      public boolean getDriveTimeout() {
-        return driveTimeout_;
-      }
-
-      public static final int PARKINGOVERTIME_FIELD_NUMBER = 17;
-      private boolean parkingOvertime_;
-      /**
-       * <code>optional bool parkingOvertime = 17;</code>
-       */
-      public boolean hasParkingOvertime() {
-        return ((bitField0_ & 0x00010000) != 0);
-      }
-      /**
-       * <code>optional bool parkingOvertime = 17;</code>
-       */
-      public boolean getParkingOvertime() {
-        return parkingOvertime_;
-      }
-
-      public static final int THROUGHAREA_FIELD_NUMBER = 18;
-      private boolean throughArea_;
-      /**
-       * <code>optional bool throughArea = 18;</code>
-       */
-      public boolean hasThroughArea() {
-        return ((bitField0_ & 0x00020000) != 0);
-      }
-      /**
-       * <code>optional bool throughArea = 18;</code>
-       */
-      public boolean getThroughArea() {
-        return throughArea_;
-      }
-
-      public static final int THROUGHROAD_FIELD_NUMBER = 19;
-      private boolean throughRoad_;
-      /**
-       * <code>optional bool throughRoad = 19;</code>
-       */
-      public boolean hasThroughRoad() {
-        return ((bitField0_ & 0x00040000) != 0);
-      }
-      /**
-       * <code>optional bool throughRoad = 19;</code>
-       */
-      public boolean getThroughRoad() {
-        return throughRoad_;
-      }
-
-      public static final int ROADTIMEOUT_FIELD_NUMBER = 20;
-      private boolean roadTimeout_;
-      /**
-       * <code>optional bool roadTimeout = 20;</code>
-       */
-      public boolean hasRoadTimeout() {
-        return ((bitField0_ & 0x00080000) != 0);
-      }
-      /**
-       * <code>optional bool roadTimeout = 20;</code>
-       */
-      public boolean getRoadTimeout() {
-        return roadTimeout_;
-      }
-
-      public static final int ROADFAULT_FIELD_NUMBER = 21;
-      private boolean roadFault_;
-      /**
-       * <code>optional bool roadFault = 21;</code>
-       */
-      public boolean hasRoadFault() {
-        return ((bitField0_ & 0x00100000) != 0);
-      }
-      /**
-       * <code>optional bool roadFault = 21;</code>
-       */
-      public boolean getRoadFault() {
-        return roadFault_;
-      }
-
-      public static final int VSSFAULT_FIELD_NUMBER = 22;
-      private boolean vSSFault_;
-      /**
-       * <code>optional bool VSSFault = 22;</code>
-       */
-      public boolean hasVSSFault() {
-        return ((bitField0_ & 0x00200000) != 0);
-      }
-      /**
-       * <code>optional bool VSSFault = 22;</code>
-       */
-      public boolean getVSSFault() {
-        return vSSFault_;
-      }
-
-      public static final int VEHICLEOILEXCEPTION_FIELD_NUMBER = 23;
-      private boolean vehicleOilException_;
-      /**
-       * <code>optional bool vehicleOilException = 23;</code>
-       */
-      public boolean hasVehicleOilException() {
-        return ((bitField0_ & 0x00400000) != 0);
-      }
-      /**
-       * <code>optional bool vehicleOilException = 23;</code>
-       */
-      public boolean getVehicleOilException() {
-        return vehicleOilException_;
-      }
-
-      public static final int VEHICLETHEFT_FIELD_NUMBER = 24;
-      private boolean vehicleTheft_;
-      /**
-       * <code>optional bool vehicleTheft = 24;</code>
-       */
-      public boolean hasVehicleTheft() {
-        return ((bitField0_ & 0x00800000) != 0);
-      }
-      /**
-       * <code>optional bool vehicleTheft = 24;</code>
-       */
-      public boolean getVehicleTheft() {
-        return vehicleTheft_;
-      }
-
-      public static final int VEHICLEILLEGALIGNITION_FIELD_NUMBER = 25;
-      private boolean vehicleIllegalIgnition_;
-      /**
-       * <code>optional bool vehicleIllegalIgnition = 25;</code>
-       */
-      public boolean hasVehicleIllegalIgnition() {
-        return ((bitField0_ & 0x01000000) != 0);
-      }
-      /**
-       * <code>optional bool vehicleIllegalIgnition = 25;</code>
-       */
-      public boolean getVehicleIllegalIgnition() {
-        return vehicleIllegalIgnition_;
-      }
-
-      public static final int VEHICLEILLEGALSHIFT_FIELD_NUMBER = 26;
-      private boolean vehicleIllegalShift_;
-      /**
-       * <code>optional bool vehicleIllegalShift = 26;</code>
-       */
-      public boolean hasVehicleIllegalShift() {
-        return ((bitField0_ & 0x02000000) != 0);
-      }
-      /**
-       * <code>optional bool vehicleIllegalShift = 26;</code>
-       */
-      public boolean getVehicleIllegalShift() {
-        return vehicleIllegalShift_;
-      }
-
-      public static final int COLLISIONWARNING_FIELD_NUMBER = 27;
-      private boolean collisionWarning_;
-      /**
-       * <code>optional bool collisionWarning = 27;</code>
-       */
-      public boolean hasCollisionWarning() {
-        return ((bitField0_ & 0x04000000) != 0);
-      }
-      /**
-       * <code>optional bool collisionWarning = 27;</code>
-       */
-      public boolean getCollisionWarning() {
-        return collisionWarning_;
-      }
-
-      public static final int ROLLOVERWARNING_FIELD_NUMBER = 28;
-      private boolean rolloverWarning_;
-      /**
-       * <code>optional bool rolloverWarning = 28;</code>
-       */
-      public boolean hasRolloverWarning() {
-        return ((bitField0_ & 0x08000000) != 0);
-      }
-      /**
-       * <code>optional bool rolloverWarning = 28;</code>
-       */
-      public boolean getRolloverWarning() {
-        return rolloverWarning_;
-      }
-
-      public static final int ILLEGALOPENDOOR_FIELD_NUMBER = 29;
-      private boolean illegalOpenDoor_;
-      /**
-       * <code>optional bool illegalOpenDoor = 29;</code>
-       */
-      public boolean hasIllegalOpenDoor() {
-        return ((bitField0_ & 0x10000000) != 0);
-      }
-      /**
-       * <code>optional bool illegalOpenDoor = 29;</code>
-       */
-      public boolean getIllegalOpenDoor() {
-        return illegalOpenDoor_;
-      }
-
-      private byte memoizedIsInitialized = -1;
-      @java.lang.Override
-      public final boolean isInitialized() {
-        byte isInitialized = memoizedIsInitialized;
-        if (isInitialized == 1) return true;
-        if (isInitialized == 0) return false;
-
-        memoizedIsInitialized = 1;
-        return true;
-      }
-
-      @java.lang.Override
-      public void writeTo(com.google.protobuf.CodedOutputStream output)
-                          throws java.io.IOException {
-        if (((bitField0_ & 0x00000001) != 0)) {
-          output.writeBool(1, warningFlag_);
-        }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          output.writeBool(2, overSpeeding_);
-        }
-        if (((bitField0_ & 0x00000004) != 0)) {
-          output.writeBool(3, overTired_);
-        }
-        if (((bitField0_ & 0x00000008) != 0)) {
-          output.writeBool(4, dangerous_);
-        }
-        if (((bitField0_ & 0x00000010) != 0)) {
-          output.writeBool(5, gNSSFault_);
-        }
-        if (((bitField0_ & 0x00000020) != 0)) {
-          output.writeBool(6, gNSSAntennaFault_);
-        }
-        if (((bitField0_ & 0x00000040) != 0)) {
-          output.writeBool(7, gNSSAntennaShortCircuit_);
-        }
-        if (((bitField0_ & 0x00000080) != 0)) {
-          output.writeBool(8, terminalMainPowerUnderVoltage_);
-        }
-        if (((bitField0_ & 0x00000100) != 0)) {
-          output.writeBool(9, terminalMainPowerFailure_);
-        }
-        if (((bitField0_ & 0x00000200) != 0)) {
-          output.writeBool(10, terminalLCDFault_);
-        }
-        if (((bitField0_ & 0x00000400) != 0)) {
-          output.writeBool(11, tTSFault_);
-        }
-        if (((bitField0_ & 0x00000800) != 0)) {
-          output.writeBool(12, cameraFault_);
-        }
-        if (((bitField0_ & 0x00001000) != 0)) {
-          output.writeBool(13, iCCardFault_);
-        }
-        if (((bitField0_ & 0x00002000) != 0)) {
-          output.writeBool(14, speeding_);
-        }
-        if (((bitField0_ & 0x00004000) != 0)) {
-          output.writeBool(15, tired_);
-        }
-        if (((bitField0_ & 0x00008000) != 0)) {
-          output.writeBool(16, driveTimeout_);
-        }
-        if (((bitField0_ & 0x00010000) != 0)) {
-          output.writeBool(17, parkingOvertime_);
-        }
-        if (((bitField0_ & 0x00020000) != 0)) {
-          output.writeBool(18, throughArea_);
-        }
-        if (((bitField0_ & 0x00040000) != 0)) {
-          output.writeBool(19, throughRoad_);
-        }
-        if (((bitField0_ & 0x00080000) != 0)) {
-          output.writeBool(20, roadTimeout_);
-        }
-        if (((bitField0_ & 0x00100000) != 0)) {
-          output.writeBool(21, roadFault_);
-        }
-        if (((bitField0_ & 0x00200000) != 0)) {
-          output.writeBool(22, vSSFault_);
-        }
-        if (((bitField0_ & 0x00400000) != 0)) {
-          output.writeBool(23, vehicleOilException_);
-        }
-        if (((bitField0_ & 0x00800000) != 0)) {
-          output.writeBool(24, vehicleTheft_);
-        }
-        if (((bitField0_ & 0x01000000) != 0)) {
-          output.writeBool(25, vehicleIllegalIgnition_);
-        }
-        if (((bitField0_ & 0x02000000) != 0)) {
-          output.writeBool(26, vehicleIllegalShift_);
-        }
-        if (((bitField0_ & 0x04000000) != 0)) {
-          output.writeBool(27, collisionWarning_);
-        }
-        if (((bitField0_ & 0x08000000) != 0)) {
-          output.writeBool(28, rolloverWarning_);
-        }
-        if (((bitField0_ & 0x10000000) != 0)) {
-          output.writeBool(29, illegalOpenDoor_);
-        }
-        unknownFields.writeTo(output);
-      }
-
-      @java.lang.Override
-      public int getSerializedSize() {
-        int size = memoizedSize;
-        if (size != -1) return size;
-
-        size = 0;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(1, warningFlag_);
-        }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(2, overSpeeding_);
-        }
-        if (((bitField0_ & 0x00000004) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(3, overTired_);
-        }
-        if (((bitField0_ & 0x00000008) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(4, dangerous_);
-        }
-        if (((bitField0_ & 0x00000010) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(5, gNSSFault_);
-        }
-        if (((bitField0_ & 0x00000020) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(6, gNSSAntennaFault_);
-        }
-        if (((bitField0_ & 0x00000040) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(7, gNSSAntennaShortCircuit_);
-        }
-        if (((bitField0_ & 0x00000080) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(8, terminalMainPowerUnderVoltage_);
-        }
-        if (((bitField0_ & 0x00000100) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(9, terminalMainPowerFailure_);
-        }
-        if (((bitField0_ & 0x00000200) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(10, terminalLCDFault_);
-        }
-        if (((bitField0_ & 0x00000400) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(11, tTSFault_);
-        }
-        if (((bitField0_ & 0x00000800) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(12, cameraFault_);
-        }
-        if (((bitField0_ & 0x00001000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(13, iCCardFault_);
-        }
-        if (((bitField0_ & 0x00002000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(14, speeding_);
-        }
-        if (((bitField0_ & 0x00004000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(15, tired_);
-        }
-        if (((bitField0_ & 0x00008000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(16, driveTimeout_);
-        }
-        if (((bitField0_ & 0x00010000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(17, parkingOvertime_);
-        }
-        if (((bitField0_ & 0x00020000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(18, throughArea_);
-        }
-        if (((bitField0_ & 0x00040000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(19, throughRoad_);
-        }
-        if (((bitField0_ & 0x00080000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(20, roadTimeout_);
-        }
-        if (((bitField0_ & 0x00100000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(21, roadFault_);
-        }
-        if (((bitField0_ & 0x00200000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(22, vSSFault_);
-        }
-        if (((bitField0_ & 0x00400000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(23, vehicleOilException_);
-        }
-        if (((bitField0_ & 0x00800000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(24, vehicleTheft_);
-        }
-        if (((bitField0_ & 0x01000000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(25, vehicleIllegalIgnition_);
-        }
-        if (((bitField0_ & 0x02000000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(26, vehicleIllegalShift_);
-        }
-        if (((bitField0_ & 0x04000000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(27, collisionWarning_);
-        }
-        if (((bitField0_ & 0x08000000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(28, rolloverWarning_);
-        }
-        if (((bitField0_ & 0x10000000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(29, illegalOpenDoor_);
-        }
-        size += unknownFields.getSerializedSize();
-        memoizedSize = size;
-        return size;
-      }
-
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
-        if (obj == this) {
-         return true;
-        }
-        if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag)) {
-          return super.equals(obj);
-        }
-        cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag) obj;
-
-        if (hasWarningFlag() != other.hasWarningFlag()) return false;
-        if (hasWarningFlag()) {
-          if (getWarningFlag()
-              != other.getWarningFlag()) return false;
-        }
-        if (hasOverSpeeding() != other.hasOverSpeeding()) return false;
-        if (hasOverSpeeding()) {
-          if (getOverSpeeding()
-              != other.getOverSpeeding()) return false;
-        }
-        if (hasOverTired() != other.hasOverTired()) return false;
-        if (hasOverTired()) {
-          if (getOverTired()
-              != other.getOverTired()) return false;
-        }
-        if (hasDangerous() != other.hasDangerous()) return false;
-        if (hasDangerous()) {
-          if (getDangerous()
-              != other.getDangerous()) return false;
-        }
-        if (hasGNSSFault() != other.hasGNSSFault()) return false;
-        if (hasGNSSFault()) {
-          if (getGNSSFault()
-              != other.getGNSSFault()) return false;
-        }
-        if (hasGNSSAntennaFault() != other.hasGNSSAntennaFault()) return false;
-        if (hasGNSSAntennaFault()) {
-          if (getGNSSAntennaFault()
-              != other.getGNSSAntennaFault()) return false;
-        }
-        if (hasGNSSAntennaShortCircuit() != other.hasGNSSAntennaShortCircuit()) return false;
-        if (hasGNSSAntennaShortCircuit()) {
-          if (getGNSSAntennaShortCircuit()
-              != other.getGNSSAntennaShortCircuit()) return false;
-        }
-        if (hasTerminalMainPowerUnderVoltage() != other.hasTerminalMainPowerUnderVoltage()) return false;
-        if (hasTerminalMainPowerUnderVoltage()) {
-          if (getTerminalMainPowerUnderVoltage()
-              != other.getTerminalMainPowerUnderVoltage()) return false;
-        }
-        if (hasTerminalMainPowerFailure() != other.hasTerminalMainPowerFailure()) return false;
-        if (hasTerminalMainPowerFailure()) {
-          if (getTerminalMainPowerFailure()
-              != other.getTerminalMainPowerFailure()) return false;
-        }
-        if (hasTerminalLCDFault() != other.hasTerminalLCDFault()) return false;
-        if (hasTerminalLCDFault()) {
-          if (getTerminalLCDFault()
-              != other.getTerminalLCDFault()) return false;
-        }
-        if (hasTTSFault() != other.hasTTSFault()) return false;
-        if (hasTTSFault()) {
-          if (getTTSFault()
-              != other.getTTSFault()) return false;
-        }
-        if (hasCameraFault() != other.hasCameraFault()) return false;
-        if (hasCameraFault()) {
-          if (getCameraFault()
-              != other.getCameraFault()) return false;
-        }
-        if (hasICCardFault() != other.hasICCardFault()) return false;
-        if (hasICCardFault()) {
-          if (getICCardFault()
-              != other.getICCardFault()) return false;
-        }
-        if (hasSpeeding() != other.hasSpeeding()) return false;
-        if (hasSpeeding()) {
-          if (getSpeeding()
-              != other.getSpeeding()) return false;
-        }
-        if (hasTired() != other.hasTired()) return false;
-        if (hasTired()) {
-          if (getTired()
-              != other.getTired()) return false;
-        }
-        if (hasDriveTimeout() != other.hasDriveTimeout()) return false;
-        if (hasDriveTimeout()) {
-          if (getDriveTimeout()
-              != other.getDriveTimeout()) return false;
-        }
-        if (hasParkingOvertime() != other.hasParkingOvertime()) return false;
-        if (hasParkingOvertime()) {
-          if (getParkingOvertime()
-              != other.getParkingOvertime()) return false;
-        }
-        if (hasThroughArea() != other.hasThroughArea()) return false;
-        if (hasThroughArea()) {
-          if (getThroughArea()
-              != other.getThroughArea()) return false;
-        }
-        if (hasThroughRoad() != other.hasThroughRoad()) return false;
-        if (hasThroughRoad()) {
-          if (getThroughRoad()
-              != other.getThroughRoad()) return false;
-        }
-        if (hasRoadTimeout() != other.hasRoadTimeout()) return false;
-        if (hasRoadTimeout()) {
-          if (getRoadTimeout()
-              != other.getRoadTimeout()) return false;
-        }
-        if (hasRoadFault() != other.hasRoadFault()) return false;
-        if (hasRoadFault()) {
-          if (getRoadFault()
-              != other.getRoadFault()) return false;
-        }
-        if (hasVSSFault() != other.hasVSSFault()) return false;
-        if (hasVSSFault()) {
-          if (getVSSFault()
-              != other.getVSSFault()) return false;
-        }
-        if (hasVehicleOilException() != other.hasVehicleOilException()) return false;
-        if (hasVehicleOilException()) {
-          if (getVehicleOilException()
-              != other.getVehicleOilException()) return false;
-        }
-        if (hasVehicleTheft() != other.hasVehicleTheft()) return false;
-        if (hasVehicleTheft()) {
-          if (getVehicleTheft()
-              != other.getVehicleTheft()) return false;
-        }
-        if (hasVehicleIllegalIgnition() != other.hasVehicleIllegalIgnition()) return false;
-        if (hasVehicleIllegalIgnition()) {
-          if (getVehicleIllegalIgnition()
-              != other.getVehicleIllegalIgnition()) return false;
-        }
-        if (hasVehicleIllegalShift() != other.hasVehicleIllegalShift()) return false;
-        if (hasVehicleIllegalShift()) {
-          if (getVehicleIllegalShift()
-              != other.getVehicleIllegalShift()) return false;
-        }
-        if (hasCollisionWarning() != other.hasCollisionWarning()) return false;
-        if (hasCollisionWarning()) {
-          if (getCollisionWarning()
-              != other.getCollisionWarning()) return false;
-        }
-        if (hasRolloverWarning() != other.hasRolloverWarning()) return false;
-        if (hasRolloverWarning()) {
-          if (getRolloverWarning()
-              != other.getRolloverWarning()) return false;
-        }
-        if (hasIllegalOpenDoor() != other.hasIllegalOpenDoor()) return false;
-        if (hasIllegalOpenDoor()) {
-          if (getIllegalOpenDoor()
-              != other.getIllegalOpenDoor()) return false;
-        }
-        if (!unknownFields.equals(other.unknownFields)) return false;
-        return true;
-      }
-
-      @java.lang.Override
-      public int hashCode() {
-        if (memoizedHashCode != 0) {
-          return memoizedHashCode;
-        }
-        int hash = 41;
-        hash = (19 * hash) + getDescriptor().hashCode();
-        if (hasWarningFlag()) {
-          hash = (37 * hash) + WARNINGFLAG_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getWarningFlag());
-        }
-        if (hasOverSpeeding()) {
-          hash = (37 * hash) + OVERSPEEDING_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getOverSpeeding());
-        }
-        if (hasOverTired()) {
-          hash = (37 * hash) + OVERTIRED_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getOverTired());
-        }
-        if (hasDangerous()) {
-          hash = (37 * hash) + DANGEROUS_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getDangerous());
-        }
-        if (hasGNSSFault()) {
-          hash = (37 * hash) + GNSSFAULT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getGNSSFault());
-        }
-        if (hasGNSSAntennaFault()) {
-          hash = (37 * hash) + GNSSANTENNAFAULT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getGNSSAntennaFault());
-        }
-        if (hasGNSSAntennaShortCircuit()) {
-          hash = (37 * hash) + GNSSANTENNASHORTCIRCUIT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getGNSSAntennaShortCircuit());
-        }
-        if (hasTerminalMainPowerUnderVoltage()) {
-          hash = (37 * hash) + TERMINALMAINPOWERUNDERVOLTAGE_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getTerminalMainPowerUnderVoltage());
-        }
-        if (hasTerminalMainPowerFailure()) {
-          hash = (37 * hash) + TERMINALMAINPOWERFAILURE_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getTerminalMainPowerFailure());
-        }
-        if (hasTerminalLCDFault()) {
-          hash = (37 * hash) + TERMINALLCDFAULT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getTerminalLCDFault());
-        }
-        if (hasTTSFault()) {
-          hash = (37 * hash) + TTSFAULT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getTTSFault());
-        }
-        if (hasCameraFault()) {
-          hash = (37 * hash) + CAMERAFAULT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getCameraFault());
-        }
-        if (hasICCardFault()) {
-          hash = (37 * hash) + ICCARDFAULT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getICCardFault());
-        }
-        if (hasSpeeding()) {
-          hash = (37 * hash) + SPEEDING_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getSpeeding());
-        }
-        if (hasTired()) {
-          hash = (37 * hash) + TIRED_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getTired());
-        }
-        if (hasDriveTimeout()) {
-          hash = (37 * hash) + DRIVETIMEOUT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getDriveTimeout());
-        }
-        if (hasParkingOvertime()) {
-          hash = (37 * hash) + PARKINGOVERTIME_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getParkingOvertime());
-        }
-        if (hasThroughArea()) {
-          hash = (37 * hash) + THROUGHAREA_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getThroughArea());
-        }
-        if (hasThroughRoad()) {
-          hash = (37 * hash) + THROUGHROAD_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getThroughRoad());
-        }
-        if (hasRoadTimeout()) {
-          hash = (37 * hash) + ROADTIMEOUT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getRoadTimeout());
-        }
-        if (hasRoadFault()) {
-          hash = (37 * hash) + ROADFAULT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getRoadFault());
-        }
-        if (hasVSSFault()) {
-          hash = (37 * hash) + VSSFAULT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getVSSFault());
-        }
-        if (hasVehicleOilException()) {
-          hash = (37 * hash) + VEHICLEOILEXCEPTION_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getVehicleOilException());
-        }
-        if (hasVehicleTheft()) {
-          hash = (37 * hash) + VEHICLETHEFT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getVehicleTheft());
-        }
-        if (hasVehicleIllegalIgnition()) {
-          hash = (37 * hash) + VEHICLEILLEGALIGNITION_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getVehicleIllegalIgnition());
-        }
-        if (hasVehicleIllegalShift()) {
-          hash = (37 * hash) + VEHICLEILLEGALSHIFT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getVehicleIllegalShift());
-        }
-        if (hasCollisionWarning()) {
-          hash = (37 * hash) + COLLISIONWARNING_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getCollisionWarning());
-        }
-        if (hasRolloverWarning()) {
-          hash = (37 * hash) + ROLLOVERWARNING_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getRolloverWarning());
-        }
-        if (hasIllegalOpenDoor()) {
-          hash = (37 * hash) + ILLEGALOPENDOOR_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getIllegalOpenDoor());
-        }
-        hash = (29 * hash) + unknownFields.hashCode();
-        memoizedHashCode = hash;
-        return hash;
-      }
-
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
-      }
-
-      @java.lang.Override
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder() {
-        return DEFAULT_INSTANCE.toBuilder();
-      }
-      public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag prototype) {
-        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-      }
-      @java.lang.Override
-      public Builder toBuilder() {
-        return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
-      }
-
-      @java.lang.Override
-      protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        Builder builder = new Builder(parent);
-        return builder;
-      }
-      /**
-       * Protobuf type {@code protobuf.Location.WarningFlag}
-       */
-      public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:protobuf.Location.WarningFlag)
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlagOrBuilder {
-        public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_WarningFlag_descriptor;
-        }
-
-        @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_WarningFlag_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag.Builder.class);
-        }
-
-        // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag.newBuilder()
-        private Builder() {
-          maybeForceBuilderInitialization();
-        }
-
-        private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-          super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
-        }
-        @java.lang.Override
-        public Builder clear() {
-          super.clear();
-          warningFlag_ = false;
-          bitField0_ = (bitField0_ & ~0x00000001);
-          overSpeeding_ = false;
-          bitField0_ = (bitField0_ & ~0x00000002);
-          overTired_ = false;
-          bitField0_ = (bitField0_ & ~0x00000004);
-          dangerous_ = false;
-          bitField0_ = (bitField0_ & ~0x00000008);
-          gNSSFault_ = false;
-          bitField0_ = (bitField0_ & ~0x00000010);
-          gNSSAntennaFault_ = false;
-          bitField0_ = (bitField0_ & ~0x00000020);
-          gNSSAntennaShortCircuit_ = false;
-          bitField0_ = (bitField0_ & ~0x00000040);
-          terminalMainPowerUnderVoltage_ = false;
-          bitField0_ = (bitField0_ & ~0x00000080);
-          terminalMainPowerFailure_ = false;
-          bitField0_ = (bitField0_ & ~0x00000100);
-          terminalLCDFault_ = false;
-          bitField0_ = (bitField0_ & ~0x00000200);
-          tTSFault_ = false;
-          bitField0_ = (bitField0_ & ~0x00000400);
-          cameraFault_ = false;
-          bitField0_ = (bitField0_ & ~0x00000800);
-          iCCardFault_ = false;
-          bitField0_ = (bitField0_ & ~0x00001000);
-          speeding_ = false;
-          bitField0_ = (bitField0_ & ~0x00002000);
-          tired_ = false;
-          bitField0_ = (bitField0_ & ~0x00004000);
-          driveTimeout_ = false;
-          bitField0_ = (bitField0_ & ~0x00008000);
-          parkingOvertime_ = false;
-          bitField0_ = (bitField0_ & ~0x00010000);
-          throughArea_ = false;
-          bitField0_ = (bitField0_ & ~0x00020000);
-          throughRoad_ = false;
-          bitField0_ = (bitField0_ & ~0x00040000);
-          roadTimeout_ = false;
-          bitField0_ = (bitField0_ & ~0x00080000);
-          roadFault_ = false;
-          bitField0_ = (bitField0_ & ~0x00100000);
-          vSSFault_ = false;
-          bitField0_ = (bitField0_ & ~0x00200000);
-          vehicleOilException_ = false;
-          bitField0_ = (bitField0_ & ~0x00400000);
-          vehicleTheft_ = false;
-          bitField0_ = (bitField0_ & ~0x00800000);
-          vehicleIllegalIgnition_ = false;
-          bitField0_ = (bitField0_ & ~0x01000000);
-          vehicleIllegalShift_ = false;
-          bitField0_ = (bitField0_ & ~0x02000000);
-          collisionWarning_ = false;
-          bitField0_ = (bitField0_ & ~0x04000000);
-          rolloverWarning_ = false;
-          bitField0_ = (bitField0_ & ~0x08000000);
-          illegalOpenDoor_ = false;
-          bitField0_ = (bitField0_ & ~0x10000000);
-          return this;
-        }
-
-        @java.lang.Override
-        public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_WarningFlag_descriptor;
-        }
-
-        @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag getDefaultInstanceForType() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag.getDefaultInstance();
-        }
-
-        @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag build() {
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag result = buildPartial();
-          if (!result.isInitialized()) {
-            throw newUninitializedMessageException(result);
-          }
-          return result;
-        }
-
-        @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag buildPartial() {
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag(this);
-          int from_bitField0_ = bitField0_;
-          int to_bitField0_ = 0;
-          if (((from_bitField0_ & 0x00000001) != 0)) {
-            result.warningFlag_ = warningFlag_;
-            to_bitField0_ |= 0x00000001;
-          }
-          if (((from_bitField0_ & 0x00000002) != 0)) {
-            result.overSpeeding_ = overSpeeding_;
-            to_bitField0_ |= 0x00000002;
-          }
-          if (((from_bitField0_ & 0x00000004) != 0)) {
-            result.overTired_ = overTired_;
-            to_bitField0_ |= 0x00000004;
-          }
-          if (((from_bitField0_ & 0x00000008) != 0)) {
-            result.dangerous_ = dangerous_;
-            to_bitField0_ |= 0x00000008;
-          }
-          if (((from_bitField0_ & 0x00000010) != 0)) {
-            result.gNSSFault_ = gNSSFault_;
-            to_bitField0_ |= 0x00000010;
-          }
-          if (((from_bitField0_ & 0x00000020) != 0)) {
-            result.gNSSAntennaFault_ = gNSSAntennaFault_;
-            to_bitField0_ |= 0x00000020;
-          }
-          if (((from_bitField0_ & 0x00000040) != 0)) {
-            result.gNSSAntennaShortCircuit_ = gNSSAntennaShortCircuit_;
-            to_bitField0_ |= 0x00000040;
-          }
-          if (((from_bitField0_ & 0x00000080) != 0)) {
-            result.terminalMainPowerUnderVoltage_ = terminalMainPowerUnderVoltage_;
-            to_bitField0_ |= 0x00000080;
-          }
-          if (((from_bitField0_ & 0x00000100) != 0)) {
-            result.terminalMainPowerFailure_ = terminalMainPowerFailure_;
-            to_bitField0_ |= 0x00000100;
-          }
-          if (((from_bitField0_ & 0x00000200) != 0)) {
-            result.terminalLCDFault_ = terminalLCDFault_;
-            to_bitField0_ |= 0x00000200;
-          }
-          if (((from_bitField0_ & 0x00000400) != 0)) {
-            result.tTSFault_ = tTSFault_;
-            to_bitField0_ |= 0x00000400;
-          }
-          if (((from_bitField0_ & 0x00000800) != 0)) {
-            result.cameraFault_ = cameraFault_;
-            to_bitField0_ |= 0x00000800;
-          }
-          if (((from_bitField0_ & 0x00001000) != 0)) {
-            result.iCCardFault_ = iCCardFault_;
-            to_bitField0_ |= 0x00001000;
-          }
-          if (((from_bitField0_ & 0x00002000) != 0)) {
-            result.speeding_ = speeding_;
-            to_bitField0_ |= 0x00002000;
-          }
-          if (((from_bitField0_ & 0x00004000) != 0)) {
-            result.tired_ = tired_;
-            to_bitField0_ |= 0x00004000;
-          }
-          if (((from_bitField0_ & 0x00008000) != 0)) {
-            result.driveTimeout_ = driveTimeout_;
-            to_bitField0_ |= 0x00008000;
-          }
-          if (((from_bitField0_ & 0x00010000) != 0)) {
-            result.parkingOvertime_ = parkingOvertime_;
-            to_bitField0_ |= 0x00010000;
-          }
-          if (((from_bitField0_ & 0x00020000) != 0)) {
-            result.throughArea_ = throughArea_;
-            to_bitField0_ |= 0x00020000;
-          }
-          if (((from_bitField0_ & 0x00040000) != 0)) {
-            result.throughRoad_ = throughRoad_;
-            to_bitField0_ |= 0x00040000;
-          }
-          if (((from_bitField0_ & 0x00080000) != 0)) {
-            result.roadTimeout_ = roadTimeout_;
-            to_bitField0_ |= 0x00080000;
-          }
-          if (((from_bitField0_ & 0x00100000) != 0)) {
-            result.roadFault_ = roadFault_;
-            to_bitField0_ |= 0x00100000;
-          }
-          if (((from_bitField0_ & 0x00200000) != 0)) {
-            result.vSSFault_ = vSSFault_;
-            to_bitField0_ |= 0x00200000;
-          }
-          if (((from_bitField0_ & 0x00400000) != 0)) {
-            result.vehicleOilException_ = vehicleOilException_;
-            to_bitField0_ |= 0x00400000;
-          }
-          if (((from_bitField0_ & 0x00800000) != 0)) {
-            result.vehicleTheft_ = vehicleTheft_;
-            to_bitField0_ |= 0x00800000;
-          }
-          if (((from_bitField0_ & 0x01000000) != 0)) {
-            result.vehicleIllegalIgnition_ = vehicleIllegalIgnition_;
-            to_bitField0_ |= 0x01000000;
-          }
-          if (((from_bitField0_ & 0x02000000) != 0)) {
-            result.vehicleIllegalShift_ = vehicleIllegalShift_;
-            to_bitField0_ |= 0x02000000;
-          }
-          if (((from_bitField0_ & 0x04000000) != 0)) {
-            result.collisionWarning_ = collisionWarning_;
-            to_bitField0_ |= 0x04000000;
-          }
-          if (((from_bitField0_ & 0x08000000) != 0)) {
-            result.rolloverWarning_ = rolloverWarning_;
-            to_bitField0_ |= 0x08000000;
-          }
-          if (((from_bitField0_ & 0x10000000) != 0)) {
-            result.illegalOpenDoor_ = illegalOpenDoor_;
-            to_bitField0_ |= 0x10000000;
-          }
-          result.bitField0_ = to_bitField0_;
-          onBuilt();
-          return result;
-        }
-
-        @java.lang.Override
-        public Builder clone() {
-          return super.clone();
-        }
-        @java.lang.Override
-        public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
-          return super.setField(field, value);
-        }
-        @java.lang.Override
-        public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
-          return super.clearField(field);
-        }
-        @java.lang.Override
-        public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-          return super.clearOneof(oneof);
-        }
-        @java.lang.Override
-        public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
-          return super.setRepeatedField(field, index, value);
-        }
-        @java.lang.Override
-        public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
-          return super.addRepeatedField(field, value);
-        }
-        @java.lang.Override
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag) {
-            return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag)other);
-          } else {
-            super.mergeFrom(other);
-            return this;
-          }
-        }
-
-        public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag other) {
-          if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag.getDefaultInstance()) return this;
-          if (other.hasWarningFlag()) {
-            setWarningFlag(other.getWarningFlag());
-          }
-          if (other.hasOverSpeeding()) {
-            setOverSpeeding(other.getOverSpeeding());
-          }
-          if (other.hasOverTired()) {
-            setOverTired(other.getOverTired());
-          }
-          if (other.hasDangerous()) {
-            setDangerous(other.getDangerous());
-          }
-          if (other.hasGNSSFault()) {
-            setGNSSFault(other.getGNSSFault());
-          }
-          if (other.hasGNSSAntennaFault()) {
-            setGNSSAntennaFault(other.getGNSSAntennaFault());
-          }
-          if (other.hasGNSSAntennaShortCircuit()) {
-            setGNSSAntennaShortCircuit(other.getGNSSAntennaShortCircuit());
-          }
-          if (other.hasTerminalMainPowerUnderVoltage()) {
-            setTerminalMainPowerUnderVoltage(other.getTerminalMainPowerUnderVoltage());
-          }
-          if (other.hasTerminalMainPowerFailure()) {
-            setTerminalMainPowerFailure(other.getTerminalMainPowerFailure());
-          }
-          if (other.hasTerminalLCDFault()) {
-            setTerminalLCDFault(other.getTerminalLCDFault());
-          }
-          if (other.hasTTSFault()) {
-            setTTSFault(other.getTTSFault());
-          }
-          if (other.hasCameraFault()) {
-            setCameraFault(other.getCameraFault());
-          }
-          if (other.hasICCardFault()) {
-            setICCardFault(other.getICCardFault());
-          }
-          if (other.hasSpeeding()) {
-            setSpeeding(other.getSpeeding());
-          }
-          if (other.hasTired()) {
-            setTired(other.getTired());
-          }
-          if (other.hasDriveTimeout()) {
-            setDriveTimeout(other.getDriveTimeout());
-          }
-          if (other.hasParkingOvertime()) {
-            setParkingOvertime(other.getParkingOvertime());
-          }
-          if (other.hasThroughArea()) {
-            setThroughArea(other.getThroughArea());
-          }
-          if (other.hasThroughRoad()) {
-            setThroughRoad(other.getThroughRoad());
-          }
-          if (other.hasRoadTimeout()) {
-            setRoadTimeout(other.getRoadTimeout());
-          }
-          if (other.hasRoadFault()) {
-            setRoadFault(other.getRoadFault());
-          }
-          if (other.hasVSSFault()) {
-            setVSSFault(other.getVSSFault());
-          }
-          if (other.hasVehicleOilException()) {
-            setVehicleOilException(other.getVehicleOilException());
-          }
-          if (other.hasVehicleTheft()) {
-            setVehicleTheft(other.getVehicleTheft());
-          }
-          if (other.hasVehicleIllegalIgnition()) {
-            setVehicleIllegalIgnition(other.getVehicleIllegalIgnition());
-          }
-          if (other.hasVehicleIllegalShift()) {
-            setVehicleIllegalShift(other.getVehicleIllegalShift());
-          }
-          if (other.hasCollisionWarning()) {
-            setCollisionWarning(other.getCollisionWarning());
-          }
-          if (other.hasRolloverWarning()) {
-            setRolloverWarning(other.getRolloverWarning());
-          }
-          if (other.hasIllegalOpenDoor()) {
-            setIllegalOpenDoor(other.getIllegalOpenDoor());
-          }
-          this.mergeUnknownFields(other.unknownFields);
-          onChanged();
-          return this;
-        }
-
-        @java.lang.Override
-        public final boolean isInitialized() {
-          return true;
-        }
-
-        @java.lang.Override
-        public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag parsedMessage = null;
-          try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag) e.getUnfinishedMessage();
-            throw e.unwrapIOException();
-          } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
-          return this;
-        }
-        private int bitField0_;
-
-        private boolean warningFlag_ ;
-        /**
-         * <code>optional bool warningFlag = 1;</code>
-         */
-        public boolean hasWarningFlag() {
-          return ((bitField0_ & 0x00000001) != 0);
-        }
-        /**
-         * <code>optional bool warningFlag = 1;</code>
-         */
-        public boolean getWarningFlag() {
-          return warningFlag_;
-        }
-        /**
-         * <code>optional bool warningFlag = 1;</code>
-         */
-        public Builder setWarningFlag(boolean value) {
-          bitField0_ |= 0x00000001;
-          warningFlag_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool warningFlag = 1;</code>
-         */
-        public Builder clearWarningFlag() {
-          bitField0_ = (bitField0_ & ~0x00000001);
-          warningFlag_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean overSpeeding_ ;
-        /**
-         * <code>optional bool overSpeeding = 2;</code>
-         */
-        public boolean hasOverSpeeding() {
-          return ((bitField0_ & 0x00000002) != 0);
-        }
-        /**
-         * <code>optional bool overSpeeding = 2;</code>
-         */
-        public boolean getOverSpeeding() {
-          return overSpeeding_;
-        }
-        /**
-         * <code>optional bool overSpeeding = 2;</code>
-         */
-        public Builder setOverSpeeding(boolean value) {
-          bitField0_ |= 0x00000002;
-          overSpeeding_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool overSpeeding = 2;</code>
-         */
-        public Builder clearOverSpeeding() {
-          bitField0_ = (bitField0_ & ~0x00000002);
-          overSpeeding_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean overTired_ ;
-        /**
-         * <code>optional bool overTired = 3;</code>
-         */
-        public boolean hasOverTired() {
-          return ((bitField0_ & 0x00000004) != 0);
-        }
-        /**
-         * <code>optional bool overTired = 3;</code>
-         */
-        public boolean getOverTired() {
-          return overTired_;
-        }
-        /**
-         * <code>optional bool overTired = 3;</code>
-         */
-        public Builder setOverTired(boolean value) {
-          bitField0_ |= 0x00000004;
-          overTired_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool overTired = 3;</code>
-         */
-        public Builder clearOverTired() {
-          bitField0_ = (bitField0_ & ~0x00000004);
-          overTired_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean dangerous_ ;
-        /**
-         * <code>optional bool dangerous = 4;</code>
-         */
-        public boolean hasDangerous() {
-          return ((bitField0_ & 0x00000008) != 0);
-        }
-        /**
-         * <code>optional bool dangerous = 4;</code>
-         */
-        public boolean getDangerous() {
-          return dangerous_;
-        }
-        /**
-         * <code>optional bool dangerous = 4;</code>
-         */
-        public Builder setDangerous(boolean value) {
-          bitField0_ |= 0x00000008;
-          dangerous_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool dangerous = 4;</code>
-         */
-        public Builder clearDangerous() {
-          bitField0_ = (bitField0_ & ~0x00000008);
-          dangerous_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean gNSSFault_ ;
-        /**
-         * <code>optional bool GNSSFault = 5;</code>
-         */
-        public boolean hasGNSSFault() {
-          return ((bitField0_ & 0x00000010) != 0);
-        }
-        /**
-         * <code>optional bool GNSSFault = 5;</code>
-         */
-        public boolean getGNSSFault() {
-          return gNSSFault_;
-        }
-        /**
-         * <code>optional bool GNSSFault = 5;</code>
-         */
-        public Builder setGNSSFault(boolean value) {
-          bitField0_ |= 0x00000010;
-          gNSSFault_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool GNSSFault = 5;</code>
-         */
-        public Builder clearGNSSFault() {
-          bitField0_ = (bitField0_ & ~0x00000010);
-          gNSSFault_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean gNSSAntennaFault_ ;
-        /**
-         * <code>optional bool GNSSAntennaFault = 6;</code>
-         */
-        public boolean hasGNSSAntennaFault() {
-          return ((bitField0_ & 0x00000020) != 0);
-        }
-        /**
-         * <code>optional bool GNSSAntennaFault = 6;</code>
-         */
-        public boolean getGNSSAntennaFault() {
-          return gNSSAntennaFault_;
-        }
-        /**
-         * <code>optional bool GNSSAntennaFault = 6;</code>
-         */
-        public Builder setGNSSAntennaFault(boolean value) {
-          bitField0_ |= 0x00000020;
-          gNSSAntennaFault_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool GNSSAntennaFault = 6;</code>
-         */
-        public Builder clearGNSSAntennaFault() {
-          bitField0_ = (bitField0_ & ~0x00000020);
-          gNSSAntennaFault_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean gNSSAntennaShortCircuit_ ;
-        /**
-         * <code>optional bool GNSSAntennaShortCircuit = 7;</code>
-         */
-        public boolean hasGNSSAntennaShortCircuit() {
-          return ((bitField0_ & 0x00000040) != 0);
-        }
-        /**
-         * <code>optional bool GNSSAntennaShortCircuit = 7;</code>
-         */
-        public boolean getGNSSAntennaShortCircuit() {
-          return gNSSAntennaShortCircuit_;
-        }
-        /**
-         * <code>optional bool GNSSAntennaShortCircuit = 7;</code>
-         */
-        public Builder setGNSSAntennaShortCircuit(boolean value) {
-          bitField0_ |= 0x00000040;
-          gNSSAntennaShortCircuit_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool GNSSAntennaShortCircuit = 7;</code>
-         */
-        public Builder clearGNSSAntennaShortCircuit() {
-          bitField0_ = (bitField0_ & ~0x00000040);
-          gNSSAntennaShortCircuit_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean terminalMainPowerUnderVoltage_ ;
-        /**
-         * <code>optional bool terminalMainPowerUnderVoltage = 8;</code>
-         */
-        public boolean hasTerminalMainPowerUnderVoltage() {
-          return ((bitField0_ & 0x00000080) != 0);
-        }
-        /**
-         * <code>optional bool terminalMainPowerUnderVoltage = 8;</code>
-         */
-        public boolean getTerminalMainPowerUnderVoltage() {
-          return terminalMainPowerUnderVoltage_;
-        }
-        /**
-         * <code>optional bool terminalMainPowerUnderVoltage = 8;</code>
-         */
-        public Builder setTerminalMainPowerUnderVoltage(boolean value) {
-          bitField0_ |= 0x00000080;
-          terminalMainPowerUnderVoltage_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool terminalMainPowerUnderVoltage = 8;</code>
-         */
-        public Builder clearTerminalMainPowerUnderVoltage() {
-          bitField0_ = (bitField0_ & ~0x00000080);
-          terminalMainPowerUnderVoltage_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean terminalMainPowerFailure_ ;
-        /**
-         * <code>optional bool terminalMainPowerFailure = 9;</code>
-         */
-        public boolean hasTerminalMainPowerFailure() {
-          return ((bitField0_ & 0x00000100) != 0);
-        }
-        /**
-         * <code>optional bool terminalMainPowerFailure = 9;</code>
-         */
-        public boolean getTerminalMainPowerFailure() {
-          return terminalMainPowerFailure_;
-        }
-        /**
-         * <code>optional bool terminalMainPowerFailure = 9;</code>
-         */
-        public Builder setTerminalMainPowerFailure(boolean value) {
-          bitField0_ |= 0x00000100;
-          terminalMainPowerFailure_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool terminalMainPowerFailure = 9;</code>
-         */
-        public Builder clearTerminalMainPowerFailure() {
-          bitField0_ = (bitField0_ & ~0x00000100);
-          terminalMainPowerFailure_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean terminalLCDFault_ ;
-        /**
-         * <code>optional bool TerminalLCDFault = 10;</code>
-         */
-        public boolean hasTerminalLCDFault() {
-          return ((bitField0_ & 0x00000200) != 0);
-        }
-        /**
-         * <code>optional bool TerminalLCDFault = 10;</code>
-         */
-        public boolean getTerminalLCDFault() {
-          return terminalLCDFault_;
-        }
-        /**
-         * <code>optional bool TerminalLCDFault = 10;</code>
-         */
-        public Builder setTerminalLCDFault(boolean value) {
-          bitField0_ |= 0x00000200;
-          terminalLCDFault_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool TerminalLCDFault = 10;</code>
-         */
-        public Builder clearTerminalLCDFault() {
-          bitField0_ = (bitField0_ & ~0x00000200);
-          terminalLCDFault_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean tTSFault_ ;
-        /**
-         * <code>optional bool TTSFault = 11;</code>
-         */
-        public boolean hasTTSFault() {
-          return ((bitField0_ & 0x00000400) != 0);
-        }
-        /**
-         * <code>optional bool TTSFault = 11;</code>
-         */
-        public boolean getTTSFault() {
-          return tTSFault_;
-        }
-        /**
-         * <code>optional bool TTSFault = 11;</code>
-         */
-        public Builder setTTSFault(boolean value) {
-          bitField0_ |= 0x00000400;
-          tTSFault_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool TTSFault = 11;</code>
-         */
-        public Builder clearTTSFault() {
-          bitField0_ = (bitField0_ & ~0x00000400);
-          tTSFault_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean cameraFault_ ;
-        /**
-         * <code>optional bool cameraFault = 12;</code>
-         */
-        public boolean hasCameraFault() {
-          return ((bitField0_ & 0x00000800) != 0);
-        }
-        /**
-         * <code>optional bool cameraFault = 12;</code>
-         */
-        public boolean getCameraFault() {
-          return cameraFault_;
-        }
-        /**
-         * <code>optional bool cameraFault = 12;</code>
-         */
-        public Builder setCameraFault(boolean value) {
-          bitField0_ |= 0x00000800;
-          cameraFault_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool cameraFault = 12;</code>
-         */
-        public Builder clearCameraFault() {
-          bitField0_ = (bitField0_ & ~0x00000800);
-          cameraFault_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean iCCardFault_ ;
-        /**
-         * <code>optional bool ICCardFault = 13;</code>
-         */
-        public boolean hasICCardFault() {
-          return ((bitField0_ & 0x00001000) != 0);
-        }
-        /**
-         * <code>optional bool ICCardFault = 13;</code>
-         */
-        public boolean getICCardFault() {
-          return iCCardFault_;
-        }
-        /**
-         * <code>optional bool ICCardFault = 13;</code>
-         */
-        public Builder setICCardFault(boolean value) {
-          bitField0_ |= 0x00001000;
-          iCCardFault_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool ICCardFault = 13;</code>
-         */
-        public Builder clearICCardFault() {
-          bitField0_ = (bitField0_ & ~0x00001000);
-          iCCardFault_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean speeding_ ;
-        /**
-         * <code>optional bool speeding = 14;</code>
-         */
-        public boolean hasSpeeding() {
-          return ((bitField0_ & 0x00002000) != 0);
-        }
-        /**
-         * <code>optional bool speeding = 14;</code>
-         */
-        public boolean getSpeeding() {
-          return speeding_;
-        }
-        /**
-         * <code>optional bool speeding = 14;</code>
-         */
-        public Builder setSpeeding(boolean value) {
-          bitField0_ |= 0x00002000;
-          speeding_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool speeding = 14;</code>
-         */
-        public Builder clearSpeeding() {
-          bitField0_ = (bitField0_ & ~0x00002000);
-          speeding_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean tired_ ;
-        /**
-         * <code>optional bool tired = 15;</code>
-         */
-        public boolean hasTired() {
-          return ((bitField0_ & 0x00004000) != 0);
-        }
-        /**
-         * <code>optional bool tired = 15;</code>
-         */
-        public boolean getTired() {
-          return tired_;
-        }
-        /**
-         * <code>optional bool tired = 15;</code>
-         */
-        public Builder setTired(boolean value) {
-          bitField0_ |= 0x00004000;
-          tired_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool tired = 15;</code>
-         */
-        public Builder clearTired() {
-          bitField0_ = (bitField0_ & ~0x00004000);
-          tired_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean driveTimeout_ ;
-        /**
-         * <code>optional bool driveTimeout = 16;</code>
-         */
-        public boolean hasDriveTimeout() {
-          return ((bitField0_ & 0x00008000) != 0);
-        }
-        /**
-         * <code>optional bool driveTimeout = 16;</code>
-         */
-        public boolean getDriveTimeout() {
-          return driveTimeout_;
-        }
-        /**
-         * <code>optional bool driveTimeout = 16;</code>
-         */
-        public Builder setDriveTimeout(boolean value) {
-          bitField0_ |= 0x00008000;
-          driveTimeout_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool driveTimeout = 16;</code>
-         */
-        public Builder clearDriveTimeout() {
-          bitField0_ = (bitField0_ & ~0x00008000);
-          driveTimeout_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean parkingOvertime_ ;
-        /**
-         * <code>optional bool parkingOvertime = 17;</code>
-         */
-        public boolean hasParkingOvertime() {
-          return ((bitField0_ & 0x00010000) != 0);
-        }
-        /**
-         * <code>optional bool parkingOvertime = 17;</code>
-         */
-        public boolean getParkingOvertime() {
-          return parkingOvertime_;
-        }
-        /**
-         * <code>optional bool parkingOvertime = 17;</code>
-         */
-        public Builder setParkingOvertime(boolean value) {
-          bitField0_ |= 0x00010000;
-          parkingOvertime_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool parkingOvertime = 17;</code>
-         */
-        public Builder clearParkingOvertime() {
-          bitField0_ = (bitField0_ & ~0x00010000);
-          parkingOvertime_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean throughArea_ ;
-        /**
-         * <code>optional bool throughArea = 18;</code>
-         */
-        public boolean hasThroughArea() {
-          return ((bitField0_ & 0x00020000) != 0);
-        }
-        /**
-         * <code>optional bool throughArea = 18;</code>
-         */
-        public boolean getThroughArea() {
-          return throughArea_;
-        }
-        /**
-         * <code>optional bool throughArea = 18;</code>
-         */
-        public Builder setThroughArea(boolean value) {
-          bitField0_ |= 0x00020000;
-          throughArea_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool throughArea = 18;</code>
-         */
-        public Builder clearThroughArea() {
-          bitField0_ = (bitField0_ & ~0x00020000);
-          throughArea_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean throughRoad_ ;
-        /**
-         * <code>optional bool throughRoad = 19;</code>
-         */
-        public boolean hasThroughRoad() {
-          return ((bitField0_ & 0x00040000) != 0);
-        }
-        /**
-         * <code>optional bool throughRoad = 19;</code>
-         */
-        public boolean getThroughRoad() {
-          return throughRoad_;
-        }
-        /**
-         * <code>optional bool throughRoad = 19;</code>
-         */
-        public Builder setThroughRoad(boolean value) {
-          bitField0_ |= 0x00040000;
-          throughRoad_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool throughRoad = 19;</code>
-         */
-        public Builder clearThroughRoad() {
-          bitField0_ = (bitField0_ & ~0x00040000);
-          throughRoad_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean roadTimeout_ ;
-        /**
-         * <code>optional bool roadTimeout = 20;</code>
-         */
-        public boolean hasRoadTimeout() {
-          return ((bitField0_ & 0x00080000) != 0);
-        }
-        /**
-         * <code>optional bool roadTimeout = 20;</code>
-         */
-        public boolean getRoadTimeout() {
-          return roadTimeout_;
-        }
-        /**
-         * <code>optional bool roadTimeout = 20;</code>
-         */
-        public Builder setRoadTimeout(boolean value) {
-          bitField0_ |= 0x00080000;
-          roadTimeout_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool roadTimeout = 20;</code>
-         */
-        public Builder clearRoadTimeout() {
-          bitField0_ = (bitField0_ & ~0x00080000);
-          roadTimeout_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean roadFault_ ;
-        /**
-         * <code>optional bool roadFault = 21;</code>
-         */
-        public boolean hasRoadFault() {
-          return ((bitField0_ & 0x00100000) != 0);
-        }
-        /**
-         * <code>optional bool roadFault = 21;</code>
-         */
-        public boolean getRoadFault() {
-          return roadFault_;
-        }
-        /**
-         * <code>optional bool roadFault = 21;</code>
-         */
-        public Builder setRoadFault(boolean value) {
-          bitField0_ |= 0x00100000;
-          roadFault_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool roadFault = 21;</code>
-         */
-        public Builder clearRoadFault() {
-          bitField0_ = (bitField0_ & ~0x00100000);
-          roadFault_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean vSSFault_ ;
-        /**
-         * <code>optional bool VSSFault = 22;</code>
-         */
-        public boolean hasVSSFault() {
-          return ((bitField0_ & 0x00200000) != 0);
-        }
-        /**
-         * <code>optional bool VSSFault = 22;</code>
-         */
-        public boolean getVSSFault() {
-          return vSSFault_;
-        }
-        /**
-         * <code>optional bool VSSFault = 22;</code>
-         */
-        public Builder setVSSFault(boolean value) {
-          bitField0_ |= 0x00200000;
-          vSSFault_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool VSSFault = 22;</code>
-         */
-        public Builder clearVSSFault() {
-          bitField0_ = (bitField0_ & ~0x00200000);
-          vSSFault_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean vehicleOilException_ ;
-        /**
-         * <code>optional bool vehicleOilException = 23;</code>
-         */
-        public boolean hasVehicleOilException() {
-          return ((bitField0_ & 0x00400000) != 0);
-        }
-        /**
-         * <code>optional bool vehicleOilException = 23;</code>
-         */
-        public boolean getVehicleOilException() {
-          return vehicleOilException_;
-        }
-        /**
-         * <code>optional bool vehicleOilException = 23;</code>
-         */
-        public Builder setVehicleOilException(boolean value) {
-          bitField0_ |= 0x00400000;
-          vehicleOilException_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool vehicleOilException = 23;</code>
-         */
-        public Builder clearVehicleOilException() {
-          bitField0_ = (bitField0_ & ~0x00400000);
-          vehicleOilException_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean vehicleTheft_ ;
-        /**
-         * <code>optional bool vehicleTheft = 24;</code>
-         */
-        public boolean hasVehicleTheft() {
-          return ((bitField0_ & 0x00800000) != 0);
-        }
-        /**
-         * <code>optional bool vehicleTheft = 24;</code>
-         */
-        public boolean getVehicleTheft() {
-          return vehicleTheft_;
-        }
-        /**
-         * <code>optional bool vehicleTheft = 24;</code>
-         */
-        public Builder setVehicleTheft(boolean value) {
-          bitField0_ |= 0x00800000;
-          vehicleTheft_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool vehicleTheft = 24;</code>
-         */
-        public Builder clearVehicleTheft() {
-          bitField0_ = (bitField0_ & ~0x00800000);
-          vehicleTheft_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean vehicleIllegalIgnition_ ;
-        /**
-         * <code>optional bool vehicleIllegalIgnition = 25;</code>
-         */
-        public boolean hasVehicleIllegalIgnition() {
-          return ((bitField0_ & 0x01000000) != 0);
-        }
-        /**
-         * <code>optional bool vehicleIllegalIgnition = 25;</code>
-         */
-        public boolean getVehicleIllegalIgnition() {
-          return vehicleIllegalIgnition_;
-        }
-        /**
-         * <code>optional bool vehicleIllegalIgnition = 25;</code>
-         */
-        public Builder setVehicleIllegalIgnition(boolean value) {
-          bitField0_ |= 0x01000000;
-          vehicleIllegalIgnition_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool vehicleIllegalIgnition = 25;</code>
-         */
-        public Builder clearVehicleIllegalIgnition() {
-          bitField0_ = (bitField0_ & ~0x01000000);
-          vehicleIllegalIgnition_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean vehicleIllegalShift_ ;
-        /**
-         * <code>optional bool vehicleIllegalShift = 26;</code>
-         */
-        public boolean hasVehicleIllegalShift() {
-          return ((bitField0_ & 0x02000000) != 0);
-        }
-        /**
-         * <code>optional bool vehicleIllegalShift = 26;</code>
-         */
-        public boolean getVehicleIllegalShift() {
-          return vehicleIllegalShift_;
-        }
-        /**
-         * <code>optional bool vehicleIllegalShift = 26;</code>
-         */
-        public Builder setVehicleIllegalShift(boolean value) {
-          bitField0_ |= 0x02000000;
-          vehicleIllegalShift_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool vehicleIllegalShift = 26;</code>
-         */
-        public Builder clearVehicleIllegalShift() {
-          bitField0_ = (bitField0_ & ~0x02000000);
-          vehicleIllegalShift_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean collisionWarning_ ;
-        /**
-         * <code>optional bool collisionWarning = 27;</code>
-         */
-        public boolean hasCollisionWarning() {
-          return ((bitField0_ & 0x04000000) != 0);
-        }
-        /**
-         * <code>optional bool collisionWarning = 27;</code>
-         */
-        public boolean getCollisionWarning() {
-          return collisionWarning_;
-        }
-        /**
-         * <code>optional bool collisionWarning = 27;</code>
-         */
-        public Builder setCollisionWarning(boolean value) {
-          bitField0_ |= 0x04000000;
-          collisionWarning_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool collisionWarning = 27;</code>
-         */
-        public Builder clearCollisionWarning() {
-          bitField0_ = (bitField0_ & ~0x04000000);
-          collisionWarning_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean rolloverWarning_ ;
-        /**
-         * <code>optional bool rolloverWarning = 28;</code>
-         */
-        public boolean hasRolloverWarning() {
-          return ((bitField0_ & 0x08000000) != 0);
-        }
-        /**
-         * <code>optional bool rolloverWarning = 28;</code>
-         */
-        public boolean getRolloverWarning() {
-          return rolloverWarning_;
-        }
-        /**
-         * <code>optional bool rolloverWarning = 28;</code>
-         */
-        public Builder setRolloverWarning(boolean value) {
-          bitField0_ |= 0x08000000;
-          rolloverWarning_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool rolloverWarning = 28;</code>
-         */
-        public Builder clearRolloverWarning() {
-          bitField0_ = (bitField0_ & ~0x08000000);
-          rolloverWarning_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean illegalOpenDoor_ ;
-        /**
-         * <code>optional bool illegalOpenDoor = 29;</code>
-         */
-        public boolean hasIllegalOpenDoor() {
-          return ((bitField0_ & 0x10000000) != 0);
-        }
-        /**
-         * <code>optional bool illegalOpenDoor = 29;</code>
-         */
-        public boolean getIllegalOpenDoor() {
-          return illegalOpenDoor_;
-        }
-        /**
-         * <code>optional bool illegalOpenDoor = 29;</code>
-         */
-        public Builder setIllegalOpenDoor(boolean value) {
-          bitField0_ |= 0x10000000;
-          illegalOpenDoor_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool illegalOpenDoor = 29;</code>
-         */
-        public Builder clearIllegalOpenDoor() {
-          bitField0_ = (bitField0_ & ~0x10000000);
-          illegalOpenDoor_ = false;
-          onChanged();
-          return this;
-        }
-        @java.lang.Override
-        public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.setUnknownFields(unknownFields);
-        }
-
-        @java.lang.Override
-        public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.mergeUnknownFields(unknownFields);
-        }
-
-
-        // @@protoc_insertion_point(builder_scope:protobuf.Location.WarningFlag)
-      }
-
-      // @@protoc_insertion_point(class_scope:protobuf.Location.WarningFlag)
-      private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag DEFAULT_INSTANCE;
-      static {
-        DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag();
-      }
-
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag getDefaultInstance() {
-        return DEFAULT_INSTANCE;
-      }
-
-      @java.lang.Deprecated public static final com.google.protobuf.Parser<WarningFlag>
-          PARSER = new com.google.protobuf.AbstractParser<WarningFlag>() {
-        @java.lang.Override
-        public WarningFlag parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new WarningFlag(input, extensionRegistry);
-        }
-      };
-
-      public static com.google.protobuf.Parser<WarningFlag> parser() {
-        return PARSER;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Parser<WarningFlag> getParserForType() {
-        return PARSER;
-      }
-
-      @java.lang.Override
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.WarningFlag getDefaultInstanceForType() {
-        return DEFAULT_INSTANCE;
-      }
-
-    }
-
-    public interface StatusOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:protobuf.Location.Status)
-        com.google.protobuf.MessageOrBuilder {
-
-      /**
-       * <code>optional bool ACC = 1;</code>
-       */
-      boolean hasACC();
-      /**
-       * <code>optional bool ACC = 1;</code>
-       */
-      boolean getACC();
-
-      /**
-       * <code>optional bool isLocation = 2;</code>
-       */
-      boolean hasIsLocation();
-      /**
-       * <code>optional bool isLocation = 2;</code>
-       */
-      boolean getIsLocation();
-
-      /**
-       * <code>optional bool latitude = 3;</code>
-       */
-      boolean hasLatitude();
-      /**
-       * <code>optional bool latitude = 3;</code>
-       */
-      boolean getLatitude();
-
-      /**
-       * <code>optional bool longitude = 4;</code>
-       */
-      boolean hasLongitude();
-      /**
-       * <code>optional bool longitude = 4;</code>
-       */
-      boolean getLongitude();
-
-      /**
-       * <code>optional bool isRunning = 5;</code>
-       */
-      boolean hasIsRunning();
-      /**
-       * <code>optional bool isRunning = 5;</code>
-       */
-      boolean getIsRunning();
-
-      /**
-       * <code>optional bool encrypt = 6;</code>
-       */
-      boolean hasEncrypt();
-      /**
-       * <code>optional bool encrypt = 6;</code>
-       */
-      boolean getEncrypt();
-
-      /**
-       * <code>optional int32 goodsStatus = 7;</code>
-       */
-      boolean hasGoodsStatus();
-      /**
-       * <code>optional int32 goodsStatus = 7;</code>
-       */
-      int getGoodsStatus();
-
-      /**
-       * <code>optional bool vehicleOil = 8;</code>
-       */
-      boolean hasVehicleOil();
-      /**
-       * <code>optional bool vehicleOil = 8;</code>
-       */
-      boolean getVehicleOil();
-
-      /**
-       * <code>optional bool vehicleCircut = 9;</code>
-       */
-      boolean hasVehicleCircut();
-      /**
-       * <code>optional bool vehicleCircut = 9;</code>
-       */
-      boolean getVehicleCircut();
-
-      /**
-       * <code>optional bool doorLock = 10;</code>
-       */
-      boolean hasDoorLock();
-      /**
-       * <code>optional bool doorLock = 10;</code>
-       */
-      boolean getDoorLock();
-
-      /**
-       * <code>optional bool frontDoorOpen = 11;</code>
-       */
-      boolean hasFrontDoorOpen();
-      /**
-       * <code>optional bool frontDoorOpen = 11;</code>
-       */
-      boolean getFrontDoorOpen();
-
-      /**
-       * <code>optional bool middleDoorOpen = 12;</code>
-       */
-      boolean hasMiddleDoorOpen();
-      /**
-       * <code>optional bool middleDoorOpen = 12;</code>
-       */
-      boolean getMiddleDoorOpen();
-
-      /**
-       * <code>optional bool endDoorOpen = 13;</code>
-       */
-      boolean hasEndDoorOpen();
-      /**
-       * <code>optional bool endDoorOpen = 13;</code>
-       */
-      boolean getEndDoorOpen();
-
-      /**
-       * <code>optional bool driverDoorOpen = 14;</code>
-       */
-      boolean hasDriverDoorOpen();
-      /**
-       * <code>optional bool driverDoorOpen = 14;</code>
-       */
-      boolean getDriverDoorOpen();
-
-      /**
-       * <code>optional bool otherDoorOpen = 15;</code>
-       */
-      boolean hasOtherDoorOpen();
-      /**
-       * <code>optional bool otherDoorOpen = 15;</code>
-       */
-      boolean getOtherDoorOpen();
-
-      /**
-       * <code>optional bool GPS = 16;</code>
-       */
-      boolean hasGPS();
-      /**
-       * <code>optional bool GPS = 16;</code>
-       */
-      boolean getGPS();
-
-      /**
-       * <code>optional bool beidou = 17;</code>
-       */
-      boolean hasBeidou();
-      /**
-       * <code>optional bool beidou = 17;</code>
-       */
-      boolean getBeidou();
-
-      /**
-       * <code>optional bool GLONASS = 18;</code>
-       */
-      boolean hasGLONASS();
-      /**
-       * <code>optional bool GLONASS = 18;</code>
-       */
-      boolean getGLONASS();
-
-      /**
-       * <code>optional bool Galileo = 19;</code>
-       */
-      boolean hasGalileo();
-      /**
-       * <code>optional bool Galileo = 19;</code>
-       */
-      boolean getGalileo();
-    }
-    /**
-     * Protobuf type {@code protobuf.Location.Status}
-     */
-    public  static final class Status extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:protobuf.Location.Status)
-        StatusOrBuilder {
-    private static final long serialVersionUID = 0L;
-      // Use Status.newBuilder() to construct.
-      private Status(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-        super(builder);
-      }
-      private Status() {
-      }
-
-      @java.lang.Override
-      public final com.google.protobuf.UnknownFieldSet
-      getUnknownFields() {
-        return this.unknownFields;
-      }
-      private Status(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 8: {
-                bitField0_ |= 0x00000001;
-                aCC_ = input.readBool();
-                break;
-              }
-              case 16: {
-                bitField0_ |= 0x00000002;
-                isLocation_ = input.readBool();
-                break;
-              }
-              case 24: {
-                bitField0_ |= 0x00000004;
-                latitude_ = input.readBool();
-                break;
-              }
-              case 32: {
-                bitField0_ |= 0x00000008;
-                longitude_ = input.readBool();
-                break;
-              }
-              case 40: {
-                bitField0_ |= 0x00000010;
-                isRunning_ = input.readBool();
-                break;
-              }
-              case 48: {
-                bitField0_ |= 0x00000020;
-                encrypt_ = input.readBool();
-                break;
-              }
-              case 56: {
-                bitField0_ |= 0x00000040;
-                goodsStatus_ = input.readInt32();
-                break;
-              }
-              case 64: {
-                bitField0_ |= 0x00000080;
-                vehicleOil_ = input.readBool();
-                break;
-              }
-              case 72: {
-                bitField0_ |= 0x00000100;
-                vehicleCircut_ = input.readBool();
-                break;
-              }
-              case 80: {
-                bitField0_ |= 0x00000200;
-                doorLock_ = input.readBool();
-                break;
-              }
-              case 88: {
-                bitField0_ |= 0x00000400;
-                frontDoorOpen_ = input.readBool();
-                break;
-              }
-              case 96: {
-                bitField0_ |= 0x00000800;
-                middleDoorOpen_ = input.readBool();
-                break;
-              }
-              case 104: {
-                bitField0_ |= 0x00001000;
-                endDoorOpen_ = input.readBool();
-                break;
-              }
-              case 112: {
-                bitField0_ |= 0x00002000;
-                driverDoorOpen_ = input.readBool();
-                break;
-              }
-              case 120: {
-                bitField0_ |= 0x00004000;
-                otherDoorOpen_ = input.readBool();
-                break;
-              }
-              case 128: {
-                bitField0_ |= 0x00008000;
-                gPS_ = input.readBool();
-                break;
-              }
-              case 136: {
-                bitField0_ |= 0x00010000;
-                beidou_ = input.readBool();
-                break;
-              }
-              case 144: {
-                bitField0_ |= 0x00020000;
-                gLONASS_ = input.readBool();
-                break;
-              }
-              case 152: {
-                bitField0_ |= 0x00040000;
-                galileo_ = input.readBool();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_Status_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_Status_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.Status.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.Status.Builder.class);
-      }
-
-      private int bitField0_;
-      public static final int ACC_FIELD_NUMBER = 1;
-      private boolean aCC_;
-      /**
-       * <code>optional bool ACC = 1;</code>
-       */
-      public boolean hasACC() {
-        return ((bitField0_ & 0x00000001) != 0);
-      }
-      /**
-       * <code>optional bool ACC = 1;</code>
-       */
-      public boolean getACC() {
-        return aCC_;
-      }
-
-      public static final int ISLOCATION_FIELD_NUMBER = 2;
-      private boolean isLocation_;
-      /**
-       * <code>optional bool isLocation = 2;</code>
-       */
-      public boolean hasIsLocation() {
-        return ((bitField0_ & 0x00000002) != 0);
-      }
-      /**
-       * <code>optional bool isLocation = 2;</code>
-       */
-      public boolean getIsLocation() {
-        return isLocation_;
-      }
-
-      public static final int LATITUDE_FIELD_NUMBER = 3;
-      private boolean latitude_;
-      /**
-       * <code>optional bool latitude = 3;</code>
-       */
-      public boolean hasLatitude() {
-        return ((bitField0_ & 0x00000004) != 0);
-      }
-      /**
-       * <code>optional bool latitude = 3;</code>
-       */
-      public boolean getLatitude() {
-        return latitude_;
-      }
-
-      public static final int LONGITUDE_FIELD_NUMBER = 4;
-      private boolean longitude_;
-      /**
-       * <code>optional bool longitude = 4;</code>
-       */
-      public boolean hasLongitude() {
-        return ((bitField0_ & 0x00000008) != 0);
-      }
-      /**
-       * <code>optional bool longitude = 4;</code>
-       */
-      public boolean getLongitude() {
-        return longitude_;
-      }
-
-      public static final int ISRUNNING_FIELD_NUMBER = 5;
-      private boolean isRunning_;
-      /**
-       * <code>optional bool isRunning = 5;</code>
-       */
-      public boolean hasIsRunning() {
-        return ((bitField0_ & 0x00000010) != 0);
-      }
-      /**
-       * <code>optional bool isRunning = 5;</code>
-       */
-      public boolean getIsRunning() {
-        return isRunning_;
-      }
-
-      public static final int ENCRYPT_FIELD_NUMBER = 6;
-      private boolean encrypt_;
-      /**
-       * <code>optional bool encrypt = 6;</code>
-       */
-      public boolean hasEncrypt() {
-        return ((bitField0_ & 0x00000020) != 0);
-      }
-      /**
-       * <code>optional bool encrypt = 6;</code>
-       */
-      public boolean getEncrypt() {
-        return encrypt_;
-      }
-
-      public static final int GOODSSTATUS_FIELD_NUMBER = 7;
-      private int goodsStatus_;
-      /**
-       * <code>optional int32 goodsStatus = 7;</code>
-       */
-      public boolean hasGoodsStatus() {
-        return ((bitField0_ & 0x00000040) != 0);
-      }
-      /**
-       * <code>optional int32 goodsStatus = 7;</code>
-       */
-      public int getGoodsStatus() {
-        return goodsStatus_;
-      }
-
-      public static final int VEHICLEOIL_FIELD_NUMBER = 8;
-      private boolean vehicleOil_;
-      /**
-       * <code>optional bool vehicleOil = 8;</code>
-       */
-      public boolean hasVehicleOil() {
-        return ((bitField0_ & 0x00000080) != 0);
-      }
-      /**
-       * <code>optional bool vehicleOil = 8;</code>
-       */
-      public boolean getVehicleOil() {
-        return vehicleOil_;
-      }
-
-      public static final int VEHICLECIRCUT_FIELD_NUMBER = 9;
-      private boolean vehicleCircut_;
-      /**
-       * <code>optional bool vehicleCircut = 9;</code>
-       */
-      public boolean hasVehicleCircut() {
-        return ((bitField0_ & 0x00000100) != 0);
-      }
-      /**
-       * <code>optional bool vehicleCircut = 9;</code>
-       */
-      public boolean getVehicleCircut() {
-        return vehicleCircut_;
-      }
-
-      public static final int DOORLOCK_FIELD_NUMBER = 10;
-      private boolean doorLock_;
-      /**
-       * <code>optional bool doorLock = 10;</code>
-       */
-      public boolean hasDoorLock() {
-        return ((bitField0_ & 0x00000200) != 0);
-      }
-      /**
-       * <code>optional bool doorLock = 10;</code>
-       */
-      public boolean getDoorLock() {
-        return doorLock_;
-      }
-
-      public static final int FRONTDOOROPEN_FIELD_NUMBER = 11;
-      private boolean frontDoorOpen_;
-      /**
-       * <code>optional bool frontDoorOpen = 11;</code>
-       */
-      public boolean hasFrontDoorOpen() {
-        return ((bitField0_ & 0x00000400) != 0);
-      }
-      /**
-       * <code>optional bool frontDoorOpen = 11;</code>
-       */
-      public boolean getFrontDoorOpen() {
-        return frontDoorOpen_;
-      }
-
-      public static final int MIDDLEDOOROPEN_FIELD_NUMBER = 12;
-      private boolean middleDoorOpen_;
-      /**
-       * <code>optional bool middleDoorOpen = 12;</code>
-       */
-      public boolean hasMiddleDoorOpen() {
-        return ((bitField0_ & 0x00000800) != 0);
-      }
-      /**
-       * <code>optional bool middleDoorOpen = 12;</code>
-       */
-      public boolean getMiddleDoorOpen() {
-        return middleDoorOpen_;
-      }
-
-      public static final int ENDDOOROPEN_FIELD_NUMBER = 13;
-      private boolean endDoorOpen_;
-      /**
-       * <code>optional bool endDoorOpen = 13;</code>
-       */
-      public boolean hasEndDoorOpen() {
-        return ((bitField0_ & 0x00001000) != 0);
-      }
-      /**
-       * <code>optional bool endDoorOpen = 13;</code>
-       */
-      public boolean getEndDoorOpen() {
-        return endDoorOpen_;
-      }
-
-      public static final int DRIVERDOOROPEN_FIELD_NUMBER = 14;
-      private boolean driverDoorOpen_;
-      /**
-       * <code>optional bool driverDoorOpen = 14;</code>
-       */
-      public boolean hasDriverDoorOpen() {
-        return ((bitField0_ & 0x00002000) != 0);
-      }
-      /**
-       * <code>optional bool driverDoorOpen = 14;</code>
-       */
-      public boolean getDriverDoorOpen() {
-        return driverDoorOpen_;
-      }
-
-      public static final int OTHERDOOROPEN_FIELD_NUMBER = 15;
-      private boolean otherDoorOpen_;
-      /**
-       * <code>optional bool otherDoorOpen = 15;</code>
-       */
-      public boolean hasOtherDoorOpen() {
-        return ((bitField0_ & 0x00004000) != 0);
-      }
-      /**
-       * <code>optional bool otherDoorOpen = 15;</code>
-       */
-      public boolean getOtherDoorOpen() {
-        return otherDoorOpen_;
-      }
-
-      public static final int GPS_FIELD_NUMBER = 16;
-      private boolean gPS_;
-      /**
-       * <code>optional bool GPS = 16;</code>
-       */
-      public boolean hasGPS() {
-        return ((bitField0_ & 0x00008000) != 0);
-      }
-      /**
-       * <code>optional bool GPS = 16;</code>
-       */
-      public boolean getGPS() {
-        return gPS_;
-      }
-
-      public static final int BEIDOU_FIELD_NUMBER = 17;
-      private boolean beidou_;
-      /**
-       * <code>optional bool beidou = 17;</code>
-       */
-      public boolean hasBeidou() {
-        return ((bitField0_ & 0x00010000) != 0);
-      }
-      /**
-       * <code>optional bool beidou = 17;</code>
-       */
-      public boolean getBeidou() {
-        return beidou_;
-      }
-
-      public static final int GLONASS_FIELD_NUMBER = 18;
-      private boolean gLONASS_;
-      /**
-       * <code>optional bool GLONASS = 18;</code>
-       */
-      public boolean hasGLONASS() {
-        return ((bitField0_ & 0x00020000) != 0);
-      }
-      /**
-       * <code>optional bool GLONASS = 18;</code>
-       */
-      public boolean getGLONASS() {
-        return gLONASS_;
-      }
-
-      public static final int GALILEO_FIELD_NUMBER = 19;
-      private boolean galileo_;
-      /**
-       * <code>optional bool Galileo = 19;</code>
-       */
-      public boolean hasGalileo() {
-        return ((bitField0_ & 0x00040000) != 0);
-      }
-      /**
-       * <code>optional bool Galileo = 19;</code>
-       */
-      public boolean getGalileo() {
-        return galileo_;
-      }
-
-      private byte memoizedIsInitialized = -1;
-      @java.lang.Override
-      public final boolean isInitialized() {
-        byte isInitialized = memoizedIsInitialized;
-        if (isInitialized == 1) return true;
-        if (isInitialized == 0) return false;
-
-        memoizedIsInitialized = 1;
-        return true;
-      }
-
-      @java.lang.Override
-      public void writeTo(com.google.protobuf.CodedOutputStream output)
-                          throws java.io.IOException {
-        if (((bitField0_ & 0x00000001) != 0)) {
-          output.writeBool(1, aCC_);
-        }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          output.writeBool(2, isLocation_);
-        }
-        if (((bitField0_ & 0x00000004) != 0)) {
-          output.writeBool(3, latitude_);
-        }
-        if (((bitField0_ & 0x00000008) != 0)) {
-          output.writeBool(4, longitude_);
-        }
-        if (((bitField0_ & 0x00000010) != 0)) {
-          output.writeBool(5, isRunning_);
-        }
-        if (((bitField0_ & 0x00000020) != 0)) {
-          output.writeBool(6, encrypt_);
-        }
-        if (((bitField0_ & 0x00000040) != 0)) {
-          output.writeInt32(7, goodsStatus_);
-        }
-        if (((bitField0_ & 0x00000080) != 0)) {
-          output.writeBool(8, vehicleOil_);
-        }
-        if (((bitField0_ & 0x00000100) != 0)) {
-          output.writeBool(9, vehicleCircut_);
-        }
-        if (((bitField0_ & 0x00000200) != 0)) {
-          output.writeBool(10, doorLock_);
-        }
-        if (((bitField0_ & 0x00000400) != 0)) {
-          output.writeBool(11, frontDoorOpen_);
-        }
-        if (((bitField0_ & 0x00000800) != 0)) {
-          output.writeBool(12, middleDoorOpen_);
-        }
-        if (((bitField0_ & 0x00001000) != 0)) {
-          output.writeBool(13, endDoorOpen_);
-        }
-        if (((bitField0_ & 0x00002000) != 0)) {
-          output.writeBool(14, driverDoorOpen_);
-        }
-        if (((bitField0_ & 0x00004000) != 0)) {
-          output.writeBool(15, otherDoorOpen_);
-        }
-        if (((bitField0_ & 0x00008000) != 0)) {
-          output.writeBool(16, gPS_);
-        }
-        if (((bitField0_ & 0x00010000) != 0)) {
-          output.writeBool(17, beidou_);
-        }
-        if (((bitField0_ & 0x00020000) != 0)) {
-          output.writeBool(18, gLONASS_);
-        }
-        if (((bitField0_ & 0x00040000) != 0)) {
-          output.writeBool(19, galileo_);
-        }
-        unknownFields.writeTo(output);
-      }
-
-      @java.lang.Override
-      public int getSerializedSize() {
-        int size = memoizedSize;
-        if (size != -1) return size;
-
-        size = 0;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(1, aCC_);
-        }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(2, isLocation_);
-        }
-        if (((bitField0_ & 0x00000004) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(3, latitude_);
-        }
-        if (((bitField0_ & 0x00000008) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(4, longitude_);
-        }
-        if (((bitField0_ & 0x00000010) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(5, isRunning_);
-        }
-        if (((bitField0_ & 0x00000020) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(6, encrypt_);
-        }
-        if (((bitField0_ & 0x00000040) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeInt32Size(7, goodsStatus_);
-        }
-        if (((bitField0_ & 0x00000080) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(8, vehicleOil_);
-        }
-        if (((bitField0_ & 0x00000100) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(9, vehicleCircut_);
-        }
-        if (((bitField0_ & 0x00000200) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(10, doorLock_);
-        }
-        if (((bitField0_ & 0x00000400) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(11, frontDoorOpen_);
-        }
-        if (((bitField0_ & 0x00000800) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(12, middleDoorOpen_);
-        }
-        if (((bitField0_ & 0x00001000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(13, endDoorOpen_);
-        }
-        if (((bitField0_ & 0x00002000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(14, driverDoorOpen_);
-        }
-        if (((bitField0_ & 0x00004000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(15, otherDoorOpen_);
-        }
-        if (((bitField0_ & 0x00008000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(16, gPS_);
-        }
-        if (((bitField0_ & 0x00010000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(17, beidou_);
-        }
-        if (((bitField0_ & 0x00020000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(18, gLONASS_);
-        }
-        if (((bitField0_ & 0x00040000) != 0)) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeBoolSize(19, galileo_);
-        }
-        size += unknownFields.getSerializedSize();
-        memoizedSize = size;
-        return size;
-      }
-
-      @java.lang.Override
-      public boolean equals(final java.lang.Object obj) {
-        if (obj == this) {
-         return true;
-        }
-        if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.Status)) {
-          return super.equals(obj);
-        }
-        cn.edu.sdu.jt808.protobuf.ServerData.Location.Status other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.Status) obj;
-
-        if (hasACC() != other.hasACC()) return false;
-        if (hasACC()) {
-          if (getACC()
-              != other.getACC()) return false;
-        }
-        if (hasIsLocation() != other.hasIsLocation()) return false;
-        if (hasIsLocation()) {
-          if (getIsLocation()
-              != other.getIsLocation()) return false;
-        }
-        if (hasLatitude() != other.hasLatitude()) return false;
-        if (hasLatitude()) {
-          if (getLatitude()
-              != other.getLatitude()) return false;
-        }
-        if (hasLongitude() != other.hasLongitude()) return false;
-        if (hasLongitude()) {
-          if (getLongitude()
-              != other.getLongitude()) return false;
-        }
-        if (hasIsRunning() != other.hasIsRunning()) return false;
-        if (hasIsRunning()) {
-          if (getIsRunning()
-              != other.getIsRunning()) return false;
-        }
-        if (hasEncrypt() != other.hasEncrypt()) return false;
-        if (hasEncrypt()) {
-          if (getEncrypt()
-              != other.getEncrypt()) return false;
-        }
-        if (hasGoodsStatus() != other.hasGoodsStatus()) return false;
-        if (hasGoodsStatus()) {
-          if (getGoodsStatus()
-              != other.getGoodsStatus()) return false;
-        }
-        if (hasVehicleOil() != other.hasVehicleOil()) return false;
-        if (hasVehicleOil()) {
-          if (getVehicleOil()
-              != other.getVehicleOil()) return false;
-        }
-        if (hasVehicleCircut() != other.hasVehicleCircut()) return false;
-        if (hasVehicleCircut()) {
-          if (getVehicleCircut()
-              != other.getVehicleCircut()) return false;
-        }
-        if (hasDoorLock() != other.hasDoorLock()) return false;
-        if (hasDoorLock()) {
-          if (getDoorLock()
-              != other.getDoorLock()) return false;
-        }
-        if (hasFrontDoorOpen() != other.hasFrontDoorOpen()) return false;
-        if (hasFrontDoorOpen()) {
-          if (getFrontDoorOpen()
-              != other.getFrontDoorOpen()) return false;
-        }
-        if (hasMiddleDoorOpen() != other.hasMiddleDoorOpen()) return false;
-        if (hasMiddleDoorOpen()) {
-          if (getMiddleDoorOpen()
-              != other.getMiddleDoorOpen()) return false;
-        }
-        if (hasEndDoorOpen() != other.hasEndDoorOpen()) return false;
-        if (hasEndDoorOpen()) {
-          if (getEndDoorOpen()
-              != other.getEndDoorOpen()) return false;
-        }
-        if (hasDriverDoorOpen() != other.hasDriverDoorOpen()) return false;
-        if (hasDriverDoorOpen()) {
-          if (getDriverDoorOpen()
-              != other.getDriverDoorOpen()) return false;
-        }
-        if (hasOtherDoorOpen() != other.hasOtherDoorOpen()) return false;
-        if (hasOtherDoorOpen()) {
-          if (getOtherDoorOpen()
-              != other.getOtherDoorOpen()) return false;
-        }
-        if (hasGPS() != other.hasGPS()) return false;
-        if (hasGPS()) {
-          if (getGPS()
-              != other.getGPS()) return false;
-        }
-        if (hasBeidou() != other.hasBeidou()) return false;
-        if (hasBeidou()) {
-          if (getBeidou()
-              != other.getBeidou()) return false;
-        }
-        if (hasGLONASS() != other.hasGLONASS()) return false;
-        if (hasGLONASS()) {
-          if (getGLONASS()
-              != other.getGLONASS()) return false;
-        }
-        if (hasGalileo() != other.hasGalileo()) return false;
-        if (hasGalileo()) {
-          if (getGalileo()
-              != other.getGalileo()) return false;
-        }
-        if (!unknownFields.equals(other.unknownFields)) return false;
-        return true;
-      }
-
-      @java.lang.Override
-      public int hashCode() {
-        if (memoizedHashCode != 0) {
-          return memoizedHashCode;
-        }
-        int hash = 41;
-        hash = (19 * hash) + getDescriptor().hashCode();
-        if (hasACC()) {
-          hash = (37 * hash) + ACC_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getACC());
-        }
-        if (hasIsLocation()) {
-          hash = (37 * hash) + ISLOCATION_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getIsLocation());
-        }
-        if (hasLatitude()) {
-          hash = (37 * hash) + LATITUDE_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getLatitude());
-        }
-        if (hasLongitude()) {
-          hash = (37 * hash) + LONGITUDE_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getLongitude());
-        }
-        if (hasIsRunning()) {
-          hash = (37 * hash) + ISRUNNING_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getIsRunning());
-        }
-        if (hasEncrypt()) {
-          hash = (37 * hash) + ENCRYPT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getEncrypt());
-        }
-        if (hasGoodsStatus()) {
-          hash = (37 * hash) + GOODSSTATUS_FIELD_NUMBER;
-          hash = (53 * hash) + getGoodsStatus();
-        }
-        if (hasVehicleOil()) {
-          hash = (37 * hash) + VEHICLEOIL_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getVehicleOil());
-        }
-        if (hasVehicleCircut()) {
-          hash = (37 * hash) + VEHICLECIRCUT_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getVehicleCircut());
-        }
-        if (hasDoorLock()) {
-          hash = (37 * hash) + DOORLOCK_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getDoorLock());
-        }
-        if (hasFrontDoorOpen()) {
-          hash = (37 * hash) + FRONTDOOROPEN_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getFrontDoorOpen());
-        }
-        if (hasMiddleDoorOpen()) {
-          hash = (37 * hash) + MIDDLEDOOROPEN_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getMiddleDoorOpen());
-        }
-        if (hasEndDoorOpen()) {
-          hash = (37 * hash) + ENDDOOROPEN_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getEndDoorOpen());
-        }
-        if (hasDriverDoorOpen()) {
-          hash = (37 * hash) + DRIVERDOOROPEN_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getDriverDoorOpen());
-        }
-        if (hasOtherDoorOpen()) {
-          hash = (37 * hash) + OTHERDOOROPEN_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getOtherDoorOpen());
-        }
-        if (hasGPS()) {
-          hash = (37 * hash) + GPS_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getGPS());
-        }
-        if (hasBeidou()) {
-          hash = (37 * hash) + BEIDOU_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getBeidou());
-        }
-        if (hasGLONASS()) {
-          hash = (37 * hash) + GLONASS_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getGLONASS());
-        }
-        if (hasGalileo()) {
-          hash = (37 * hash) + GALILEO_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-              getGalileo());
-        }
-        hash = (29 * hash) + unknownFields.hashCode();
-        memoizedHashCode = hash;
-        return hash;
-      }
-
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
-      }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
-      }
-
-      @java.lang.Override
-      public Builder newBuilderForType() { return newBuilder(); }
-      public static Builder newBuilder() {
-        return DEFAULT_INSTANCE.toBuilder();
-      }
-      public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.Status prototype) {
-        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-      }
-      @java.lang.Override
-      public Builder toBuilder() {
-        return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
-      }
-
-      @java.lang.Override
-      protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        Builder builder = new Builder(parent);
-        return builder;
-      }
-      /**
-       * Protobuf type {@code protobuf.Location.Status}
-       */
-      public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:protobuf.Location.Status)
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.StatusOrBuilder {
-        public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_Status_descriptor;
-        }
-
-        @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_Status_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.Status.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.Status.Builder.class);
-        }
-
-        // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.Status.newBuilder()
-        private Builder() {
-          maybeForceBuilderInitialization();
-        }
-
-        private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-          super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
-        }
-        @java.lang.Override
-        public Builder clear() {
-          super.clear();
-          aCC_ = false;
-          bitField0_ = (bitField0_ & ~0x00000001);
-          isLocation_ = false;
-          bitField0_ = (bitField0_ & ~0x00000002);
-          latitude_ = false;
-          bitField0_ = (bitField0_ & ~0x00000004);
-          longitude_ = false;
-          bitField0_ = (bitField0_ & ~0x00000008);
-          isRunning_ = false;
-          bitField0_ = (bitField0_ & ~0x00000010);
-          encrypt_ = false;
-          bitField0_ = (bitField0_ & ~0x00000020);
-          goodsStatus_ = 0;
-          bitField0_ = (bitField0_ & ~0x00000040);
-          vehicleOil_ = false;
-          bitField0_ = (bitField0_ & ~0x00000080);
-          vehicleCircut_ = false;
-          bitField0_ = (bitField0_ & ~0x00000100);
-          doorLock_ = false;
-          bitField0_ = (bitField0_ & ~0x00000200);
-          frontDoorOpen_ = false;
-          bitField0_ = (bitField0_ & ~0x00000400);
-          middleDoorOpen_ = false;
-          bitField0_ = (bitField0_ & ~0x00000800);
-          endDoorOpen_ = false;
-          bitField0_ = (bitField0_ & ~0x00001000);
-          driverDoorOpen_ = false;
-          bitField0_ = (bitField0_ & ~0x00002000);
-          otherDoorOpen_ = false;
-          bitField0_ = (bitField0_ & ~0x00004000);
-          gPS_ = false;
-          bitField0_ = (bitField0_ & ~0x00008000);
-          beidou_ = false;
-          bitField0_ = (bitField0_ & ~0x00010000);
-          gLONASS_ = false;
-          bitField0_ = (bitField0_ & ~0x00020000);
-          galileo_ = false;
-          bitField0_ = (bitField0_ & ~0x00040000);
-          return this;
-        }
-
-        @java.lang.Override
-        public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_Status_descriptor;
-        }
-
-        @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.Status getDefaultInstanceForType() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.Location.Status.getDefaultInstance();
-        }
-
-        @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.Status build() {
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.Status result = buildPartial();
-          if (!result.isInitialized()) {
-            throw newUninitializedMessageException(result);
-          }
-          return result;
-        }
-
-        @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.Status buildPartial() {
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.Status result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.Status(this);
-          int from_bitField0_ = bitField0_;
-          int to_bitField0_ = 0;
-          if (((from_bitField0_ & 0x00000001) != 0)) {
-            result.aCC_ = aCC_;
-            to_bitField0_ |= 0x00000001;
-          }
-          if (((from_bitField0_ & 0x00000002) != 0)) {
-            result.isLocation_ = isLocation_;
-            to_bitField0_ |= 0x00000002;
-          }
-          if (((from_bitField0_ & 0x00000004) != 0)) {
-            result.latitude_ = latitude_;
-            to_bitField0_ |= 0x00000004;
-          }
-          if (((from_bitField0_ & 0x00000008) != 0)) {
-            result.longitude_ = longitude_;
-            to_bitField0_ |= 0x00000008;
-          }
-          if (((from_bitField0_ & 0x00000010) != 0)) {
-            result.isRunning_ = isRunning_;
-            to_bitField0_ |= 0x00000010;
-          }
-          if (((from_bitField0_ & 0x00000020) != 0)) {
-            result.encrypt_ = encrypt_;
-            to_bitField0_ |= 0x00000020;
-          }
-          if (((from_bitField0_ & 0x00000040) != 0)) {
-            result.goodsStatus_ = goodsStatus_;
-            to_bitField0_ |= 0x00000040;
-          }
-          if (((from_bitField0_ & 0x00000080) != 0)) {
-            result.vehicleOil_ = vehicleOil_;
-            to_bitField0_ |= 0x00000080;
-          }
-          if (((from_bitField0_ & 0x00000100) != 0)) {
-            result.vehicleCircut_ = vehicleCircut_;
-            to_bitField0_ |= 0x00000100;
-          }
-          if (((from_bitField0_ & 0x00000200) != 0)) {
-            result.doorLock_ = doorLock_;
-            to_bitField0_ |= 0x00000200;
-          }
-          if (((from_bitField0_ & 0x00000400) != 0)) {
-            result.frontDoorOpen_ = frontDoorOpen_;
-            to_bitField0_ |= 0x00000400;
-          }
-          if (((from_bitField0_ & 0x00000800) != 0)) {
-            result.middleDoorOpen_ = middleDoorOpen_;
-            to_bitField0_ |= 0x00000800;
-          }
-          if (((from_bitField0_ & 0x00001000) != 0)) {
-            result.endDoorOpen_ = endDoorOpen_;
-            to_bitField0_ |= 0x00001000;
-          }
-          if (((from_bitField0_ & 0x00002000) != 0)) {
-            result.driverDoorOpen_ = driverDoorOpen_;
-            to_bitField0_ |= 0x00002000;
-          }
-          if (((from_bitField0_ & 0x00004000) != 0)) {
-            result.otherDoorOpen_ = otherDoorOpen_;
-            to_bitField0_ |= 0x00004000;
-          }
-          if (((from_bitField0_ & 0x00008000) != 0)) {
-            result.gPS_ = gPS_;
-            to_bitField0_ |= 0x00008000;
-          }
-          if (((from_bitField0_ & 0x00010000) != 0)) {
-            result.beidou_ = beidou_;
-            to_bitField0_ |= 0x00010000;
-          }
-          if (((from_bitField0_ & 0x00020000) != 0)) {
-            result.gLONASS_ = gLONASS_;
-            to_bitField0_ |= 0x00020000;
-          }
-          if (((from_bitField0_ & 0x00040000) != 0)) {
-            result.galileo_ = galileo_;
-            to_bitField0_ |= 0x00040000;
-          }
-          result.bitField0_ = to_bitField0_;
-          onBuilt();
-          return result;
-        }
-
-        @java.lang.Override
-        public Builder clone() {
-          return super.clone();
-        }
-        @java.lang.Override
-        public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
-          return super.setField(field, value);
-        }
-        @java.lang.Override
-        public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
-          return super.clearField(field);
-        }
-        @java.lang.Override
-        public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-          return super.clearOneof(oneof);
-        }
-        @java.lang.Override
-        public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
-          return super.setRepeatedField(field, index, value);
-        }
-        @java.lang.Override
-        public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
-          return super.addRepeatedField(field, value);
-        }
-        @java.lang.Override
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.Status) {
-            return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.Status)other);
-          } else {
-            super.mergeFrom(other);
-            return this;
-          }
-        }
-
-        public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.Status other) {
-          if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.Status.getDefaultInstance()) return this;
-          if (other.hasACC()) {
-            setACC(other.getACC());
-          }
-          if (other.hasIsLocation()) {
-            setIsLocation(other.getIsLocation());
-          }
-          if (other.hasLatitude()) {
-            setLatitude(other.getLatitude());
-          }
-          if (other.hasLongitude()) {
-            setLongitude(other.getLongitude());
-          }
-          if (other.hasIsRunning()) {
-            setIsRunning(other.getIsRunning());
-          }
-          if (other.hasEncrypt()) {
-            setEncrypt(other.getEncrypt());
-          }
-          if (other.hasGoodsStatus()) {
-            setGoodsStatus(other.getGoodsStatus());
-          }
-          if (other.hasVehicleOil()) {
-            setVehicleOil(other.getVehicleOil());
-          }
-          if (other.hasVehicleCircut()) {
-            setVehicleCircut(other.getVehicleCircut());
-          }
-          if (other.hasDoorLock()) {
-            setDoorLock(other.getDoorLock());
-          }
-          if (other.hasFrontDoorOpen()) {
-            setFrontDoorOpen(other.getFrontDoorOpen());
-          }
-          if (other.hasMiddleDoorOpen()) {
-            setMiddleDoorOpen(other.getMiddleDoorOpen());
-          }
-          if (other.hasEndDoorOpen()) {
-            setEndDoorOpen(other.getEndDoorOpen());
-          }
-          if (other.hasDriverDoorOpen()) {
-            setDriverDoorOpen(other.getDriverDoorOpen());
-          }
-          if (other.hasOtherDoorOpen()) {
-            setOtherDoorOpen(other.getOtherDoorOpen());
-          }
-          if (other.hasGPS()) {
-            setGPS(other.getGPS());
-          }
-          if (other.hasBeidou()) {
-            setBeidou(other.getBeidou());
-          }
-          if (other.hasGLONASS()) {
-            setGLONASS(other.getGLONASS());
-          }
-          if (other.hasGalileo()) {
-            setGalileo(other.getGalileo());
-          }
-          this.mergeUnknownFields(other.unknownFields);
-          onChanged();
-          return this;
-        }
-
-        @java.lang.Override
-        public final boolean isInitialized() {
-          return true;
-        }
-
-        @java.lang.Override
-        public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.Status parsedMessage = null;
-          try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.Status) e.getUnfinishedMessage();
-            throw e.unwrapIOException();
-          } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
-          return this;
-        }
-        private int bitField0_;
-
-        private boolean aCC_ ;
-        /**
-         * <code>optional bool ACC = 1;</code>
-         */
-        public boolean hasACC() {
-          return ((bitField0_ & 0x00000001) != 0);
-        }
-        /**
-         * <code>optional bool ACC = 1;</code>
-         */
-        public boolean getACC() {
-          return aCC_;
-        }
-        /**
-         * <code>optional bool ACC = 1;</code>
-         */
-        public Builder setACC(boolean value) {
-          bitField0_ |= 0x00000001;
-          aCC_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool ACC = 1;</code>
-         */
-        public Builder clearACC() {
-          bitField0_ = (bitField0_ & ~0x00000001);
-          aCC_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean isLocation_ ;
-        /**
-         * <code>optional bool isLocation = 2;</code>
-         */
-        public boolean hasIsLocation() {
-          return ((bitField0_ & 0x00000002) != 0);
-        }
-        /**
-         * <code>optional bool isLocation = 2;</code>
-         */
-        public boolean getIsLocation() {
-          return isLocation_;
-        }
-        /**
-         * <code>optional bool isLocation = 2;</code>
-         */
-        public Builder setIsLocation(boolean value) {
-          bitField0_ |= 0x00000002;
-          isLocation_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool isLocation = 2;</code>
-         */
-        public Builder clearIsLocation() {
-          bitField0_ = (bitField0_ & ~0x00000002);
-          isLocation_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean latitude_ ;
-        /**
-         * <code>optional bool latitude = 3;</code>
-         */
-        public boolean hasLatitude() {
-          return ((bitField0_ & 0x00000004) != 0);
-        }
-        /**
-         * <code>optional bool latitude = 3;</code>
-         */
-        public boolean getLatitude() {
-          return latitude_;
-        }
-        /**
-         * <code>optional bool latitude = 3;</code>
-         */
-        public Builder setLatitude(boolean value) {
-          bitField0_ |= 0x00000004;
-          latitude_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool latitude = 3;</code>
-         */
-        public Builder clearLatitude() {
-          bitField0_ = (bitField0_ & ~0x00000004);
-          latitude_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean longitude_ ;
-        /**
-         * <code>optional bool longitude = 4;</code>
-         */
-        public boolean hasLongitude() {
-          return ((bitField0_ & 0x00000008) != 0);
-        }
-        /**
-         * <code>optional bool longitude = 4;</code>
-         */
-        public boolean getLongitude() {
-          return longitude_;
-        }
-        /**
-         * <code>optional bool longitude = 4;</code>
-         */
-        public Builder setLongitude(boolean value) {
-          bitField0_ |= 0x00000008;
-          longitude_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool longitude = 4;</code>
-         */
-        public Builder clearLongitude() {
-          bitField0_ = (bitField0_ & ~0x00000008);
-          longitude_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean isRunning_ ;
-        /**
-         * <code>optional bool isRunning = 5;</code>
-         */
-        public boolean hasIsRunning() {
-          return ((bitField0_ & 0x00000010) != 0);
-        }
-        /**
-         * <code>optional bool isRunning = 5;</code>
-         */
-        public boolean getIsRunning() {
-          return isRunning_;
-        }
-        /**
-         * <code>optional bool isRunning = 5;</code>
-         */
-        public Builder setIsRunning(boolean value) {
-          bitField0_ |= 0x00000010;
-          isRunning_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool isRunning = 5;</code>
-         */
-        public Builder clearIsRunning() {
-          bitField0_ = (bitField0_ & ~0x00000010);
-          isRunning_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean encrypt_ ;
-        /**
-         * <code>optional bool encrypt = 6;</code>
-         */
-        public boolean hasEncrypt() {
-          return ((bitField0_ & 0x00000020) != 0);
-        }
-        /**
-         * <code>optional bool encrypt = 6;</code>
-         */
-        public boolean getEncrypt() {
-          return encrypt_;
-        }
-        /**
-         * <code>optional bool encrypt = 6;</code>
-         */
-        public Builder setEncrypt(boolean value) {
-          bitField0_ |= 0x00000020;
-          encrypt_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool encrypt = 6;</code>
-         */
-        public Builder clearEncrypt() {
-          bitField0_ = (bitField0_ & ~0x00000020);
-          encrypt_ = false;
-          onChanged();
-          return this;
-        }
-
-        private int goodsStatus_ ;
-        /**
-         * <code>optional int32 goodsStatus = 7;</code>
-         */
-        public boolean hasGoodsStatus() {
-          return ((bitField0_ & 0x00000040) != 0);
-        }
-        /**
-         * <code>optional int32 goodsStatus = 7;</code>
-         */
-        public int getGoodsStatus() {
-          return goodsStatus_;
-        }
-        /**
-         * <code>optional int32 goodsStatus = 7;</code>
-         */
-        public Builder setGoodsStatus(int value) {
-          bitField0_ |= 0x00000040;
-          goodsStatus_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional int32 goodsStatus = 7;</code>
-         */
-        public Builder clearGoodsStatus() {
-          bitField0_ = (bitField0_ & ~0x00000040);
-          goodsStatus_ = 0;
-          onChanged();
-          return this;
-        }
-
-        private boolean vehicleOil_ ;
-        /**
-         * <code>optional bool vehicleOil = 8;</code>
-         */
-        public boolean hasVehicleOil() {
-          return ((bitField0_ & 0x00000080) != 0);
-        }
-        /**
-         * <code>optional bool vehicleOil = 8;</code>
-         */
-        public boolean getVehicleOil() {
-          return vehicleOil_;
-        }
-        /**
-         * <code>optional bool vehicleOil = 8;</code>
-         */
-        public Builder setVehicleOil(boolean value) {
-          bitField0_ |= 0x00000080;
-          vehicleOil_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool vehicleOil = 8;</code>
-         */
-        public Builder clearVehicleOil() {
-          bitField0_ = (bitField0_ & ~0x00000080);
-          vehicleOil_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean vehicleCircut_ ;
-        /**
-         * <code>optional bool vehicleCircut = 9;</code>
-         */
-        public boolean hasVehicleCircut() {
-          return ((bitField0_ & 0x00000100) != 0);
-        }
-        /**
-         * <code>optional bool vehicleCircut = 9;</code>
-         */
-        public boolean getVehicleCircut() {
-          return vehicleCircut_;
-        }
-        /**
-         * <code>optional bool vehicleCircut = 9;</code>
-         */
-        public Builder setVehicleCircut(boolean value) {
-          bitField0_ |= 0x00000100;
-          vehicleCircut_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool vehicleCircut = 9;</code>
-         */
-        public Builder clearVehicleCircut() {
-          bitField0_ = (bitField0_ & ~0x00000100);
-          vehicleCircut_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean doorLock_ ;
-        /**
-         * <code>optional bool doorLock = 10;</code>
-         */
-        public boolean hasDoorLock() {
-          return ((bitField0_ & 0x00000200) != 0);
-        }
-        /**
-         * <code>optional bool doorLock = 10;</code>
-         */
-        public boolean getDoorLock() {
-          return doorLock_;
-        }
-        /**
-         * <code>optional bool doorLock = 10;</code>
-         */
-        public Builder setDoorLock(boolean value) {
-          bitField0_ |= 0x00000200;
-          doorLock_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool doorLock = 10;</code>
-         */
-        public Builder clearDoorLock() {
-          bitField0_ = (bitField0_ & ~0x00000200);
-          doorLock_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean frontDoorOpen_ ;
-        /**
-         * <code>optional bool frontDoorOpen = 11;</code>
-         */
-        public boolean hasFrontDoorOpen() {
-          return ((bitField0_ & 0x00000400) != 0);
-        }
-        /**
-         * <code>optional bool frontDoorOpen = 11;</code>
-         */
-        public boolean getFrontDoorOpen() {
-          return frontDoorOpen_;
-        }
-        /**
-         * <code>optional bool frontDoorOpen = 11;</code>
-         */
-        public Builder setFrontDoorOpen(boolean value) {
-          bitField0_ |= 0x00000400;
-          frontDoorOpen_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool frontDoorOpen = 11;</code>
-         */
-        public Builder clearFrontDoorOpen() {
-          bitField0_ = (bitField0_ & ~0x00000400);
-          frontDoorOpen_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean middleDoorOpen_ ;
-        /**
-         * <code>optional bool middleDoorOpen = 12;</code>
-         */
-        public boolean hasMiddleDoorOpen() {
-          return ((bitField0_ & 0x00000800) != 0);
-        }
-        /**
-         * <code>optional bool middleDoorOpen = 12;</code>
-         */
-        public boolean getMiddleDoorOpen() {
-          return middleDoorOpen_;
-        }
-        /**
-         * <code>optional bool middleDoorOpen = 12;</code>
-         */
-        public Builder setMiddleDoorOpen(boolean value) {
-          bitField0_ |= 0x00000800;
-          middleDoorOpen_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool middleDoorOpen = 12;</code>
-         */
-        public Builder clearMiddleDoorOpen() {
-          bitField0_ = (bitField0_ & ~0x00000800);
-          middleDoorOpen_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean endDoorOpen_ ;
-        /**
-         * <code>optional bool endDoorOpen = 13;</code>
-         */
-        public boolean hasEndDoorOpen() {
-          return ((bitField0_ & 0x00001000) != 0);
-        }
-        /**
-         * <code>optional bool endDoorOpen = 13;</code>
-         */
-        public boolean getEndDoorOpen() {
-          return endDoorOpen_;
-        }
-        /**
-         * <code>optional bool endDoorOpen = 13;</code>
-         */
-        public Builder setEndDoorOpen(boolean value) {
-          bitField0_ |= 0x00001000;
-          endDoorOpen_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool endDoorOpen = 13;</code>
-         */
-        public Builder clearEndDoorOpen() {
-          bitField0_ = (bitField0_ & ~0x00001000);
-          endDoorOpen_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean driverDoorOpen_ ;
-        /**
-         * <code>optional bool driverDoorOpen = 14;</code>
-         */
-        public boolean hasDriverDoorOpen() {
-          return ((bitField0_ & 0x00002000) != 0);
-        }
-        /**
-         * <code>optional bool driverDoorOpen = 14;</code>
-         */
-        public boolean getDriverDoorOpen() {
-          return driverDoorOpen_;
-        }
-        /**
-         * <code>optional bool driverDoorOpen = 14;</code>
-         */
-        public Builder setDriverDoorOpen(boolean value) {
-          bitField0_ |= 0x00002000;
-          driverDoorOpen_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool driverDoorOpen = 14;</code>
-         */
-        public Builder clearDriverDoorOpen() {
-          bitField0_ = (bitField0_ & ~0x00002000);
-          driverDoorOpen_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean otherDoorOpen_ ;
-        /**
-         * <code>optional bool otherDoorOpen = 15;</code>
-         */
-        public boolean hasOtherDoorOpen() {
-          return ((bitField0_ & 0x00004000) != 0);
-        }
-        /**
-         * <code>optional bool otherDoorOpen = 15;</code>
-         */
-        public boolean getOtherDoorOpen() {
-          return otherDoorOpen_;
-        }
-        /**
-         * <code>optional bool otherDoorOpen = 15;</code>
-         */
-        public Builder setOtherDoorOpen(boolean value) {
-          bitField0_ |= 0x00004000;
-          otherDoorOpen_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool otherDoorOpen = 15;</code>
-         */
-        public Builder clearOtherDoorOpen() {
-          bitField0_ = (bitField0_ & ~0x00004000);
-          otherDoorOpen_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean gPS_ ;
-        /**
-         * <code>optional bool GPS = 16;</code>
-         */
-        public boolean hasGPS() {
-          return ((bitField0_ & 0x00008000) != 0);
-        }
-        /**
-         * <code>optional bool GPS = 16;</code>
-         */
-        public boolean getGPS() {
-          return gPS_;
-        }
-        /**
-         * <code>optional bool GPS = 16;</code>
-         */
-        public Builder setGPS(boolean value) {
-          bitField0_ |= 0x00008000;
-          gPS_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool GPS = 16;</code>
-         */
-        public Builder clearGPS() {
-          bitField0_ = (bitField0_ & ~0x00008000);
-          gPS_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean beidou_ ;
-        /**
-         * <code>optional bool beidou = 17;</code>
-         */
-        public boolean hasBeidou() {
-          return ((bitField0_ & 0x00010000) != 0);
-        }
-        /**
-         * <code>optional bool beidou = 17;</code>
-         */
-        public boolean getBeidou() {
-          return beidou_;
-        }
-        /**
-         * <code>optional bool beidou = 17;</code>
-         */
-        public Builder setBeidou(boolean value) {
-          bitField0_ |= 0x00010000;
-          beidou_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool beidou = 17;</code>
-         */
-        public Builder clearBeidou() {
-          bitField0_ = (bitField0_ & ~0x00010000);
-          beidou_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean gLONASS_ ;
-        /**
-         * <code>optional bool GLONASS = 18;</code>
-         */
-        public boolean hasGLONASS() {
-          return ((bitField0_ & 0x00020000) != 0);
-        }
-        /**
-         * <code>optional bool GLONASS = 18;</code>
-         */
-        public boolean getGLONASS() {
-          return gLONASS_;
-        }
-        /**
-         * <code>optional bool GLONASS = 18;</code>
-         */
-        public Builder setGLONASS(boolean value) {
-          bitField0_ |= 0x00020000;
-          gLONASS_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool GLONASS = 18;</code>
-         */
-        public Builder clearGLONASS() {
-          bitField0_ = (bitField0_ & ~0x00020000);
-          gLONASS_ = false;
-          onChanged();
-          return this;
-        }
-
-        private boolean galileo_ ;
-        /**
-         * <code>optional bool Galileo = 19;</code>
-         */
-        public boolean hasGalileo() {
-          return ((bitField0_ & 0x00040000) != 0);
-        }
-        /**
-         * <code>optional bool Galileo = 19;</code>
-         */
-        public boolean getGalileo() {
-          return galileo_;
-        }
-        /**
-         * <code>optional bool Galileo = 19;</code>
-         */
-        public Builder setGalileo(boolean value) {
-          bitField0_ |= 0x00040000;
-          galileo_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>optional bool Galileo = 19;</code>
-         */
-        public Builder clearGalileo() {
-          bitField0_ = (bitField0_ & ~0x00040000);
-          galileo_ = false;
-          onChanged();
-          return this;
-        }
-        @java.lang.Override
-        public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.setUnknownFields(unknownFields);
-        }
-
-        @java.lang.Override
-        public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.mergeUnknownFields(unknownFields);
-        }
-
-
-        // @@protoc_insertion_point(builder_scope:protobuf.Location.Status)
-      }
-
-      // @@protoc_insertion_point(class_scope:protobuf.Location.Status)
-      private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.Status DEFAULT_INSTANCE;
-      static {
-        DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.Status();
-      }
-
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.Status getDefaultInstance() {
-        return DEFAULT_INSTANCE;
-      }
-
-      @java.lang.Deprecated public static final com.google.protobuf.Parser<Status>
-          PARSER = new com.google.protobuf.AbstractParser<Status>() {
-        @java.lang.Override
-        public Status parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Status(input, extensionRegistry);
-        }
-      };
-
-      public static com.google.protobuf.Parser<Status> parser() {
-        return PARSER;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Parser<Status> getParserForType() {
-        return PARSER;
-      }
-
-      @java.lang.Override
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.Status getDefaultInstanceForType() {
-        return DEFAULT_INSTANCE;
-      }
-
-    }
-
-    public interface TerminalExtraLocationMsgOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg)
+    public interface ExtraLocationOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -53876,69 +49551,69 @@ public final class ServerData {
       int getWarningId();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
        */
       boolean hasSpeedingExtraData();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData getSpeedingExtraData();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData getSpeedingExtraData();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraDataOrBuilder getSpeedingExtraDataOrBuilder();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraDataOrBuilder getSpeedingExtraDataOrBuilder();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
        */
       boolean hasLocationExtraData();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData getLocationExtraData();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData getLocationExtraData();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraDataOrBuilder getLocationExtraDataOrBuilder();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraDataOrBuilder getLocationExtraDataOrBuilder();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
        */
       boolean hasLocationInfoExtraData();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData getLocationInfoExtraData();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData getLocationInfoExtraData();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraDataOrBuilder getLocationInfoExtraDataOrBuilder();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraDataOrBuilder getLocationInfoExtraDataOrBuilder();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
        */
       boolean hasExtraCarState();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState getExtraCarState();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState getExtraCarState();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarStateOrBuilder getExtraCarStateOrBuilder();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarStateOrBuilder getExtraCarStateOrBuilder();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
        */
       boolean hasIoState();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState getIoState();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState getIoState();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOStateOrBuilder getIoStateOrBuilder();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOStateOrBuilder getIoStateOrBuilder();
 
       /**
        * <code>optional int32 simulation = 10;</code>
@@ -53968,83 +49643,67 @@ public final class ServerData {
       int getSatellitesNum();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
+       * <code>optional int32 videoAlarm = 13;</code>
        */
       boolean hasVideoAlarm();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
+       * <code>optional int32 videoAlarm = 13;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm getVideoAlarm();
-      /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
-       */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarmOrBuilder getVideoAlarmOrBuilder();
+      int getVideoAlarm();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
+       * <code>optional int32 videoLostFlag = 14;</code>
        */
       boolean hasVideoLostFlag();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
+       * <code>optional int32 videoLostFlag = 14;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag getVideoLostFlag();
-      /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
-       */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlagOrBuilder getVideoLostFlagOrBuilder();
+      int getVideoLostFlag();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
+       * <code>optional int32 videoShelterFlag = 15;</code>
        */
       boolean hasVideoShelterFlag();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
+       * <code>optional int32 videoShelterFlag = 15;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag getVideoShelterFlag();
-      /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
-       */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlagOrBuilder getVideoShelterFlagOrBuilder();
+      int getVideoShelterFlag();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
+       * <code>optional int32 storageFaultFlag = 16;</code>
        */
       boolean hasStorageFaultFlag();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
+       * <code>optional int32 storageFaultFlag = 16;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag getStorageFaultFlag();
-      /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
-       */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlagOrBuilder getStorageFaultFlagOrBuilder();
+      int getStorageFaultFlag();
 
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
        */
       boolean hasExceptBehavior();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior getExceptBehavior();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior getExceptBehavior();
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
        */
-      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehaviorOrBuilder getExceptBehaviorOrBuilder();
+      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehaviorOrBuilder getExceptBehaviorOrBuilder();
     }
     /**
-     * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg}
+     * Protobuf type {@code protobuf.Location.ExtraLocation}
      */
-    public  static final class TerminalExtraLocationMsg extends
+    public  static final class ExtraLocation extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg)
-        TerminalExtraLocationMsgOrBuilder {
+        // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation)
+        ExtraLocationOrBuilder {
     private static final long serialVersionUID = 0L;
-      // Use TerminalExtraLocationMsg.newBuilder() to construct.
-      private TerminalExtraLocationMsg(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // Use ExtraLocation.newBuilder() to construct.
+      private ExtraLocation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
       }
-      private TerminalExtraLocationMsg() {
+      private ExtraLocation() {
       }
 
       @java.lang.Override
@@ -54052,7 +49711,7 @@ public final class ServerData {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private TerminalExtraLocationMsg(
+      private ExtraLocation(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -54092,11 +49751,11 @@ public final class ServerData {
                 break;
               }
               case 42: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.Builder subBuilder = null;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000010) != 0)) {
                   subBuilder = speedingExtraData_.toBuilder();
                 }
-                speedingExtraData_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.PARSER, extensionRegistry);
+                speedingExtraData_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(speedingExtraData_);
                   speedingExtraData_ = subBuilder.buildPartial();
@@ -54105,11 +49764,11 @@ public final class ServerData {
                 break;
               }
               case 50: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.Builder subBuilder = null;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000020) != 0)) {
                   subBuilder = locationExtraData_.toBuilder();
                 }
-                locationExtraData_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.PARSER, extensionRegistry);
+                locationExtraData_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(locationExtraData_);
                   locationExtraData_ = subBuilder.buildPartial();
@@ -54118,11 +49777,11 @@ public final class ServerData {
                 break;
               }
               case 58: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.Builder subBuilder = null;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000040) != 0)) {
                   subBuilder = locationInfoExtraData_.toBuilder();
                 }
-                locationInfoExtraData_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.PARSER, extensionRegistry);
+                locationInfoExtraData_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(locationInfoExtraData_);
                   locationInfoExtraData_ = subBuilder.buildPartial();
@@ -54131,11 +49790,11 @@ public final class ServerData {
                 break;
               }
               case 66: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.Builder subBuilder = null;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000080) != 0)) {
                   subBuilder = extraCarState_.toBuilder();
                 }
-                extraCarState_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.PARSER, extensionRegistry);
+                extraCarState_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(extraCarState_);
                   extraCarState_ = subBuilder.buildPartial();
@@ -54144,11 +49803,11 @@ public final class ServerData {
                 break;
               }
               case 74: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.Builder subBuilder = null;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.Builder subBuilder = null;
                 if (((bitField0_ & 0x00000100) != 0)) {
                   subBuilder = ioState_.toBuilder();
                 }
-                ioState_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.PARSER, extensionRegistry);
+                ioState_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(ioState_);
                   ioState_ = subBuilder.buildPartial();
@@ -54171,64 +49830,32 @@ public final class ServerData {
                 satellitesNum_ = input.readInt32();
                 break;
               }
-              case 106: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.Builder subBuilder = null;
-                if (((bitField0_ & 0x00001000) != 0)) {
-                  subBuilder = videoAlarm_.toBuilder();
-                }
-                videoAlarm_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.PARSER, extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(videoAlarm_);
-                  videoAlarm_ = subBuilder.buildPartial();
-                }
+              case 104: {
                 bitField0_ |= 0x00001000;
+                videoAlarm_ = input.readInt32();
                 break;
               }
-              case 114: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.Builder subBuilder = null;
-                if (((bitField0_ & 0x00002000) != 0)) {
-                  subBuilder = videoLostFlag_.toBuilder();
-                }
-                videoLostFlag_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.PARSER, extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(videoLostFlag_);
-                  videoLostFlag_ = subBuilder.buildPartial();
-                }
+              case 112: {
                 bitField0_ |= 0x00002000;
+                videoLostFlag_ = input.readInt32();
                 break;
               }
-              case 122: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.Builder subBuilder = null;
-                if (((bitField0_ & 0x00004000) != 0)) {
-                  subBuilder = videoShelterFlag_.toBuilder();
-                }
-                videoShelterFlag_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.PARSER, extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(videoShelterFlag_);
-                  videoShelterFlag_ = subBuilder.buildPartial();
-                }
+              case 120: {
                 bitField0_ |= 0x00004000;
+                videoShelterFlag_ = input.readInt32();
                 break;
               }
-              case 130: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.Builder subBuilder = null;
-                if (((bitField0_ & 0x00008000) != 0)) {
-                  subBuilder = storageFaultFlag_.toBuilder();
-                }
-                storageFaultFlag_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.PARSER, extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(storageFaultFlag_);
-                  storageFaultFlag_ = subBuilder.buildPartial();
-                }
+              case 128: {
                 bitField0_ |= 0x00008000;
+                storageFaultFlag_ = input.readInt32();
                 break;
               }
               case 138: {
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.Builder subBuilder = null;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.Builder subBuilder = null;
                 if (((bitField0_ & 0x00010000) != 0)) {
                   subBuilder = exceptBehavior_.toBuilder();
                 }
-                exceptBehavior_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.PARSER, extensionRegistry);
+                exceptBehavior_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.PARSER, extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(exceptBehavior_);
                   exceptBehavior_ = subBuilder.buildPartial();
@@ -54257,19 +49884,19 @@ public final class ServerData {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor;
+        return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_fieldAccessorTable
+        return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.Builder.class);
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder.class);
       }
 
       public interface SpeedingExtraDataOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData)
+          // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation.SpeedingExtraData)
           com.google.protobuf.MessageOrBuilder {
 
         /**
@@ -54296,11 +49923,11 @@ public final class ServerData {
             getLocationIdBytes();
       }
       /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData}
+       * Protobuf type {@code protobuf.Location.ExtraLocation.SpeedingExtraData}
        */
       public  static final class SpeedingExtraData extends
           com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData)
+          // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation.SpeedingExtraData)
           SpeedingExtraDataOrBuilder {
       private static final long serialVersionUID = 0L;
         // Use SpeedingExtraData.newBuilder() to construct.
@@ -54367,15 +49994,15 @@ public final class ServerData {
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_fieldAccessorTable
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.Builder.class);
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.Builder.class);
         }
 
         private int bitField0_;
@@ -54482,10 +50109,10 @@ public final class ServerData {
           if (obj == this) {
            return true;
           }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData)) {
+          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData)) {
             return super.equals(obj);
           }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData) obj;
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData) obj;
 
           if (hasLocationType() != other.hasLocationType()) return false;
           if (hasLocationType()) {
@@ -54521,69 +50148,69 @@ public final class ServerData {
           return hash;
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(byte[] data)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseDelimitedFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseDelimitedFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -54596,7 +50223,7 @@ public final class ServerData {
         public static Builder newBuilder() {
           return DEFAULT_INSTANCE.toBuilder();
         }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData prototype) {
+        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData prototype) {
           return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
         }
         @java.lang.Override
@@ -54612,26 +50239,26 @@ public final class ServerData {
           return builder;
         }
         /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData}
+         * Protobuf type {@code protobuf.Location.ExtraLocation.SpeedingExtraData}
          */
         public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraDataOrBuilder {
+            // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation.SpeedingExtraData)
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraDataOrBuilder {
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_fieldAccessorTable
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.Builder.class);
+                    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.Builder.class);
           }
 
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.newBuilder()
+          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.newBuilder()
           private Builder() {
             maybeForceBuilderInitialization();
           }
@@ -54659,17 +50286,17 @@ public final class ServerData {
           @java.lang.Override
           public com.google.protobuf.Descriptors.Descriptor
               getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_descriptor;
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.getDefaultInstance();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData getDefaultInstanceForType() {
+            return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.getDefaultInstance();
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData result = buildPartial();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData build() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData result = buildPartial();
             if (!result.isInitialized()) {
               throw newUninitializedMessageException(result);
             }
@@ -54677,8 +50304,8 @@ public final class ServerData {
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData(this);
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData buildPartial() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData(this);
             int from_bitField0_ = bitField0_;
             int to_bitField0_ = 0;
             if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -54728,16 +50355,16 @@ public final class ServerData {
           }
           @java.lang.Override
           public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData)other);
+            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData) {
+              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData)other);
             } else {
               super.mergeFrom(other);
               return this;
             }
           }
 
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.getDefaultInstance()) return this;
+          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData other) {
+            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.getDefaultInstance()) return this;
             if (other.hasLocationType()) {
               setLocationType(other.getLocationType());
             }
@@ -54761,11 +50388,11 @@ public final class ServerData {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData parsedMessage = null;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData parsedMessage = null;
             try {
               parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData) e.getUnfinishedMessage();
+              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
               if (parsedMessage != null) {
@@ -54896,16 +50523,16 @@ public final class ServerData {
           }
 
 
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData)
+          // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation.SpeedingExtraData)
         }
 
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData DEFAULT_INSTANCE;
+        // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation.SpeedingExtraData)
+        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData DEFAULT_INSTANCE;
         static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData();
+          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData();
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData getDefaultInstance() {
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData getDefaultInstance() {
           return DEFAULT_INSTANCE;
         }
 
@@ -54930,14 +50557,14 @@ public final class ServerData {
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData getDefaultInstanceForType() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData getDefaultInstanceForType() {
           return DEFAULT_INSTANCE;
         }
 
       }
 
       public interface LocationExtraDataOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.LocationExtraData)
+          // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation.LocationExtraData)
           com.google.protobuf.MessageOrBuilder {
 
         /**
@@ -54973,11 +50600,11 @@ public final class ServerData {
         int getDirection();
       }
       /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.LocationExtraData}
+       * Protobuf type {@code protobuf.Location.ExtraLocation.LocationExtraData}
        */
       public  static final class LocationExtraData extends
           com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.LocationExtraData)
+          // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation.LocationExtraData)
           LocationExtraDataOrBuilder {
       private static final long serialVersionUID = 0L;
         // Use LocationExtraData.newBuilder() to construct.
@@ -55049,15 +50676,15 @@ public final class ServerData {
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationExtraData_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_fieldAccessorTable
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationExtraData_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.Builder.class);
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.Builder.class);
         }
 
         private int bitField0_;
@@ -55186,10 +50813,10 @@ public final class ServerData {
           if (obj == this) {
            return true;
           }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData)) {
+          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData)) {
             return super.equals(obj);
           }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData) obj;
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData) obj;
 
           if (hasLocationType() != other.hasLocationType()) return false;
           if (hasLocationType()) {
@@ -55234,69 +50861,69 @@ public final class ServerData {
           return hash;
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(byte[] data)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseDelimitedFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseDelimitedFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -55309,7 +50936,7 @@ public final class ServerData {
         public static Builder newBuilder() {
           return DEFAULT_INSTANCE.toBuilder();
         }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData prototype) {
+        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData prototype) {
           return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
         }
         @java.lang.Override
@@ -55325,26 +50952,26 @@ public final class ServerData {
           return builder;
         }
         /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.LocationExtraData}
+         * Protobuf type {@code protobuf.Location.ExtraLocation.LocationExtraData}
          */
         public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.LocationExtraData)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraDataOrBuilder {
+            // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation.LocationExtraData)
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraDataOrBuilder {
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationExtraData_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_fieldAccessorTable
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationExtraData_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.Builder.class);
+                    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.Builder.class);
           }
 
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.newBuilder()
+          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.newBuilder()
           private Builder() {
             maybeForceBuilderInitialization();
           }
@@ -55374,17 +51001,17 @@ public final class ServerData {
           @java.lang.Override
           public com.google.protobuf.Descriptors.Descriptor
               getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationExtraData_descriptor;
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.getDefaultInstance();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData getDefaultInstanceForType() {
+            return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.getDefaultInstance();
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData result = buildPartial();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData build() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData result = buildPartial();
             if (!result.isInitialized()) {
               throw newUninitializedMessageException(result);
             }
@@ -55392,8 +51019,8 @@ public final class ServerData {
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData(this);
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData buildPartial() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData(this);
             int from_bitField0_ = bitField0_;
             int to_bitField0_ = 0;
             if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -55447,16 +51074,16 @@ public final class ServerData {
           }
           @java.lang.Override
           public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData)other);
+            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData) {
+              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData)other);
             } else {
               super.mergeFrom(other);
               return this;
             }
           }
 
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.getDefaultInstance()) return this;
+          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData other) {
+            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.getDefaultInstance()) return this;
             if (other.hasLocationType()) {
               setLocationType(other.getLocationType());
             }
@@ -55483,11 +51110,11 @@ public final class ServerData {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData parsedMessage = null;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData parsedMessage = null;
             try {
               parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData) e.getUnfinishedMessage();
+              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
               if (parsedMessage != null) {
@@ -55650,16 +51277,16 @@ public final class ServerData {
           }
 
 
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.LocationExtraData)
+          // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation.LocationExtraData)
         }
 
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.LocationExtraData)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData DEFAULT_INSTANCE;
+        // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation.LocationExtraData)
+        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData DEFAULT_INSTANCE;
         static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData();
+          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData();
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData getDefaultInstance() {
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData getDefaultInstance() {
           return DEFAULT_INSTANCE;
         }
 
@@ -55684,14 +51311,14 @@ public final class ServerData {
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData getDefaultInstanceForType() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData getDefaultInstanceForType() {
           return DEFAULT_INSTANCE;
         }
 
       }
 
       public interface LocationInfoExtraDataOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData)
+          // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation.LocationInfoExtraData)
           com.google.protobuf.MessageOrBuilder {
 
         /**
@@ -55727,11 +51354,11 @@ public final class ServerData {
         int getResult();
       }
       /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData}
+       * Protobuf type {@code protobuf.Location.ExtraLocation.LocationInfoExtraData}
        */
       public  static final class LocationInfoExtraData extends
           com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData)
+          // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation.LocationInfoExtraData)
           LocationInfoExtraDataOrBuilder {
       private static final long serialVersionUID = 0L;
         // Use LocationInfoExtraData.newBuilder() to construct.
@@ -55803,15 +51430,15 @@ public final class ServerData {
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_fieldAccessorTable
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.Builder.class);
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.Builder.class);
         }
 
         private int bitField0_;
@@ -55940,10 +51567,10 @@ public final class ServerData {
           if (obj == this) {
            return true;
           }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData)) {
+          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData)) {
             return super.equals(obj);
           }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData) obj;
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData) obj;
 
           if (hasRoadId() != other.hasRoadId()) return false;
           if (hasRoadId()) {
@@ -55988,69 +51615,69 @@ public final class ServerData {
           return hash;
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(byte[] data)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseDelimitedFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseDelimitedFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -56063,7 +51690,7 @@ public final class ServerData {
         public static Builder newBuilder() {
           return DEFAULT_INSTANCE.toBuilder();
         }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData prototype) {
+        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData prototype) {
           return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
         }
         @java.lang.Override
@@ -56079,26 +51706,26 @@ public final class ServerData {
           return builder;
         }
         /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData}
+         * Protobuf type {@code protobuf.Location.ExtraLocation.LocationInfoExtraData}
          */
         public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraDataOrBuilder {
+            // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation.LocationInfoExtraData)
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraDataOrBuilder {
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_fieldAccessorTable
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.Builder.class);
+                    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.Builder.class);
           }
 
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.newBuilder()
+          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.newBuilder()
           private Builder() {
             maybeForceBuilderInitialization();
           }
@@ -56128,17 +51755,17 @@ public final class ServerData {
           @java.lang.Override
           public com.google.protobuf.Descriptors.Descriptor
               getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_descriptor;
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.getDefaultInstance();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData getDefaultInstanceForType() {
+            return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.getDefaultInstance();
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData result = buildPartial();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData build() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData result = buildPartial();
             if (!result.isInitialized()) {
               throw newUninitializedMessageException(result);
             }
@@ -56146,8 +51773,8 @@ public final class ServerData {
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData(this);
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData buildPartial() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData(this);
             int from_bitField0_ = bitField0_;
             int to_bitField0_ = 0;
             if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -56201,16 +51828,16 @@ public final class ServerData {
           }
           @java.lang.Override
           public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData)other);
+            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData) {
+              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData)other);
             } else {
               super.mergeFrom(other);
               return this;
             }
           }
 
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.getDefaultInstance()) return this;
+          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData other) {
+            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.getDefaultInstance()) return this;
             if (other.hasRoadId()) {
               bitField0_ |= 0x00000001;
               roadId_ = other.roadId_;
@@ -56237,11 +51864,11 @@ public final class ServerData {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData parsedMessage = null;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData parsedMessage = null;
             try {
               parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData) e.getUnfinishedMessage();
+              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
               if (parsedMessage != null) {
@@ -56404,16 +52031,16 @@ public final class ServerData {
           }
 
 
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData)
+          // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation.LocationInfoExtraData)
         }
 
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData DEFAULT_INSTANCE;
+        // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation.LocationInfoExtraData)
+        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData DEFAULT_INSTANCE;
         static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData();
+          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData();
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData getDefaultInstance() {
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData getDefaultInstance() {
           return DEFAULT_INSTANCE;
         }
 
@@ -56438,14 +52065,14 @@ public final class ServerData {
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData getDefaultInstanceForType() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData getDefaultInstanceForType() {
           return DEFAULT_INSTANCE;
         }
 
       }
 
       public interface ExtraCarStateOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.ExtraCarState)
+          // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation.ExtraCarState)
           com.google.protobuf.MessageOrBuilder {
 
         /**
@@ -56584,11 +52211,11 @@ public final class ServerData {
         boolean getClutchState();
       }
       /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.ExtraCarState}
+       * Protobuf type {@code protobuf.Location.ExtraLocation.ExtraCarState}
        */
       public  static final class ExtraCarState extends
           com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.ExtraCarState)
+          // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation.ExtraCarState)
           ExtraCarStateOrBuilder {
       private static final long serialVersionUID = 0L;
         // Use ExtraCarState.newBuilder() to construct.
@@ -56718,15 +52345,15 @@ public final class ServerData {
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExtraCarState_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_fieldAccessorTable
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExtraCarState_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.Builder.class);
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.Builder.class);
         }
 
         private int bitField0_;
@@ -57093,10 +52720,10 @@ public final class ServerData {
           if (obj == this) {
            return true;
           }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState)) {
+          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState)) {
             return super.equals(obj);
           }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState) obj;
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState) obj;
 
           if (hasLowLightSignal() != other.hasLowLightSignal()) return false;
           if (hasLowLightSignal()) {
@@ -57264,69 +52891,69 @@ public final class ServerData {
           return hash;
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(byte[] data)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseDelimitedFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseDelimitedFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -57339,7 +52966,7 @@ public final class ServerData {
         public static Builder newBuilder() {
           return DEFAULT_INSTANCE.toBuilder();
         }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState prototype) {
+        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState prototype) {
           return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
         }
         @java.lang.Override
@@ -57355,26 +52982,26 @@ public final class ServerData {
           return builder;
         }
         /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.ExtraCarState}
+         * Protobuf type {@code protobuf.Location.ExtraLocation.ExtraCarState}
          */
         public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.ExtraCarState)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarStateOrBuilder {
+            // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation.ExtraCarState)
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarStateOrBuilder {
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExtraCarState_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_fieldAccessorTable
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExtraCarState_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.Builder.class);
+                    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.Builder.class);
           }
 
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.newBuilder()
+          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.newBuilder()
           private Builder() {
             maybeForceBuilderInitialization();
           }
@@ -57428,17 +53055,17 @@ public final class ServerData {
           @java.lang.Override
           public com.google.protobuf.Descriptors.Descriptor
               getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExtraCarState_descriptor;
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.getDefaultInstance();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState getDefaultInstanceForType() {
+            return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.getDefaultInstance();
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState result = buildPartial();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState build() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState result = buildPartial();
             if (!result.isInitialized()) {
               throw newUninitializedMessageException(result);
             }
@@ -57446,8 +53073,8 @@ public final class ServerData {
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState(this);
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState buildPartial() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState(this);
             int from_bitField0_ = bitField0_;
             int to_bitField0_ = 0;
             if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -57549,16 +53176,16 @@ public final class ServerData {
           }
           @java.lang.Override
           public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState)other);
+            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState) {
+              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState)other);
             } else {
               super.mergeFrom(other);
               return this;
             }
           }
 
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.getDefaultInstance()) return this;
+          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState other) {
+            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.getDefaultInstance()) return this;
             if (other.hasLowLightSignal()) {
               setLowLightSignal(other.getLowLightSignal());
             }
@@ -57619,11 +53246,11 @@ public final class ServerData {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState parsedMessage = null;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState parsedMessage = null;
             try {
               parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState) e.getUnfinishedMessage();
+              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
               if (parsedMessage != null) {
@@ -58126,16 +53753,16 @@ public final class ServerData {
           }
 
 
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.ExtraCarState)
+          // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation.ExtraCarState)
         }
 
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.ExtraCarState)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState DEFAULT_INSTANCE;
+        // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation.ExtraCarState)
+        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState DEFAULT_INSTANCE;
         static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState();
+          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState();
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState getDefaultInstance() {
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState getDefaultInstance() {
           return DEFAULT_INSTANCE;
         }
 
@@ -58160,14 +53787,14 @@ public final class ServerData {
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState getDefaultInstanceForType() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState getDefaultInstanceForType() {
           return DEFAULT_INSTANCE;
         }
 
       }
 
       public interface IOStateOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.IOState)
+          // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation.IOState)
           com.google.protobuf.MessageOrBuilder {
 
         /**
@@ -58189,11 +53816,11 @@ public final class ServerData {
         boolean getDormancy();
       }
       /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.IOState}
+       * Protobuf type {@code protobuf.Location.ExtraLocation.IOState}
        */
       public  static final class IOState extends
           com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.IOState)
+          // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation.IOState)
           IOStateOrBuilder {
       private static final long serialVersionUID = 0L;
         // Use IOState.newBuilder() to construct.
@@ -58258,15 +53885,15 @@ public final class ServerData {
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_IOState_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_fieldAccessorTable
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_IOState_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.Builder.class);
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.Builder.class);
         }
 
         private int bitField0_;
@@ -58347,10 +53974,10 @@ public final class ServerData {
           if (obj == this) {
            return true;
           }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState)) {
+          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState)) {
             return super.equals(obj);
           }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState) obj;
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState) obj;
 
           if (hasDeepDormancy() != other.hasDeepDormancy()) return false;
           if (hasDeepDormancy()) {
@@ -58388,69 +54015,69 @@ public final class ServerData {
           return hash;
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(byte[] data)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseDelimitedFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseDelimitedFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -58463,7 +54090,7 @@ public final class ServerData {
         public static Builder newBuilder() {
           return DEFAULT_INSTANCE.toBuilder();
         }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState prototype) {
+        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState prototype) {
           return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
         }
         @java.lang.Override
@@ -58479,26 +54106,26 @@ public final class ServerData {
           return builder;
         }
         /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.IOState}
+         * Protobuf type {@code protobuf.Location.ExtraLocation.IOState}
          */
         public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.IOState)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOStateOrBuilder {
+            // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation.IOState)
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOStateOrBuilder {
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_IOState_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_fieldAccessorTable
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_IOState_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.Builder.class);
+                    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.Builder.class);
           }
 
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.newBuilder()
+          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.newBuilder()
           private Builder() {
             maybeForceBuilderInitialization();
           }
@@ -58526,17 +54153,17 @@ public final class ServerData {
           @java.lang.Override
           public com.google.protobuf.Descriptors.Descriptor
               getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_IOState_descriptor;
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.getDefaultInstance();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState getDefaultInstanceForType() {
+            return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.getDefaultInstance();
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState result = buildPartial();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState build() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState result = buildPartial();
             if (!result.isInitialized()) {
               throw newUninitializedMessageException(result);
             }
@@ -58544,8 +54171,8 @@ public final class ServerData {
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState(this);
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState buildPartial() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState(this);
             int from_bitField0_ = bitField0_;
             int to_bitField0_ = 0;
             if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -58595,16 +54222,16 @@ public final class ServerData {
           }
           @java.lang.Override
           public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState)other);
+            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState) {
+              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState)other);
             } else {
               super.mergeFrom(other);
               return this;
             }
           }
 
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.getDefaultInstance()) return this;
+          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState other) {
+            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.getDefaultInstance()) return this;
             if (other.hasDeepDormancy()) {
               setDeepDormancy(other.getDeepDormancy());
             }
@@ -58626,11 +54253,11 @@ public final class ServerData {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState parsedMessage = null;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState parsedMessage = null;
             try {
               parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState) e.getUnfinishedMessage();
+              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
               if (parsedMessage != null) {
@@ -58717,16 +54344,16 @@ public final class ServerData {
           }
 
 
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.IOState)
+          // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation.IOState)
         }
 
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.IOState)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState DEFAULT_INSTANCE;
+        // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation.IOState)
+        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState DEFAULT_INSTANCE;
         static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState();
+          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState();
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState getDefaultInstance() {
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState getDefaultInstance() {
           return DEFAULT_INSTANCE;
         }
 
@@ -58751,14 +54378,14 @@ public final class ServerData {
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState getDefaultInstanceForType() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState getDefaultInstanceForType() {
           return DEFAULT_INSTANCE;
         }
 
       }
 
       public interface VideoAlarmOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.VideoAlarm)
+          // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation.VideoAlarm)
           com.google.protobuf.MessageOrBuilder {
 
         /**
@@ -58825,11 +54452,11 @@ public final class ServerData {
         boolean getVideoStorageOver();
       }
       /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.VideoAlarm}
+       * Protobuf type {@code protobuf.Location.ExtraLocation.VideoAlarm}
        */
       public  static final class VideoAlarm extends
           com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.VideoAlarm)
+          // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation.VideoAlarm)
           VideoAlarmOrBuilder {
       private static final long serialVersionUID = 0L;
         // Use VideoAlarm.newBuilder() to construct.
@@ -58919,15 +54546,15 @@ public final class ServerData {
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoAlarm_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_fieldAccessorTable
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoAlarm_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.Builder.class);
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm.Builder.class);
         }
 
         private int bitField0_;
@@ -59118,10 +54745,10 @@ public final class ServerData {
           if (obj == this) {
            return true;
           }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm)) {
+          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm)) {
             return super.equals(obj);
           }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm) obj;
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm) obj;
 
           if (hasVideoLost() != other.hasVideoLost()) return false;
           if (hasVideoLost()) {
@@ -59209,69 +54836,69 @@ public final class ServerData {
           return hash;
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(byte[] data)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseDelimitedFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseDelimitedFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -59284,7 +54911,7 @@ public final class ServerData {
         public static Builder newBuilder() {
           return DEFAULT_INSTANCE.toBuilder();
         }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm prototype) {
+        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm prototype) {
           return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
         }
         @java.lang.Override
@@ -59300,26 +54927,26 @@ public final class ServerData {
           return builder;
         }
         /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.VideoAlarm}
+         * Protobuf type {@code protobuf.Location.ExtraLocation.VideoAlarm}
          */
         public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.VideoAlarm)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarmOrBuilder {
+            // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation.VideoAlarm)
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarmOrBuilder {
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoAlarm_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_fieldAccessorTable
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoAlarm_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.Builder.class);
+                    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm.Builder.class);
           }
 
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.newBuilder()
+          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm.newBuilder()
           private Builder() {
             maybeForceBuilderInitialization();
           }
@@ -59357,17 +54984,17 @@ public final class ServerData {
           @java.lang.Override
           public com.google.protobuf.Descriptors.Descriptor
               getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoAlarm_descriptor;
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.getDefaultInstance();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm getDefaultInstanceForType() {
+            return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm.getDefaultInstance();
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm result = buildPartial();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm build() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm result = buildPartial();
             if (!result.isInitialized()) {
               throw newUninitializedMessageException(result);
             }
@@ -59375,8 +55002,8 @@ public final class ServerData {
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm(this);
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm buildPartial() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm(this);
             int from_bitField0_ = bitField0_;
             int to_bitField0_ = 0;
             if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -59446,16 +55073,16 @@ public final class ServerData {
           }
           @java.lang.Override
           public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm)other);
+            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm) {
+              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm)other);
             } else {
               super.mergeFrom(other);
               return this;
             }
           }
 
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.getDefaultInstance()) return this;
+          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm other) {
+            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm.getDefaultInstance()) return this;
             if (other.hasVideoLost()) {
               setVideoLost(other.getVideoLost());
             }
@@ -59492,11 +55119,11 @@ public final class ServerData {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm parsedMessage = null;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm parsedMessage = null;
             try {
               parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm) e.getUnfinishedMessage();
+              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
               if (parsedMessage != null) {
@@ -59743,16 +55370,16 @@ public final class ServerData {
           }
 
 
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.VideoAlarm)
+          // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation.VideoAlarm)
         }
 
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.VideoAlarm)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm DEFAULT_INSTANCE;
+        // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation.VideoAlarm)
+        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm DEFAULT_INSTANCE;
         static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm();
+          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm();
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm getDefaultInstance() {
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm getDefaultInstance() {
           return DEFAULT_INSTANCE;
         }
 
@@ -59777,14 +55404,14 @@ public final class ServerData {
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm getDefaultInstanceForType() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoAlarm getDefaultInstanceForType() {
           return DEFAULT_INSTANCE;
         }
 
       }
 
       public interface VideoLostFlagOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag)
+          // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation.VideoLostFlag)
           com.google.protobuf.MessageOrBuilder {
 
         /**
@@ -60076,11 +55703,11 @@ public final class ServerData {
         boolean getLogicChannel32();
       }
       /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag}
+       * Protobuf type {@code protobuf.Location.ExtraLocation.VideoLostFlag}
        */
       public  static final class VideoLostFlag extends
           com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag)
+          // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation.VideoLostFlag)
           VideoLostFlagOrBuilder {
       private static final long serialVersionUID = 0L;
         // Use VideoLostFlag.newBuilder() to construct.
@@ -60295,15 +55922,15 @@ public final class ServerData {
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_fieldAccessorTable
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.Builder.class);
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag.Builder.class);
         }
 
         private int bitField0_;
@@ -61044,10 +56671,10 @@ public final class ServerData {
           if (obj == this) {
            return true;
           }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag)) {
+          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag)) {
             return super.equals(obj);
           }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag) obj;
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag) obj;
 
           if (hasLogicChannel1() != other.hasLogicChannel1()) return false;
           if (hasLogicChannel1()) {
@@ -61385,69 +57012,69 @@ public final class ServerData {
           return hash;
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(byte[] data)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseDelimitedFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseDelimitedFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -61460,7 +57087,7 @@ public final class ServerData {
         public static Builder newBuilder() {
           return DEFAULT_INSTANCE.toBuilder();
         }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag prototype) {
+        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag prototype) {
           return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
         }
         @java.lang.Override
@@ -61476,26 +57103,26 @@ public final class ServerData {
           return builder;
         }
         /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag}
+         * Protobuf type {@code protobuf.Location.ExtraLocation.VideoLostFlag}
          */
         public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlagOrBuilder {
+            // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation.VideoLostFlag)
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlagOrBuilder {
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_fieldAccessorTable
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.Builder.class);
+                    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag.Builder.class);
           }
 
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.newBuilder()
+          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag.newBuilder()
           private Builder() {
             maybeForceBuilderInitialization();
           }
@@ -61583,17 +57210,17 @@ public final class ServerData {
           @java.lang.Override
           public com.google.protobuf.Descriptors.Descriptor
               getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_descriptor;
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.getDefaultInstance();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag getDefaultInstanceForType() {
+            return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag.getDefaultInstance();
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag result = buildPartial();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag build() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag result = buildPartial();
             if (!result.isInitialized()) {
               throw newUninitializedMessageException(result);
             }
@@ -61601,8 +57228,8 @@ public final class ServerData {
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag(this);
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag buildPartial() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag(this);
             int from_bitField0_ = bitField0_;
             int to_bitField0_ = 0;
             if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -61772,16 +57399,16 @@ public final class ServerData {
           }
           @java.lang.Override
           public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag)other);
+            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag) {
+              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag)other);
             } else {
               super.mergeFrom(other);
               return this;
             }
           }
 
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.getDefaultInstance()) return this;
+          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag other) {
+            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag.getDefaultInstance()) return this;
             if (other.hasLogicChannel1()) {
               setLogicChannel1(other.getLogicChannel1());
             }
@@ -61893,11 +57520,11 @@ public final class ServerData {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag parsedMessage = null;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag parsedMessage = null;
             try {
               parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag) e.getUnfinishedMessage();
+              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
               if (parsedMessage != null) {
@@ -62944,16 +58571,16 @@ public final class ServerData {
           }
 
 
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag)
+          // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation.VideoLostFlag)
         }
 
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag DEFAULT_INSTANCE;
+        // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation.VideoLostFlag)
+        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag DEFAULT_INSTANCE;
         static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag();
+          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag();
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag getDefaultInstance() {
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag getDefaultInstance() {
           return DEFAULT_INSTANCE;
         }
 
@@ -62978,5038 +58605,28 @@ public final class ServerData {
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag getDefaultInstanceForType() {
-          return DEFAULT_INSTANCE;
-        }
-
-      }
-
-      public interface VideoShelterFlagOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag)
-          com.google.protobuf.MessageOrBuilder {
-
-        /**
-         * <code>optional bool logicChannel1 = 1;</code>
-         */
-        boolean hasLogicChannel1();
-        /**
-         * <code>optional bool logicChannel1 = 1;</code>
-         */
-        boolean getLogicChannel1();
-
-        /**
-         * <code>optional bool logicChannel2 = 2;</code>
-         */
-        boolean hasLogicChannel2();
-        /**
-         * <code>optional bool logicChannel2 = 2;</code>
-         */
-        boolean getLogicChannel2();
-
-        /**
-         * <code>optional bool logicChannel3 = 3;</code>
-         */
-        boolean hasLogicChannel3();
-        /**
-         * <code>optional bool logicChannel3 = 3;</code>
-         */
-        boolean getLogicChannel3();
-
-        /**
-         * <code>optional bool logicChannel4 = 4;</code>
-         */
-        boolean hasLogicChannel4();
-        /**
-         * <code>optional bool logicChannel4 = 4;</code>
-         */
-        boolean getLogicChannel4();
-
-        /**
-         * <code>optional bool logicChannel5 = 5;</code>
-         */
-        boolean hasLogicChannel5();
-        /**
-         * <code>optional bool logicChannel5 = 5;</code>
-         */
-        boolean getLogicChannel5();
-
-        /**
-         * <code>optional bool logicChannel6 = 6;</code>
-         */
-        boolean hasLogicChannel6();
-        /**
-         * <code>optional bool logicChannel6 = 6;</code>
-         */
-        boolean getLogicChannel6();
-
-        /**
-         * <code>optional bool logicChannel7 = 7;</code>
-         */
-        boolean hasLogicChannel7();
-        /**
-         * <code>optional bool logicChannel7 = 7;</code>
-         */
-        boolean getLogicChannel7();
-
-        /**
-         * <code>optional bool logicChannel8 = 8;</code>
-         */
-        boolean hasLogicChannel8();
-        /**
-         * <code>optional bool logicChannel8 = 8;</code>
-         */
-        boolean getLogicChannel8();
-
-        /**
-         * <code>optional bool logicChannel9 = 9;</code>
-         */
-        boolean hasLogicChannel9();
-        /**
-         * <code>optional bool logicChannel9 = 9;</code>
-         */
-        boolean getLogicChannel9();
-
-        /**
-         * <code>optional bool logicChannel10 = 10;</code>
-         */
-        boolean hasLogicChannel10();
-        /**
-         * <code>optional bool logicChannel10 = 10;</code>
-         */
-        boolean getLogicChannel10();
-
-        /**
-         * <code>optional bool logicChannel11 = 11;</code>
-         */
-        boolean hasLogicChannel11();
-        /**
-         * <code>optional bool logicChannel11 = 11;</code>
-         */
-        boolean getLogicChannel11();
-
-        /**
-         * <code>optional bool logicChannel12 = 12;</code>
-         */
-        boolean hasLogicChannel12();
-        /**
-         * <code>optional bool logicChannel12 = 12;</code>
-         */
-        boolean getLogicChannel12();
-
-        /**
-         * <code>optional bool logicChannel13 = 13;</code>
-         */
-        boolean hasLogicChannel13();
-        /**
-         * <code>optional bool logicChannel13 = 13;</code>
-         */
-        boolean getLogicChannel13();
-
-        /**
-         * <code>optional bool logicChannel14 = 14;</code>
-         */
-        boolean hasLogicChannel14();
-        /**
-         * <code>optional bool logicChannel14 = 14;</code>
-         */
-        boolean getLogicChannel14();
-
-        /**
-         * <code>optional bool logicChannel15 = 15;</code>
-         */
-        boolean hasLogicChannel15();
-        /**
-         * <code>optional bool logicChannel15 = 15;</code>
-         */
-        boolean getLogicChannel15();
-
-        /**
-         * <code>optional bool logicChannel16 = 16;</code>
-         */
-        boolean hasLogicChannel16();
-        /**
-         * <code>optional bool logicChannel16 = 16;</code>
-         */
-        boolean getLogicChannel16();
-
-        /**
-         * <code>optional bool logicChannel17 = 17;</code>
-         */
-        boolean hasLogicChannel17();
-        /**
-         * <code>optional bool logicChannel17 = 17;</code>
-         */
-        boolean getLogicChannel17();
-
-        /**
-         * <code>optional bool logicChannel18 = 18;</code>
-         */
-        boolean hasLogicChannel18();
-        /**
-         * <code>optional bool logicChannel18 = 18;</code>
-         */
-        boolean getLogicChannel18();
-
-        /**
-         * <code>optional bool logicChannel19 = 19;</code>
-         */
-        boolean hasLogicChannel19();
-        /**
-         * <code>optional bool logicChannel19 = 19;</code>
-         */
-        boolean getLogicChannel19();
-
-        /**
-         * <code>optional bool logicChannel20 = 20;</code>
-         */
-        boolean hasLogicChannel20();
-        /**
-         * <code>optional bool logicChannel20 = 20;</code>
-         */
-        boolean getLogicChannel20();
-
-        /**
-         * <code>optional bool logicChannel21 = 21;</code>
-         */
-        boolean hasLogicChannel21();
-        /**
-         * <code>optional bool logicChannel21 = 21;</code>
-         */
-        boolean getLogicChannel21();
-
-        /**
-         * <code>optional bool logicChannel22 = 22;</code>
-         */
-        boolean hasLogicChannel22();
-        /**
-         * <code>optional bool logicChannel22 = 22;</code>
-         */
-        boolean getLogicChannel22();
-
-        /**
-         * <code>optional bool logicChannel23 = 23;</code>
-         */
-        boolean hasLogicChannel23();
-        /**
-         * <code>optional bool logicChannel23 = 23;</code>
-         */
-        boolean getLogicChannel23();
-
-        /**
-         * <code>optional bool logicChannel24 = 24;</code>
-         */
-        boolean hasLogicChannel24();
-        /**
-         * <code>optional bool logicChannel24 = 24;</code>
-         */
-        boolean getLogicChannel24();
-
-        /**
-         * <code>optional bool logicChannel25 = 25;</code>
-         */
-        boolean hasLogicChannel25();
-        /**
-         * <code>optional bool logicChannel25 = 25;</code>
-         */
-        boolean getLogicChannel25();
-
-        /**
-         * <code>optional bool logicChannel26 = 26;</code>
-         */
-        boolean hasLogicChannel26();
-        /**
-         * <code>optional bool logicChannel26 = 26;</code>
-         */
-        boolean getLogicChannel26();
-
-        /**
-         * <code>optional bool logicChannel27 = 27;</code>
-         */
-        boolean hasLogicChannel27();
-        /**
-         * <code>optional bool logicChannel27 = 27;</code>
-         */
-        boolean getLogicChannel27();
-
-        /**
-         * <code>optional bool logicChannel28 = 28;</code>
-         */
-        boolean hasLogicChannel28();
-        /**
-         * <code>optional bool logicChannel28 = 28;</code>
-         */
-        boolean getLogicChannel28();
-
-        /**
-         * <code>optional bool logicChannel29 = 29;</code>
-         */
-        boolean hasLogicChannel29();
-        /**
-         * <code>optional bool logicChannel29 = 29;</code>
-         */
-        boolean getLogicChannel29();
-
-        /**
-         * <code>optional bool logicChannel30 = 30;</code>
-         */
-        boolean hasLogicChannel30();
-        /**
-         * <code>optional bool logicChannel30 = 30;</code>
-         */
-        boolean getLogicChannel30();
-
-        /**
-         * <code>optional bool logicChannel31 = 31;</code>
-         */
-        boolean hasLogicChannel31();
-        /**
-         * <code>optional bool logicChannel31 = 31;</code>
-         */
-        boolean getLogicChannel31();
-
-        /**
-         * <code>optional bool logicChannel32 = 32;</code>
-         */
-        boolean hasLogicChannel32();
-        /**
-         * <code>optional bool logicChannel32 = 32;</code>
-         */
-        boolean getLogicChannel32();
-      }
-      /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag}
-       */
-      public  static final class VideoShelterFlag extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag)
-          VideoShelterFlagOrBuilder {
-      private static final long serialVersionUID = 0L;
-        // Use VideoShelterFlag.newBuilder() to construct.
-        private VideoShelterFlag(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-          super(builder);
-        }
-        private VideoShelterFlag() {
-        }
-
-        @java.lang.Override
-        public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-          return this.unknownFields;
-        }
-        private VideoShelterFlag(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          this();
-          if (extensionRegistry == null) {
-            throw new java.lang.NullPointerException();
-          }
-          int mutable_bitField0_ = 0;
-          com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-              com.google.protobuf.UnknownFieldSet.newBuilder();
-          try {
-            boolean done = false;
-            while (!done) {
-              int tag = input.readTag();
-              switch (tag) {
-                case 0:
-                  done = true;
-                  break;
-                case 8: {
-                  bitField0_ |= 0x00000001;
-                  logicChannel1_ = input.readBool();
-                  break;
-                }
-                case 16: {
-                  bitField0_ |= 0x00000002;
-                  logicChannel2_ = input.readBool();
-                  break;
-                }
-                case 24: {
-                  bitField0_ |= 0x00000004;
-                  logicChannel3_ = input.readBool();
-                  break;
-                }
-                case 32: {
-                  bitField0_ |= 0x00000008;
-                  logicChannel4_ = input.readBool();
-                  break;
-                }
-                case 40: {
-                  bitField0_ |= 0x00000010;
-                  logicChannel5_ = input.readBool();
-                  break;
-                }
-                case 48: {
-                  bitField0_ |= 0x00000020;
-                  logicChannel6_ = input.readBool();
-                  break;
-                }
-                case 56: {
-                  bitField0_ |= 0x00000040;
-                  logicChannel7_ = input.readBool();
-                  break;
-                }
-                case 64: {
-                  bitField0_ |= 0x00000080;
-                  logicChannel8_ = input.readBool();
-                  break;
-                }
-                case 72: {
-                  bitField0_ |= 0x00000100;
-                  logicChannel9_ = input.readBool();
-                  break;
-                }
-                case 80: {
-                  bitField0_ |= 0x00000200;
-                  logicChannel10_ = input.readBool();
-                  break;
-                }
-                case 88: {
-                  bitField0_ |= 0x00000400;
-                  logicChannel11_ = input.readBool();
-                  break;
-                }
-                case 96: {
-                  bitField0_ |= 0x00000800;
-                  logicChannel12_ = input.readBool();
-                  break;
-                }
-                case 104: {
-                  bitField0_ |= 0x00001000;
-                  logicChannel13_ = input.readBool();
-                  break;
-                }
-                case 112: {
-                  bitField0_ |= 0x00002000;
-                  logicChannel14_ = input.readBool();
-                  break;
-                }
-                case 120: {
-                  bitField0_ |= 0x00004000;
-                  logicChannel15_ = input.readBool();
-                  break;
-                }
-                case 128: {
-                  bitField0_ |= 0x00008000;
-                  logicChannel16_ = input.readBool();
-                  break;
-                }
-                case 136: {
-                  bitField0_ |= 0x00010000;
-                  logicChannel17_ = input.readBool();
-                  break;
-                }
-                case 144: {
-                  bitField0_ |= 0x00020000;
-                  logicChannel18_ = input.readBool();
-                  break;
-                }
-                case 152: {
-                  bitField0_ |= 0x00040000;
-                  logicChannel19_ = input.readBool();
-                  break;
-                }
-                case 160: {
-                  bitField0_ |= 0x00080000;
-                  logicChannel20_ = input.readBool();
-                  break;
-                }
-                case 168: {
-                  bitField0_ |= 0x00100000;
-                  logicChannel21_ = input.readBool();
-                  break;
-                }
-                case 176: {
-                  bitField0_ |= 0x00200000;
-                  logicChannel22_ = input.readBool();
-                  break;
-                }
-                case 184: {
-                  bitField0_ |= 0x00400000;
-                  logicChannel23_ = input.readBool();
-                  break;
-                }
-                case 192: {
-                  bitField0_ |= 0x00800000;
-                  logicChannel24_ = input.readBool();
-                  break;
-                }
-                case 200: {
-                  bitField0_ |= 0x01000000;
-                  logicChannel25_ = input.readBool();
-                  break;
-                }
-                case 208: {
-                  bitField0_ |= 0x02000000;
-                  logicChannel26_ = input.readBool();
-                  break;
-                }
-                case 216: {
-                  bitField0_ |= 0x04000000;
-                  logicChannel27_ = input.readBool();
-                  break;
-                }
-                case 224: {
-                  bitField0_ |= 0x08000000;
-                  logicChannel28_ = input.readBool();
-                  break;
-                }
-                case 232: {
-                  bitField0_ |= 0x10000000;
-                  logicChannel29_ = input.readBool();
-                  break;
-                }
-                case 240: {
-                  bitField0_ |= 0x20000000;
-                  logicChannel30_ = input.readBool();
-                  break;
-                }
-                case 248: {
-                  bitField0_ |= 0x40000000;
-                  logicChannel31_ = input.readBool();
-                  break;
-                }
-                case 256: {
-                  bitField0_ |= 0x80000000;
-                  logicChannel32_ = input.readBool();
-                  break;
-                }
-                default: {
-                  if (!parseUnknownField(
-                      input, unknownFields, extensionRegistry, tag)) {
-                    done = true;
-                  }
-                  break;
-                }
-              }
-            }
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            throw e.setUnfinishedMessage(this);
-          } catch (java.io.IOException e) {
-            throw new com.google.protobuf.InvalidProtocolBufferException(
-                e).setUnfinishedMessage(this);
-          } finally {
-            this.unknownFields = unknownFields.build();
-            makeExtensionsImmutable();
-          }
-        }
-        public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_descriptor;
-        }
-
-        @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.Builder.class);
-        }
-
-        private int bitField0_;
-        public static final int LOGICCHANNEL1_FIELD_NUMBER = 1;
-        private boolean logicChannel1_;
-        /**
-         * <code>optional bool logicChannel1 = 1;</code>
-         */
-        public boolean hasLogicChannel1() {
-          return ((bitField0_ & 0x00000001) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel1 = 1;</code>
-         */
-        public boolean getLogicChannel1() {
-          return logicChannel1_;
-        }
-
-        public static final int LOGICCHANNEL2_FIELD_NUMBER = 2;
-        private boolean logicChannel2_;
-        /**
-         * <code>optional bool logicChannel2 = 2;</code>
-         */
-        public boolean hasLogicChannel2() {
-          return ((bitField0_ & 0x00000002) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel2 = 2;</code>
-         */
-        public boolean getLogicChannel2() {
-          return logicChannel2_;
-        }
-
-        public static final int LOGICCHANNEL3_FIELD_NUMBER = 3;
-        private boolean logicChannel3_;
-        /**
-         * <code>optional bool logicChannel3 = 3;</code>
-         */
-        public boolean hasLogicChannel3() {
-          return ((bitField0_ & 0x00000004) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel3 = 3;</code>
-         */
-        public boolean getLogicChannel3() {
-          return logicChannel3_;
-        }
-
-        public static final int LOGICCHANNEL4_FIELD_NUMBER = 4;
-        private boolean logicChannel4_;
-        /**
-         * <code>optional bool logicChannel4 = 4;</code>
-         */
-        public boolean hasLogicChannel4() {
-          return ((bitField0_ & 0x00000008) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel4 = 4;</code>
-         */
-        public boolean getLogicChannel4() {
-          return logicChannel4_;
-        }
-
-        public static final int LOGICCHANNEL5_FIELD_NUMBER = 5;
-        private boolean logicChannel5_;
-        /**
-         * <code>optional bool logicChannel5 = 5;</code>
-         */
-        public boolean hasLogicChannel5() {
-          return ((bitField0_ & 0x00000010) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel5 = 5;</code>
-         */
-        public boolean getLogicChannel5() {
-          return logicChannel5_;
-        }
-
-        public static final int LOGICCHANNEL6_FIELD_NUMBER = 6;
-        private boolean logicChannel6_;
-        /**
-         * <code>optional bool logicChannel6 = 6;</code>
-         */
-        public boolean hasLogicChannel6() {
-          return ((bitField0_ & 0x00000020) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel6 = 6;</code>
-         */
-        public boolean getLogicChannel6() {
-          return logicChannel6_;
-        }
-
-        public static final int LOGICCHANNEL7_FIELD_NUMBER = 7;
-        private boolean logicChannel7_;
-        /**
-         * <code>optional bool logicChannel7 = 7;</code>
-         */
-        public boolean hasLogicChannel7() {
-          return ((bitField0_ & 0x00000040) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel7 = 7;</code>
-         */
-        public boolean getLogicChannel7() {
-          return logicChannel7_;
-        }
-
-        public static final int LOGICCHANNEL8_FIELD_NUMBER = 8;
-        private boolean logicChannel8_;
-        /**
-         * <code>optional bool logicChannel8 = 8;</code>
-         */
-        public boolean hasLogicChannel8() {
-          return ((bitField0_ & 0x00000080) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel8 = 8;</code>
-         */
-        public boolean getLogicChannel8() {
-          return logicChannel8_;
-        }
-
-        public static final int LOGICCHANNEL9_FIELD_NUMBER = 9;
-        private boolean logicChannel9_;
-        /**
-         * <code>optional bool logicChannel9 = 9;</code>
-         */
-        public boolean hasLogicChannel9() {
-          return ((bitField0_ & 0x00000100) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel9 = 9;</code>
-         */
-        public boolean getLogicChannel9() {
-          return logicChannel9_;
-        }
-
-        public static final int LOGICCHANNEL10_FIELD_NUMBER = 10;
-        private boolean logicChannel10_;
-        /**
-         * <code>optional bool logicChannel10 = 10;</code>
-         */
-        public boolean hasLogicChannel10() {
-          return ((bitField0_ & 0x00000200) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel10 = 10;</code>
-         */
-        public boolean getLogicChannel10() {
-          return logicChannel10_;
-        }
-
-        public static final int LOGICCHANNEL11_FIELD_NUMBER = 11;
-        private boolean logicChannel11_;
-        /**
-         * <code>optional bool logicChannel11 = 11;</code>
-         */
-        public boolean hasLogicChannel11() {
-          return ((bitField0_ & 0x00000400) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel11 = 11;</code>
-         */
-        public boolean getLogicChannel11() {
-          return logicChannel11_;
-        }
-
-        public static final int LOGICCHANNEL12_FIELD_NUMBER = 12;
-        private boolean logicChannel12_;
-        /**
-         * <code>optional bool logicChannel12 = 12;</code>
-         */
-        public boolean hasLogicChannel12() {
-          return ((bitField0_ & 0x00000800) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel12 = 12;</code>
-         */
-        public boolean getLogicChannel12() {
-          return logicChannel12_;
-        }
-
-        public static final int LOGICCHANNEL13_FIELD_NUMBER = 13;
-        private boolean logicChannel13_;
-        /**
-         * <code>optional bool logicChannel13 = 13;</code>
-         */
-        public boolean hasLogicChannel13() {
-          return ((bitField0_ & 0x00001000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel13 = 13;</code>
-         */
-        public boolean getLogicChannel13() {
-          return logicChannel13_;
-        }
-
-        public static final int LOGICCHANNEL14_FIELD_NUMBER = 14;
-        private boolean logicChannel14_;
-        /**
-         * <code>optional bool logicChannel14 = 14;</code>
-         */
-        public boolean hasLogicChannel14() {
-          return ((bitField0_ & 0x00002000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel14 = 14;</code>
-         */
-        public boolean getLogicChannel14() {
-          return logicChannel14_;
-        }
-
-        public static final int LOGICCHANNEL15_FIELD_NUMBER = 15;
-        private boolean logicChannel15_;
-        /**
-         * <code>optional bool logicChannel15 = 15;</code>
-         */
-        public boolean hasLogicChannel15() {
-          return ((bitField0_ & 0x00004000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel15 = 15;</code>
-         */
-        public boolean getLogicChannel15() {
-          return logicChannel15_;
-        }
-
-        public static final int LOGICCHANNEL16_FIELD_NUMBER = 16;
-        private boolean logicChannel16_;
-        /**
-         * <code>optional bool logicChannel16 = 16;</code>
-         */
-        public boolean hasLogicChannel16() {
-          return ((bitField0_ & 0x00008000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel16 = 16;</code>
-         */
-        public boolean getLogicChannel16() {
-          return logicChannel16_;
-        }
-
-        public static final int LOGICCHANNEL17_FIELD_NUMBER = 17;
-        private boolean logicChannel17_;
-        /**
-         * <code>optional bool logicChannel17 = 17;</code>
-         */
-        public boolean hasLogicChannel17() {
-          return ((bitField0_ & 0x00010000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel17 = 17;</code>
-         */
-        public boolean getLogicChannel17() {
-          return logicChannel17_;
-        }
-
-        public static final int LOGICCHANNEL18_FIELD_NUMBER = 18;
-        private boolean logicChannel18_;
-        /**
-         * <code>optional bool logicChannel18 = 18;</code>
-         */
-        public boolean hasLogicChannel18() {
-          return ((bitField0_ & 0x00020000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel18 = 18;</code>
-         */
-        public boolean getLogicChannel18() {
-          return logicChannel18_;
-        }
-
-        public static final int LOGICCHANNEL19_FIELD_NUMBER = 19;
-        private boolean logicChannel19_;
-        /**
-         * <code>optional bool logicChannel19 = 19;</code>
-         */
-        public boolean hasLogicChannel19() {
-          return ((bitField0_ & 0x00040000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel19 = 19;</code>
-         */
-        public boolean getLogicChannel19() {
-          return logicChannel19_;
-        }
-
-        public static final int LOGICCHANNEL20_FIELD_NUMBER = 20;
-        private boolean logicChannel20_;
-        /**
-         * <code>optional bool logicChannel20 = 20;</code>
-         */
-        public boolean hasLogicChannel20() {
-          return ((bitField0_ & 0x00080000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel20 = 20;</code>
-         */
-        public boolean getLogicChannel20() {
-          return logicChannel20_;
-        }
-
-        public static final int LOGICCHANNEL21_FIELD_NUMBER = 21;
-        private boolean logicChannel21_;
-        /**
-         * <code>optional bool logicChannel21 = 21;</code>
-         */
-        public boolean hasLogicChannel21() {
-          return ((bitField0_ & 0x00100000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel21 = 21;</code>
-         */
-        public boolean getLogicChannel21() {
-          return logicChannel21_;
-        }
-
-        public static final int LOGICCHANNEL22_FIELD_NUMBER = 22;
-        private boolean logicChannel22_;
-        /**
-         * <code>optional bool logicChannel22 = 22;</code>
-         */
-        public boolean hasLogicChannel22() {
-          return ((bitField0_ & 0x00200000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel22 = 22;</code>
-         */
-        public boolean getLogicChannel22() {
-          return logicChannel22_;
-        }
-
-        public static final int LOGICCHANNEL23_FIELD_NUMBER = 23;
-        private boolean logicChannel23_;
-        /**
-         * <code>optional bool logicChannel23 = 23;</code>
-         */
-        public boolean hasLogicChannel23() {
-          return ((bitField0_ & 0x00400000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel23 = 23;</code>
-         */
-        public boolean getLogicChannel23() {
-          return logicChannel23_;
-        }
-
-        public static final int LOGICCHANNEL24_FIELD_NUMBER = 24;
-        private boolean logicChannel24_;
-        /**
-         * <code>optional bool logicChannel24 = 24;</code>
-         */
-        public boolean hasLogicChannel24() {
-          return ((bitField0_ & 0x00800000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel24 = 24;</code>
-         */
-        public boolean getLogicChannel24() {
-          return logicChannel24_;
-        }
-
-        public static final int LOGICCHANNEL25_FIELD_NUMBER = 25;
-        private boolean logicChannel25_;
-        /**
-         * <code>optional bool logicChannel25 = 25;</code>
-         */
-        public boolean hasLogicChannel25() {
-          return ((bitField0_ & 0x01000000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel25 = 25;</code>
-         */
-        public boolean getLogicChannel25() {
-          return logicChannel25_;
-        }
-
-        public static final int LOGICCHANNEL26_FIELD_NUMBER = 26;
-        private boolean logicChannel26_;
-        /**
-         * <code>optional bool logicChannel26 = 26;</code>
-         */
-        public boolean hasLogicChannel26() {
-          return ((bitField0_ & 0x02000000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel26 = 26;</code>
-         */
-        public boolean getLogicChannel26() {
-          return logicChannel26_;
-        }
-
-        public static final int LOGICCHANNEL27_FIELD_NUMBER = 27;
-        private boolean logicChannel27_;
-        /**
-         * <code>optional bool logicChannel27 = 27;</code>
-         */
-        public boolean hasLogicChannel27() {
-          return ((bitField0_ & 0x04000000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel27 = 27;</code>
-         */
-        public boolean getLogicChannel27() {
-          return logicChannel27_;
-        }
-
-        public static final int LOGICCHANNEL28_FIELD_NUMBER = 28;
-        private boolean logicChannel28_;
-        /**
-         * <code>optional bool logicChannel28 = 28;</code>
-         */
-        public boolean hasLogicChannel28() {
-          return ((bitField0_ & 0x08000000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel28 = 28;</code>
-         */
-        public boolean getLogicChannel28() {
-          return logicChannel28_;
-        }
-
-        public static final int LOGICCHANNEL29_FIELD_NUMBER = 29;
-        private boolean logicChannel29_;
-        /**
-         * <code>optional bool logicChannel29 = 29;</code>
-         */
-        public boolean hasLogicChannel29() {
-          return ((bitField0_ & 0x10000000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel29 = 29;</code>
-         */
-        public boolean getLogicChannel29() {
-          return logicChannel29_;
-        }
-
-        public static final int LOGICCHANNEL30_FIELD_NUMBER = 30;
-        private boolean logicChannel30_;
-        /**
-         * <code>optional bool logicChannel30 = 30;</code>
-         */
-        public boolean hasLogicChannel30() {
-          return ((bitField0_ & 0x20000000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel30 = 30;</code>
-         */
-        public boolean getLogicChannel30() {
-          return logicChannel30_;
-        }
-
-        public static final int LOGICCHANNEL31_FIELD_NUMBER = 31;
-        private boolean logicChannel31_;
-        /**
-         * <code>optional bool logicChannel31 = 31;</code>
-         */
-        public boolean hasLogicChannel31() {
-          return ((bitField0_ & 0x40000000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel31 = 31;</code>
-         */
-        public boolean getLogicChannel31() {
-          return logicChannel31_;
-        }
-
-        public static final int LOGICCHANNEL32_FIELD_NUMBER = 32;
-        private boolean logicChannel32_;
-        /**
-         * <code>optional bool logicChannel32 = 32;</code>
-         */
-        public boolean hasLogicChannel32() {
-          return ((bitField0_ & 0x80000000) != 0);
-        }
-        /**
-         * <code>optional bool logicChannel32 = 32;</code>
-         */
-        public boolean getLogicChannel32() {
-          return logicChannel32_;
-        }
-
-        private byte memoizedIsInitialized = -1;
-        @java.lang.Override
-        public final boolean isInitialized() {
-          byte isInitialized = memoizedIsInitialized;
-          if (isInitialized == 1) return true;
-          if (isInitialized == 0) return false;
-
-          memoizedIsInitialized = 1;
-          return true;
-        }
-
-        @java.lang.Override
-        public void writeTo(com.google.protobuf.CodedOutputStream output)
-                            throws java.io.IOException {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            output.writeBool(1, logicChannel1_);
-          }
-          if (((bitField0_ & 0x00000002) != 0)) {
-            output.writeBool(2, logicChannel2_);
-          }
-          if (((bitField0_ & 0x00000004) != 0)) {
-            output.writeBool(3, logicChannel3_);
-          }
-          if (((bitField0_ & 0x00000008) != 0)) {
-            output.writeBool(4, logicChannel4_);
-          }
-          if (((bitField0_ & 0x00000010) != 0)) {
-            output.writeBool(5, logicChannel5_);
-          }
-          if (((bitField0_ & 0x00000020) != 0)) {
-            output.writeBool(6, logicChannel6_);
-          }
-          if (((bitField0_ & 0x00000040) != 0)) {
-            output.writeBool(7, logicChannel7_);
-          }
-          if (((bitField0_ & 0x00000080) != 0)) {
-            output.writeBool(8, logicChannel8_);
-          }
-          if (((bitField0_ & 0x00000100) != 0)) {
-            output.writeBool(9, logicChannel9_);
-          }
-          if (((bitField0_ & 0x00000200) != 0)) {
-            output.writeBool(10, logicChannel10_);
-          }
-          if (((bitField0_ & 0x00000400) != 0)) {
-            output.writeBool(11, logicChannel11_);
-          }
-          if (((bitField0_ & 0x00000800) != 0)) {
-            output.writeBool(12, logicChannel12_);
-          }
-          if (((bitField0_ & 0x00001000) != 0)) {
-            output.writeBool(13, logicChannel13_);
-          }
-          if (((bitField0_ & 0x00002000) != 0)) {
-            output.writeBool(14, logicChannel14_);
-          }
-          if (((bitField0_ & 0x00004000) != 0)) {
-            output.writeBool(15, logicChannel15_);
-          }
-          if (((bitField0_ & 0x00008000) != 0)) {
-            output.writeBool(16, logicChannel16_);
-          }
-          if (((bitField0_ & 0x00010000) != 0)) {
-            output.writeBool(17, logicChannel17_);
-          }
-          if (((bitField0_ & 0x00020000) != 0)) {
-            output.writeBool(18, logicChannel18_);
-          }
-          if (((bitField0_ & 0x00040000) != 0)) {
-            output.writeBool(19, logicChannel19_);
-          }
-          if (((bitField0_ & 0x00080000) != 0)) {
-            output.writeBool(20, logicChannel20_);
-          }
-          if (((bitField0_ & 0x00100000) != 0)) {
-            output.writeBool(21, logicChannel21_);
-          }
-          if (((bitField0_ & 0x00200000) != 0)) {
-            output.writeBool(22, logicChannel22_);
-          }
-          if (((bitField0_ & 0x00400000) != 0)) {
-            output.writeBool(23, logicChannel23_);
-          }
-          if (((bitField0_ & 0x00800000) != 0)) {
-            output.writeBool(24, logicChannel24_);
-          }
-          if (((bitField0_ & 0x01000000) != 0)) {
-            output.writeBool(25, logicChannel25_);
-          }
-          if (((bitField0_ & 0x02000000) != 0)) {
-            output.writeBool(26, logicChannel26_);
-          }
-          if (((bitField0_ & 0x04000000) != 0)) {
-            output.writeBool(27, logicChannel27_);
-          }
-          if (((bitField0_ & 0x08000000) != 0)) {
-            output.writeBool(28, logicChannel28_);
-          }
-          if (((bitField0_ & 0x10000000) != 0)) {
-            output.writeBool(29, logicChannel29_);
-          }
-          if (((bitField0_ & 0x20000000) != 0)) {
-            output.writeBool(30, logicChannel30_);
-          }
-          if (((bitField0_ & 0x40000000) != 0)) {
-            output.writeBool(31, logicChannel31_);
-          }
-          if (((bitField0_ & 0x80000000) != 0)) {
-            output.writeBool(32, logicChannel32_);
-          }
-          unknownFields.writeTo(output);
-        }
-
-        @java.lang.Override
-        public int getSerializedSize() {
-          int size = memoizedSize;
-          if (size != -1) return size;
-
-          size = 0;
-          if (((bitField0_ & 0x00000001) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(1, logicChannel1_);
-          }
-          if (((bitField0_ & 0x00000002) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(2, logicChannel2_);
-          }
-          if (((bitField0_ & 0x00000004) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(3, logicChannel3_);
-          }
-          if (((bitField0_ & 0x00000008) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(4, logicChannel4_);
-          }
-          if (((bitField0_ & 0x00000010) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(5, logicChannel5_);
-          }
-          if (((bitField0_ & 0x00000020) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(6, logicChannel6_);
-          }
-          if (((bitField0_ & 0x00000040) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(7, logicChannel7_);
-          }
-          if (((bitField0_ & 0x00000080) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(8, logicChannel8_);
-          }
-          if (((bitField0_ & 0x00000100) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(9, logicChannel9_);
-          }
-          if (((bitField0_ & 0x00000200) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(10, logicChannel10_);
-          }
-          if (((bitField0_ & 0x00000400) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(11, logicChannel11_);
-          }
-          if (((bitField0_ & 0x00000800) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(12, logicChannel12_);
-          }
-          if (((bitField0_ & 0x00001000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(13, logicChannel13_);
-          }
-          if (((bitField0_ & 0x00002000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(14, logicChannel14_);
-          }
-          if (((bitField0_ & 0x00004000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(15, logicChannel15_);
-          }
-          if (((bitField0_ & 0x00008000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(16, logicChannel16_);
-          }
-          if (((bitField0_ & 0x00010000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(17, logicChannel17_);
-          }
-          if (((bitField0_ & 0x00020000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(18, logicChannel18_);
-          }
-          if (((bitField0_ & 0x00040000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(19, logicChannel19_);
-          }
-          if (((bitField0_ & 0x00080000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(20, logicChannel20_);
-          }
-          if (((bitField0_ & 0x00100000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(21, logicChannel21_);
-          }
-          if (((bitField0_ & 0x00200000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(22, logicChannel22_);
-          }
-          if (((bitField0_ & 0x00400000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(23, logicChannel23_);
-          }
-          if (((bitField0_ & 0x00800000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(24, logicChannel24_);
-          }
-          if (((bitField0_ & 0x01000000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(25, logicChannel25_);
-          }
-          if (((bitField0_ & 0x02000000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(26, logicChannel26_);
-          }
-          if (((bitField0_ & 0x04000000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(27, logicChannel27_);
-          }
-          if (((bitField0_ & 0x08000000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(28, logicChannel28_);
-          }
-          if (((bitField0_ & 0x10000000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(29, logicChannel29_);
-          }
-          if (((bitField0_ & 0x20000000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(30, logicChannel30_);
-          }
-          if (((bitField0_ & 0x40000000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(31, logicChannel31_);
-          }
-          if (((bitField0_ & 0x80000000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(32, logicChannel32_);
-          }
-          size += unknownFields.getSerializedSize();
-          memoizedSize = size;
-          return size;
-        }
-
-        @java.lang.Override
-        public boolean equals(final java.lang.Object obj) {
-          if (obj == this) {
-           return true;
-          }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag)) {
-            return super.equals(obj);
-          }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag) obj;
-
-          if (hasLogicChannel1() != other.hasLogicChannel1()) return false;
-          if (hasLogicChannel1()) {
-            if (getLogicChannel1()
-                != other.getLogicChannel1()) return false;
-          }
-          if (hasLogicChannel2() != other.hasLogicChannel2()) return false;
-          if (hasLogicChannel2()) {
-            if (getLogicChannel2()
-                != other.getLogicChannel2()) return false;
-          }
-          if (hasLogicChannel3() != other.hasLogicChannel3()) return false;
-          if (hasLogicChannel3()) {
-            if (getLogicChannel3()
-                != other.getLogicChannel3()) return false;
-          }
-          if (hasLogicChannel4() != other.hasLogicChannel4()) return false;
-          if (hasLogicChannel4()) {
-            if (getLogicChannel4()
-                != other.getLogicChannel4()) return false;
-          }
-          if (hasLogicChannel5() != other.hasLogicChannel5()) return false;
-          if (hasLogicChannel5()) {
-            if (getLogicChannel5()
-                != other.getLogicChannel5()) return false;
-          }
-          if (hasLogicChannel6() != other.hasLogicChannel6()) return false;
-          if (hasLogicChannel6()) {
-            if (getLogicChannel6()
-                != other.getLogicChannel6()) return false;
-          }
-          if (hasLogicChannel7() != other.hasLogicChannel7()) return false;
-          if (hasLogicChannel7()) {
-            if (getLogicChannel7()
-                != other.getLogicChannel7()) return false;
-          }
-          if (hasLogicChannel8() != other.hasLogicChannel8()) return false;
-          if (hasLogicChannel8()) {
-            if (getLogicChannel8()
-                != other.getLogicChannel8()) return false;
-          }
-          if (hasLogicChannel9() != other.hasLogicChannel9()) return false;
-          if (hasLogicChannel9()) {
-            if (getLogicChannel9()
-                != other.getLogicChannel9()) return false;
-          }
-          if (hasLogicChannel10() != other.hasLogicChannel10()) return false;
-          if (hasLogicChannel10()) {
-            if (getLogicChannel10()
-                != other.getLogicChannel10()) return false;
-          }
-          if (hasLogicChannel11() != other.hasLogicChannel11()) return false;
-          if (hasLogicChannel11()) {
-            if (getLogicChannel11()
-                != other.getLogicChannel11()) return false;
-          }
-          if (hasLogicChannel12() != other.hasLogicChannel12()) return false;
-          if (hasLogicChannel12()) {
-            if (getLogicChannel12()
-                != other.getLogicChannel12()) return false;
-          }
-          if (hasLogicChannel13() != other.hasLogicChannel13()) return false;
-          if (hasLogicChannel13()) {
-            if (getLogicChannel13()
-                != other.getLogicChannel13()) return false;
-          }
-          if (hasLogicChannel14() != other.hasLogicChannel14()) return false;
-          if (hasLogicChannel14()) {
-            if (getLogicChannel14()
-                != other.getLogicChannel14()) return false;
-          }
-          if (hasLogicChannel15() != other.hasLogicChannel15()) return false;
-          if (hasLogicChannel15()) {
-            if (getLogicChannel15()
-                != other.getLogicChannel15()) return false;
-          }
-          if (hasLogicChannel16() != other.hasLogicChannel16()) return false;
-          if (hasLogicChannel16()) {
-            if (getLogicChannel16()
-                != other.getLogicChannel16()) return false;
-          }
-          if (hasLogicChannel17() != other.hasLogicChannel17()) return false;
-          if (hasLogicChannel17()) {
-            if (getLogicChannel17()
-                != other.getLogicChannel17()) return false;
-          }
-          if (hasLogicChannel18() != other.hasLogicChannel18()) return false;
-          if (hasLogicChannel18()) {
-            if (getLogicChannel18()
-                != other.getLogicChannel18()) return false;
-          }
-          if (hasLogicChannel19() != other.hasLogicChannel19()) return false;
-          if (hasLogicChannel19()) {
-            if (getLogicChannel19()
-                != other.getLogicChannel19()) return false;
-          }
-          if (hasLogicChannel20() != other.hasLogicChannel20()) return false;
-          if (hasLogicChannel20()) {
-            if (getLogicChannel20()
-                != other.getLogicChannel20()) return false;
-          }
-          if (hasLogicChannel21() != other.hasLogicChannel21()) return false;
-          if (hasLogicChannel21()) {
-            if (getLogicChannel21()
-                != other.getLogicChannel21()) return false;
-          }
-          if (hasLogicChannel22() != other.hasLogicChannel22()) return false;
-          if (hasLogicChannel22()) {
-            if (getLogicChannel22()
-                != other.getLogicChannel22()) return false;
-          }
-          if (hasLogicChannel23() != other.hasLogicChannel23()) return false;
-          if (hasLogicChannel23()) {
-            if (getLogicChannel23()
-                != other.getLogicChannel23()) return false;
-          }
-          if (hasLogicChannel24() != other.hasLogicChannel24()) return false;
-          if (hasLogicChannel24()) {
-            if (getLogicChannel24()
-                != other.getLogicChannel24()) return false;
-          }
-          if (hasLogicChannel25() != other.hasLogicChannel25()) return false;
-          if (hasLogicChannel25()) {
-            if (getLogicChannel25()
-                != other.getLogicChannel25()) return false;
-          }
-          if (hasLogicChannel26() != other.hasLogicChannel26()) return false;
-          if (hasLogicChannel26()) {
-            if (getLogicChannel26()
-                != other.getLogicChannel26()) return false;
-          }
-          if (hasLogicChannel27() != other.hasLogicChannel27()) return false;
-          if (hasLogicChannel27()) {
-            if (getLogicChannel27()
-                != other.getLogicChannel27()) return false;
-          }
-          if (hasLogicChannel28() != other.hasLogicChannel28()) return false;
-          if (hasLogicChannel28()) {
-            if (getLogicChannel28()
-                != other.getLogicChannel28()) return false;
-          }
-          if (hasLogicChannel29() != other.hasLogicChannel29()) return false;
-          if (hasLogicChannel29()) {
-            if (getLogicChannel29()
-                != other.getLogicChannel29()) return false;
-          }
-          if (hasLogicChannel30() != other.hasLogicChannel30()) return false;
-          if (hasLogicChannel30()) {
-            if (getLogicChannel30()
-                != other.getLogicChannel30()) return false;
-          }
-          if (hasLogicChannel31() != other.hasLogicChannel31()) return false;
-          if (hasLogicChannel31()) {
-            if (getLogicChannel31()
-                != other.getLogicChannel31()) return false;
-          }
-          if (hasLogicChannel32() != other.hasLogicChannel32()) return false;
-          if (hasLogicChannel32()) {
-            if (getLogicChannel32()
-                != other.getLogicChannel32()) return false;
-          }
-          if (!unknownFields.equals(other.unknownFields)) return false;
-          return true;
-        }
-
-        @java.lang.Override
-        public int hashCode() {
-          if (memoizedHashCode != 0) {
-            return memoizedHashCode;
-          }
-          int hash = 41;
-          hash = (19 * hash) + getDescriptor().hashCode();
-          if (hasLogicChannel1()) {
-            hash = (37 * hash) + LOGICCHANNEL1_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel1());
-          }
-          if (hasLogicChannel2()) {
-            hash = (37 * hash) + LOGICCHANNEL2_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel2());
-          }
-          if (hasLogicChannel3()) {
-            hash = (37 * hash) + LOGICCHANNEL3_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel3());
-          }
-          if (hasLogicChannel4()) {
-            hash = (37 * hash) + LOGICCHANNEL4_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel4());
-          }
-          if (hasLogicChannel5()) {
-            hash = (37 * hash) + LOGICCHANNEL5_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel5());
-          }
-          if (hasLogicChannel6()) {
-            hash = (37 * hash) + LOGICCHANNEL6_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel6());
-          }
-          if (hasLogicChannel7()) {
-            hash = (37 * hash) + LOGICCHANNEL7_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel7());
-          }
-          if (hasLogicChannel8()) {
-            hash = (37 * hash) + LOGICCHANNEL8_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel8());
-          }
-          if (hasLogicChannel9()) {
-            hash = (37 * hash) + LOGICCHANNEL9_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel9());
-          }
-          if (hasLogicChannel10()) {
-            hash = (37 * hash) + LOGICCHANNEL10_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel10());
-          }
-          if (hasLogicChannel11()) {
-            hash = (37 * hash) + LOGICCHANNEL11_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel11());
-          }
-          if (hasLogicChannel12()) {
-            hash = (37 * hash) + LOGICCHANNEL12_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel12());
-          }
-          if (hasLogicChannel13()) {
-            hash = (37 * hash) + LOGICCHANNEL13_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel13());
-          }
-          if (hasLogicChannel14()) {
-            hash = (37 * hash) + LOGICCHANNEL14_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel14());
-          }
-          if (hasLogicChannel15()) {
-            hash = (37 * hash) + LOGICCHANNEL15_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel15());
-          }
-          if (hasLogicChannel16()) {
-            hash = (37 * hash) + LOGICCHANNEL16_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel16());
-          }
-          if (hasLogicChannel17()) {
-            hash = (37 * hash) + LOGICCHANNEL17_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel17());
-          }
-          if (hasLogicChannel18()) {
-            hash = (37 * hash) + LOGICCHANNEL18_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel18());
-          }
-          if (hasLogicChannel19()) {
-            hash = (37 * hash) + LOGICCHANNEL19_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel19());
-          }
-          if (hasLogicChannel20()) {
-            hash = (37 * hash) + LOGICCHANNEL20_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel20());
-          }
-          if (hasLogicChannel21()) {
-            hash = (37 * hash) + LOGICCHANNEL21_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel21());
-          }
-          if (hasLogicChannel22()) {
-            hash = (37 * hash) + LOGICCHANNEL22_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel22());
-          }
-          if (hasLogicChannel23()) {
-            hash = (37 * hash) + LOGICCHANNEL23_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel23());
-          }
-          if (hasLogicChannel24()) {
-            hash = (37 * hash) + LOGICCHANNEL24_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel24());
-          }
-          if (hasLogicChannel25()) {
-            hash = (37 * hash) + LOGICCHANNEL25_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel25());
-          }
-          if (hasLogicChannel26()) {
-            hash = (37 * hash) + LOGICCHANNEL26_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel26());
-          }
-          if (hasLogicChannel27()) {
-            hash = (37 * hash) + LOGICCHANNEL27_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel27());
-          }
-          if (hasLogicChannel28()) {
-            hash = (37 * hash) + LOGICCHANNEL28_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel28());
-          }
-          if (hasLogicChannel29()) {
-            hash = (37 * hash) + LOGICCHANNEL29_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel29());
-          }
-          if (hasLogicChannel30()) {
-            hash = (37 * hash) + LOGICCHANNEL30_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel30());
-          }
-          if (hasLogicChannel31()) {
-            hash = (37 * hash) + LOGICCHANNEL31_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel31());
-          }
-          if (hasLogicChannel32()) {
-            hash = (37 * hash) + LOGICCHANNEL32_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getLogicChannel32());
-          }
-          hash = (29 * hash) + unknownFields.hashCode();
-          memoizedHashCode = hash;
-          return hash;
-        }
-
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
-        }
-
-        @java.lang.Override
-        public Builder newBuilderForType() { return newBuilder(); }
-        public static Builder newBuilder() {
-          return DEFAULT_INSTANCE.toBuilder();
-        }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag prototype) {
-          return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-        }
-        @java.lang.Override
-        public Builder toBuilder() {
-          return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
-        }
-
-        @java.lang.Override
-        protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-          Builder builder = new Builder(parent);
-          return builder;
-        }
-        /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag}
-         */
-        public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlagOrBuilder {
-          public static final com.google.protobuf.Descriptors.Descriptor
-              getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_descriptor;
-          }
-
-          @java.lang.Override
-          protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-              internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.Builder.class);
-          }
-
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.newBuilder()
-          private Builder() {
-            maybeForceBuilderInitialization();
-          }
-
-          private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-            super(parent);
-            maybeForceBuilderInitialization();
-          }
-          private void maybeForceBuilderInitialization() {
-            if (com.google.protobuf.GeneratedMessageV3
-                    .alwaysUseFieldBuilders) {
-            }
-          }
-          @java.lang.Override
-          public Builder clear() {
-            super.clear();
-            logicChannel1_ = false;
-            bitField0_ = (bitField0_ & ~0x00000001);
-            logicChannel2_ = false;
-            bitField0_ = (bitField0_ & ~0x00000002);
-            logicChannel3_ = false;
-            bitField0_ = (bitField0_ & ~0x00000004);
-            logicChannel4_ = false;
-            bitField0_ = (bitField0_ & ~0x00000008);
-            logicChannel5_ = false;
-            bitField0_ = (bitField0_ & ~0x00000010);
-            logicChannel6_ = false;
-            bitField0_ = (bitField0_ & ~0x00000020);
-            logicChannel7_ = false;
-            bitField0_ = (bitField0_ & ~0x00000040);
-            logicChannel8_ = false;
-            bitField0_ = (bitField0_ & ~0x00000080);
-            logicChannel9_ = false;
-            bitField0_ = (bitField0_ & ~0x00000100);
-            logicChannel10_ = false;
-            bitField0_ = (bitField0_ & ~0x00000200);
-            logicChannel11_ = false;
-            bitField0_ = (bitField0_ & ~0x00000400);
-            logicChannel12_ = false;
-            bitField0_ = (bitField0_ & ~0x00000800);
-            logicChannel13_ = false;
-            bitField0_ = (bitField0_ & ~0x00001000);
-            logicChannel14_ = false;
-            bitField0_ = (bitField0_ & ~0x00002000);
-            logicChannel15_ = false;
-            bitField0_ = (bitField0_ & ~0x00004000);
-            logicChannel16_ = false;
-            bitField0_ = (bitField0_ & ~0x00008000);
-            logicChannel17_ = false;
-            bitField0_ = (bitField0_ & ~0x00010000);
-            logicChannel18_ = false;
-            bitField0_ = (bitField0_ & ~0x00020000);
-            logicChannel19_ = false;
-            bitField0_ = (bitField0_ & ~0x00040000);
-            logicChannel20_ = false;
-            bitField0_ = (bitField0_ & ~0x00080000);
-            logicChannel21_ = false;
-            bitField0_ = (bitField0_ & ~0x00100000);
-            logicChannel22_ = false;
-            bitField0_ = (bitField0_ & ~0x00200000);
-            logicChannel23_ = false;
-            bitField0_ = (bitField0_ & ~0x00400000);
-            logicChannel24_ = false;
-            bitField0_ = (bitField0_ & ~0x00800000);
-            logicChannel25_ = false;
-            bitField0_ = (bitField0_ & ~0x01000000);
-            logicChannel26_ = false;
-            bitField0_ = (bitField0_ & ~0x02000000);
-            logicChannel27_ = false;
-            bitField0_ = (bitField0_ & ~0x04000000);
-            logicChannel28_ = false;
-            bitField0_ = (bitField0_ & ~0x08000000);
-            logicChannel29_ = false;
-            bitField0_ = (bitField0_ & ~0x10000000);
-            logicChannel30_ = false;
-            bitField0_ = (bitField0_ & ~0x20000000);
-            logicChannel31_ = false;
-            bitField0_ = (bitField0_ & ~0x40000000);
-            logicChannel32_ = false;
-            bitField0_ = (bitField0_ & ~0x80000000);
-            return this;
-          }
-
-          @java.lang.Override
-          public com.google.protobuf.Descriptors.Descriptor
-              getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_descriptor;
-          }
-
-          @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.getDefaultInstance();
-          }
-
-          @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag result = buildPartial();
-            if (!result.isInitialized()) {
-              throw newUninitializedMessageException(result);
-            }
-            return result;
-          }
-
-          @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag(this);
-            int from_bitField0_ = bitField0_;
-            int to_bitField0_ = 0;
-            if (((from_bitField0_ & 0x00000001) != 0)) {
-              result.logicChannel1_ = logicChannel1_;
-              to_bitField0_ |= 0x00000001;
-            }
-            if (((from_bitField0_ & 0x00000002) != 0)) {
-              result.logicChannel2_ = logicChannel2_;
-              to_bitField0_ |= 0x00000002;
-            }
-            if (((from_bitField0_ & 0x00000004) != 0)) {
-              result.logicChannel3_ = logicChannel3_;
-              to_bitField0_ |= 0x00000004;
-            }
-            if (((from_bitField0_ & 0x00000008) != 0)) {
-              result.logicChannel4_ = logicChannel4_;
-              to_bitField0_ |= 0x00000008;
-            }
-            if (((from_bitField0_ & 0x00000010) != 0)) {
-              result.logicChannel5_ = logicChannel5_;
-              to_bitField0_ |= 0x00000010;
-            }
-            if (((from_bitField0_ & 0x00000020) != 0)) {
-              result.logicChannel6_ = logicChannel6_;
-              to_bitField0_ |= 0x00000020;
-            }
-            if (((from_bitField0_ & 0x00000040) != 0)) {
-              result.logicChannel7_ = logicChannel7_;
-              to_bitField0_ |= 0x00000040;
-            }
-            if (((from_bitField0_ & 0x00000080) != 0)) {
-              result.logicChannel8_ = logicChannel8_;
-              to_bitField0_ |= 0x00000080;
-            }
-            if (((from_bitField0_ & 0x00000100) != 0)) {
-              result.logicChannel9_ = logicChannel9_;
-              to_bitField0_ |= 0x00000100;
-            }
-            if (((from_bitField0_ & 0x00000200) != 0)) {
-              result.logicChannel10_ = logicChannel10_;
-              to_bitField0_ |= 0x00000200;
-            }
-            if (((from_bitField0_ & 0x00000400) != 0)) {
-              result.logicChannel11_ = logicChannel11_;
-              to_bitField0_ |= 0x00000400;
-            }
-            if (((from_bitField0_ & 0x00000800) != 0)) {
-              result.logicChannel12_ = logicChannel12_;
-              to_bitField0_ |= 0x00000800;
-            }
-            if (((from_bitField0_ & 0x00001000) != 0)) {
-              result.logicChannel13_ = logicChannel13_;
-              to_bitField0_ |= 0x00001000;
-            }
-            if (((from_bitField0_ & 0x00002000) != 0)) {
-              result.logicChannel14_ = logicChannel14_;
-              to_bitField0_ |= 0x00002000;
-            }
-            if (((from_bitField0_ & 0x00004000) != 0)) {
-              result.logicChannel15_ = logicChannel15_;
-              to_bitField0_ |= 0x00004000;
-            }
-            if (((from_bitField0_ & 0x00008000) != 0)) {
-              result.logicChannel16_ = logicChannel16_;
-              to_bitField0_ |= 0x00008000;
-            }
-            if (((from_bitField0_ & 0x00010000) != 0)) {
-              result.logicChannel17_ = logicChannel17_;
-              to_bitField0_ |= 0x00010000;
-            }
-            if (((from_bitField0_ & 0x00020000) != 0)) {
-              result.logicChannel18_ = logicChannel18_;
-              to_bitField0_ |= 0x00020000;
-            }
-            if (((from_bitField0_ & 0x00040000) != 0)) {
-              result.logicChannel19_ = logicChannel19_;
-              to_bitField0_ |= 0x00040000;
-            }
-            if (((from_bitField0_ & 0x00080000) != 0)) {
-              result.logicChannel20_ = logicChannel20_;
-              to_bitField0_ |= 0x00080000;
-            }
-            if (((from_bitField0_ & 0x00100000) != 0)) {
-              result.logicChannel21_ = logicChannel21_;
-              to_bitField0_ |= 0x00100000;
-            }
-            if (((from_bitField0_ & 0x00200000) != 0)) {
-              result.logicChannel22_ = logicChannel22_;
-              to_bitField0_ |= 0x00200000;
-            }
-            if (((from_bitField0_ & 0x00400000) != 0)) {
-              result.logicChannel23_ = logicChannel23_;
-              to_bitField0_ |= 0x00400000;
-            }
-            if (((from_bitField0_ & 0x00800000) != 0)) {
-              result.logicChannel24_ = logicChannel24_;
-              to_bitField0_ |= 0x00800000;
-            }
-            if (((from_bitField0_ & 0x01000000) != 0)) {
-              result.logicChannel25_ = logicChannel25_;
-              to_bitField0_ |= 0x01000000;
-            }
-            if (((from_bitField0_ & 0x02000000) != 0)) {
-              result.logicChannel26_ = logicChannel26_;
-              to_bitField0_ |= 0x02000000;
-            }
-            if (((from_bitField0_ & 0x04000000) != 0)) {
-              result.logicChannel27_ = logicChannel27_;
-              to_bitField0_ |= 0x04000000;
-            }
-            if (((from_bitField0_ & 0x08000000) != 0)) {
-              result.logicChannel28_ = logicChannel28_;
-              to_bitField0_ |= 0x08000000;
-            }
-            if (((from_bitField0_ & 0x10000000) != 0)) {
-              result.logicChannel29_ = logicChannel29_;
-              to_bitField0_ |= 0x10000000;
-            }
-            if (((from_bitField0_ & 0x20000000) != 0)) {
-              result.logicChannel30_ = logicChannel30_;
-              to_bitField0_ |= 0x20000000;
-            }
-            if (((from_bitField0_ & 0x40000000) != 0)) {
-              result.logicChannel31_ = logicChannel31_;
-              to_bitField0_ |= 0x40000000;
-            }
-            if (((from_bitField0_ & 0x80000000) != 0)) {
-              result.logicChannel32_ = logicChannel32_;
-              to_bitField0_ |= 0x80000000;
-            }
-            result.bitField0_ = to_bitField0_;
-            onBuilt();
-            return result;
-          }
-
-          @java.lang.Override
-          public Builder clone() {
-            return super.clone();
-          }
-          @java.lang.Override
-          public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
-            return super.setField(field, value);
-          }
-          @java.lang.Override
-          public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
-            return super.clearField(field);
-          }
-          @java.lang.Override
-          public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-            return super.clearOneof(oneof);
-          }
-          @java.lang.Override
-          public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
-            return super.setRepeatedField(field, index, value);
-          }
-          @java.lang.Override
-          public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
-            return super.addRepeatedField(field, value);
-          }
-          @java.lang.Override
-          public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag)other);
-            } else {
-              super.mergeFrom(other);
-              return this;
-            }
-          }
-
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.getDefaultInstance()) return this;
-            if (other.hasLogicChannel1()) {
-              setLogicChannel1(other.getLogicChannel1());
-            }
-            if (other.hasLogicChannel2()) {
-              setLogicChannel2(other.getLogicChannel2());
-            }
-            if (other.hasLogicChannel3()) {
-              setLogicChannel3(other.getLogicChannel3());
-            }
-            if (other.hasLogicChannel4()) {
-              setLogicChannel4(other.getLogicChannel4());
-            }
-            if (other.hasLogicChannel5()) {
-              setLogicChannel5(other.getLogicChannel5());
-            }
-            if (other.hasLogicChannel6()) {
-              setLogicChannel6(other.getLogicChannel6());
-            }
-            if (other.hasLogicChannel7()) {
-              setLogicChannel7(other.getLogicChannel7());
-            }
-            if (other.hasLogicChannel8()) {
-              setLogicChannel8(other.getLogicChannel8());
-            }
-            if (other.hasLogicChannel9()) {
-              setLogicChannel9(other.getLogicChannel9());
-            }
-            if (other.hasLogicChannel10()) {
-              setLogicChannel10(other.getLogicChannel10());
-            }
-            if (other.hasLogicChannel11()) {
-              setLogicChannel11(other.getLogicChannel11());
-            }
-            if (other.hasLogicChannel12()) {
-              setLogicChannel12(other.getLogicChannel12());
-            }
-            if (other.hasLogicChannel13()) {
-              setLogicChannel13(other.getLogicChannel13());
-            }
-            if (other.hasLogicChannel14()) {
-              setLogicChannel14(other.getLogicChannel14());
-            }
-            if (other.hasLogicChannel15()) {
-              setLogicChannel15(other.getLogicChannel15());
-            }
-            if (other.hasLogicChannel16()) {
-              setLogicChannel16(other.getLogicChannel16());
-            }
-            if (other.hasLogicChannel17()) {
-              setLogicChannel17(other.getLogicChannel17());
-            }
-            if (other.hasLogicChannel18()) {
-              setLogicChannel18(other.getLogicChannel18());
-            }
-            if (other.hasLogicChannel19()) {
-              setLogicChannel19(other.getLogicChannel19());
-            }
-            if (other.hasLogicChannel20()) {
-              setLogicChannel20(other.getLogicChannel20());
-            }
-            if (other.hasLogicChannel21()) {
-              setLogicChannel21(other.getLogicChannel21());
-            }
-            if (other.hasLogicChannel22()) {
-              setLogicChannel22(other.getLogicChannel22());
-            }
-            if (other.hasLogicChannel23()) {
-              setLogicChannel23(other.getLogicChannel23());
-            }
-            if (other.hasLogicChannel24()) {
-              setLogicChannel24(other.getLogicChannel24());
-            }
-            if (other.hasLogicChannel25()) {
-              setLogicChannel25(other.getLogicChannel25());
-            }
-            if (other.hasLogicChannel26()) {
-              setLogicChannel26(other.getLogicChannel26());
-            }
-            if (other.hasLogicChannel27()) {
-              setLogicChannel27(other.getLogicChannel27());
-            }
-            if (other.hasLogicChannel28()) {
-              setLogicChannel28(other.getLogicChannel28());
-            }
-            if (other.hasLogicChannel29()) {
-              setLogicChannel29(other.getLogicChannel29());
-            }
-            if (other.hasLogicChannel30()) {
-              setLogicChannel30(other.getLogicChannel30());
-            }
-            if (other.hasLogicChannel31()) {
-              setLogicChannel31(other.getLogicChannel31());
-            }
-            if (other.hasLogicChannel32()) {
-              setLogicChannel32(other.getLogicChannel32());
-            }
-            this.mergeUnknownFields(other.unknownFields);
-            onChanged();
-            return this;
-          }
-
-          @java.lang.Override
-          public final boolean isInitialized() {
-            return true;
-          }
-
-          @java.lang.Override
-          public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag parsedMessage = null;
-            try {
-              parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag) e.getUnfinishedMessage();
-              throw e.unwrapIOException();
-            } finally {
-              if (parsedMessage != null) {
-                mergeFrom(parsedMessage);
-              }
-            }
-            return this;
-          }
-          private int bitField0_;
-
-          private boolean logicChannel1_ ;
-          /**
-           * <code>optional bool logicChannel1 = 1;</code>
-           */
-          public boolean hasLogicChannel1() {
-            return ((bitField0_ & 0x00000001) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel1 = 1;</code>
-           */
-          public boolean getLogicChannel1() {
-            return logicChannel1_;
-          }
-          /**
-           * <code>optional bool logicChannel1 = 1;</code>
-           */
-          public Builder setLogicChannel1(boolean value) {
-            bitField0_ |= 0x00000001;
-            logicChannel1_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel1 = 1;</code>
-           */
-          public Builder clearLogicChannel1() {
-            bitField0_ = (bitField0_ & ~0x00000001);
-            logicChannel1_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel2_ ;
-          /**
-           * <code>optional bool logicChannel2 = 2;</code>
-           */
-          public boolean hasLogicChannel2() {
-            return ((bitField0_ & 0x00000002) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel2 = 2;</code>
-           */
-          public boolean getLogicChannel2() {
-            return logicChannel2_;
-          }
-          /**
-           * <code>optional bool logicChannel2 = 2;</code>
-           */
-          public Builder setLogicChannel2(boolean value) {
-            bitField0_ |= 0x00000002;
-            logicChannel2_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel2 = 2;</code>
-           */
-          public Builder clearLogicChannel2() {
-            bitField0_ = (bitField0_ & ~0x00000002);
-            logicChannel2_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel3_ ;
-          /**
-           * <code>optional bool logicChannel3 = 3;</code>
-           */
-          public boolean hasLogicChannel3() {
-            return ((bitField0_ & 0x00000004) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel3 = 3;</code>
-           */
-          public boolean getLogicChannel3() {
-            return logicChannel3_;
-          }
-          /**
-           * <code>optional bool logicChannel3 = 3;</code>
-           */
-          public Builder setLogicChannel3(boolean value) {
-            bitField0_ |= 0x00000004;
-            logicChannel3_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel3 = 3;</code>
-           */
-          public Builder clearLogicChannel3() {
-            bitField0_ = (bitField0_ & ~0x00000004);
-            logicChannel3_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel4_ ;
-          /**
-           * <code>optional bool logicChannel4 = 4;</code>
-           */
-          public boolean hasLogicChannel4() {
-            return ((bitField0_ & 0x00000008) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel4 = 4;</code>
-           */
-          public boolean getLogicChannel4() {
-            return logicChannel4_;
-          }
-          /**
-           * <code>optional bool logicChannel4 = 4;</code>
-           */
-          public Builder setLogicChannel4(boolean value) {
-            bitField0_ |= 0x00000008;
-            logicChannel4_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel4 = 4;</code>
-           */
-          public Builder clearLogicChannel4() {
-            bitField0_ = (bitField0_ & ~0x00000008);
-            logicChannel4_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel5_ ;
-          /**
-           * <code>optional bool logicChannel5 = 5;</code>
-           */
-          public boolean hasLogicChannel5() {
-            return ((bitField0_ & 0x00000010) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel5 = 5;</code>
-           */
-          public boolean getLogicChannel5() {
-            return logicChannel5_;
-          }
-          /**
-           * <code>optional bool logicChannel5 = 5;</code>
-           */
-          public Builder setLogicChannel5(boolean value) {
-            bitField0_ |= 0x00000010;
-            logicChannel5_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel5 = 5;</code>
-           */
-          public Builder clearLogicChannel5() {
-            bitField0_ = (bitField0_ & ~0x00000010);
-            logicChannel5_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel6_ ;
-          /**
-           * <code>optional bool logicChannel6 = 6;</code>
-           */
-          public boolean hasLogicChannel6() {
-            return ((bitField0_ & 0x00000020) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel6 = 6;</code>
-           */
-          public boolean getLogicChannel6() {
-            return logicChannel6_;
-          }
-          /**
-           * <code>optional bool logicChannel6 = 6;</code>
-           */
-          public Builder setLogicChannel6(boolean value) {
-            bitField0_ |= 0x00000020;
-            logicChannel6_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel6 = 6;</code>
-           */
-          public Builder clearLogicChannel6() {
-            bitField0_ = (bitField0_ & ~0x00000020);
-            logicChannel6_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel7_ ;
-          /**
-           * <code>optional bool logicChannel7 = 7;</code>
-           */
-          public boolean hasLogicChannel7() {
-            return ((bitField0_ & 0x00000040) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel7 = 7;</code>
-           */
-          public boolean getLogicChannel7() {
-            return logicChannel7_;
-          }
-          /**
-           * <code>optional bool logicChannel7 = 7;</code>
-           */
-          public Builder setLogicChannel7(boolean value) {
-            bitField0_ |= 0x00000040;
-            logicChannel7_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel7 = 7;</code>
-           */
-          public Builder clearLogicChannel7() {
-            bitField0_ = (bitField0_ & ~0x00000040);
-            logicChannel7_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel8_ ;
-          /**
-           * <code>optional bool logicChannel8 = 8;</code>
-           */
-          public boolean hasLogicChannel8() {
-            return ((bitField0_ & 0x00000080) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel8 = 8;</code>
-           */
-          public boolean getLogicChannel8() {
-            return logicChannel8_;
-          }
-          /**
-           * <code>optional bool logicChannel8 = 8;</code>
-           */
-          public Builder setLogicChannel8(boolean value) {
-            bitField0_ |= 0x00000080;
-            logicChannel8_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel8 = 8;</code>
-           */
-          public Builder clearLogicChannel8() {
-            bitField0_ = (bitField0_ & ~0x00000080);
-            logicChannel8_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel9_ ;
-          /**
-           * <code>optional bool logicChannel9 = 9;</code>
-           */
-          public boolean hasLogicChannel9() {
-            return ((bitField0_ & 0x00000100) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel9 = 9;</code>
-           */
-          public boolean getLogicChannel9() {
-            return logicChannel9_;
-          }
-          /**
-           * <code>optional bool logicChannel9 = 9;</code>
-           */
-          public Builder setLogicChannel9(boolean value) {
-            bitField0_ |= 0x00000100;
-            logicChannel9_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel9 = 9;</code>
-           */
-          public Builder clearLogicChannel9() {
-            bitField0_ = (bitField0_ & ~0x00000100);
-            logicChannel9_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel10_ ;
-          /**
-           * <code>optional bool logicChannel10 = 10;</code>
-           */
-          public boolean hasLogicChannel10() {
-            return ((bitField0_ & 0x00000200) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel10 = 10;</code>
-           */
-          public boolean getLogicChannel10() {
-            return logicChannel10_;
-          }
-          /**
-           * <code>optional bool logicChannel10 = 10;</code>
-           */
-          public Builder setLogicChannel10(boolean value) {
-            bitField0_ |= 0x00000200;
-            logicChannel10_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel10 = 10;</code>
-           */
-          public Builder clearLogicChannel10() {
-            bitField0_ = (bitField0_ & ~0x00000200);
-            logicChannel10_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel11_ ;
-          /**
-           * <code>optional bool logicChannel11 = 11;</code>
-           */
-          public boolean hasLogicChannel11() {
-            return ((bitField0_ & 0x00000400) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel11 = 11;</code>
-           */
-          public boolean getLogicChannel11() {
-            return logicChannel11_;
-          }
-          /**
-           * <code>optional bool logicChannel11 = 11;</code>
-           */
-          public Builder setLogicChannel11(boolean value) {
-            bitField0_ |= 0x00000400;
-            logicChannel11_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel11 = 11;</code>
-           */
-          public Builder clearLogicChannel11() {
-            bitField0_ = (bitField0_ & ~0x00000400);
-            logicChannel11_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel12_ ;
-          /**
-           * <code>optional bool logicChannel12 = 12;</code>
-           */
-          public boolean hasLogicChannel12() {
-            return ((bitField0_ & 0x00000800) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel12 = 12;</code>
-           */
-          public boolean getLogicChannel12() {
-            return logicChannel12_;
-          }
-          /**
-           * <code>optional bool logicChannel12 = 12;</code>
-           */
-          public Builder setLogicChannel12(boolean value) {
-            bitField0_ |= 0x00000800;
-            logicChannel12_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel12 = 12;</code>
-           */
-          public Builder clearLogicChannel12() {
-            bitField0_ = (bitField0_ & ~0x00000800);
-            logicChannel12_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel13_ ;
-          /**
-           * <code>optional bool logicChannel13 = 13;</code>
-           */
-          public boolean hasLogicChannel13() {
-            return ((bitField0_ & 0x00001000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel13 = 13;</code>
-           */
-          public boolean getLogicChannel13() {
-            return logicChannel13_;
-          }
-          /**
-           * <code>optional bool logicChannel13 = 13;</code>
-           */
-          public Builder setLogicChannel13(boolean value) {
-            bitField0_ |= 0x00001000;
-            logicChannel13_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel13 = 13;</code>
-           */
-          public Builder clearLogicChannel13() {
-            bitField0_ = (bitField0_ & ~0x00001000);
-            logicChannel13_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel14_ ;
-          /**
-           * <code>optional bool logicChannel14 = 14;</code>
-           */
-          public boolean hasLogicChannel14() {
-            return ((bitField0_ & 0x00002000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel14 = 14;</code>
-           */
-          public boolean getLogicChannel14() {
-            return logicChannel14_;
-          }
-          /**
-           * <code>optional bool logicChannel14 = 14;</code>
-           */
-          public Builder setLogicChannel14(boolean value) {
-            bitField0_ |= 0x00002000;
-            logicChannel14_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel14 = 14;</code>
-           */
-          public Builder clearLogicChannel14() {
-            bitField0_ = (bitField0_ & ~0x00002000);
-            logicChannel14_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel15_ ;
-          /**
-           * <code>optional bool logicChannel15 = 15;</code>
-           */
-          public boolean hasLogicChannel15() {
-            return ((bitField0_ & 0x00004000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel15 = 15;</code>
-           */
-          public boolean getLogicChannel15() {
-            return logicChannel15_;
-          }
-          /**
-           * <code>optional bool logicChannel15 = 15;</code>
-           */
-          public Builder setLogicChannel15(boolean value) {
-            bitField0_ |= 0x00004000;
-            logicChannel15_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel15 = 15;</code>
-           */
-          public Builder clearLogicChannel15() {
-            bitField0_ = (bitField0_ & ~0x00004000);
-            logicChannel15_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel16_ ;
-          /**
-           * <code>optional bool logicChannel16 = 16;</code>
-           */
-          public boolean hasLogicChannel16() {
-            return ((bitField0_ & 0x00008000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel16 = 16;</code>
-           */
-          public boolean getLogicChannel16() {
-            return logicChannel16_;
-          }
-          /**
-           * <code>optional bool logicChannel16 = 16;</code>
-           */
-          public Builder setLogicChannel16(boolean value) {
-            bitField0_ |= 0x00008000;
-            logicChannel16_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel16 = 16;</code>
-           */
-          public Builder clearLogicChannel16() {
-            bitField0_ = (bitField0_ & ~0x00008000);
-            logicChannel16_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel17_ ;
-          /**
-           * <code>optional bool logicChannel17 = 17;</code>
-           */
-          public boolean hasLogicChannel17() {
-            return ((bitField0_ & 0x00010000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel17 = 17;</code>
-           */
-          public boolean getLogicChannel17() {
-            return logicChannel17_;
-          }
-          /**
-           * <code>optional bool logicChannel17 = 17;</code>
-           */
-          public Builder setLogicChannel17(boolean value) {
-            bitField0_ |= 0x00010000;
-            logicChannel17_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel17 = 17;</code>
-           */
-          public Builder clearLogicChannel17() {
-            bitField0_ = (bitField0_ & ~0x00010000);
-            logicChannel17_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel18_ ;
-          /**
-           * <code>optional bool logicChannel18 = 18;</code>
-           */
-          public boolean hasLogicChannel18() {
-            return ((bitField0_ & 0x00020000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel18 = 18;</code>
-           */
-          public boolean getLogicChannel18() {
-            return logicChannel18_;
-          }
-          /**
-           * <code>optional bool logicChannel18 = 18;</code>
-           */
-          public Builder setLogicChannel18(boolean value) {
-            bitField0_ |= 0x00020000;
-            logicChannel18_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel18 = 18;</code>
-           */
-          public Builder clearLogicChannel18() {
-            bitField0_ = (bitField0_ & ~0x00020000);
-            logicChannel18_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel19_ ;
-          /**
-           * <code>optional bool logicChannel19 = 19;</code>
-           */
-          public boolean hasLogicChannel19() {
-            return ((bitField0_ & 0x00040000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel19 = 19;</code>
-           */
-          public boolean getLogicChannel19() {
-            return logicChannel19_;
-          }
-          /**
-           * <code>optional bool logicChannel19 = 19;</code>
-           */
-          public Builder setLogicChannel19(boolean value) {
-            bitField0_ |= 0x00040000;
-            logicChannel19_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel19 = 19;</code>
-           */
-          public Builder clearLogicChannel19() {
-            bitField0_ = (bitField0_ & ~0x00040000);
-            logicChannel19_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel20_ ;
-          /**
-           * <code>optional bool logicChannel20 = 20;</code>
-           */
-          public boolean hasLogicChannel20() {
-            return ((bitField0_ & 0x00080000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel20 = 20;</code>
-           */
-          public boolean getLogicChannel20() {
-            return logicChannel20_;
-          }
-          /**
-           * <code>optional bool logicChannel20 = 20;</code>
-           */
-          public Builder setLogicChannel20(boolean value) {
-            bitField0_ |= 0x00080000;
-            logicChannel20_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel20 = 20;</code>
-           */
-          public Builder clearLogicChannel20() {
-            bitField0_ = (bitField0_ & ~0x00080000);
-            logicChannel20_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel21_ ;
-          /**
-           * <code>optional bool logicChannel21 = 21;</code>
-           */
-          public boolean hasLogicChannel21() {
-            return ((bitField0_ & 0x00100000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel21 = 21;</code>
-           */
-          public boolean getLogicChannel21() {
-            return logicChannel21_;
-          }
-          /**
-           * <code>optional bool logicChannel21 = 21;</code>
-           */
-          public Builder setLogicChannel21(boolean value) {
-            bitField0_ |= 0x00100000;
-            logicChannel21_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel21 = 21;</code>
-           */
-          public Builder clearLogicChannel21() {
-            bitField0_ = (bitField0_ & ~0x00100000);
-            logicChannel21_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel22_ ;
-          /**
-           * <code>optional bool logicChannel22 = 22;</code>
-           */
-          public boolean hasLogicChannel22() {
-            return ((bitField0_ & 0x00200000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel22 = 22;</code>
-           */
-          public boolean getLogicChannel22() {
-            return logicChannel22_;
-          }
-          /**
-           * <code>optional bool logicChannel22 = 22;</code>
-           */
-          public Builder setLogicChannel22(boolean value) {
-            bitField0_ |= 0x00200000;
-            logicChannel22_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel22 = 22;</code>
-           */
-          public Builder clearLogicChannel22() {
-            bitField0_ = (bitField0_ & ~0x00200000);
-            logicChannel22_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel23_ ;
-          /**
-           * <code>optional bool logicChannel23 = 23;</code>
-           */
-          public boolean hasLogicChannel23() {
-            return ((bitField0_ & 0x00400000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel23 = 23;</code>
-           */
-          public boolean getLogicChannel23() {
-            return logicChannel23_;
-          }
-          /**
-           * <code>optional bool logicChannel23 = 23;</code>
-           */
-          public Builder setLogicChannel23(boolean value) {
-            bitField0_ |= 0x00400000;
-            logicChannel23_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel23 = 23;</code>
-           */
-          public Builder clearLogicChannel23() {
-            bitField0_ = (bitField0_ & ~0x00400000);
-            logicChannel23_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel24_ ;
-          /**
-           * <code>optional bool logicChannel24 = 24;</code>
-           */
-          public boolean hasLogicChannel24() {
-            return ((bitField0_ & 0x00800000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel24 = 24;</code>
-           */
-          public boolean getLogicChannel24() {
-            return logicChannel24_;
-          }
-          /**
-           * <code>optional bool logicChannel24 = 24;</code>
-           */
-          public Builder setLogicChannel24(boolean value) {
-            bitField0_ |= 0x00800000;
-            logicChannel24_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel24 = 24;</code>
-           */
-          public Builder clearLogicChannel24() {
-            bitField0_ = (bitField0_ & ~0x00800000);
-            logicChannel24_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel25_ ;
-          /**
-           * <code>optional bool logicChannel25 = 25;</code>
-           */
-          public boolean hasLogicChannel25() {
-            return ((bitField0_ & 0x01000000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel25 = 25;</code>
-           */
-          public boolean getLogicChannel25() {
-            return logicChannel25_;
-          }
-          /**
-           * <code>optional bool logicChannel25 = 25;</code>
-           */
-          public Builder setLogicChannel25(boolean value) {
-            bitField0_ |= 0x01000000;
-            logicChannel25_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel25 = 25;</code>
-           */
-          public Builder clearLogicChannel25() {
-            bitField0_ = (bitField0_ & ~0x01000000);
-            logicChannel25_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel26_ ;
-          /**
-           * <code>optional bool logicChannel26 = 26;</code>
-           */
-          public boolean hasLogicChannel26() {
-            return ((bitField0_ & 0x02000000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel26 = 26;</code>
-           */
-          public boolean getLogicChannel26() {
-            return logicChannel26_;
-          }
-          /**
-           * <code>optional bool logicChannel26 = 26;</code>
-           */
-          public Builder setLogicChannel26(boolean value) {
-            bitField0_ |= 0x02000000;
-            logicChannel26_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel26 = 26;</code>
-           */
-          public Builder clearLogicChannel26() {
-            bitField0_ = (bitField0_ & ~0x02000000);
-            logicChannel26_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel27_ ;
-          /**
-           * <code>optional bool logicChannel27 = 27;</code>
-           */
-          public boolean hasLogicChannel27() {
-            return ((bitField0_ & 0x04000000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel27 = 27;</code>
-           */
-          public boolean getLogicChannel27() {
-            return logicChannel27_;
-          }
-          /**
-           * <code>optional bool logicChannel27 = 27;</code>
-           */
-          public Builder setLogicChannel27(boolean value) {
-            bitField0_ |= 0x04000000;
-            logicChannel27_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel27 = 27;</code>
-           */
-          public Builder clearLogicChannel27() {
-            bitField0_ = (bitField0_ & ~0x04000000);
-            logicChannel27_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel28_ ;
-          /**
-           * <code>optional bool logicChannel28 = 28;</code>
-           */
-          public boolean hasLogicChannel28() {
-            return ((bitField0_ & 0x08000000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel28 = 28;</code>
-           */
-          public boolean getLogicChannel28() {
-            return logicChannel28_;
-          }
-          /**
-           * <code>optional bool logicChannel28 = 28;</code>
-           */
-          public Builder setLogicChannel28(boolean value) {
-            bitField0_ |= 0x08000000;
-            logicChannel28_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel28 = 28;</code>
-           */
-          public Builder clearLogicChannel28() {
-            bitField0_ = (bitField0_ & ~0x08000000);
-            logicChannel28_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel29_ ;
-          /**
-           * <code>optional bool logicChannel29 = 29;</code>
-           */
-          public boolean hasLogicChannel29() {
-            return ((bitField0_ & 0x10000000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel29 = 29;</code>
-           */
-          public boolean getLogicChannel29() {
-            return logicChannel29_;
-          }
-          /**
-           * <code>optional bool logicChannel29 = 29;</code>
-           */
-          public Builder setLogicChannel29(boolean value) {
-            bitField0_ |= 0x10000000;
-            logicChannel29_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel29 = 29;</code>
-           */
-          public Builder clearLogicChannel29() {
-            bitField0_ = (bitField0_ & ~0x10000000);
-            logicChannel29_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel30_ ;
-          /**
-           * <code>optional bool logicChannel30 = 30;</code>
-           */
-          public boolean hasLogicChannel30() {
-            return ((bitField0_ & 0x20000000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel30 = 30;</code>
-           */
-          public boolean getLogicChannel30() {
-            return logicChannel30_;
-          }
-          /**
-           * <code>optional bool logicChannel30 = 30;</code>
-           */
-          public Builder setLogicChannel30(boolean value) {
-            bitField0_ |= 0x20000000;
-            logicChannel30_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel30 = 30;</code>
-           */
-          public Builder clearLogicChannel30() {
-            bitField0_ = (bitField0_ & ~0x20000000);
-            logicChannel30_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel31_ ;
-          /**
-           * <code>optional bool logicChannel31 = 31;</code>
-           */
-          public boolean hasLogicChannel31() {
-            return ((bitField0_ & 0x40000000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel31 = 31;</code>
-           */
-          public boolean getLogicChannel31() {
-            return logicChannel31_;
-          }
-          /**
-           * <code>optional bool logicChannel31 = 31;</code>
-           */
-          public Builder setLogicChannel31(boolean value) {
-            bitField0_ |= 0x40000000;
-            logicChannel31_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel31 = 31;</code>
-           */
-          public Builder clearLogicChannel31() {
-            bitField0_ = (bitField0_ & ~0x40000000);
-            logicChannel31_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean logicChannel32_ ;
-          /**
-           * <code>optional bool logicChannel32 = 32;</code>
-           */
-          public boolean hasLogicChannel32() {
-            return ((bitField0_ & 0x80000000) != 0);
-          }
-          /**
-           * <code>optional bool logicChannel32 = 32;</code>
-           */
-          public boolean getLogicChannel32() {
-            return logicChannel32_;
-          }
-          /**
-           * <code>optional bool logicChannel32 = 32;</code>
-           */
-          public Builder setLogicChannel32(boolean value) {
-            bitField0_ |= 0x80000000;
-            logicChannel32_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool logicChannel32 = 32;</code>
-           */
-          public Builder clearLogicChannel32() {
-            bitField0_ = (bitField0_ & ~0x80000000);
-            logicChannel32_ = false;
-            onChanged();
-            return this;
-          }
-          @java.lang.Override
-          public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
-            return super.setUnknownFields(unknownFields);
-          }
-
-          @java.lang.Override
-          public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
-            return super.mergeUnknownFields(unknownFields);
-          }
-
-
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag)
-        }
-
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag DEFAULT_INSTANCE;
-        static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag();
-        }
-
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag getDefaultInstance() {
-          return DEFAULT_INSTANCE;
-        }
-
-        @java.lang.Deprecated public static final com.google.protobuf.Parser<VideoShelterFlag>
-            PARSER = new com.google.protobuf.AbstractParser<VideoShelterFlag>() {
-          @java.lang.Override
-          public VideoShelterFlag parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new VideoShelterFlag(input, extensionRegistry);
-          }
-        };
-
-        public static com.google.protobuf.Parser<VideoShelterFlag> parser() {
-          return PARSER;
-        }
-
-        @java.lang.Override
-        public com.google.protobuf.Parser<VideoShelterFlag> getParserForType() {
-          return PARSER;
-        }
-
-        @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag getDefaultInstanceForType() {
-          return DEFAULT_INSTANCE;
-        }
-
-      }
-
-      public interface StorageFaultFlagOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag)
-          com.google.protobuf.MessageOrBuilder {
-
-        /**
-         * <code>optional bool storage1 = 1;</code>
-         */
-        boolean hasStorage1();
-        /**
-         * <code>optional bool storage1 = 1;</code>
-         */
-        boolean getStorage1();
-
-        /**
-         * <code>optional bool storage2 = 2;</code>
-         */
-        boolean hasStorage2();
-        /**
-         * <code>optional bool storage2 = 2;</code>
-         */
-        boolean getStorage2();
-
-        /**
-         * <code>optional bool storage3 = 3;</code>
-         */
-        boolean hasStorage3();
-        /**
-         * <code>optional bool storage3 = 3;</code>
-         */
-        boolean getStorage3();
-
-        /**
-         * <code>optional bool storage4 = 4;</code>
-         */
-        boolean hasStorage4();
-        /**
-         * <code>optional bool storage4 = 4;</code>
-         */
-        boolean getStorage4();
-
-        /**
-         * <code>optional bool storage5 = 5;</code>
-         */
-        boolean hasStorage5();
-        /**
-         * <code>optional bool storage5 = 5;</code>
-         */
-        boolean getStorage5();
-
-        /**
-         * <code>optional bool storage6 = 6;</code>
-         */
-        boolean hasStorage6();
-        /**
-         * <code>optional bool storage6 = 6;</code>
-         */
-        boolean getStorage6();
-
-        /**
-         * <code>optional bool storage7 = 7;</code>
-         */
-        boolean hasStorage7();
-        /**
-         * <code>optional bool storage7 = 7;</code>
-         */
-        boolean getStorage7();
-
-        /**
-         * <code>optional bool storage8 = 8;</code>
-         */
-        boolean hasStorage8();
-        /**
-         * <code>optional bool storage8 = 8;</code>
-         */
-        boolean getStorage8();
-
-        /**
-         * <code>optional bool storage9 = 9;</code>
-         */
-        boolean hasStorage9();
-        /**
-         * <code>optional bool storage9 = 9;</code>
-         */
-        boolean getStorage9();
-
-        /**
-         * <code>optional bool storage10 = 10;</code>
-         */
-        boolean hasStorage10();
-        /**
-         * <code>optional bool storage10 = 10;</code>
-         */
-        boolean getStorage10();
-
-        /**
-         * <code>optional bool storage11 = 11;</code>
-         */
-        boolean hasStorage11();
-        /**
-         * <code>optional bool storage11 = 11;</code>
-         */
-        boolean getStorage11();
-
-        /**
-         * <code>optional bool storage12 = 12;</code>
-         */
-        boolean hasStorage12();
-        /**
-         * <code>optional bool storage12 = 12;</code>
-         */
-        boolean getStorage12();
-
-        /**
-         * <code>optional bool backupStorage1 = 13;</code>
-         */
-        boolean hasBackupStorage1();
-        /**
-         * <code>optional bool backupStorage1 = 13;</code>
-         */
-        boolean getBackupStorage1();
-
-        /**
-         * <code>optional bool backupStorage2 = 14;</code>
-         */
-        boolean hasBackupStorage2();
-        /**
-         * <code>optional bool backupStorage2 = 14;</code>
-         */
-        boolean getBackupStorage2();
-
-        /**
-         * <code>optional bool backupStorage3 = 15;</code>
-         */
-        boolean hasBackupStorage3();
-        /**
-         * <code>optional bool backupStorage3 = 15;</code>
-         */
-        boolean getBackupStorage3();
-
-        /**
-         * <code>optional bool backupStorage4 = 16;</code>
-         */
-        boolean hasBackupStorage4();
-        /**
-         * <code>optional bool backupStorage4 = 16;</code>
-         */
-        boolean getBackupStorage4();
-      }
-      /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag}
-       */
-      public  static final class StorageFaultFlag extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag)
-          StorageFaultFlagOrBuilder {
-      private static final long serialVersionUID = 0L;
-        // Use StorageFaultFlag.newBuilder() to construct.
-        private StorageFaultFlag(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-          super(builder);
-        }
-        private StorageFaultFlag() {
-        }
-
-        @java.lang.Override
-        public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-          return this.unknownFields;
-        }
-        private StorageFaultFlag(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          this();
-          if (extensionRegistry == null) {
-            throw new java.lang.NullPointerException();
-          }
-          int mutable_bitField0_ = 0;
-          com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-              com.google.protobuf.UnknownFieldSet.newBuilder();
-          try {
-            boolean done = false;
-            while (!done) {
-              int tag = input.readTag();
-              switch (tag) {
-                case 0:
-                  done = true;
-                  break;
-                case 8: {
-                  bitField0_ |= 0x00000001;
-                  storage1_ = input.readBool();
-                  break;
-                }
-                case 16: {
-                  bitField0_ |= 0x00000002;
-                  storage2_ = input.readBool();
-                  break;
-                }
-                case 24: {
-                  bitField0_ |= 0x00000004;
-                  storage3_ = input.readBool();
-                  break;
-                }
-                case 32: {
-                  bitField0_ |= 0x00000008;
-                  storage4_ = input.readBool();
-                  break;
-                }
-                case 40: {
-                  bitField0_ |= 0x00000010;
-                  storage5_ = input.readBool();
-                  break;
-                }
-                case 48: {
-                  bitField0_ |= 0x00000020;
-                  storage6_ = input.readBool();
-                  break;
-                }
-                case 56: {
-                  bitField0_ |= 0x00000040;
-                  storage7_ = input.readBool();
-                  break;
-                }
-                case 64: {
-                  bitField0_ |= 0x00000080;
-                  storage8_ = input.readBool();
-                  break;
-                }
-                case 72: {
-                  bitField0_ |= 0x00000100;
-                  storage9_ = input.readBool();
-                  break;
-                }
-                case 80: {
-                  bitField0_ |= 0x00000200;
-                  storage10_ = input.readBool();
-                  break;
-                }
-                case 88: {
-                  bitField0_ |= 0x00000400;
-                  storage11_ = input.readBool();
-                  break;
-                }
-                case 96: {
-                  bitField0_ |= 0x00000800;
-                  storage12_ = input.readBool();
-                  break;
-                }
-                case 104: {
-                  bitField0_ |= 0x00001000;
-                  backupStorage1_ = input.readBool();
-                  break;
-                }
-                case 112: {
-                  bitField0_ |= 0x00002000;
-                  backupStorage2_ = input.readBool();
-                  break;
-                }
-                case 120: {
-                  bitField0_ |= 0x00004000;
-                  backupStorage3_ = input.readBool();
-                  break;
-                }
-                case 128: {
-                  bitField0_ |= 0x00008000;
-                  backupStorage4_ = input.readBool();
-                  break;
-                }
-                default: {
-                  if (!parseUnknownField(
-                      input, unknownFields, extensionRegistry, tag)) {
-                    done = true;
-                  }
-                  break;
-                }
-              }
-            }
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            throw e.setUnfinishedMessage(this);
-          } catch (java.io.IOException e) {
-            throw new com.google.protobuf.InvalidProtocolBufferException(
-                e).setUnfinishedMessage(this);
-          } finally {
-            this.unknownFields = unknownFields.build();
-            makeExtensionsImmutable();
-          }
-        }
-        public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_descriptor;
-        }
-
-        @java.lang.Override
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.Builder.class);
-        }
-
-        private int bitField0_;
-        public static final int STORAGE1_FIELD_NUMBER = 1;
-        private boolean storage1_;
-        /**
-         * <code>optional bool storage1 = 1;</code>
-         */
-        public boolean hasStorage1() {
-          return ((bitField0_ & 0x00000001) != 0);
-        }
-        /**
-         * <code>optional bool storage1 = 1;</code>
-         */
-        public boolean getStorage1() {
-          return storage1_;
-        }
-
-        public static final int STORAGE2_FIELD_NUMBER = 2;
-        private boolean storage2_;
-        /**
-         * <code>optional bool storage2 = 2;</code>
-         */
-        public boolean hasStorage2() {
-          return ((bitField0_ & 0x00000002) != 0);
-        }
-        /**
-         * <code>optional bool storage2 = 2;</code>
-         */
-        public boolean getStorage2() {
-          return storage2_;
-        }
-
-        public static final int STORAGE3_FIELD_NUMBER = 3;
-        private boolean storage3_;
-        /**
-         * <code>optional bool storage3 = 3;</code>
-         */
-        public boolean hasStorage3() {
-          return ((bitField0_ & 0x00000004) != 0);
-        }
-        /**
-         * <code>optional bool storage3 = 3;</code>
-         */
-        public boolean getStorage3() {
-          return storage3_;
-        }
-
-        public static final int STORAGE4_FIELD_NUMBER = 4;
-        private boolean storage4_;
-        /**
-         * <code>optional bool storage4 = 4;</code>
-         */
-        public boolean hasStorage4() {
-          return ((bitField0_ & 0x00000008) != 0);
-        }
-        /**
-         * <code>optional bool storage4 = 4;</code>
-         */
-        public boolean getStorage4() {
-          return storage4_;
-        }
-
-        public static final int STORAGE5_FIELD_NUMBER = 5;
-        private boolean storage5_;
-        /**
-         * <code>optional bool storage5 = 5;</code>
-         */
-        public boolean hasStorage5() {
-          return ((bitField0_ & 0x00000010) != 0);
-        }
-        /**
-         * <code>optional bool storage5 = 5;</code>
-         */
-        public boolean getStorage5() {
-          return storage5_;
-        }
-
-        public static final int STORAGE6_FIELD_NUMBER = 6;
-        private boolean storage6_;
-        /**
-         * <code>optional bool storage6 = 6;</code>
-         */
-        public boolean hasStorage6() {
-          return ((bitField0_ & 0x00000020) != 0);
-        }
-        /**
-         * <code>optional bool storage6 = 6;</code>
-         */
-        public boolean getStorage6() {
-          return storage6_;
-        }
-
-        public static final int STORAGE7_FIELD_NUMBER = 7;
-        private boolean storage7_;
-        /**
-         * <code>optional bool storage7 = 7;</code>
-         */
-        public boolean hasStorage7() {
-          return ((bitField0_ & 0x00000040) != 0);
-        }
-        /**
-         * <code>optional bool storage7 = 7;</code>
-         */
-        public boolean getStorage7() {
-          return storage7_;
-        }
-
-        public static final int STORAGE8_FIELD_NUMBER = 8;
-        private boolean storage8_;
-        /**
-         * <code>optional bool storage8 = 8;</code>
-         */
-        public boolean hasStorage8() {
-          return ((bitField0_ & 0x00000080) != 0);
-        }
-        /**
-         * <code>optional bool storage8 = 8;</code>
-         */
-        public boolean getStorage8() {
-          return storage8_;
-        }
-
-        public static final int STORAGE9_FIELD_NUMBER = 9;
-        private boolean storage9_;
-        /**
-         * <code>optional bool storage9 = 9;</code>
-         */
-        public boolean hasStorage9() {
-          return ((bitField0_ & 0x00000100) != 0);
-        }
-        /**
-         * <code>optional bool storage9 = 9;</code>
-         */
-        public boolean getStorage9() {
-          return storage9_;
-        }
-
-        public static final int STORAGE10_FIELD_NUMBER = 10;
-        private boolean storage10_;
-        /**
-         * <code>optional bool storage10 = 10;</code>
-         */
-        public boolean hasStorage10() {
-          return ((bitField0_ & 0x00000200) != 0);
-        }
-        /**
-         * <code>optional bool storage10 = 10;</code>
-         */
-        public boolean getStorage10() {
-          return storage10_;
-        }
-
-        public static final int STORAGE11_FIELD_NUMBER = 11;
-        private boolean storage11_;
-        /**
-         * <code>optional bool storage11 = 11;</code>
-         */
-        public boolean hasStorage11() {
-          return ((bitField0_ & 0x00000400) != 0);
-        }
-        /**
-         * <code>optional bool storage11 = 11;</code>
-         */
-        public boolean getStorage11() {
-          return storage11_;
-        }
-
-        public static final int STORAGE12_FIELD_NUMBER = 12;
-        private boolean storage12_;
-        /**
-         * <code>optional bool storage12 = 12;</code>
-         */
-        public boolean hasStorage12() {
-          return ((bitField0_ & 0x00000800) != 0);
-        }
-        /**
-         * <code>optional bool storage12 = 12;</code>
-         */
-        public boolean getStorage12() {
-          return storage12_;
-        }
-
-        public static final int BACKUPSTORAGE1_FIELD_NUMBER = 13;
-        private boolean backupStorage1_;
-        /**
-         * <code>optional bool backupStorage1 = 13;</code>
-         */
-        public boolean hasBackupStorage1() {
-          return ((bitField0_ & 0x00001000) != 0);
-        }
-        /**
-         * <code>optional bool backupStorage1 = 13;</code>
-         */
-        public boolean getBackupStorage1() {
-          return backupStorage1_;
-        }
-
-        public static final int BACKUPSTORAGE2_FIELD_NUMBER = 14;
-        private boolean backupStorage2_;
-        /**
-         * <code>optional bool backupStorage2 = 14;</code>
-         */
-        public boolean hasBackupStorage2() {
-          return ((bitField0_ & 0x00002000) != 0);
-        }
-        /**
-         * <code>optional bool backupStorage2 = 14;</code>
-         */
-        public boolean getBackupStorage2() {
-          return backupStorage2_;
-        }
-
-        public static final int BACKUPSTORAGE3_FIELD_NUMBER = 15;
-        private boolean backupStorage3_;
-        /**
-         * <code>optional bool backupStorage3 = 15;</code>
-         */
-        public boolean hasBackupStorage3() {
-          return ((bitField0_ & 0x00004000) != 0);
-        }
-        /**
-         * <code>optional bool backupStorage3 = 15;</code>
-         */
-        public boolean getBackupStorage3() {
-          return backupStorage3_;
-        }
-
-        public static final int BACKUPSTORAGE4_FIELD_NUMBER = 16;
-        private boolean backupStorage4_;
-        /**
-         * <code>optional bool backupStorage4 = 16;</code>
-         */
-        public boolean hasBackupStorage4() {
-          return ((bitField0_ & 0x00008000) != 0);
-        }
-        /**
-         * <code>optional bool backupStorage4 = 16;</code>
-         */
-        public boolean getBackupStorage4() {
-          return backupStorage4_;
-        }
-
-        private byte memoizedIsInitialized = -1;
-        @java.lang.Override
-        public final boolean isInitialized() {
-          byte isInitialized = memoizedIsInitialized;
-          if (isInitialized == 1) return true;
-          if (isInitialized == 0) return false;
-
-          memoizedIsInitialized = 1;
-          return true;
-        }
-
-        @java.lang.Override
-        public void writeTo(com.google.protobuf.CodedOutputStream output)
-                            throws java.io.IOException {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            output.writeBool(1, storage1_);
-          }
-          if (((bitField0_ & 0x00000002) != 0)) {
-            output.writeBool(2, storage2_);
-          }
-          if (((bitField0_ & 0x00000004) != 0)) {
-            output.writeBool(3, storage3_);
-          }
-          if (((bitField0_ & 0x00000008) != 0)) {
-            output.writeBool(4, storage4_);
-          }
-          if (((bitField0_ & 0x00000010) != 0)) {
-            output.writeBool(5, storage5_);
-          }
-          if (((bitField0_ & 0x00000020) != 0)) {
-            output.writeBool(6, storage6_);
-          }
-          if (((bitField0_ & 0x00000040) != 0)) {
-            output.writeBool(7, storage7_);
-          }
-          if (((bitField0_ & 0x00000080) != 0)) {
-            output.writeBool(8, storage8_);
-          }
-          if (((bitField0_ & 0x00000100) != 0)) {
-            output.writeBool(9, storage9_);
-          }
-          if (((bitField0_ & 0x00000200) != 0)) {
-            output.writeBool(10, storage10_);
-          }
-          if (((bitField0_ & 0x00000400) != 0)) {
-            output.writeBool(11, storage11_);
-          }
-          if (((bitField0_ & 0x00000800) != 0)) {
-            output.writeBool(12, storage12_);
-          }
-          if (((bitField0_ & 0x00001000) != 0)) {
-            output.writeBool(13, backupStorage1_);
-          }
-          if (((bitField0_ & 0x00002000) != 0)) {
-            output.writeBool(14, backupStorage2_);
-          }
-          if (((bitField0_ & 0x00004000) != 0)) {
-            output.writeBool(15, backupStorage3_);
-          }
-          if (((bitField0_ & 0x00008000) != 0)) {
-            output.writeBool(16, backupStorage4_);
-          }
-          unknownFields.writeTo(output);
-        }
-
-        @java.lang.Override
-        public int getSerializedSize() {
-          int size = memoizedSize;
-          if (size != -1) return size;
-
-          size = 0;
-          if (((bitField0_ & 0x00000001) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(1, storage1_);
-          }
-          if (((bitField0_ & 0x00000002) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(2, storage2_);
-          }
-          if (((bitField0_ & 0x00000004) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(3, storage3_);
-          }
-          if (((bitField0_ & 0x00000008) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(4, storage4_);
-          }
-          if (((bitField0_ & 0x00000010) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(5, storage5_);
-          }
-          if (((bitField0_ & 0x00000020) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(6, storage6_);
-          }
-          if (((bitField0_ & 0x00000040) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(7, storage7_);
-          }
-          if (((bitField0_ & 0x00000080) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(8, storage8_);
-          }
-          if (((bitField0_ & 0x00000100) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(9, storage9_);
-          }
-          if (((bitField0_ & 0x00000200) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(10, storage10_);
-          }
-          if (((bitField0_ & 0x00000400) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(11, storage11_);
-          }
-          if (((bitField0_ & 0x00000800) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(12, storage12_);
-          }
-          if (((bitField0_ & 0x00001000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(13, backupStorage1_);
-          }
-          if (((bitField0_ & 0x00002000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(14, backupStorage2_);
-          }
-          if (((bitField0_ & 0x00004000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(15, backupStorage3_);
-          }
-          if (((bitField0_ & 0x00008000) != 0)) {
-            size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(16, backupStorage4_);
-          }
-          size += unknownFields.getSerializedSize();
-          memoizedSize = size;
-          return size;
-        }
-
-        @java.lang.Override
-        public boolean equals(final java.lang.Object obj) {
-          if (obj == this) {
-           return true;
-          }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag)) {
-            return super.equals(obj);
-          }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag) obj;
-
-          if (hasStorage1() != other.hasStorage1()) return false;
-          if (hasStorage1()) {
-            if (getStorage1()
-                != other.getStorage1()) return false;
-          }
-          if (hasStorage2() != other.hasStorage2()) return false;
-          if (hasStorage2()) {
-            if (getStorage2()
-                != other.getStorage2()) return false;
-          }
-          if (hasStorage3() != other.hasStorage3()) return false;
-          if (hasStorage3()) {
-            if (getStorage3()
-                != other.getStorage3()) return false;
-          }
-          if (hasStorage4() != other.hasStorage4()) return false;
-          if (hasStorage4()) {
-            if (getStorage4()
-                != other.getStorage4()) return false;
-          }
-          if (hasStorage5() != other.hasStorage5()) return false;
-          if (hasStorage5()) {
-            if (getStorage5()
-                != other.getStorage5()) return false;
-          }
-          if (hasStorage6() != other.hasStorage6()) return false;
-          if (hasStorage6()) {
-            if (getStorage6()
-                != other.getStorage6()) return false;
-          }
-          if (hasStorage7() != other.hasStorage7()) return false;
-          if (hasStorage7()) {
-            if (getStorage7()
-                != other.getStorage7()) return false;
-          }
-          if (hasStorage8() != other.hasStorage8()) return false;
-          if (hasStorage8()) {
-            if (getStorage8()
-                != other.getStorage8()) return false;
-          }
-          if (hasStorage9() != other.hasStorage9()) return false;
-          if (hasStorage9()) {
-            if (getStorage9()
-                != other.getStorage9()) return false;
-          }
-          if (hasStorage10() != other.hasStorage10()) return false;
-          if (hasStorage10()) {
-            if (getStorage10()
-                != other.getStorage10()) return false;
-          }
-          if (hasStorage11() != other.hasStorage11()) return false;
-          if (hasStorage11()) {
-            if (getStorage11()
-                != other.getStorage11()) return false;
-          }
-          if (hasStorage12() != other.hasStorage12()) return false;
-          if (hasStorage12()) {
-            if (getStorage12()
-                != other.getStorage12()) return false;
-          }
-          if (hasBackupStorage1() != other.hasBackupStorage1()) return false;
-          if (hasBackupStorage1()) {
-            if (getBackupStorage1()
-                != other.getBackupStorage1()) return false;
-          }
-          if (hasBackupStorage2() != other.hasBackupStorage2()) return false;
-          if (hasBackupStorage2()) {
-            if (getBackupStorage2()
-                != other.getBackupStorage2()) return false;
-          }
-          if (hasBackupStorage3() != other.hasBackupStorage3()) return false;
-          if (hasBackupStorage3()) {
-            if (getBackupStorage3()
-                != other.getBackupStorage3()) return false;
-          }
-          if (hasBackupStorage4() != other.hasBackupStorage4()) return false;
-          if (hasBackupStorage4()) {
-            if (getBackupStorage4()
-                != other.getBackupStorage4()) return false;
-          }
-          if (!unknownFields.equals(other.unknownFields)) return false;
-          return true;
-        }
-
-        @java.lang.Override
-        public int hashCode() {
-          if (memoizedHashCode != 0) {
-            return memoizedHashCode;
-          }
-          int hash = 41;
-          hash = (19 * hash) + getDescriptor().hashCode();
-          if (hasStorage1()) {
-            hash = (37 * hash) + STORAGE1_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage1());
-          }
-          if (hasStorage2()) {
-            hash = (37 * hash) + STORAGE2_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage2());
-          }
-          if (hasStorage3()) {
-            hash = (37 * hash) + STORAGE3_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage3());
-          }
-          if (hasStorage4()) {
-            hash = (37 * hash) + STORAGE4_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage4());
-          }
-          if (hasStorage5()) {
-            hash = (37 * hash) + STORAGE5_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage5());
-          }
-          if (hasStorage6()) {
-            hash = (37 * hash) + STORAGE6_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage6());
-          }
-          if (hasStorage7()) {
-            hash = (37 * hash) + STORAGE7_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage7());
-          }
-          if (hasStorage8()) {
-            hash = (37 * hash) + STORAGE8_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage8());
-          }
-          if (hasStorage9()) {
-            hash = (37 * hash) + STORAGE9_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage9());
-          }
-          if (hasStorage10()) {
-            hash = (37 * hash) + STORAGE10_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage10());
-          }
-          if (hasStorage11()) {
-            hash = (37 * hash) + STORAGE11_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage11());
-          }
-          if (hasStorage12()) {
-            hash = (37 * hash) + STORAGE12_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getStorage12());
-          }
-          if (hasBackupStorage1()) {
-            hash = (37 * hash) + BACKUPSTORAGE1_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getBackupStorage1());
-          }
-          if (hasBackupStorage2()) {
-            hash = (37 * hash) + BACKUPSTORAGE2_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getBackupStorage2());
-          }
-          if (hasBackupStorage3()) {
-            hash = (37 * hash) + BACKUPSTORAGE3_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getBackupStorage3());
-          }
-          if (hasBackupStorage4()) {
-            hash = (37 * hash) + BACKUPSTORAGE4_FIELD_NUMBER;
-            hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-                getBackupStorage4());
-          }
-          hash = (29 * hash) + unknownFields.hashCode();
-          memoizedHashCode = hash;
-          return hash;
-        }
-
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return PARSER.parseFrom(data, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
-        }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
-        }
-
-        @java.lang.Override
-        public Builder newBuilderForType() { return newBuilder(); }
-        public static Builder newBuilder() {
-          return DEFAULT_INSTANCE.toBuilder();
-        }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag prototype) {
-          return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-        }
-        @java.lang.Override
-        public Builder toBuilder() {
-          return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
-        }
-
-        @java.lang.Override
-        protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-          Builder builder = new Builder(parent);
-          return builder;
-        }
-        /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag}
-         */
-        public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlagOrBuilder {
-          public static final com.google.protobuf.Descriptors.Descriptor
-              getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_descriptor;
-          }
-
-          @java.lang.Override
-          protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-              internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.Builder.class);
-          }
-
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.newBuilder()
-          private Builder() {
-            maybeForceBuilderInitialization();
-          }
-
-          private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-            super(parent);
-            maybeForceBuilderInitialization();
-          }
-          private void maybeForceBuilderInitialization() {
-            if (com.google.protobuf.GeneratedMessageV3
-                    .alwaysUseFieldBuilders) {
-            }
-          }
-          @java.lang.Override
-          public Builder clear() {
-            super.clear();
-            storage1_ = false;
-            bitField0_ = (bitField0_ & ~0x00000001);
-            storage2_ = false;
-            bitField0_ = (bitField0_ & ~0x00000002);
-            storage3_ = false;
-            bitField0_ = (bitField0_ & ~0x00000004);
-            storage4_ = false;
-            bitField0_ = (bitField0_ & ~0x00000008);
-            storage5_ = false;
-            bitField0_ = (bitField0_ & ~0x00000010);
-            storage6_ = false;
-            bitField0_ = (bitField0_ & ~0x00000020);
-            storage7_ = false;
-            bitField0_ = (bitField0_ & ~0x00000040);
-            storage8_ = false;
-            bitField0_ = (bitField0_ & ~0x00000080);
-            storage9_ = false;
-            bitField0_ = (bitField0_ & ~0x00000100);
-            storage10_ = false;
-            bitField0_ = (bitField0_ & ~0x00000200);
-            storage11_ = false;
-            bitField0_ = (bitField0_ & ~0x00000400);
-            storage12_ = false;
-            bitField0_ = (bitField0_ & ~0x00000800);
-            backupStorage1_ = false;
-            bitField0_ = (bitField0_ & ~0x00001000);
-            backupStorage2_ = false;
-            bitField0_ = (bitField0_ & ~0x00002000);
-            backupStorage3_ = false;
-            bitField0_ = (bitField0_ & ~0x00004000);
-            backupStorage4_ = false;
-            bitField0_ = (bitField0_ & ~0x00008000);
-            return this;
-          }
-
-          @java.lang.Override
-          public com.google.protobuf.Descriptors.Descriptor
-              getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_descriptor;
-          }
-
-          @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.getDefaultInstance();
-          }
-
-          @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag result = buildPartial();
-            if (!result.isInitialized()) {
-              throw newUninitializedMessageException(result);
-            }
-            return result;
-          }
-
-          @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag(this);
-            int from_bitField0_ = bitField0_;
-            int to_bitField0_ = 0;
-            if (((from_bitField0_ & 0x00000001) != 0)) {
-              result.storage1_ = storage1_;
-              to_bitField0_ |= 0x00000001;
-            }
-            if (((from_bitField0_ & 0x00000002) != 0)) {
-              result.storage2_ = storage2_;
-              to_bitField0_ |= 0x00000002;
-            }
-            if (((from_bitField0_ & 0x00000004) != 0)) {
-              result.storage3_ = storage3_;
-              to_bitField0_ |= 0x00000004;
-            }
-            if (((from_bitField0_ & 0x00000008) != 0)) {
-              result.storage4_ = storage4_;
-              to_bitField0_ |= 0x00000008;
-            }
-            if (((from_bitField0_ & 0x00000010) != 0)) {
-              result.storage5_ = storage5_;
-              to_bitField0_ |= 0x00000010;
-            }
-            if (((from_bitField0_ & 0x00000020) != 0)) {
-              result.storage6_ = storage6_;
-              to_bitField0_ |= 0x00000020;
-            }
-            if (((from_bitField0_ & 0x00000040) != 0)) {
-              result.storage7_ = storage7_;
-              to_bitField0_ |= 0x00000040;
-            }
-            if (((from_bitField0_ & 0x00000080) != 0)) {
-              result.storage8_ = storage8_;
-              to_bitField0_ |= 0x00000080;
-            }
-            if (((from_bitField0_ & 0x00000100) != 0)) {
-              result.storage9_ = storage9_;
-              to_bitField0_ |= 0x00000100;
-            }
-            if (((from_bitField0_ & 0x00000200) != 0)) {
-              result.storage10_ = storage10_;
-              to_bitField0_ |= 0x00000200;
-            }
-            if (((from_bitField0_ & 0x00000400) != 0)) {
-              result.storage11_ = storage11_;
-              to_bitField0_ |= 0x00000400;
-            }
-            if (((from_bitField0_ & 0x00000800) != 0)) {
-              result.storage12_ = storage12_;
-              to_bitField0_ |= 0x00000800;
-            }
-            if (((from_bitField0_ & 0x00001000) != 0)) {
-              result.backupStorage1_ = backupStorage1_;
-              to_bitField0_ |= 0x00001000;
-            }
-            if (((from_bitField0_ & 0x00002000) != 0)) {
-              result.backupStorage2_ = backupStorage2_;
-              to_bitField0_ |= 0x00002000;
-            }
-            if (((from_bitField0_ & 0x00004000) != 0)) {
-              result.backupStorage3_ = backupStorage3_;
-              to_bitField0_ |= 0x00004000;
-            }
-            if (((from_bitField0_ & 0x00008000) != 0)) {
-              result.backupStorage4_ = backupStorage4_;
-              to_bitField0_ |= 0x00008000;
-            }
-            result.bitField0_ = to_bitField0_;
-            onBuilt();
-            return result;
-          }
-
-          @java.lang.Override
-          public Builder clone() {
-            return super.clone();
-          }
-          @java.lang.Override
-          public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
-            return super.setField(field, value);
-          }
-          @java.lang.Override
-          public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
-            return super.clearField(field);
-          }
-          @java.lang.Override
-          public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-            return super.clearOneof(oneof);
-          }
-          @java.lang.Override
-          public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
-            return super.setRepeatedField(field, index, value);
-          }
-          @java.lang.Override
-          public Builder addRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
-            return super.addRepeatedField(field, value);
-          }
-          @java.lang.Override
-          public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag)other);
-            } else {
-              super.mergeFrom(other);
-              return this;
-            }
-          }
-
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.getDefaultInstance()) return this;
-            if (other.hasStorage1()) {
-              setStorage1(other.getStorage1());
-            }
-            if (other.hasStorage2()) {
-              setStorage2(other.getStorage2());
-            }
-            if (other.hasStorage3()) {
-              setStorage3(other.getStorage3());
-            }
-            if (other.hasStorage4()) {
-              setStorage4(other.getStorage4());
-            }
-            if (other.hasStorage5()) {
-              setStorage5(other.getStorage5());
-            }
-            if (other.hasStorage6()) {
-              setStorage6(other.getStorage6());
-            }
-            if (other.hasStorage7()) {
-              setStorage7(other.getStorage7());
-            }
-            if (other.hasStorage8()) {
-              setStorage8(other.getStorage8());
-            }
-            if (other.hasStorage9()) {
-              setStorage9(other.getStorage9());
-            }
-            if (other.hasStorage10()) {
-              setStorage10(other.getStorage10());
-            }
-            if (other.hasStorage11()) {
-              setStorage11(other.getStorage11());
-            }
-            if (other.hasStorage12()) {
-              setStorage12(other.getStorage12());
-            }
-            if (other.hasBackupStorage1()) {
-              setBackupStorage1(other.getBackupStorage1());
-            }
-            if (other.hasBackupStorage2()) {
-              setBackupStorage2(other.getBackupStorage2());
-            }
-            if (other.hasBackupStorage3()) {
-              setBackupStorage3(other.getBackupStorage3());
-            }
-            if (other.hasBackupStorage4()) {
-              setBackupStorage4(other.getBackupStorage4());
-            }
-            this.mergeUnknownFields(other.unknownFields);
-            onChanged();
-            return this;
-          }
-
-          @java.lang.Override
-          public final boolean isInitialized() {
-            return true;
-          }
-
-          @java.lang.Override
-          public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag parsedMessage = null;
-            try {
-              parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag) e.getUnfinishedMessage();
-              throw e.unwrapIOException();
-            } finally {
-              if (parsedMessage != null) {
-                mergeFrom(parsedMessage);
-              }
-            }
-            return this;
-          }
-          private int bitField0_;
-
-          private boolean storage1_ ;
-          /**
-           * <code>optional bool storage1 = 1;</code>
-           */
-          public boolean hasStorage1() {
-            return ((bitField0_ & 0x00000001) != 0);
-          }
-          /**
-           * <code>optional bool storage1 = 1;</code>
-           */
-          public boolean getStorage1() {
-            return storage1_;
-          }
-          /**
-           * <code>optional bool storage1 = 1;</code>
-           */
-          public Builder setStorage1(boolean value) {
-            bitField0_ |= 0x00000001;
-            storage1_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage1 = 1;</code>
-           */
-          public Builder clearStorage1() {
-            bitField0_ = (bitField0_ & ~0x00000001);
-            storage1_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage2_ ;
-          /**
-           * <code>optional bool storage2 = 2;</code>
-           */
-          public boolean hasStorage2() {
-            return ((bitField0_ & 0x00000002) != 0);
-          }
-          /**
-           * <code>optional bool storage2 = 2;</code>
-           */
-          public boolean getStorage2() {
-            return storage2_;
-          }
-          /**
-           * <code>optional bool storage2 = 2;</code>
-           */
-          public Builder setStorage2(boolean value) {
-            bitField0_ |= 0x00000002;
-            storage2_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage2 = 2;</code>
-           */
-          public Builder clearStorage2() {
-            bitField0_ = (bitField0_ & ~0x00000002);
-            storage2_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage3_ ;
-          /**
-           * <code>optional bool storage3 = 3;</code>
-           */
-          public boolean hasStorage3() {
-            return ((bitField0_ & 0x00000004) != 0);
-          }
-          /**
-           * <code>optional bool storage3 = 3;</code>
-           */
-          public boolean getStorage3() {
-            return storage3_;
-          }
-          /**
-           * <code>optional bool storage3 = 3;</code>
-           */
-          public Builder setStorage3(boolean value) {
-            bitField0_ |= 0x00000004;
-            storage3_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage3 = 3;</code>
-           */
-          public Builder clearStorage3() {
-            bitField0_ = (bitField0_ & ~0x00000004);
-            storage3_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage4_ ;
-          /**
-           * <code>optional bool storage4 = 4;</code>
-           */
-          public boolean hasStorage4() {
-            return ((bitField0_ & 0x00000008) != 0);
-          }
-          /**
-           * <code>optional bool storage4 = 4;</code>
-           */
-          public boolean getStorage4() {
-            return storage4_;
-          }
-          /**
-           * <code>optional bool storage4 = 4;</code>
-           */
-          public Builder setStorage4(boolean value) {
-            bitField0_ |= 0x00000008;
-            storage4_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage4 = 4;</code>
-           */
-          public Builder clearStorage4() {
-            bitField0_ = (bitField0_ & ~0x00000008);
-            storage4_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage5_ ;
-          /**
-           * <code>optional bool storage5 = 5;</code>
-           */
-          public boolean hasStorage5() {
-            return ((bitField0_ & 0x00000010) != 0);
-          }
-          /**
-           * <code>optional bool storage5 = 5;</code>
-           */
-          public boolean getStorage5() {
-            return storage5_;
-          }
-          /**
-           * <code>optional bool storage5 = 5;</code>
-           */
-          public Builder setStorage5(boolean value) {
-            bitField0_ |= 0x00000010;
-            storage5_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage5 = 5;</code>
-           */
-          public Builder clearStorage5() {
-            bitField0_ = (bitField0_ & ~0x00000010);
-            storage5_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage6_ ;
-          /**
-           * <code>optional bool storage6 = 6;</code>
-           */
-          public boolean hasStorage6() {
-            return ((bitField0_ & 0x00000020) != 0);
-          }
-          /**
-           * <code>optional bool storage6 = 6;</code>
-           */
-          public boolean getStorage6() {
-            return storage6_;
-          }
-          /**
-           * <code>optional bool storage6 = 6;</code>
-           */
-          public Builder setStorage6(boolean value) {
-            bitField0_ |= 0x00000020;
-            storage6_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage6 = 6;</code>
-           */
-          public Builder clearStorage6() {
-            bitField0_ = (bitField0_ & ~0x00000020);
-            storage6_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage7_ ;
-          /**
-           * <code>optional bool storage7 = 7;</code>
-           */
-          public boolean hasStorage7() {
-            return ((bitField0_ & 0x00000040) != 0);
-          }
-          /**
-           * <code>optional bool storage7 = 7;</code>
-           */
-          public boolean getStorage7() {
-            return storage7_;
-          }
-          /**
-           * <code>optional bool storage7 = 7;</code>
-           */
-          public Builder setStorage7(boolean value) {
-            bitField0_ |= 0x00000040;
-            storage7_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage7 = 7;</code>
-           */
-          public Builder clearStorage7() {
-            bitField0_ = (bitField0_ & ~0x00000040);
-            storage7_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage8_ ;
-          /**
-           * <code>optional bool storage8 = 8;</code>
-           */
-          public boolean hasStorage8() {
-            return ((bitField0_ & 0x00000080) != 0);
-          }
-          /**
-           * <code>optional bool storage8 = 8;</code>
-           */
-          public boolean getStorage8() {
-            return storage8_;
-          }
-          /**
-           * <code>optional bool storage8 = 8;</code>
-           */
-          public Builder setStorage8(boolean value) {
-            bitField0_ |= 0x00000080;
-            storage8_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage8 = 8;</code>
-           */
-          public Builder clearStorage8() {
-            bitField0_ = (bitField0_ & ~0x00000080);
-            storage8_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage9_ ;
-          /**
-           * <code>optional bool storage9 = 9;</code>
-           */
-          public boolean hasStorage9() {
-            return ((bitField0_ & 0x00000100) != 0);
-          }
-          /**
-           * <code>optional bool storage9 = 9;</code>
-           */
-          public boolean getStorage9() {
-            return storage9_;
-          }
-          /**
-           * <code>optional bool storage9 = 9;</code>
-           */
-          public Builder setStorage9(boolean value) {
-            bitField0_ |= 0x00000100;
-            storage9_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage9 = 9;</code>
-           */
-          public Builder clearStorage9() {
-            bitField0_ = (bitField0_ & ~0x00000100);
-            storage9_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage10_ ;
-          /**
-           * <code>optional bool storage10 = 10;</code>
-           */
-          public boolean hasStorage10() {
-            return ((bitField0_ & 0x00000200) != 0);
-          }
-          /**
-           * <code>optional bool storage10 = 10;</code>
-           */
-          public boolean getStorage10() {
-            return storage10_;
-          }
-          /**
-           * <code>optional bool storage10 = 10;</code>
-           */
-          public Builder setStorage10(boolean value) {
-            bitField0_ |= 0x00000200;
-            storage10_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage10 = 10;</code>
-           */
-          public Builder clearStorage10() {
-            bitField0_ = (bitField0_ & ~0x00000200);
-            storage10_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage11_ ;
-          /**
-           * <code>optional bool storage11 = 11;</code>
-           */
-          public boolean hasStorage11() {
-            return ((bitField0_ & 0x00000400) != 0);
-          }
-          /**
-           * <code>optional bool storage11 = 11;</code>
-           */
-          public boolean getStorage11() {
-            return storage11_;
-          }
-          /**
-           * <code>optional bool storage11 = 11;</code>
-           */
-          public Builder setStorage11(boolean value) {
-            bitField0_ |= 0x00000400;
-            storage11_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage11 = 11;</code>
-           */
-          public Builder clearStorage11() {
-            bitField0_ = (bitField0_ & ~0x00000400);
-            storage11_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean storage12_ ;
-          /**
-           * <code>optional bool storage12 = 12;</code>
-           */
-          public boolean hasStorage12() {
-            return ((bitField0_ & 0x00000800) != 0);
-          }
-          /**
-           * <code>optional bool storage12 = 12;</code>
-           */
-          public boolean getStorage12() {
-            return storage12_;
-          }
-          /**
-           * <code>optional bool storage12 = 12;</code>
-           */
-          public Builder setStorage12(boolean value) {
-            bitField0_ |= 0x00000800;
-            storage12_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool storage12 = 12;</code>
-           */
-          public Builder clearStorage12() {
-            bitField0_ = (bitField0_ & ~0x00000800);
-            storage12_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean backupStorage1_ ;
-          /**
-           * <code>optional bool backupStorage1 = 13;</code>
-           */
-          public boolean hasBackupStorage1() {
-            return ((bitField0_ & 0x00001000) != 0);
-          }
-          /**
-           * <code>optional bool backupStorage1 = 13;</code>
-           */
-          public boolean getBackupStorage1() {
-            return backupStorage1_;
-          }
-          /**
-           * <code>optional bool backupStorage1 = 13;</code>
-           */
-          public Builder setBackupStorage1(boolean value) {
-            bitField0_ |= 0x00001000;
-            backupStorage1_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool backupStorage1 = 13;</code>
-           */
-          public Builder clearBackupStorage1() {
-            bitField0_ = (bitField0_ & ~0x00001000);
-            backupStorage1_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean backupStorage2_ ;
-          /**
-           * <code>optional bool backupStorage2 = 14;</code>
-           */
-          public boolean hasBackupStorage2() {
-            return ((bitField0_ & 0x00002000) != 0);
-          }
-          /**
-           * <code>optional bool backupStorage2 = 14;</code>
-           */
-          public boolean getBackupStorage2() {
-            return backupStorage2_;
-          }
-          /**
-           * <code>optional bool backupStorage2 = 14;</code>
-           */
-          public Builder setBackupStorage2(boolean value) {
-            bitField0_ |= 0x00002000;
-            backupStorage2_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool backupStorage2 = 14;</code>
-           */
-          public Builder clearBackupStorage2() {
-            bitField0_ = (bitField0_ & ~0x00002000);
-            backupStorage2_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean backupStorage3_ ;
-          /**
-           * <code>optional bool backupStorage3 = 15;</code>
-           */
-          public boolean hasBackupStorage3() {
-            return ((bitField0_ & 0x00004000) != 0);
-          }
-          /**
-           * <code>optional bool backupStorage3 = 15;</code>
-           */
-          public boolean getBackupStorage3() {
-            return backupStorage3_;
-          }
-          /**
-           * <code>optional bool backupStorage3 = 15;</code>
-           */
-          public Builder setBackupStorage3(boolean value) {
-            bitField0_ |= 0x00004000;
-            backupStorage3_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool backupStorage3 = 15;</code>
-           */
-          public Builder clearBackupStorage3() {
-            bitField0_ = (bitField0_ & ~0x00004000);
-            backupStorage3_ = false;
-            onChanged();
-            return this;
-          }
-
-          private boolean backupStorage4_ ;
-          /**
-           * <code>optional bool backupStorage4 = 16;</code>
-           */
-          public boolean hasBackupStorage4() {
-            return ((bitField0_ & 0x00008000) != 0);
-          }
-          /**
-           * <code>optional bool backupStorage4 = 16;</code>
-           */
-          public boolean getBackupStorage4() {
-            return backupStorage4_;
-          }
-          /**
-           * <code>optional bool backupStorage4 = 16;</code>
-           */
-          public Builder setBackupStorage4(boolean value) {
-            bitField0_ |= 0x00008000;
-            backupStorage4_ = value;
-            onChanged();
-            return this;
-          }
-          /**
-           * <code>optional bool backupStorage4 = 16;</code>
-           */
-          public Builder clearBackupStorage4() {
-            bitField0_ = (bitField0_ & ~0x00008000);
-            backupStorage4_ = false;
-            onChanged();
-            return this;
-          }
-          @java.lang.Override
-          public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
-            return super.setUnknownFields(unknownFields);
-          }
-
-          @java.lang.Override
-          public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
-            return super.mergeUnknownFields(unknownFields);
-          }
-
-
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag)
-        }
-
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag DEFAULT_INSTANCE;
-        static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag();
-        }
-
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag getDefaultInstance() {
-          return DEFAULT_INSTANCE;
-        }
-
-        @java.lang.Deprecated public static final com.google.protobuf.Parser<StorageFaultFlag>
-            PARSER = new com.google.protobuf.AbstractParser<StorageFaultFlag>() {
-          @java.lang.Override
-          public StorageFaultFlag parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new StorageFaultFlag(input, extensionRegistry);
-          }
-        };
-
-        public static com.google.protobuf.Parser<StorageFaultFlag> parser() {
-          return PARSER;
-        }
-
-        @java.lang.Override
-        public com.google.protobuf.Parser<StorageFaultFlag> getParserForType() {
-          return PARSER;
-        }
-
-        @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag getDefaultInstanceForType() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.VideoLostFlag getDefaultInstanceForType() {
           return DEFAULT_INSTANCE;
         }
 
       }
 
       public interface ExceptBehaviorOrBuilder extends
-          // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior)
+          // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation.ExceptBehavior)
           com.google.protobuf.MessageOrBuilder {
 
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
          */
         boolean hasExceptBehaviorType();
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
          */
-        cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType getExceptBehaviorType();
+        cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType getExceptBehaviorType();
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
          */
-        cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorTypeOrBuilder getExceptBehaviorTypeOrBuilder();
+        cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorTypeOrBuilder getExceptBehaviorTypeOrBuilder();
 
         /**
          * <code>optional int32 tiredLevel = 2;</code>
@@ -68021,11 +58638,11 @@ public final class ServerData {
         int getTiredLevel();
       }
       /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior}
+       * Protobuf type {@code protobuf.Location.ExtraLocation.ExceptBehavior}
        */
       public  static final class ExceptBehavior extends
           com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior)
+          // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation.ExceptBehavior)
           ExceptBehaviorOrBuilder {
       private static final long serialVersionUID = 0L;
         // Use ExceptBehavior.newBuilder() to construct.
@@ -68060,11 +58677,11 @@ public final class ServerData {
                   done = true;
                   break;
                 case 10: {
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.Builder subBuilder = null;
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.Builder subBuilder = null;
                   if (((bitField0_ & 0x00000001) != 0)) {
                     subBuilder = exceptBehaviorType_.toBuilder();
                   }
-                  exceptBehaviorType_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.PARSER, extensionRegistry);
+                  exceptBehaviorType_ = input.readMessage(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.PARSER, extensionRegistry);
                   if (subBuilder != null) {
                     subBuilder.mergeFrom(exceptBehaviorType_);
                     exceptBehaviorType_ = subBuilder.buildPartial();
@@ -68098,19 +58715,19 @@ public final class ServerData {
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_fieldAccessorTable
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.Builder.class);
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.Builder.class);
         }
 
         public interface ExceptBehaviorTypeOrBuilder extends
-            // @@protoc_insertion_point(interface_extends:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType)
+            // @@protoc_insertion_point(interface_extends:protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType)
             com.google.protobuf.MessageOrBuilder {
 
           /**
@@ -68141,11 +58758,11 @@ public final class ServerData {
           boolean getSmoking();
         }
         /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType}
+         * Protobuf type {@code protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType}
          */
         public  static final class ExceptBehaviorType extends
             com.google.protobuf.GeneratedMessageV3 implements
-            // @@protoc_insertion_point(message_implements:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType)
+            // @@protoc_insertion_point(message_implements:protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType)
             ExceptBehaviorTypeOrBuilder {
         private static final long serialVersionUID = 0L;
           // Use ExceptBehaviorType.newBuilder() to construct.
@@ -68215,15 +58832,15 @@ public final class ServerData {
           }
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_fieldAccessorTable
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.Builder.class);
+                    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.Builder.class);
           }
 
           private int bitField0_;
@@ -68326,10 +58943,10 @@ public final class ServerData {
             if (obj == this) {
              return true;
             }
-            if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType)) {
+            if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType)) {
               return super.equals(obj);
             }
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType) obj;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType) obj;
 
             if (hasTired() != other.hasTired()) return false;
             if (hasTired()) {
@@ -68377,69 +58994,69 @@ public final class ServerData {
             return hash;
           }
 
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(
               java.nio.ByteBuffer data)
               throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(
               java.nio.ByteBuffer data,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(
               com.google.protobuf.ByteString data)
               throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(
               com.google.protobuf.ByteString data,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(byte[] data)
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(byte[] data)
               throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(
               byte[] data,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(java.io.InputStream input)
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(java.io.InputStream input)
               throws java.io.IOException {
             return com.google.protobuf.GeneratedMessageV3
                 .parseWithIOException(PARSER, input);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(
               java.io.InputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
             return com.google.protobuf.GeneratedMessageV3
                 .parseWithIOException(PARSER, input, extensionRegistry);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseDelimitedFrom(java.io.InputStream input)
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseDelimitedFrom(java.io.InputStream input)
               throws java.io.IOException {
             return com.google.protobuf.GeneratedMessageV3
                 .parseDelimitedWithIOException(PARSER, input);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseDelimitedFrom(
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseDelimitedFrom(
               java.io.InputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
             return com.google.protobuf.GeneratedMessageV3
                 .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(
               com.google.protobuf.CodedInputStream input)
               throws java.io.IOException {
             return com.google.protobuf.GeneratedMessageV3
                 .parseWithIOException(PARSER, input);
           }
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parseFrom(
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parseFrom(
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
@@ -68452,7 +59069,7 @@ public final class ServerData {
           public static Builder newBuilder() {
             return DEFAULT_INSTANCE.toBuilder();
           }
-          public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType prototype) {
+          public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType prototype) {
             return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
           }
           @java.lang.Override
@@ -68468,26 +59085,26 @@ public final class ServerData {
             return builder;
           }
           /**
-           * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType}
+           * Protobuf type {@code protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType}
            */
           public static final class Builder extends
               com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-              // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType)
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorTypeOrBuilder {
+              // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType)
+              cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorTypeOrBuilder {
             public static final com.google.protobuf.Descriptors.Descriptor
                 getDescriptor() {
-              return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_descriptor;
+              return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_descriptor;
             }
 
             @java.lang.Override
             protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
                 internalGetFieldAccessorTable() {
-              return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_fieldAccessorTable
+              return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_fieldAccessorTable
                   .ensureFieldAccessorsInitialized(
-                      cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.Builder.class);
+                      cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.Builder.class);
             }
 
-            // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.newBuilder()
+            // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.newBuilder()
             private Builder() {
               maybeForceBuilderInitialization();
             }
@@ -68517,17 +59134,17 @@ public final class ServerData {
             @java.lang.Override
             public com.google.protobuf.Descriptors.Descriptor
                 getDescriptorForType() {
-              return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_descriptor;
+              return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_descriptor;
             }
 
             @java.lang.Override
-            public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType getDefaultInstanceForType() {
-              return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.getDefaultInstance();
+            public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType getDefaultInstanceForType() {
+              return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.getDefaultInstance();
             }
 
             @java.lang.Override
-            public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType build() {
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType result = buildPartial();
+            public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType build() {
+              cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType result = buildPartial();
               if (!result.isInitialized()) {
                 throw newUninitializedMessageException(result);
               }
@@ -68535,8 +59152,8 @@ public final class ServerData {
             }
 
             @java.lang.Override
-            public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType buildPartial() {
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType(this);
+            public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType buildPartial() {
+              cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType(this);
               int from_bitField0_ = bitField0_;
               int to_bitField0_ = 0;
               if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -68590,16 +59207,16 @@ public final class ServerData {
             }
             @java.lang.Override
             public Builder mergeFrom(com.google.protobuf.Message other) {
-              if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType) {
-                return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType)other);
+              if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType) {
+                return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType)other);
               } else {
                 super.mergeFrom(other);
                 return this;
               }
             }
 
-            public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType other) {
-              if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.getDefaultInstance()) return this;
+            public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType other) {
+              if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.getDefaultInstance()) return this;
               if (other.hasTired()) {
                 setTired(other.getTired());
               }
@@ -68624,11 +59241,11 @@ public final class ServerData {
                 com.google.protobuf.CodedInputStream input,
                 com.google.protobuf.ExtensionRegistryLite extensionRegistry)
                 throws java.io.IOException {
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType parsedMessage = null;
+              cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType parsedMessage = null;
               try {
                 parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
               } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-                parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType) e.getUnfinishedMessage();
+                parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType) e.getUnfinishedMessage();
                 throw e.unwrapIOException();
               } finally {
                 if (parsedMessage != null) {
@@ -68747,16 +59364,16 @@ public final class ServerData {
             }
 
 
-            // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType)
+            // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType)
           }
 
-          // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType)
-          private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType DEFAULT_INSTANCE;
+          // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType)
+          private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType DEFAULT_INSTANCE;
           static {
-            DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType();
+            DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType();
           }
 
-          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType getDefaultInstance() {
+          public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType getDefaultInstance() {
             return DEFAULT_INSTANCE;
           }
 
@@ -68781,7 +59398,7 @@ public final class ServerData {
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType getDefaultInstanceForType() {
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType getDefaultInstanceForType() {
             return DEFAULT_INSTANCE;
           }
 
@@ -68789,24 +59406,24 @@ public final class ServerData {
 
         private int bitField0_;
         public static final int EXCEPTBEHAVIORTYPE_FIELD_NUMBER = 1;
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType_;
+        private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType_;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
          */
         public boolean hasExceptBehaviorType() {
           return ((bitField0_ & 0x00000001) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType getExceptBehaviorType() {
-          return exceptBehaviorType_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.getDefaultInstance() : exceptBehaviorType_;
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType getExceptBehaviorType() {
+          return exceptBehaviorType_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.getDefaultInstance() : exceptBehaviorType_;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorTypeOrBuilder getExceptBehaviorTypeOrBuilder() {
-          return exceptBehaviorType_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.getDefaultInstance() : exceptBehaviorType_;
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorTypeOrBuilder getExceptBehaviorTypeOrBuilder() {
+          return exceptBehaviorType_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.getDefaultInstance() : exceptBehaviorType_;
         }
 
         public static final int TIREDLEVEL_FIELD_NUMBER = 2;
@@ -68871,10 +59488,10 @@ public final class ServerData {
           if (obj == this) {
            return true;
           }
-          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior)) {
+          if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior)) {
             return super.equals(obj);
           }
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior) obj;
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior) obj;
 
           if (hasExceptBehaviorType() != other.hasExceptBehaviorType()) return false;
           if (hasExceptBehaviorType()) {
@@ -68910,69 +59527,69 @@ public final class ServerData {
           return hash;
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(byte[] data)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseDelimitedFrom(java.io.InputStream input)
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseDelimitedFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parseFrom(
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -68985,7 +59602,7 @@ public final class ServerData {
         public static Builder newBuilder() {
           return DEFAULT_INSTANCE.toBuilder();
         }
-        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior prototype) {
+        public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior prototype) {
           return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
         }
         @java.lang.Override
@@ -69001,26 +59618,26 @@ public final class ServerData {
           return builder;
         }
         /**
-         * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior}
+         * Protobuf type {@code protobuf.Location.ExtraLocation.ExceptBehavior}
          */
         public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior)
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehaviorOrBuilder {
+            // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation.ExceptBehavior)
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehaviorOrBuilder {
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_fieldAccessorTable
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.Builder.class);
+                    cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.Builder.class);
           }
 
-          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.newBuilder()
+          // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.newBuilder()
           private Builder() {
             maybeForceBuilderInitialization();
           }
@@ -69053,17 +59670,17 @@ public final class ServerData {
           @java.lang.Override
           public com.google.protobuf.Descriptors.Descriptor
               getDescriptorForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_descriptor;
+            return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_descriptor;
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior getDefaultInstanceForType() {
-            return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.getDefaultInstance();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior getDefaultInstanceForType() {
+            return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.getDefaultInstance();
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior build() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior result = buildPartial();
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior build() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior result = buildPartial();
             if (!result.isInitialized()) {
               throw newUninitializedMessageException(result);
             }
@@ -69071,8 +59688,8 @@ public final class ServerData {
           }
 
           @java.lang.Override
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior buildPartial() {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior(this);
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior buildPartial() {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior(this);
             int from_bitField0_ = bitField0_;
             int to_bitField0_ = 0;
             if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -69126,16 +59743,16 @@ public final class ServerData {
           }
           @java.lang.Override
           public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior) {
-              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior)other);
+            if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior) {
+              return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior)other);
             } else {
               super.mergeFrom(other);
               return this;
             }
           }
 
-          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior other) {
-            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.getDefaultInstance()) return this;
+          public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior other) {
+            if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.getDefaultInstance()) return this;
             if (other.hasExceptBehaviorType()) {
               mergeExceptBehaviorType(other.getExceptBehaviorType());
             }
@@ -69157,11 +59774,11 @@ public final class ServerData {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior parsedMessage = null;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior parsedMessage = null;
             try {
               parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior) e.getUnfinishedMessage();
+              parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
               if (parsedMessage != null) {
@@ -69172,29 +59789,29 @@ public final class ServerData {
           }
           private int bitField0_;
 
-          private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType_;
+          private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType_;
           private com.google.protobuf.SingleFieldBuilderV3<
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorTypeOrBuilder> exceptBehaviorTypeBuilder_;
+              cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorTypeOrBuilder> exceptBehaviorTypeBuilder_;
           /**
-           * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+           * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
            */
           public boolean hasExceptBehaviorType() {
             return ((bitField0_ & 0x00000001) != 0);
           }
           /**
-           * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+           * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
            */
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType getExceptBehaviorType() {
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType getExceptBehaviorType() {
             if (exceptBehaviorTypeBuilder_ == null) {
-              return exceptBehaviorType_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.getDefaultInstance() : exceptBehaviorType_;
+              return exceptBehaviorType_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.getDefaultInstance() : exceptBehaviorType_;
             } else {
               return exceptBehaviorTypeBuilder_.getMessage();
             }
           }
           /**
-           * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+           * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
            */
-          public Builder setExceptBehaviorType(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType value) {
+          public Builder setExceptBehaviorType(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType value) {
             if (exceptBehaviorTypeBuilder_ == null) {
               if (value == null) {
                 throw new NullPointerException();
@@ -69208,10 +59825,10 @@ public final class ServerData {
             return this;
           }
           /**
-           * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+           * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
            */
           public Builder setExceptBehaviorType(
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.Builder builderForValue) {
+              cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.Builder builderForValue) {
             if (exceptBehaviorTypeBuilder_ == null) {
               exceptBehaviorType_ = builderForValue.build();
               onChanged();
@@ -69222,15 +59839,15 @@ public final class ServerData {
             return this;
           }
           /**
-           * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+           * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
            */
-          public Builder mergeExceptBehaviorType(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType value) {
+          public Builder mergeExceptBehaviorType(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType value) {
             if (exceptBehaviorTypeBuilder_ == null) {
               if (((bitField0_ & 0x00000001) != 0) &&
                   exceptBehaviorType_ != null &&
-                  exceptBehaviorType_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.getDefaultInstance()) {
+                  exceptBehaviorType_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.getDefaultInstance()) {
                 exceptBehaviorType_ =
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.newBuilder(exceptBehaviorType_).mergeFrom(value).buildPartial();
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.newBuilder(exceptBehaviorType_).mergeFrom(value).buildPartial();
               } else {
                 exceptBehaviorType_ = value;
               }
@@ -69242,7 +59859,7 @@ public final class ServerData {
             return this;
           }
           /**
-           * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+           * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
            */
           public Builder clearExceptBehaviorType() {
             if (exceptBehaviorTypeBuilder_ == null) {
@@ -69255,33 +59872,33 @@ public final class ServerData {
             return this;
           }
           /**
-           * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+           * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
            */
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.Builder getExceptBehaviorTypeBuilder() {
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.Builder getExceptBehaviorTypeBuilder() {
             bitField0_ |= 0x00000001;
             onChanged();
             return getExceptBehaviorTypeFieldBuilder().getBuilder();
           }
           /**
-           * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+           * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
            */
-          public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorTypeOrBuilder getExceptBehaviorTypeOrBuilder() {
+          public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorTypeOrBuilder getExceptBehaviorTypeOrBuilder() {
             if (exceptBehaviorTypeBuilder_ != null) {
               return exceptBehaviorTypeBuilder_.getMessageOrBuilder();
             } else {
               return exceptBehaviorType_ == null ?
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.getDefaultInstance() : exceptBehaviorType_;
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.getDefaultInstance() : exceptBehaviorType_;
             }
           }
           /**
-           * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
+           * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType exceptBehaviorType = 1;</code>
            */
           private com.google.protobuf.SingleFieldBuilderV3<
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorTypeOrBuilder> 
+              cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorTypeOrBuilder> 
               getExceptBehaviorTypeFieldBuilder() {
             if (exceptBehaviorTypeBuilder_ == null) {
               exceptBehaviorTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorType.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.ExceptBehaviorTypeOrBuilder>(
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorType.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.ExceptBehaviorTypeOrBuilder>(
                       getExceptBehaviorType(),
                       getParentForChildren(),
                       isClean());
@@ -69334,16 +59951,16 @@ public final class ServerData {
           }
 
 
-          // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior)
+          // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation.ExceptBehavior)
         }
 
-        // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior)
-        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior DEFAULT_INSTANCE;
+        // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation.ExceptBehavior)
+        private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior DEFAULT_INSTANCE;
         static {
-          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior();
+          DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior();
         }
 
-        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior getDefaultInstance() {
+        public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior getDefaultInstance() {
           return DEFAULT_INSTANCE;
         }
 
@@ -69368,7 +59985,7 @@ public final class ServerData {
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior getDefaultInstanceForType() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior getDefaultInstanceForType() {
           return DEFAULT_INSTANCE;
         }
 
@@ -69436,108 +60053,108 @@ public final class ServerData {
       }
 
       public static final int SPEEDINGEXTRADATA_FIELD_NUMBER = 5;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData_;
+      private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData speedingExtraData_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
        */
       public boolean hasSpeedingExtraData() {
         return ((bitField0_ & 0x00000010) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData getSpeedingExtraData() {
-        return speedingExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.getDefaultInstance() : speedingExtraData_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData getSpeedingExtraData() {
+        return speedingExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.getDefaultInstance() : speedingExtraData_;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraDataOrBuilder getSpeedingExtraDataOrBuilder() {
-        return speedingExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.getDefaultInstance() : speedingExtraData_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraDataOrBuilder getSpeedingExtraDataOrBuilder() {
+        return speedingExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.getDefaultInstance() : speedingExtraData_;
       }
 
       public static final int LOCATIONEXTRADATA_FIELD_NUMBER = 6;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData_;
+      private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData locationExtraData_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
        */
       public boolean hasLocationExtraData() {
         return ((bitField0_ & 0x00000020) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData getLocationExtraData() {
-        return locationExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.getDefaultInstance() : locationExtraData_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData getLocationExtraData() {
+        return locationExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.getDefaultInstance() : locationExtraData_;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraDataOrBuilder getLocationExtraDataOrBuilder() {
-        return locationExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.getDefaultInstance() : locationExtraData_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraDataOrBuilder getLocationExtraDataOrBuilder() {
+        return locationExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.getDefaultInstance() : locationExtraData_;
       }
 
       public static final int LOCATIONINFOEXTRADATA_FIELD_NUMBER = 7;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData_;
+      private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
        */
       public boolean hasLocationInfoExtraData() {
         return ((bitField0_ & 0x00000040) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData getLocationInfoExtraData() {
-        return locationInfoExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.getDefaultInstance() : locationInfoExtraData_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData getLocationInfoExtraData() {
+        return locationInfoExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.getDefaultInstance() : locationInfoExtraData_;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraDataOrBuilder getLocationInfoExtraDataOrBuilder() {
-        return locationInfoExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.getDefaultInstance() : locationInfoExtraData_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraDataOrBuilder getLocationInfoExtraDataOrBuilder() {
+        return locationInfoExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.getDefaultInstance() : locationInfoExtraData_;
       }
 
       public static final int EXTRACARSTATE_FIELD_NUMBER = 8;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState_;
+      private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState extraCarState_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
        */
       public boolean hasExtraCarState() {
         return ((bitField0_ & 0x00000080) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState getExtraCarState() {
-        return extraCarState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.getDefaultInstance() : extraCarState_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState getExtraCarState() {
+        return extraCarState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.getDefaultInstance() : extraCarState_;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarStateOrBuilder getExtraCarStateOrBuilder() {
-        return extraCarState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.getDefaultInstance() : extraCarState_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarStateOrBuilder getExtraCarStateOrBuilder() {
+        return extraCarState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.getDefaultInstance() : extraCarState_;
       }
 
       public static final int IOSTATE_FIELD_NUMBER = 9;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState ioState_;
+      private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState ioState_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
        */
       public boolean hasIoState() {
         return ((bitField0_ & 0x00000100) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState getIoState() {
-        return ioState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.getDefaultInstance() : ioState_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState getIoState() {
+        return ioState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.getDefaultInstance() : ioState_;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOStateOrBuilder getIoStateOrBuilder() {
-        return ioState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.getDefaultInstance() : ioState_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOStateOrBuilder getIoStateOrBuilder() {
+        return ioState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.getDefaultInstance() : ioState_;
       }
 
       public static final int SIMULATION_FIELD_NUMBER = 10;
@@ -69586,108 +60203,84 @@ public final class ServerData {
       }
 
       public static final int VIDEOALARM_FIELD_NUMBER = 13;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm_;
+      private int videoAlarm_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
+       * <code>optional int32 videoAlarm = 13;</code>
        */
       public boolean hasVideoAlarm() {
         return ((bitField0_ & 0x00001000) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
+       * <code>optional int32 videoAlarm = 13;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm getVideoAlarm() {
-        return videoAlarm_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.getDefaultInstance() : videoAlarm_;
-      }
-      /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
-       */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarmOrBuilder getVideoAlarmOrBuilder() {
-        return videoAlarm_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.getDefaultInstance() : videoAlarm_;
+      public int getVideoAlarm() {
+        return videoAlarm_;
       }
 
       public static final int VIDEOLOSTFLAG_FIELD_NUMBER = 14;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag_;
+      private int videoLostFlag_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
+       * <code>optional int32 videoLostFlag = 14;</code>
        */
       public boolean hasVideoLostFlag() {
         return ((bitField0_ & 0x00002000) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
+       * <code>optional int32 videoLostFlag = 14;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag getVideoLostFlag() {
-        return videoLostFlag_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.getDefaultInstance() : videoLostFlag_;
-      }
-      /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
-       */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlagOrBuilder getVideoLostFlagOrBuilder() {
-        return videoLostFlag_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.getDefaultInstance() : videoLostFlag_;
+      public int getVideoLostFlag() {
+        return videoLostFlag_;
       }
 
       public static final int VIDEOSHELTERFLAG_FIELD_NUMBER = 15;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag_;
+      private int videoShelterFlag_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
+       * <code>optional int32 videoShelterFlag = 15;</code>
        */
       public boolean hasVideoShelterFlag() {
         return ((bitField0_ & 0x00004000) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
+       * <code>optional int32 videoShelterFlag = 15;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag getVideoShelterFlag() {
-        return videoShelterFlag_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.getDefaultInstance() : videoShelterFlag_;
-      }
-      /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
-       */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlagOrBuilder getVideoShelterFlagOrBuilder() {
-        return videoShelterFlag_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.getDefaultInstance() : videoShelterFlag_;
+      public int getVideoShelterFlag() {
+        return videoShelterFlag_;
       }
 
       public static final int STORAGEFAULTFLAG_FIELD_NUMBER = 16;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag_;
+      private int storageFaultFlag_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
+       * <code>optional int32 storageFaultFlag = 16;</code>
        */
       public boolean hasStorageFaultFlag() {
         return ((bitField0_ & 0x00008000) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
+       * <code>optional int32 storageFaultFlag = 16;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag getStorageFaultFlag() {
-        return storageFaultFlag_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.getDefaultInstance() : storageFaultFlag_;
-      }
-      /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
-       */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlagOrBuilder getStorageFaultFlagOrBuilder() {
-        return storageFaultFlag_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.getDefaultInstance() : storageFaultFlag_;
+      public int getStorageFaultFlag() {
+        return storageFaultFlag_;
       }
 
       public static final int EXCEPTBEHAVIOR_FIELD_NUMBER = 17;
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior_;
+      private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior exceptBehavior_;
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
        */
       public boolean hasExceptBehavior() {
         return ((bitField0_ & 0x00010000) != 0);
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior getExceptBehavior() {
-        return exceptBehavior_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.getDefaultInstance() : exceptBehavior_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior getExceptBehavior() {
+        return exceptBehavior_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.getDefaultInstance() : exceptBehavior_;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+       * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehaviorOrBuilder getExceptBehaviorOrBuilder() {
-        return exceptBehavior_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.getDefaultInstance() : exceptBehavior_;
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehaviorOrBuilder getExceptBehaviorOrBuilder() {
+        return exceptBehavior_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.getDefaultInstance() : exceptBehavior_;
       }
 
       private byte memoizedIsInitialized = -1;
@@ -69741,16 +60334,16 @@ public final class ServerData {
           output.writeInt32(12, satellitesNum_);
         }
         if (((bitField0_ & 0x00001000) != 0)) {
-          output.writeMessage(13, getVideoAlarm());
+          output.writeInt32(13, videoAlarm_);
         }
         if (((bitField0_ & 0x00002000) != 0)) {
-          output.writeMessage(14, getVideoLostFlag());
+          output.writeInt32(14, videoLostFlag_);
         }
         if (((bitField0_ & 0x00004000) != 0)) {
-          output.writeMessage(15, getVideoShelterFlag());
+          output.writeInt32(15, videoShelterFlag_);
         }
         if (((bitField0_ & 0x00008000) != 0)) {
-          output.writeMessage(16, getStorageFaultFlag());
+          output.writeInt32(16, storageFaultFlag_);
         }
         if (((bitField0_ & 0x00010000) != 0)) {
           output.writeMessage(17, getExceptBehavior());
@@ -69814,19 +60407,19 @@ public final class ServerData {
         }
         if (((bitField0_ & 0x00001000) != 0)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(13, getVideoAlarm());
+            .computeInt32Size(13, videoAlarm_);
         }
         if (((bitField0_ & 0x00002000) != 0)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(14, getVideoLostFlag());
+            .computeInt32Size(14, videoLostFlag_);
         }
         if (((bitField0_ & 0x00004000) != 0)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(15, getVideoShelterFlag());
+            .computeInt32Size(15, videoShelterFlag_);
         }
         if (((bitField0_ & 0x00008000) != 0)) {
           size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(16, getStorageFaultFlag());
+            .computeInt32Size(16, storageFaultFlag_);
         }
         if (((bitField0_ & 0x00010000) != 0)) {
           size += com.google.protobuf.CodedOutputStream
@@ -69842,10 +60435,10 @@ public final class ServerData {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg)) {
+        if (!(obj instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation)) {
           return super.equals(obj);
         }
-        cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg) obj;
+        cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation other = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation) obj;
 
         if (hasMileage() != other.hasMileage()) return false;
         if (hasMileage()) {
@@ -69909,23 +60502,23 @@ public final class ServerData {
         }
         if (hasVideoAlarm() != other.hasVideoAlarm()) return false;
         if (hasVideoAlarm()) {
-          if (!getVideoAlarm()
-              .equals(other.getVideoAlarm())) return false;
+          if (getVideoAlarm()
+              != other.getVideoAlarm()) return false;
         }
         if (hasVideoLostFlag() != other.hasVideoLostFlag()) return false;
         if (hasVideoLostFlag()) {
-          if (!getVideoLostFlag()
-              .equals(other.getVideoLostFlag())) return false;
+          if (getVideoLostFlag()
+              != other.getVideoLostFlag()) return false;
         }
         if (hasVideoShelterFlag() != other.hasVideoShelterFlag()) return false;
         if (hasVideoShelterFlag()) {
-          if (!getVideoShelterFlag()
-              .equals(other.getVideoShelterFlag())) return false;
+          if (getVideoShelterFlag()
+              != other.getVideoShelterFlag()) return false;
         }
         if (hasStorageFaultFlag() != other.hasStorageFaultFlag()) return false;
         if (hasStorageFaultFlag()) {
-          if (!getStorageFaultFlag()
-              .equals(other.getStorageFaultFlag())) return false;
+          if (getStorageFaultFlag()
+              != other.getStorageFaultFlag()) return false;
         }
         if (hasExceptBehavior() != other.hasExceptBehavior()) return false;
         if (hasExceptBehavior()) {
@@ -69993,19 +60586,19 @@ public final class ServerData {
         }
         if (hasVideoAlarm()) {
           hash = (37 * hash) + VIDEOALARM_FIELD_NUMBER;
-          hash = (53 * hash) + getVideoAlarm().hashCode();
+          hash = (53 * hash) + getVideoAlarm();
         }
         if (hasVideoLostFlag()) {
           hash = (37 * hash) + VIDEOLOSTFLAG_FIELD_NUMBER;
-          hash = (53 * hash) + getVideoLostFlag().hashCode();
+          hash = (53 * hash) + getVideoLostFlag();
         }
         if (hasVideoShelterFlag()) {
           hash = (37 * hash) + VIDEOSHELTERFLAG_FIELD_NUMBER;
-          hash = (53 * hash) + getVideoShelterFlag().hashCode();
+          hash = (53 * hash) + getVideoShelterFlag();
         }
         if (hasStorageFaultFlag()) {
           hash = (37 * hash) + STORAGEFAULTFLAG_FIELD_NUMBER;
-          hash = (53 * hash) + getStorageFaultFlag().hashCode();
+          hash = (53 * hash) + getStorageFaultFlag();
         }
         if (hasExceptBehavior()) {
           hash = (37 * hash) + EXCEPTBEHAVIOR_FIELD_NUMBER;
@@ -70016,69 +60609,69 @@ public final class ServerData {
         return hash;
       }
 
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(byte[] data)
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(java.io.InputStream input)
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseDelimitedFrom(java.io.InputStream input)
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseDelimitedFrom(
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parseFrom(
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -70091,7 +60684,7 @@ public final class ServerData {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg prototype) {
+      public static Builder newBuilder(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -70107,26 +60700,26 @@ public final class ServerData {
         return builder;
       }
       /**
-       * Protobuf type {@code protobuf.Location.TerminalExtraLocationMsg}
+       * Protobuf type {@code protobuf.Location.ExtraLocation}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:protobuf.Location.TerminalExtraLocationMsg)
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsgOrBuilder {
+          // @@protoc_insertion_point(builder_implements:protobuf.Location.ExtraLocation)
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_fieldAccessorTable
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.Builder.class);
+                  cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.class, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder.class);
         }
 
-        // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.newBuilder()
+        // Construct using cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
@@ -70144,10 +60737,6 @@ public final class ServerData {
             getLocationInfoExtraDataFieldBuilder();
             getExtraCarStateFieldBuilder();
             getIoStateFieldBuilder();
-            getVideoAlarmFieldBuilder();
-            getVideoLostFlagFieldBuilder();
-            getVideoShelterFlagFieldBuilder();
-            getStorageFaultFlagFieldBuilder();
             getExceptBehaviorFieldBuilder();
           }
         }
@@ -70198,29 +60787,13 @@ public final class ServerData {
           bitField0_ = (bitField0_ & ~0x00000400);
           satellitesNum_ = 0;
           bitField0_ = (bitField0_ & ~0x00000800);
-          if (videoAlarmBuilder_ == null) {
-            videoAlarm_ = null;
-          } else {
-            videoAlarmBuilder_.clear();
-          }
+          videoAlarm_ = 0;
           bitField0_ = (bitField0_ & ~0x00001000);
-          if (videoLostFlagBuilder_ == null) {
-            videoLostFlag_ = null;
-          } else {
-            videoLostFlagBuilder_.clear();
-          }
+          videoLostFlag_ = 0;
           bitField0_ = (bitField0_ & ~0x00002000);
-          if (videoShelterFlagBuilder_ == null) {
-            videoShelterFlag_ = null;
-          } else {
-            videoShelterFlagBuilder_.clear();
-          }
+          videoShelterFlag_ = 0;
           bitField0_ = (bitField0_ & ~0x00004000);
-          if (storageFaultFlagBuilder_ == null) {
-            storageFaultFlag_ = null;
-          } else {
-            storageFaultFlagBuilder_.clear();
-          }
+          storageFaultFlag_ = 0;
           bitField0_ = (bitField0_ & ~0x00008000);
           if (exceptBehaviorBuilder_ == null) {
             exceptBehavior_ = null;
@@ -70234,17 +60807,17 @@ public final class ServerData {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor;
+          return cn.edu.sdu.jt808.protobuf.ServerData.internal_static_protobuf_Location_ExtraLocation_descriptor;
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg getDefaultInstanceForType() {
-          return cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.getDefaultInstance();
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation getDefaultInstanceForType() {
+          return cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.getDefaultInstance();
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg build() {
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg result = buildPartial();
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation build() {
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -70252,8 +60825,8 @@ public final class ServerData {
         }
 
         @java.lang.Override
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg buildPartial() {
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg(this);
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation buildPartial() {
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation result = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation(this);
           int from_bitField0_ = bitField0_;
           int to_bitField0_ = 0;
           if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -70325,35 +60898,19 @@ public final class ServerData {
             to_bitField0_ |= 0x00000800;
           }
           if (((from_bitField0_ & 0x00001000) != 0)) {
-            if (videoAlarmBuilder_ == null) {
-              result.videoAlarm_ = videoAlarm_;
-            } else {
-              result.videoAlarm_ = videoAlarmBuilder_.build();
-            }
+            result.videoAlarm_ = videoAlarm_;
             to_bitField0_ |= 0x00001000;
           }
           if (((from_bitField0_ & 0x00002000) != 0)) {
-            if (videoLostFlagBuilder_ == null) {
-              result.videoLostFlag_ = videoLostFlag_;
-            } else {
-              result.videoLostFlag_ = videoLostFlagBuilder_.build();
-            }
+            result.videoLostFlag_ = videoLostFlag_;
             to_bitField0_ |= 0x00002000;
           }
           if (((from_bitField0_ & 0x00004000) != 0)) {
-            if (videoShelterFlagBuilder_ == null) {
-              result.videoShelterFlag_ = videoShelterFlag_;
-            } else {
-              result.videoShelterFlag_ = videoShelterFlagBuilder_.build();
-            }
+            result.videoShelterFlag_ = videoShelterFlag_;
             to_bitField0_ |= 0x00004000;
           }
           if (((from_bitField0_ & 0x00008000) != 0)) {
-            if (storageFaultFlagBuilder_ == null) {
-              result.storageFaultFlag_ = storageFaultFlag_;
-            } else {
-              result.storageFaultFlag_ = storageFaultFlagBuilder_.build();
-            }
+            result.storageFaultFlag_ = storageFaultFlag_;
             to_bitField0_ |= 0x00008000;
           }
           if (((from_bitField0_ & 0x00010000) != 0)) {
@@ -70403,16 +60960,16 @@ public final class ServerData {
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg) {
-            return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg)other);
+          if (other instanceof cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation) {
+            return mergeFrom((cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg other) {
-          if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.getDefaultInstance()) return this;
+        public Builder mergeFrom(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation other) {
+          if (other == cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.getDefaultInstance()) return this;
           if (other.hasMileage()) {
             setMileage(other.getMileage());
           }
@@ -70450,16 +61007,16 @@ public final class ServerData {
             setSatellitesNum(other.getSatellitesNum());
           }
           if (other.hasVideoAlarm()) {
-            mergeVideoAlarm(other.getVideoAlarm());
+            setVideoAlarm(other.getVideoAlarm());
           }
           if (other.hasVideoLostFlag()) {
-            mergeVideoLostFlag(other.getVideoLostFlag());
+            setVideoLostFlag(other.getVideoLostFlag());
           }
           if (other.hasVideoShelterFlag()) {
-            mergeVideoShelterFlag(other.getVideoShelterFlag());
+            setVideoShelterFlag(other.getVideoShelterFlag());
           }
           if (other.hasStorageFaultFlag()) {
-            mergeStorageFaultFlag(other.getStorageFaultFlag());
+            setStorageFaultFlag(other.getStorageFaultFlag());
           }
           if (other.hasExceptBehavior()) {
             mergeExceptBehavior(other.getExceptBehavior());
@@ -70479,11 +61036,11 @@ public final class ServerData {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg parsedMessage = null;
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg) e.getUnfinishedMessage();
+            parsedMessage = (cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -70622,29 +61179,29 @@ public final class ServerData {
           return this;
         }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData_;
+        private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData speedingExtraData_;
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraDataOrBuilder> speedingExtraDataBuilder_;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraDataOrBuilder> speedingExtraDataBuilder_;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
          */
         public boolean hasSpeedingExtraData() {
           return ((bitField0_ & 0x00000010) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData getSpeedingExtraData() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData getSpeedingExtraData() {
           if (speedingExtraDataBuilder_ == null) {
-            return speedingExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.getDefaultInstance() : speedingExtraData_;
+            return speedingExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.getDefaultInstance() : speedingExtraData_;
           } else {
             return speedingExtraDataBuilder_.getMessage();
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
          */
-        public Builder setSpeedingExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData value) {
+        public Builder setSpeedingExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData value) {
           if (speedingExtraDataBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -70658,10 +61215,10 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
          */
         public Builder setSpeedingExtraData(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.Builder builderForValue) {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.Builder builderForValue) {
           if (speedingExtraDataBuilder_ == null) {
             speedingExtraData_ = builderForValue.build();
             onChanged();
@@ -70672,15 +61229,15 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
          */
-        public Builder mergeSpeedingExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData value) {
+        public Builder mergeSpeedingExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData value) {
           if (speedingExtraDataBuilder_ == null) {
             if (((bitField0_ & 0x00000010) != 0) &&
                 speedingExtraData_ != null &&
-                speedingExtraData_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.getDefaultInstance()) {
+                speedingExtraData_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.getDefaultInstance()) {
               speedingExtraData_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.newBuilder(speedingExtraData_).mergeFrom(value).buildPartial();
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.newBuilder(speedingExtraData_).mergeFrom(value).buildPartial();
             } else {
               speedingExtraData_ = value;
             }
@@ -70692,7 +61249,7 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
          */
         public Builder clearSpeedingExtraData() {
           if (speedingExtraDataBuilder_ == null) {
@@ -70705,33 +61262,33 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.Builder getSpeedingExtraDataBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.Builder getSpeedingExtraDataBuilder() {
           bitField0_ |= 0x00000010;
           onChanged();
           return getSpeedingExtraDataFieldBuilder().getBuilder();
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraDataOrBuilder getSpeedingExtraDataOrBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraDataOrBuilder getSpeedingExtraDataOrBuilder() {
           if (speedingExtraDataBuilder_ != null) {
             return speedingExtraDataBuilder_.getMessageOrBuilder();
           } else {
             return speedingExtraData_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.getDefaultInstance() : speedingExtraData_;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.getDefaultInstance() : speedingExtraData_;
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.SpeedingExtraData speedingExtraData = 5;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.SpeedingExtraData speedingExtraData = 5;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraDataOrBuilder> 
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraDataOrBuilder> 
             getSpeedingExtraDataFieldBuilder() {
           if (speedingExtraDataBuilder_ == null) {
             speedingExtraDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.SpeedingExtraDataOrBuilder>(
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.SpeedingExtraDataOrBuilder>(
                     getSpeedingExtraData(),
                     getParentForChildren(),
                     isClean());
@@ -70740,29 +61297,29 @@ public final class ServerData {
           return speedingExtraDataBuilder_;
         }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData_;
+        private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData locationExtraData_;
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraDataOrBuilder> locationExtraDataBuilder_;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraDataOrBuilder> locationExtraDataBuilder_;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
          */
         public boolean hasLocationExtraData() {
           return ((bitField0_ & 0x00000020) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData getLocationExtraData() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData getLocationExtraData() {
           if (locationExtraDataBuilder_ == null) {
-            return locationExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.getDefaultInstance() : locationExtraData_;
+            return locationExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.getDefaultInstance() : locationExtraData_;
           } else {
             return locationExtraDataBuilder_.getMessage();
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
          */
-        public Builder setLocationExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData value) {
+        public Builder setLocationExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData value) {
           if (locationExtraDataBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -70776,10 +61333,10 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
          */
         public Builder setLocationExtraData(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.Builder builderForValue) {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.Builder builderForValue) {
           if (locationExtraDataBuilder_ == null) {
             locationExtraData_ = builderForValue.build();
             onChanged();
@@ -70790,15 +61347,15 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
          */
-        public Builder mergeLocationExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData value) {
+        public Builder mergeLocationExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData value) {
           if (locationExtraDataBuilder_ == null) {
             if (((bitField0_ & 0x00000020) != 0) &&
                 locationExtraData_ != null &&
-                locationExtraData_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.getDefaultInstance()) {
+                locationExtraData_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.getDefaultInstance()) {
               locationExtraData_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.newBuilder(locationExtraData_).mergeFrom(value).buildPartial();
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.newBuilder(locationExtraData_).mergeFrom(value).buildPartial();
             } else {
               locationExtraData_ = value;
             }
@@ -70810,7 +61367,7 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
          */
         public Builder clearLocationExtraData() {
           if (locationExtraDataBuilder_ == null) {
@@ -70823,33 +61380,33 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.Builder getLocationExtraDataBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.Builder getLocationExtraDataBuilder() {
           bitField0_ |= 0x00000020;
           onChanged();
           return getLocationExtraDataFieldBuilder().getBuilder();
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraDataOrBuilder getLocationExtraDataOrBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraDataOrBuilder getLocationExtraDataOrBuilder() {
           if (locationExtraDataBuilder_ != null) {
             return locationExtraDataBuilder_.getMessageOrBuilder();
           } else {
             return locationExtraData_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.getDefaultInstance() : locationExtraData_;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.getDefaultInstance() : locationExtraData_;
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationExtraData locationExtraData = 6;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationExtraData locationExtraData = 6;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraDataOrBuilder> 
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraDataOrBuilder> 
             getLocationExtraDataFieldBuilder() {
           if (locationExtraDataBuilder_ == null) {
             locationExtraDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationExtraDataOrBuilder>(
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationExtraDataOrBuilder>(
                     getLocationExtraData(),
                     getParentForChildren(),
                     isClean());
@@ -70858,29 +61415,29 @@ public final class ServerData {
           return locationExtraDataBuilder_;
         }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData_;
+        private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData_;
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraDataOrBuilder> locationInfoExtraDataBuilder_;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraDataOrBuilder> locationInfoExtraDataBuilder_;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
          */
         public boolean hasLocationInfoExtraData() {
           return ((bitField0_ & 0x00000040) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData getLocationInfoExtraData() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData getLocationInfoExtraData() {
           if (locationInfoExtraDataBuilder_ == null) {
-            return locationInfoExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.getDefaultInstance() : locationInfoExtraData_;
+            return locationInfoExtraData_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.getDefaultInstance() : locationInfoExtraData_;
           } else {
             return locationInfoExtraDataBuilder_.getMessage();
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
          */
-        public Builder setLocationInfoExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData value) {
+        public Builder setLocationInfoExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData value) {
           if (locationInfoExtraDataBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -70894,10 +61451,10 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
          */
         public Builder setLocationInfoExtraData(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.Builder builderForValue) {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.Builder builderForValue) {
           if (locationInfoExtraDataBuilder_ == null) {
             locationInfoExtraData_ = builderForValue.build();
             onChanged();
@@ -70908,15 +61465,15 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
          */
-        public Builder mergeLocationInfoExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData value) {
+        public Builder mergeLocationInfoExtraData(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData value) {
           if (locationInfoExtraDataBuilder_ == null) {
             if (((bitField0_ & 0x00000040) != 0) &&
                 locationInfoExtraData_ != null &&
-                locationInfoExtraData_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.getDefaultInstance()) {
+                locationInfoExtraData_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.getDefaultInstance()) {
               locationInfoExtraData_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.newBuilder(locationInfoExtraData_).mergeFrom(value).buildPartial();
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.newBuilder(locationInfoExtraData_).mergeFrom(value).buildPartial();
             } else {
               locationInfoExtraData_ = value;
             }
@@ -70928,7 +61485,7 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
          */
         public Builder clearLocationInfoExtraData() {
           if (locationInfoExtraDataBuilder_ == null) {
@@ -70941,33 +61498,33 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.Builder getLocationInfoExtraDataBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.Builder getLocationInfoExtraDataBuilder() {
           bitField0_ |= 0x00000040;
           onChanged();
           return getLocationInfoExtraDataFieldBuilder().getBuilder();
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraDataOrBuilder getLocationInfoExtraDataOrBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraDataOrBuilder getLocationInfoExtraDataOrBuilder() {
           if (locationInfoExtraDataBuilder_ != null) {
             return locationInfoExtraDataBuilder_.getMessageOrBuilder();
           } else {
             return locationInfoExtraData_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.getDefaultInstance() : locationInfoExtraData_;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.getDefaultInstance() : locationInfoExtraData_;
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.LocationInfoExtraData locationInfoExtraData = 7;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.LocationInfoExtraData locationInfoExtraData = 7;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraDataOrBuilder> 
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraDataOrBuilder> 
             getLocationInfoExtraDataFieldBuilder() {
           if (locationInfoExtraDataBuilder_ == null) {
             locationInfoExtraDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.LocationInfoExtraDataOrBuilder>(
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraData.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.LocationInfoExtraDataOrBuilder>(
                     getLocationInfoExtraData(),
                     getParentForChildren(),
                     isClean());
@@ -70976,29 +61533,29 @@ public final class ServerData {
           return locationInfoExtraDataBuilder_;
         }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState_;
+        private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState extraCarState_;
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarStateOrBuilder> extraCarStateBuilder_;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarStateOrBuilder> extraCarStateBuilder_;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
          */
         public boolean hasExtraCarState() {
           return ((bitField0_ & 0x00000080) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState getExtraCarState() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState getExtraCarState() {
           if (extraCarStateBuilder_ == null) {
-            return extraCarState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.getDefaultInstance() : extraCarState_;
+            return extraCarState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.getDefaultInstance() : extraCarState_;
           } else {
             return extraCarStateBuilder_.getMessage();
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
          */
-        public Builder setExtraCarState(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState value) {
+        public Builder setExtraCarState(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState value) {
           if (extraCarStateBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -71012,10 +61569,10 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
          */
         public Builder setExtraCarState(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.Builder builderForValue) {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.Builder builderForValue) {
           if (extraCarStateBuilder_ == null) {
             extraCarState_ = builderForValue.build();
             onChanged();
@@ -71026,15 +61583,15 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
          */
-        public Builder mergeExtraCarState(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState value) {
+        public Builder mergeExtraCarState(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState value) {
           if (extraCarStateBuilder_ == null) {
             if (((bitField0_ & 0x00000080) != 0) &&
                 extraCarState_ != null &&
-                extraCarState_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.getDefaultInstance()) {
+                extraCarState_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.getDefaultInstance()) {
               extraCarState_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.newBuilder(extraCarState_).mergeFrom(value).buildPartial();
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.newBuilder(extraCarState_).mergeFrom(value).buildPartial();
             } else {
               extraCarState_ = value;
             }
@@ -71046,7 +61603,7 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
          */
         public Builder clearExtraCarState() {
           if (extraCarStateBuilder_ == null) {
@@ -71059,33 +61616,33 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.Builder getExtraCarStateBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.Builder getExtraCarStateBuilder() {
           bitField0_ |= 0x00000080;
           onChanged();
           return getExtraCarStateFieldBuilder().getBuilder();
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarStateOrBuilder getExtraCarStateOrBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarStateOrBuilder getExtraCarStateOrBuilder() {
           if (extraCarStateBuilder_ != null) {
             return extraCarStateBuilder_.getMessageOrBuilder();
           } else {
             return extraCarState_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.getDefaultInstance() : extraCarState_;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.getDefaultInstance() : extraCarState_;
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExtraCarState extraCarState = 8;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExtraCarState extraCarState = 8;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarStateOrBuilder> 
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarStateOrBuilder> 
             getExtraCarStateFieldBuilder() {
           if (extraCarStateBuilder_ == null) {
             extraCarStateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExtraCarStateOrBuilder>(
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExtraCarStateOrBuilder>(
                     getExtraCarState(),
                     getParentForChildren(),
                     isClean());
@@ -71094,29 +61651,29 @@ public final class ServerData {
           return extraCarStateBuilder_;
         }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState ioState_;
+        private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState ioState_;
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOStateOrBuilder> ioStateBuilder_;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOStateOrBuilder> ioStateBuilder_;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
          */
         public boolean hasIoState() {
           return ((bitField0_ & 0x00000100) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState getIoState() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState getIoState() {
           if (ioStateBuilder_ == null) {
-            return ioState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.getDefaultInstance() : ioState_;
+            return ioState_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.getDefaultInstance() : ioState_;
           } else {
             return ioStateBuilder_.getMessage();
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
          */
-        public Builder setIoState(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState value) {
+        public Builder setIoState(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState value) {
           if (ioStateBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -71130,10 +61687,10 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
          */
         public Builder setIoState(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.Builder builderForValue) {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.Builder builderForValue) {
           if (ioStateBuilder_ == null) {
             ioState_ = builderForValue.build();
             onChanged();
@@ -71144,15 +61701,15 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
          */
-        public Builder mergeIoState(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState value) {
+        public Builder mergeIoState(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState value) {
           if (ioStateBuilder_ == null) {
             if (((bitField0_ & 0x00000100) != 0) &&
                 ioState_ != null &&
-                ioState_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.getDefaultInstance()) {
+                ioState_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.getDefaultInstance()) {
               ioState_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.newBuilder(ioState_).mergeFrom(value).buildPartial();
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.newBuilder(ioState_).mergeFrom(value).buildPartial();
             } else {
               ioState_ = value;
             }
@@ -71164,7 +61721,7 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
          */
         public Builder clearIoState() {
           if (ioStateBuilder_ == null) {
@@ -71177,33 +61734,33 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.Builder getIoStateBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.Builder getIoStateBuilder() {
           bitField0_ |= 0x00000100;
           onChanged();
           return getIoStateFieldBuilder().getBuilder();
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOStateOrBuilder getIoStateOrBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOStateOrBuilder getIoStateOrBuilder() {
           if (ioStateBuilder_ != null) {
             return ioStateBuilder_.getMessageOrBuilder();
           } else {
             return ioState_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.getDefaultInstance() : ioState_;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.getDefaultInstance() : ioState_;
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.IOState ioState = 9;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.IOState ioState = 9;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOStateOrBuilder> 
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOStateOrBuilder> 
             getIoStateFieldBuilder() {
           if (ioStateBuilder_ == null) {
             ioStateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.IOStateOrBuilder>(
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOState.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.IOStateOrBuilder>(
                     getIoState(),
                     getParentForChildren(),
                     isClean());
@@ -71308,501 +61865,157 @@ public final class ServerData {
           return this;
         }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarmOrBuilder> videoAlarmBuilder_;
+        private int videoAlarm_ ;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
+         * <code>optional int32 videoAlarm = 13;</code>
          */
         public boolean hasVideoAlarm() {
           return ((bitField0_ & 0x00001000) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
+         * <code>optional int32 videoAlarm = 13;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm getVideoAlarm() {
-          if (videoAlarmBuilder_ == null) {
-            return videoAlarm_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.getDefaultInstance() : videoAlarm_;
-          } else {
-            return videoAlarmBuilder_.getMessage();
-          }
+        public int getVideoAlarm() {
+          return videoAlarm_;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
+         * <code>optional int32 videoAlarm = 13;</code>
          */
-        public Builder setVideoAlarm(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm value) {
-          if (videoAlarmBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            videoAlarm_ = value;
-            onChanged();
-          } else {
-            videoAlarmBuilder_.setMessage(value);
-          }
+        public Builder setVideoAlarm(int value) {
           bitField0_ |= 0x00001000;
+          videoAlarm_ = value;
+          onChanged();
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
-         */
-        public Builder setVideoAlarm(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.Builder builderForValue) {
-          if (videoAlarmBuilder_ == null) {
-            videoAlarm_ = builderForValue.build();
-            onChanged();
-          } else {
-            videoAlarmBuilder_.setMessage(builderForValue.build());
-          }
-          bitField0_ |= 0x00001000;
-          return this;
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
-         */
-        public Builder mergeVideoAlarm(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm value) {
-          if (videoAlarmBuilder_ == null) {
-            if (((bitField0_ & 0x00001000) != 0) &&
-                videoAlarm_ != null &&
-                videoAlarm_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.getDefaultInstance()) {
-              videoAlarm_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.newBuilder(videoAlarm_).mergeFrom(value).buildPartial();
-            } else {
-              videoAlarm_ = value;
-            }
-            onChanged();
-          } else {
-            videoAlarmBuilder_.mergeFrom(value);
-          }
-          bitField0_ |= 0x00001000;
-          return this;
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
+         * <code>optional int32 videoAlarm = 13;</code>
          */
         public Builder clearVideoAlarm() {
-          if (videoAlarmBuilder_ == null) {
-            videoAlarm_ = null;
-            onChanged();
-          } else {
-            videoAlarmBuilder_.clear();
-          }
           bitField0_ = (bitField0_ & ~0x00001000);
+          videoAlarm_ = 0;
+          onChanged();
           return this;
         }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
-         */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.Builder getVideoAlarmBuilder() {
-          bitField0_ |= 0x00001000;
-          onChanged();
-          return getVideoAlarmFieldBuilder().getBuilder();
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
-         */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarmOrBuilder getVideoAlarmOrBuilder() {
-          if (videoAlarmBuilder_ != null) {
-            return videoAlarmBuilder_.getMessageOrBuilder();
-          } else {
-            return videoAlarm_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.getDefaultInstance() : videoAlarm_;
-          }
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoAlarm videoAlarm = 13;</code>
-         */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarmOrBuilder> 
-            getVideoAlarmFieldBuilder() {
-          if (videoAlarmBuilder_ == null) {
-            videoAlarmBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarm.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoAlarmOrBuilder>(
-                    getVideoAlarm(),
-                    getParentForChildren(),
-                    isClean());
-            videoAlarm_ = null;
-          }
-          return videoAlarmBuilder_;
-        }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlagOrBuilder> videoLostFlagBuilder_;
+        private int videoLostFlag_ ;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
+         * <code>optional int32 videoLostFlag = 14;</code>
          */
         public boolean hasVideoLostFlag() {
           return ((bitField0_ & 0x00002000) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
+         * <code>optional int32 videoLostFlag = 14;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag getVideoLostFlag() {
-          if (videoLostFlagBuilder_ == null) {
-            return videoLostFlag_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.getDefaultInstance() : videoLostFlag_;
-          } else {
-            return videoLostFlagBuilder_.getMessage();
-          }
+        public int getVideoLostFlag() {
+          return videoLostFlag_;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
+         * <code>optional int32 videoLostFlag = 14;</code>
          */
-        public Builder setVideoLostFlag(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag value) {
-          if (videoLostFlagBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            videoLostFlag_ = value;
-            onChanged();
-          } else {
-            videoLostFlagBuilder_.setMessage(value);
-          }
+        public Builder setVideoLostFlag(int value) {
           bitField0_ |= 0x00002000;
+          videoLostFlag_ = value;
+          onChanged();
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
-         */
-        public Builder setVideoLostFlag(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.Builder builderForValue) {
-          if (videoLostFlagBuilder_ == null) {
-            videoLostFlag_ = builderForValue.build();
-            onChanged();
-          } else {
-            videoLostFlagBuilder_.setMessage(builderForValue.build());
-          }
-          bitField0_ |= 0x00002000;
-          return this;
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
-         */
-        public Builder mergeVideoLostFlag(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag value) {
-          if (videoLostFlagBuilder_ == null) {
-            if (((bitField0_ & 0x00002000) != 0) &&
-                videoLostFlag_ != null &&
-                videoLostFlag_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.getDefaultInstance()) {
-              videoLostFlag_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.newBuilder(videoLostFlag_).mergeFrom(value).buildPartial();
-            } else {
-              videoLostFlag_ = value;
-            }
-            onChanged();
-          } else {
-            videoLostFlagBuilder_.mergeFrom(value);
-          }
-          bitField0_ |= 0x00002000;
-          return this;
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
+         * <code>optional int32 videoLostFlag = 14;</code>
          */
         public Builder clearVideoLostFlag() {
-          if (videoLostFlagBuilder_ == null) {
-            videoLostFlag_ = null;
-            onChanged();
-          } else {
-            videoLostFlagBuilder_.clear();
-          }
           bitField0_ = (bitField0_ & ~0x00002000);
+          videoLostFlag_ = 0;
+          onChanged();
           return this;
         }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
-         */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.Builder getVideoLostFlagBuilder() {
-          bitField0_ |= 0x00002000;
-          onChanged();
-          return getVideoLostFlagFieldBuilder().getBuilder();
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
-         */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlagOrBuilder getVideoLostFlagOrBuilder() {
-          if (videoLostFlagBuilder_ != null) {
-            return videoLostFlagBuilder_.getMessageOrBuilder();
-          } else {
-            return videoLostFlag_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.getDefaultInstance() : videoLostFlag_;
-          }
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoLostFlag videoLostFlag = 14;</code>
-         */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlagOrBuilder> 
-            getVideoLostFlagFieldBuilder() {
-          if (videoLostFlagBuilder_ == null) {
-            videoLostFlagBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlag.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoLostFlagOrBuilder>(
-                    getVideoLostFlag(),
-                    getParentForChildren(),
-                    isClean());
-            videoLostFlag_ = null;
-          }
-          return videoLostFlagBuilder_;
-        }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlagOrBuilder> videoShelterFlagBuilder_;
+        private int videoShelterFlag_ ;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
+         * <code>optional int32 videoShelterFlag = 15;</code>
          */
         public boolean hasVideoShelterFlag() {
           return ((bitField0_ & 0x00004000) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
+         * <code>optional int32 videoShelterFlag = 15;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag getVideoShelterFlag() {
-          if (videoShelterFlagBuilder_ == null) {
-            return videoShelterFlag_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.getDefaultInstance() : videoShelterFlag_;
-          } else {
-            return videoShelterFlagBuilder_.getMessage();
-          }
+        public int getVideoShelterFlag() {
+          return videoShelterFlag_;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
+         * <code>optional int32 videoShelterFlag = 15;</code>
          */
-        public Builder setVideoShelterFlag(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag value) {
-          if (videoShelterFlagBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            videoShelterFlag_ = value;
-            onChanged();
-          } else {
-            videoShelterFlagBuilder_.setMessage(value);
-          }
+        public Builder setVideoShelterFlag(int value) {
           bitField0_ |= 0x00004000;
+          videoShelterFlag_ = value;
+          onChanged();
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
-         */
-        public Builder setVideoShelterFlag(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.Builder builderForValue) {
-          if (videoShelterFlagBuilder_ == null) {
-            videoShelterFlag_ = builderForValue.build();
-            onChanged();
-          } else {
-            videoShelterFlagBuilder_.setMessage(builderForValue.build());
-          }
-          bitField0_ |= 0x00004000;
-          return this;
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
-         */
-        public Builder mergeVideoShelterFlag(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag value) {
-          if (videoShelterFlagBuilder_ == null) {
-            if (((bitField0_ & 0x00004000) != 0) &&
-                videoShelterFlag_ != null &&
-                videoShelterFlag_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.getDefaultInstance()) {
-              videoShelterFlag_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.newBuilder(videoShelterFlag_).mergeFrom(value).buildPartial();
-            } else {
-              videoShelterFlag_ = value;
-            }
-            onChanged();
-          } else {
-            videoShelterFlagBuilder_.mergeFrom(value);
-          }
-          bitField0_ |= 0x00004000;
-          return this;
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
+         * <code>optional int32 videoShelterFlag = 15;</code>
          */
         public Builder clearVideoShelterFlag() {
-          if (videoShelterFlagBuilder_ == null) {
-            videoShelterFlag_ = null;
-            onChanged();
-          } else {
-            videoShelterFlagBuilder_.clear();
-          }
           bitField0_ = (bitField0_ & ~0x00004000);
+          videoShelterFlag_ = 0;
+          onChanged();
           return this;
         }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
-         */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.Builder getVideoShelterFlagBuilder() {
-          bitField0_ |= 0x00004000;
-          onChanged();
-          return getVideoShelterFlagFieldBuilder().getBuilder();
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
-         */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlagOrBuilder getVideoShelterFlagOrBuilder() {
-          if (videoShelterFlagBuilder_ != null) {
-            return videoShelterFlagBuilder_.getMessageOrBuilder();
-          } else {
-            return videoShelterFlag_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.getDefaultInstance() : videoShelterFlag_;
-          }
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.VideoShelterFlag videoShelterFlag = 15;</code>
-         */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlagOrBuilder> 
-            getVideoShelterFlagFieldBuilder() {
-          if (videoShelterFlagBuilder_ == null) {
-            videoShelterFlagBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlag.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.VideoShelterFlagOrBuilder>(
-                    getVideoShelterFlag(),
-                    getParentForChildren(),
-                    isClean());
-            videoShelterFlag_ = null;
-          }
-          return videoShelterFlagBuilder_;
-        }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag_;
-        private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlagOrBuilder> storageFaultFlagBuilder_;
+        private int storageFaultFlag_ ;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
+         * <code>optional int32 storageFaultFlag = 16;</code>
          */
         public boolean hasStorageFaultFlag() {
           return ((bitField0_ & 0x00008000) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
+         * <code>optional int32 storageFaultFlag = 16;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag getStorageFaultFlag() {
-          if (storageFaultFlagBuilder_ == null) {
-            return storageFaultFlag_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.getDefaultInstance() : storageFaultFlag_;
-          } else {
-            return storageFaultFlagBuilder_.getMessage();
-          }
+        public int getStorageFaultFlag() {
+          return storageFaultFlag_;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
+         * <code>optional int32 storageFaultFlag = 16;</code>
          */
-        public Builder setStorageFaultFlag(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag value) {
-          if (storageFaultFlagBuilder_ == null) {
-            if (value == null) {
-              throw new NullPointerException();
-            }
-            storageFaultFlag_ = value;
-            onChanged();
-          } else {
-            storageFaultFlagBuilder_.setMessage(value);
-          }
+        public Builder setStorageFaultFlag(int value) {
           bitField0_ |= 0x00008000;
+          storageFaultFlag_ = value;
+          onChanged();
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
-         */
-        public Builder setStorageFaultFlag(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.Builder builderForValue) {
-          if (storageFaultFlagBuilder_ == null) {
-            storageFaultFlag_ = builderForValue.build();
-            onChanged();
-          } else {
-            storageFaultFlagBuilder_.setMessage(builderForValue.build());
-          }
-          bitField0_ |= 0x00008000;
-          return this;
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
-         */
-        public Builder mergeStorageFaultFlag(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag value) {
-          if (storageFaultFlagBuilder_ == null) {
-            if (((bitField0_ & 0x00008000) != 0) &&
-                storageFaultFlag_ != null &&
-                storageFaultFlag_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.getDefaultInstance()) {
-              storageFaultFlag_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.newBuilder(storageFaultFlag_).mergeFrom(value).buildPartial();
-            } else {
-              storageFaultFlag_ = value;
-            }
-            onChanged();
-          } else {
-            storageFaultFlagBuilder_.mergeFrom(value);
-          }
-          bitField0_ |= 0x00008000;
-          return this;
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
+         * <code>optional int32 storageFaultFlag = 16;</code>
          */
         public Builder clearStorageFaultFlag() {
-          if (storageFaultFlagBuilder_ == null) {
-            storageFaultFlag_ = null;
-            onChanged();
-          } else {
-            storageFaultFlagBuilder_.clear();
-          }
           bitField0_ = (bitField0_ & ~0x00008000);
+          storageFaultFlag_ = 0;
+          onChanged();
           return this;
         }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
-         */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.Builder getStorageFaultFlagBuilder() {
-          bitField0_ |= 0x00008000;
-          onChanged();
-          return getStorageFaultFlagFieldBuilder().getBuilder();
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
-         */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlagOrBuilder getStorageFaultFlagOrBuilder() {
-          if (storageFaultFlagBuilder_ != null) {
-            return storageFaultFlagBuilder_.getMessageOrBuilder();
-          } else {
-            return storageFaultFlag_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.getDefaultInstance() : storageFaultFlag_;
-          }
-        }
-        /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.StorageFaultFlag storageFaultFlag = 16;</code>
-         */
-        private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlagOrBuilder> 
-            getStorageFaultFlagFieldBuilder() {
-          if (storageFaultFlagBuilder_ == null) {
-            storageFaultFlagBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlag.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.StorageFaultFlagOrBuilder>(
-                    getStorageFaultFlag(),
-                    getParentForChildren(),
-                    isClean());
-            storageFaultFlag_ = null;
-          }
-          return storageFaultFlagBuilder_;
-        }
 
-        private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior_;
+        private cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior exceptBehavior_;
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehaviorOrBuilder> exceptBehaviorBuilder_;
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehaviorOrBuilder> exceptBehaviorBuilder_;
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
          */
         public boolean hasExceptBehavior() {
           return ((bitField0_ & 0x00010000) != 0);
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior getExceptBehavior() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior getExceptBehavior() {
           if (exceptBehaviorBuilder_ == null) {
-            return exceptBehavior_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.getDefaultInstance() : exceptBehavior_;
+            return exceptBehavior_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.getDefaultInstance() : exceptBehavior_;
           } else {
             return exceptBehaviorBuilder_.getMessage();
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
          */
-        public Builder setExceptBehavior(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior value) {
+        public Builder setExceptBehavior(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior value) {
           if (exceptBehaviorBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -71816,10 +62029,10 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
          */
         public Builder setExceptBehavior(
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.Builder builderForValue) {
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.Builder builderForValue) {
           if (exceptBehaviorBuilder_ == null) {
             exceptBehavior_ = builderForValue.build();
             onChanged();
@@ -71830,15 +62043,15 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
          */
-        public Builder mergeExceptBehavior(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior value) {
+        public Builder mergeExceptBehavior(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior value) {
           if (exceptBehaviorBuilder_ == null) {
             if (((bitField0_ & 0x00010000) != 0) &&
                 exceptBehavior_ != null &&
-                exceptBehavior_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.getDefaultInstance()) {
+                exceptBehavior_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.getDefaultInstance()) {
               exceptBehavior_ =
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.newBuilder(exceptBehavior_).mergeFrom(value).buildPartial();
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.newBuilder(exceptBehavior_).mergeFrom(value).buildPartial();
             } else {
               exceptBehavior_ = value;
             }
@@ -71850,7 +62063,7 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
          */
         public Builder clearExceptBehavior() {
           if (exceptBehaviorBuilder_ == null) {
@@ -71863,33 +62076,33 @@ public final class ServerData {
           return this;
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.Builder getExceptBehaviorBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.Builder getExceptBehaviorBuilder() {
           bitField0_ |= 0x00010000;
           onChanged();
           return getExceptBehaviorFieldBuilder().getBuilder();
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
          */
-        public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehaviorOrBuilder getExceptBehaviorOrBuilder() {
+        public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehaviorOrBuilder getExceptBehaviorOrBuilder() {
           if (exceptBehaviorBuilder_ != null) {
             return exceptBehaviorBuilder_.getMessageOrBuilder();
           } else {
             return exceptBehavior_ == null ?
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.getDefaultInstance() : exceptBehavior_;
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.getDefaultInstance() : exceptBehavior_;
           }
         }
         /**
-         * <code>optional .protobuf.Location.TerminalExtraLocationMsg.ExceptBehavior exceptBehavior = 17;</code>
+         * <code>optional .protobuf.Location.ExtraLocation.ExceptBehavior exceptBehavior = 17;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
-            cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehaviorOrBuilder> 
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehaviorOrBuilder> 
             getExceptBehaviorFieldBuilder() {
           if (exceptBehaviorBuilder_ == null) {
             exceptBehaviorBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehavior.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.ExceptBehaviorOrBuilder>(
+                cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehavior.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.ExceptBehaviorOrBuilder>(
                     getExceptBehavior(),
                     getParentForChildren(),
                     isClean());
@@ -71910,47 +62123,48 @@ public final class ServerData {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:protobuf.Location.TerminalExtraLocationMsg)
+        // @@protoc_insertion_point(builder_scope:protobuf.Location.ExtraLocation)
       }
 
-      // @@protoc_insertion_point(class_scope:protobuf.Location.TerminalExtraLocationMsg)
-      private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:protobuf.Location.ExtraLocation)
+      private static final cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg();
+        DEFAULT_INSTANCE = new cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation();
       }
 
-      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg getDefaultInstance() {
+      public static cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
-      @java.lang.Deprecated public static final com.google.protobuf.Parser<TerminalExtraLocationMsg>
-          PARSER = new com.google.protobuf.AbstractParser<TerminalExtraLocationMsg>() {
+      @java.lang.Deprecated public static final com.google.protobuf.Parser<ExtraLocation>
+          PARSER = new com.google.protobuf.AbstractParser<ExtraLocation>() {
         @java.lang.Override
-        public TerminalExtraLocationMsg parsePartialFrom(
+        public ExtraLocation parsePartialFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new TerminalExtraLocationMsg(input, extensionRegistry);
+          return new ExtraLocation(input, extensionRegistry);
         }
       };
 
-      public static com.google.protobuf.Parser<TerminalExtraLocationMsg> parser() {
+      public static com.google.protobuf.Parser<ExtraLocation> parser() {
         return PARSER;
       }
 
       @java.lang.Override
-      public com.google.protobuf.Parser<TerminalExtraLocationMsg> getParserForType() {
+      public com.google.protobuf.Parser<ExtraLocation> getParserForType() {
         return PARSER;
       }
 
       @java.lang.Override
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg getDefaultInstanceForType() {
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
     private int bitField0_;
+    private int bitField1_;
     public static final int WARNINGFLAG_FIELD_NUMBER = 1;
     private int warningFlag_;
     /**
@@ -72098,25 +62312,759 @@ public final class ServerData {
       }
     }
 
-    public static final int TERMINALEXTRALOCATIONMSG_FIELD_NUMBER = 9;
-    private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg terminalExtraLocationMsg_;
+    public static final int EXTRALOCATIONS_FIELD_NUMBER = 9;
+    private java.util.List<cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation> extraLocations_;
     /**
-     * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
      */
-    public boolean hasTerminalExtraLocationMsg() {
+    public java.util.List<cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation> getExtraLocationsList() {
+      return extraLocations_;
+    }
+    /**
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+     */
+    public java.util.List<? extends cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder> 
+        getExtraLocationsOrBuilderList() {
+      return extraLocations_;
+    }
+    /**
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+     */
+    public int getExtraLocationsCount() {
+      return extraLocations_.size();
+    }
+    /**
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+     */
+    public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation getExtraLocations(int index) {
+      return extraLocations_.get(index);
+    }
+    /**
+     * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+     */
+    public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder getExtraLocationsOrBuilder(
+        int index) {
+      return extraLocations_.get(index);
+    }
+
+    public static final int FLAG_FIELD_NUMBER = 10;
+    private boolean flag_;
+    /**
+     * <code>optional bool flag = 10;</code>
+     */
+    public boolean hasFlag() {
       return ((bitField0_ & 0x00000100) != 0);
     }
     /**
-     * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+     * <code>optional bool flag = 10;</code>
      */
-    public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg getTerminalExtraLocationMsg() {
-      return terminalExtraLocationMsg_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.getDefaultInstance() : terminalExtraLocationMsg_;
+    public boolean getFlag() {
+      return flag_;
+    }
+
+    public static final int OVERSPEEDING_FIELD_NUMBER = 11;
+    private boolean overSpeeding_;
+    /**
+     * <code>optional bool overSpeeding = 11;</code>
+     */
+    public boolean hasOverSpeeding() {
+      return ((bitField0_ & 0x00000200) != 0);
     }
     /**
-     * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+     * <code>optional bool overSpeeding = 11;</code>
      */
-    public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsgOrBuilder getTerminalExtraLocationMsgOrBuilder() {
-      return terminalExtraLocationMsg_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.getDefaultInstance() : terminalExtraLocationMsg_;
+    public boolean getOverSpeeding() {
+      return overSpeeding_;
+    }
+
+    public static final int OVERTIRED_FIELD_NUMBER = 12;
+    private boolean overTired_;
+    /**
+     * <code>optional bool overTired = 12;</code>
+     */
+    public boolean hasOverTired() {
+      return ((bitField0_ & 0x00000400) != 0);
+    }
+    /**
+     * <code>optional bool overTired = 12;</code>
+     */
+    public boolean getOverTired() {
+      return overTired_;
+    }
+
+    public static final int DANGEROUS_FIELD_NUMBER = 13;
+    private boolean dangerous_;
+    /**
+     * <code>optional bool dangerous = 13;</code>
+     */
+    public boolean hasDangerous() {
+      return ((bitField0_ & 0x00000800) != 0);
+    }
+    /**
+     * <code>optional bool dangerous = 13;</code>
+     */
+    public boolean getDangerous() {
+      return dangerous_;
+    }
+
+    public static final int GNSSFAULT_FIELD_NUMBER = 14;
+    private boolean gNSSFault_;
+    /**
+     * <code>optional bool GNSSFault = 14;</code>
+     */
+    public boolean hasGNSSFault() {
+      return ((bitField0_ & 0x00001000) != 0);
+    }
+    /**
+     * <code>optional bool GNSSFault = 14;</code>
+     */
+    public boolean getGNSSFault() {
+      return gNSSFault_;
+    }
+
+    public static final int GNSSANTENNAFAULT_FIELD_NUMBER = 15;
+    private boolean gNSSAntennaFault_;
+    /**
+     * <code>optional bool GNSSAntennaFault = 15;</code>
+     */
+    public boolean hasGNSSAntennaFault() {
+      return ((bitField0_ & 0x00002000) != 0);
+    }
+    /**
+     * <code>optional bool GNSSAntennaFault = 15;</code>
+     */
+    public boolean getGNSSAntennaFault() {
+      return gNSSAntennaFault_;
+    }
+
+    public static final int GNSSANTENNASHORTCIRCUIT_FIELD_NUMBER = 16;
+    private boolean gNSSAntennaShortCircuit_;
+    /**
+     * <code>optional bool GNSSAntennaShortCircuit = 16;</code>
+     */
+    public boolean hasGNSSAntennaShortCircuit() {
+      return ((bitField0_ & 0x00004000) != 0);
+    }
+    /**
+     * <code>optional bool GNSSAntennaShortCircuit = 16;</code>
+     */
+    public boolean getGNSSAntennaShortCircuit() {
+      return gNSSAntennaShortCircuit_;
+    }
+
+    public static final int TERMINALMAINPOWERUNDERVOLTAGE_FIELD_NUMBER = 17;
+    private boolean terminalMainPowerUnderVoltage_;
+    /**
+     * <code>optional bool terminalMainPowerUnderVoltage = 17;</code>
+     */
+    public boolean hasTerminalMainPowerUnderVoltage() {
+      return ((bitField0_ & 0x00008000) != 0);
+    }
+    /**
+     * <code>optional bool terminalMainPowerUnderVoltage = 17;</code>
+     */
+    public boolean getTerminalMainPowerUnderVoltage() {
+      return terminalMainPowerUnderVoltage_;
+    }
+
+    public static final int TERMINALMAINPOWERFAILURE_FIELD_NUMBER = 18;
+    private boolean terminalMainPowerFailure_;
+    /**
+     * <code>optional bool terminalMainPowerFailure = 18;</code>
+     */
+    public boolean hasTerminalMainPowerFailure() {
+      return ((bitField0_ & 0x00010000) != 0);
+    }
+    /**
+     * <code>optional bool terminalMainPowerFailure = 18;</code>
+     */
+    public boolean getTerminalMainPowerFailure() {
+      return terminalMainPowerFailure_;
+    }
+
+    public static final int TERMINALLCDFAULT_FIELD_NUMBER = 19;
+    private boolean terminalLCDFault_;
+    /**
+     * <code>optional bool TerminalLCDFault = 19;</code>
+     */
+    public boolean hasTerminalLCDFault() {
+      return ((bitField0_ & 0x00020000) != 0);
+    }
+    /**
+     * <code>optional bool TerminalLCDFault = 19;</code>
+     */
+    public boolean getTerminalLCDFault() {
+      return terminalLCDFault_;
+    }
+
+    public static final int TTSFAULT_FIELD_NUMBER = 20;
+    private boolean tTSFault_;
+    /**
+     * <code>optional bool TTSFault = 20;</code>
+     */
+    public boolean hasTTSFault() {
+      return ((bitField0_ & 0x00040000) != 0);
+    }
+    /**
+     * <code>optional bool TTSFault = 20;</code>
+     */
+    public boolean getTTSFault() {
+      return tTSFault_;
+    }
+
+    public static final int CAMERAFAULT_FIELD_NUMBER = 21;
+    private boolean cameraFault_;
+    /**
+     * <code>optional bool cameraFault = 21;</code>
+     */
+    public boolean hasCameraFault() {
+      return ((bitField0_ & 0x00080000) != 0);
+    }
+    /**
+     * <code>optional bool cameraFault = 21;</code>
+     */
+    public boolean getCameraFault() {
+      return cameraFault_;
+    }
+
+    public static final int ICCARDFAULT_FIELD_NUMBER = 22;
+    private boolean iCCardFault_;
+    /**
+     * <code>optional bool ICCardFault = 22;</code>
+     */
+    public boolean hasICCardFault() {
+      return ((bitField0_ & 0x00100000) != 0);
+    }
+    /**
+     * <code>optional bool ICCardFault = 22;</code>
+     */
+    public boolean getICCardFault() {
+      return iCCardFault_;
+    }
+
+    public static final int SPEEDING_FIELD_NUMBER = 23;
+    private boolean speeding_;
+    /**
+     * <code>optional bool speeding = 23;</code>
+     */
+    public boolean hasSpeeding() {
+      return ((bitField0_ & 0x00200000) != 0);
+    }
+    /**
+     * <code>optional bool speeding = 23;</code>
+     */
+    public boolean getSpeeding() {
+      return speeding_;
+    }
+
+    public static final int TIRED_FIELD_NUMBER = 24;
+    private boolean tired_;
+    /**
+     * <code>optional bool tired = 24;</code>
+     */
+    public boolean hasTired() {
+      return ((bitField0_ & 0x00400000) != 0);
+    }
+    /**
+     * <code>optional bool tired = 24;</code>
+     */
+    public boolean getTired() {
+      return tired_;
+    }
+
+    public static final int DRIVETIMEOUT_FIELD_NUMBER = 25;
+    private boolean driveTimeout_;
+    /**
+     * <code>optional bool driveTimeout = 25;</code>
+     */
+    public boolean hasDriveTimeout() {
+      return ((bitField0_ & 0x00800000) != 0);
+    }
+    /**
+     * <code>optional bool driveTimeout = 25;</code>
+     */
+    public boolean getDriveTimeout() {
+      return driveTimeout_;
+    }
+
+    public static final int PARKINGOVERTIME_FIELD_NUMBER = 26;
+    private boolean parkingOvertime_;
+    /**
+     * <code>optional bool parkingOvertime = 26;</code>
+     */
+    public boolean hasParkingOvertime() {
+      return ((bitField0_ & 0x01000000) != 0);
+    }
+    /**
+     * <code>optional bool parkingOvertime = 26;</code>
+     */
+    public boolean getParkingOvertime() {
+      return parkingOvertime_;
+    }
+
+    public static final int THROUGHAREA_FIELD_NUMBER = 27;
+    private boolean throughArea_;
+    /**
+     * <code>optional bool throughArea = 27;</code>
+     */
+    public boolean hasThroughArea() {
+      return ((bitField0_ & 0x02000000) != 0);
+    }
+    /**
+     * <code>optional bool throughArea = 27;</code>
+     */
+    public boolean getThroughArea() {
+      return throughArea_;
+    }
+
+    public static final int THROUGHROAD_FIELD_NUMBER = 28;
+    private boolean throughRoad_;
+    /**
+     * <code>optional bool throughRoad = 28;</code>
+     */
+    public boolean hasThroughRoad() {
+      return ((bitField0_ & 0x04000000) != 0);
+    }
+    /**
+     * <code>optional bool throughRoad = 28;</code>
+     */
+    public boolean getThroughRoad() {
+      return throughRoad_;
+    }
+
+    public static final int ROADTIMEOUT_FIELD_NUMBER = 29;
+    private boolean roadTimeout_;
+    /**
+     * <code>optional bool roadTimeout = 29;</code>
+     */
+    public boolean hasRoadTimeout() {
+      return ((bitField0_ & 0x08000000) != 0);
+    }
+    /**
+     * <code>optional bool roadTimeout = 29;</code>
+     */
+    public boolean getRoadTimeout() {
+      return roadTimeout_;
+    }
+
+    public static final int ROADFAULT_FIELD_NUMBER = 30;
+    private boolean roadFault_;
+    /**
+     * <code>optional bool roadFault = 30;</code>
+     */
+    public boolean hasRoadFault() {
+      return ((bitField0_ & 0x10000000) != 0);
+    }
+    /**
+     * <code>optional bool roadFault = 30;</code>
+     */
+    public boolean getRoadFault() {
+      return roadFault_;
+    }
+
+    public static final int VSSFAULT_FIELD_NUMBER = 31;
+    private boolean vSSFault_;
+    /**
+     * <code>optional bool VSSFault = 31;</code>
+     */
+    public boolean hasVSSFault() {
+      return ((bitField0_ & 0x20000000) != 0);
+    }
+    /**
+     * <code>optional bool VSSFault = 31;</code>
+     */
+    public boolean getVSSFault() {
+      return vSSFault_;
+    }
+
+    public static final int VEHICLEOILEXCEPTION_FIELD_NUMBER = 32;
+    private boolean vehicleOilException_;
+    /**
+     * <code>optional bool vehicleOilException = 32;</code>
+     */
+    public boolean hasVehicleOilException() {
+      return ((bitField0_ & 0x40000000) != 0);
+    }
+    /**
+     * <code>optional bool vehicleOilException = 32;</code>
+     */
+    public boolean getVehicleOilException() {
+      return vehicleOilException_;
+    }
+
+    public static final int VEHICLETHEFT_FIELD_NUMBER = 33;
+    private boolean vehicleTheft_;
+    /**
+     * <code>optional bool vehicleTheft = 33;</code>
+     */
+    public boolean hasVehicleTheft() {
+      return ((bitField0_ & 0x80000000) != 0);
+    }
+    /**
+     * <code>optional bool vehicleTheft = 33;</code>
+     */
+    public boolean getVehicleTheft() {
+      return vehicleTheft_;
+    }
+
+    public static final int VEHICLEILLEGALIGNITION_FIELD_NUMBER = 34;
+    private boolean vehicleIllegalIgnition_;
+    /**
+     * <code>optional bool vehicleIllegalIgnition = 34;</code>
+     */
+    public boolean hasVehicleIllegalIgnition() {
+      return ((bitField1_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>optional bool vehicleIllegalIgnition = 34;</code>
+     */
+    public boolean getVehicleIllegalIgnition() {
+      return vehicleIllegalIgnition_;
+    }
+
+    public static final int VEHICLEILLEGALSHIFT_FIELD_NUMBER = 35;
+    private boolean vehicleIllegalShift_;
+    /**
+     * <code>optional bool vehicleIllegalShift = 35;</code>
+     */
+    public boolean hasVehicleIllegalShift() {
+      return ((bitField1_ & 0x00000002) != 0);
+    }
+    /**
+     * <code>optional bool vehicleIllegalShift = 35;</code>
+     */
+    public boolean getVehicleIllegalShift() {
+      return vehicleIllegalShift_;
+    }
+
+    public static final int COLLISIONWARNING_FIELD_NUMBER = 36;
+    private boolean collisionWarning_;
+    /**
+     * <code>optional bool collisionWarning = 36;</code>
+     */
+    public boolean hasCollisionWarning() {
+      return ((bitField1_ & 0x00000004) != 0);
+    }
+    /**
+     * <code>optional bool collisionWarning = 36;</code>
+     */
+    public boolean getCollisionWarning() {
+      return collisionWarning_;
+    }
+
+    public static final int ROLLOVERWARNING_FIELD_NUMBER = 37;
+    private boolean rolloverWarning_;
+    /**
+     * <code>optional bool rolloverWarning = 37;</code>
+     */
+    public boolean hasRolloverWarning() {
+      return ((bitField1_ & 0x00000008) != 0);
+    }
+    /**
+     * <code>optional bool rolloverWarning = 37;</code>
+     */
+    public boolean getRolloverWarning() {
+      return rolloverWarning_;
+    }
+
+    public static final int ILLEGALOPENDOOR_FIELD_NUMBER = 38;
+    private boolean illegalOpenDoor_;
+    /**
+     * <code>optional bool illegalOpenDoor = 38;</code>
+     */
+    public boolean hasIllegalOpenDoor() {
+      return ((bitField1_ & 0x00000010) != 0);
+    }
+    /**
+     * <code>optional bool illegalOpenDoor = 38;</code>
+     */
+    public boolean getIllegalOpenDoor() {
+      return illegalOpenDoor_;
+    }
+
+    public static final int ACC_FIELD_NUMBER = 39;
+    private boolean aCC_;
+    /**
+     * <code>optional bool ACC = 39;</code>
+     */
+    public boolean hasACC() {
+      return ((bitField1_ & 0x00000020) != 0);
+    }
+    /**
+     * <code>optional bool ACC = 39;</code>
+     */
+    public boolean getACC() {
+      return aCC_;
+    }
+
+    public static final int ISLOCATION_FIELD_NUMBER = 40;
+    private boolean isLocation_;
+    /**
+     * <code>optional bool isLocation = 40;</code>
+     */
+    public boolean hasIsLocation() {
+      return ((bitField1_ & 0x00000040) != 0);
+    }
+    /**
+     * <code>optional bool isLocation = 40;</code>
+     */
+    public boolean getIsLocation() {
+      return isLocation_;
+    }
+
+    public static final int HASLATITUDE_FIELD_NUMBER = 41;
+    private boolean hasLatitude_;
+    /**
+     * <code>optional bool hasLatitude = 41;</code>
+     */
+    public boolean hasHasLatitude() {
+      return ((bitField1_ & 0x00000080) != 0);
+    }
+    /**
+     * <code>optional bool hasLatitude = 41;</code>
+     */
+    public boolean getHasLatitude() {
+      return hasLatitude_;
+    }
+
+    public static final int HASLONGITUDE_FIELD_NUMBER = 42;
+    private boolean hasLongitude_;
+    /**
+     * <code>optional bool hasLongitude = 42;</code>
+     */
+    public boolean hasHasLongitude() {
+      return ((bitField1_ & 0x00000100) != 0);
+    }
+    /**
+     * <code>optional bool hasLongitude = 42;</code>
+     */
+    public boolean getHasLongitude() {
+      return hasLongitude_;
+    }
+
+    public static final int ISRUNNING_FIELD_NUMBER = 43;
+    private boolean isRunning_;
+    /**
+     * <code>optional bool isRunning = 43;</code>
+     */
+    public boolean hasIsRunning() {
+      return ((bitField1_ & 0x00000200) != 0);
+    }
+    /**
+     * <code>optional bool isRunning = 43;</code>
+     */
+    public boolean getIsRunning() {
+      return isRunning_;
+    }
+
+    public static final int ENCRYPT_FIELD_NUMBER = 44;
+    private boolean encrypt_;
+    /**
+     * <code>optional bool encrypt = 44;</code>
+     */
+    public boolean hasEncrypt() {
+      return ((bitField1_ & 0x00000400) != 0);
+    }
+    /**
+     * <code>optional bool encrypt = 44;</code>
+     */
+    public boolean getEncrypt() {
+      return encrypt_;
+    }
+
+    public static final int GOODSSTATUS_FIELD_NUMBER = 45;
+    private int goodsStatus_;
+    /**
+     * <code>optional int32 goodsStatus = 45;</code>
+     */
+    public boolean hasGoodsStatus() {
+      return ((bitField1_ & 0x00000800) != 0);
+    }
+    /**
+     * <code>optional int32 goodsStatus = 45;</code>
+     */
+    public int getGoodsStatus() {
+      return goodsStatus_;
+    }
+
+    public static final int VEHICLEOIL_FIELD_NUMBER = 46;
+    private boolean vehicleOil_;
+    /**
+     * <code>optional bool vehicleOil = 46;</code>
+     */
+    public boolean hasVehicleOil() {
+      return ((bitField1_ & 0x00001000) != 0);
+    }
+    /**
+     * <code>optional bool vehicleOil = 46;</code>
+     */
+    public boolean getVehicleOil() {
+      return vehicleOil_;
+    }
+
+    public static final int VEHICLECIRCUT_FIELD_NUMBER = 47;
+    private boolean vehicleCircut_;
+    /**
+     * <code>optional bool vehicleCircut = 47;</code>
+     */
+    public boolean hasVehicleCircut() {
+      return ((bitField1_ & 0x00002000) != 0);
+    }
+    /**
+     * <code>optional bool vehicleCircut = 47;</code>
+     */
+    public boolean getVehicleCircut() {
+      return vehicleCircut_;
+    }
+
+    public static final int DOORLOCK_FIELD_NUMBER = 48;
+    private boolean doorLock_;
+    /**
+     * <code>optional bool doorLock = 48;</code>
+     */
+    public boolean hasDoorLock() {
+      return ((bitField1_ & 0x00004000) != 0);
+    }
+    /**
+     * <code>optional bool doorLock = 48;</code>
+     */
+    public boolean getDoorLock() {
+      return doorLock_;
+    }
+
+    public static final int FRONTDOOROPEN_FIELD_NUMBER = 49;
+    private boolean frontDoorOpen_;
+    /**
+     * <code>optional bool frontDoorOpen = 49;</code>
+     */
+    public boolean hasFrontDoorOpen() {
+      return ((bitField1_ & 0x00008000) != 0);
+    }
+    /**
+     * <code>optional bool frontDoorOpen = 49;</code>
+     */
+    public boolean getFrontDoorOpen() {
+      return frontDoorOpen_;
+    }
+
+    public static final int MIDDLEDOOROPEN_FIELD_NUMBER = 50;
+    private boolean middleDoorOpen_;
+    /**
+     * <code>optional bool middleDoorOpen = 50;</code>
+     */
+    public boolean hasMiddleDoorOpen() {
+      return ((bitField1_ & 0x00010000) != 0);
+    }
+    /**
+     * <code>optional bool middleDoorOpen = 50;</code>
+     */
+    public boolean getMiddleDoorOpen() {
+      return middleDoorOpen_;
+    }
+
+    public static final int ENDDOOROPEN_FIELD_NUMBER = 51;
+    private boolean endDoorOpen_;
+    /**
+     * <code>optional bool endDoorOpen = 51;</code>
+     */
+    public boolean hasEndDoorOpen() {
+      return ((bitField1_ & 0x00020000) != 0);
+    }
+    /**
+     * <code>optional bool endDoorOpen = 51;</code>
+     */
+    public boolean getEndDoorOpen() {
+      return endDoorOpen_;
+    }
+
+    public static final int DRIVERDOOROPEN_FIELD_NUMBER = 52;
+    private boolean driverDoorOpen_;
+    /**
+     * <code>optional bool driverDoorOpen = 52;</code>
+     */
+    public boolean hasDriverDoorOpen() {
+      return ((bitField1_ & 0x00040000) != 0);
+    }
+    /**
+     * <code>optional bool driverDoorOpen = 52;</code>
+     */
+    public boolean getDriverDoorOpen() {
+      return driverDoorOpen_;
+    }
+
+    public static final int OTHERDOOROPEN_FIELD_NUMBER = 53;
+    private boolean otherDoorOpen_;
+    /**
+     * <code>optional bool otherDoorOpen = 53;</code>
+     */
+    public boolean hasOtherDoorOpen() {
+      return ((bitField1_ & 0x00080000) != 0);
+    }
+    /**
+     * <code>optional bool otherDoorOpen = 53;</code>
+     */
+    public boolean getOtherDoorOpen() {
+      return otherDoorOpen_;
+    }
+
+    public static final int GPS_FIELD_NUMBER = 54;
+    private boolean gPS_;
+    /**
+     * <code>optional bool GPS = 54;</code>
+     */
+    public boolean hasGPS() {
+      return ((bitField1_ & 0x00100000) != 0);
+    }
+    /**
+     * <code>optional bool GPS = 54;</code>
+     */
+    public boolean getGPS() {
+      return gPS_;
+    }
+
+    public static final int BEIDOU_FIELD_NUMBER = 55;
+    private boolean beidou_;
+    /**
+     * <code>optional bool beidou = 55;</code>
+     */
+    public boolean hasBeidou() {
+      return ((bitField1_ & 0x00200000) != 0);
+    }
+    /**
+     * <code>optional bool beidou = 55;</code>
+     */
+    public boolean getBeidou() {
+      return beidou_;
+    }
+
+    public static final int GLONASS_FIELD_NUMBER = 56;
+    private boolean gLONASS_;
+    /**
+     * <code>optional bool GLONASS = 56;</code>
+     */
+    public boolean hasGLONASS() {
+      return ((bitField1_ & 0x00400000) != 0);
+    }
+    /**
+     * <code>optional bool GLONASS = 56;</code>
+     */
+    public boolean getGLONASS() {
+      return gLONASS_;
+    }
+
+    public static final int GALILEO_FIELD_NUMBER = 57;
+    private boolean galileo_;
+    /**
+     * <code>optional bool Galileo = 57;</code>
+     */
+    public boolean hasGalileo() {
+      return ((bitField1_ & 0x00800000) != 0);
+    }
+    /**
+     * <code>optional bool Galileo = 57;</code>
+     */
+    public boolean getGalileo() {
+      return galileo_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -72157,8 +63105,152 @@ public final class ServerData {
       if (((bitField0_ & 0x00000080) != 0)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, time_);
       }
+      for (int i = 0; i < extraLocations_.size(); i++) {
+        output.writeMessage(9, extraLocations_.get(i));
+      }
       if (((bitField0_ & 0x00000100) != 0)) {
-        output.writeMessage(9, getTerminalExtraLocationMsg());
+        output.writeBool(10, flag_);
+      }
+      if (((bitField0_ & 0x00000200) != 0)) {
+        output.writeBool(11, overSpeeding_);
+      }
+      if (((bitField0_ & 0x00000400) != 0)) {
+        output.writeBool(12, overTired_);
+      }
+      if (((bitField0_ & 0x00000800) != 0)) {
+        output.writeBool(13, dangerous_);
+      }
+      if (((bitField0_ & 0x00001000) != 0)) {
+        output.writeBool(14, gNSSFault_);
+      }
+      if (((bitField0_ & 0x00002000) != 0)) {
+        output.writeBool(15, gNSSAntennaFault_);
+      }
+      if (((bitField0_ & 0x00004000) != 0)) {
+        output.writeBool(16, gNSSAntennaShortCircuit_);
+      }
+      if (((bitField0_ & 0x00008000) != 0)) {
+        output.writeBool(17, terminalMainPowerUnderVoltage_);
+      }
+      if (((bitField0_ & 0x00010000) != 0)) {
+        output.writeBool(18, terminalMainPowerFailure_);
+      }
+      if (((bitField0_ & 0x00020000) != 0)) {
+        output.writeBool(19, terminalLCDFault_);
+      }
+      if (((bitField0_ & 0x00040000) != 0)) {
+        output.writeBool(20, tTSFault_);
+      }
+      if (((bitField0_ & 0x00080000) != 0)) {
+        output.writeBool(21, cameraFault_);
+      }
+      if (((bitField0_ & 0x00100000) != 0)) {
+        output.writeBool(22, iCCardFault_);
+      }
+      if (((bitField0_ & 0x00200000) != 0)) {
+        output.writeBool(23, speeding_);
+      }
+      if (((bitField0_ & 0x00400000) != 0)) {
+        output.writeBool(24, tired_);
+      }
+      if (((bitField0_ & 0x00800000) != 0)) {
+        output.writeBool(25, driveTimeout_);
+      }
+      if (((bitField0_ & 0x01000000) != 0)) {
+        output.writeBool(26, parkingOvertime_);
+      }
+      if (((bitField0_ & 0x02000000) != 0)) {
+        output.writeBool(27, throughArea_);
+      }
+      if (((bitField0_ & 0x04000000) != 0)) {
+        output.writeBool(28, throughRoad_);
+      }
+      if (((bitField0_ & 0x08000000) != 0)) {
+        output.writeBool(29, roadTimeout_);
+      }
+      if (((bitField0_ & 0x10000000) != 0)) {
+        output.writeBool(30, roadFault_);
+      }
+      if (((bitField0_ & 0x20000000) != 0)) {
+        output.writeBool(31, vSSFault_);
+      }
+      if (((bitField0_ & 0x40000000) != 0)) {
+        output.writeBool(32, vehicleOilException_);
+      }
+      if (((bitField0_ & 0x80000000) != 0)) {
+        output.writeBool(33, vehicleTheft_);
+      }
+      if (((bitField1_ & 0x00000001) != 0)) {
+        output.writeBool(34, vehicleIllegalIgnition_);
+      }
+      if (((bitField1_ & 0x00000002) != 0)) {
+        output.writeBool(35, vehicleIllegalShift_);
+      }
+      if (((bitField1_ & 0x00000004) != 0)) {
+        output.writeBool(36, collisionWarning_);
+      }
+      if (((bitField1_ & 0x00000008) != 0)) {
+        output.writeBool(37, rolloverWarning_);
+      }
+      if (((bitField1_ & 0x00000010) != 0)) {
+        output.writeBool(38, illegalOpenDoor_);
+      }
+      if (((bitField1_ & 0x00000020) != 0)) {
+        output.writeBool(39, aCC_);
+      }
+      if (((bitField1_ & 0x00000040) != 0)) {
+        output.writeBool(40, isLocation_);
+      }
+      if (((bitField1_ & 0x00000080) != 0)) {
+        output.writeBool(41, hasLatitude_);
+      }
+      if (((bitField1_ & 0x00000100) != 0)) {
+        output.writeBool(42, hasLongitude_);
+      }
+      if (((bitField1_ & 0x00000200) != 0)) {
+        output.writeBool(43, isRunning_);
+      }
+      if (((bitField1_ & 0x00000400) != 0)) {
+        output.writeBool(44, encrypt_);
+      }
+      if (((bitField1_ & 0x00000800) != 0)) {
+        output.writeInt32(45, goodsStatus_);
+      }
+      if (((bitField1_ & 0x00001000) != 0)) {
+        output.writeBool(46, vehicleOil_);
+      }
+      if (((bitField1_ & 0x00002000) != 0)) {
+        output.writeBool(47, vehicleCircut_);
+      }
+      if (((bitField1_ & 0x00004000) != 0)) {
+        output.writeBool(48, doorLock_);
+      }
+      if (((bitField1_ & 0x00008000) != 0)) {
+        output.writeBool(49, frontDoorOpen_);
+      }
+      if (((bitField1_ & 0x00010000) != 0)) {
+        output.writeBool(50, middleDoorOpen_);
+      }
+      if (((bitField1_ & 0x00020000) != 0)) {
+        output.writeBool(51, endDoorOpen_);
+      }
+      if (((bitField1_ & 0x00040000) != 0)) {
+        output.writeBool(52, driverDoorOpen_);
+      }
+      if (((bitField1_ & 0x00080000) != 0)) {
+        output.writeBool(53, otherDoorOpen_);
+      }
+      if (((bitField1_ & 0x00100000) != 0)) {
+        output.writeBool(54, gPS_);
+      }
+      if (((bitField1_ & 0x00200000) != 0)) {
+        output.writeBool(55, beidou_);
+      }
+      if (((bitField1_ & 0x00400000) != 0)) {
+        output.writeBool(56, gLONASS_);
+      }
+      if (((bitField1_ & 0x00800000) != 0)) {
+        output.writeBool(57, galileo_);
       }
       unknownFields.writeTo(output);
     }
@@ -72200,9 +63292,201 @@ public final class ServerData {
       if (((bitField0_ & 0x00000080) != 0)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, time_);
       }
+      for (int i = 0; i < extraLocations_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, extraLocations_.get(i));
+      }
       if (((bitField0_ & 0x00000100) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getTerminalExtraLocationMsg());
+          .computeBoolSize(10, flag_);
+      }
+      if (((bitField0_ & 0x00000200) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, overSpeeding_);
+      }
+      if (((bitField0_ & 0x00000400) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, overTired_);
+      }
+      if (((bitField0_ & 0x00000800) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, dangerous_);
+      }
+      if (((bitField0_ & 0x00001000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, gNSSFault_);
+      }
+      if (((bitField0_ & 0x00002000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, gNSSAntennaFault_);
+      }
+      if (((bitField0_ & 0x00004000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(16, gNSSAntennaShortCircuit_);
+      }
+      if (((bitField0_ & 0x00008000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(17, terminalMainPowerUnderVoltage_);
+      }
+      if (((bitField0_ & 0x00010000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(18, terminalMainPowerFailure_);
+      }
+      if (((bitField0_ & 0x00020000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(19, terminalLCDFault_);
+      }
+      if (((bitField0_ & 0x00040000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(20, tTSFault_);
+      }
+      if (((bitField0_ & 0x00080000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(21, cameraFault_);
+      }
+      if (((bitField0_ & 0x00100000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(22, iCCardFault_);
+      }
+      if (((bitField0_ & 0x00200000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(23, speeding_);
+      }
+      if (((bitField0_ & 0x00400000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(24, tired_);
+      }
+      if (((bitField0_ & 0x00800000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(25, driveTimeout_);
+      }
+      if (((bitField0_ & 0x01000000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(26, parkingOvertime_);
+      }
+      if (((bitField0_ & 0x02000000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(27, throughArea_);
+      }
+      if (((bitField0_ & 0x04000000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(28, throughRoad_);
+      }
+      if (((bitField0_ & 0x08000000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(29, roadTimeout_);
+      }
+      if (((bitField0_ & 0x10000000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(30, roadFault_);
+      }
+      if (((bitField0_ & 0x20000000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(31, vSSFault_);
+      }
+      if (((bitField0_ & 0x40000000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(32, vehicleOilException_);
+      }
+      if (((bitField0_ & 0x80000000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(33, vehicleTheft_);
+      }
+      if (((bitField1_ & 0x00000001) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(34, vehicleIllegalIgnition_);
+      }
+      if (((bitField1_ & 0x00000002) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(35, vehicleIllegalShift_);
+      }
+      if (((bitField1_ & 0x00000004) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(36, collisionWarning_);
+      }
+      if (((bitField1_ & 0x00000008) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(37, rolloverWarning_);
+      }
+      if (((bitField1_ & 0x00000010) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(38, illegalOpenDoor_);
+      }
+      if (((bitField1_ & 0x00000020) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(39, aCC_);
+      }
+      if (((bitField1_ & 0x00000040) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(40, isLocation_);
+      }
+      if (((bitField1_ & 0x00000080) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(41, hasLatitude_);
+      }
+      if (((bitField1_ & 0x00000100) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(42, hasLongitude_);
+      }
+      if (((bitField1_ & 0x00000200) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(43, isRunning_);
+      }
+      if (((bitField1_ & 0x00000400) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(44, encrypt_);
+      }
+      if (((bitField1_ & 0x00000800) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(45, goodsStatus_);
+      }
+      if (((bitField1_ & 0x00001000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(46, vehicleOil_);
+      }
+      if (((bitField1_ & 0x00002000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(47, vehicleCircut_);
+      }
+      if (((bitField1_ & 0x00004000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(48, doorLock_);
+      }
+      if (((bitField1_ & 0x00008000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(49, frontDoorOpen_);
+      }
+      if (((bitField1_ & 0x00010000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(50, middleDoorOpen_);
+      }
+      if (((bitField1_ & 0x00020000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(51, endDoorOpen_);
+      }
+      if (((bitField1_ & 0x00040000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(52, driverDoorOpen_);
+      }
+      if (((bitField1_ & 0x00080000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(53, otherDoorOpen_);
+      }
+      if (((bitField1_ & 0x00100000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(54, gPS_);
+      }
+      if (((bitField1_ & 0x00200000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(55, beidou_);
+      }
+      if (((bitField1_ & 0x00400000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(56, gLONASS_);
+      }
+      if (((bitField1_ & 0x00800000) != 0)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(57, galileo_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -72262,10 +63546,247 @@ public final class ServerData {
         if (!getTime()
             .equals(other.getTime())) return false;
       }
-      if (hasTerminalExtraLocationMsg() != other.hasTerminalExtraLocationMsg()) return false;
-      if (hasTerminalExtraLocationMsg()) {
-        if (!getTerminalExtraLocationMsg()
-            .equals(other.getTerminalExtraLocationMsg())) return false;
+      if (!getExtraLocationsList()
+          .equals(other.getExtraLocationsList())) return false;
+      if (hasFlag() != other.hasFlag()) return false;
+      if (hasFlag()) {
+        if (getFlag()
+            != other.getFlag()) return false;
+      }
+      if (hasOverSpeeding() != other.hasOverSpeeding()) return false;
+      if (hasOverSpeeding()) {
+        if (getOverSpeeding()
+            != other.getOverSpeeding()) return false;
+      }
+      if (hasOverTired() != other.hasOverTired()) return false;
+      if (hasOverTired()) {
+        if (getOverTired()
+            != other.getOverTired()) return false;
+      }
+      if (hasDangerous() != other.hasDangerous()) return false;
+      if (hasDangerous()) {
+        if (getDangerous()
+            != other.getDangerous()) return false;
+      }
+      if (hasGNSSFault() != other.hasGNSSFault()) return false;
+      if (hasGNSSFault()) {
+        if (getGNSSFault()
+            != other.getGNSSFault()) return false;
+      }
+      if (hasGNSSAntennaFault() != other.hasGNSSAntennaFault()) return false;
+      if (hasGNSSAntennaFault()) {
+        if (getGNSSAntennaFault()
+            != other.getGNSSAntennaFault()) return false;
+      }
+      if (hasGNSSAntennaShortCircuit() != other.hasGNSSAntennaShortCircuit()) return false;
+      if (hasGNSSAntennaShortCircuit()) {
+        if (getGNSSAntennaShortCircuit()
+            != other.getGNSSAntennaShortCircuit()) return false;
+      }
+      if (hasTerminalMainPowerUnderVoltage() != other.hasTerminalMainPowerUnderVoltage()) return false;
+      if (hasTerminalMainPowerUnderVoltage()) {
+        if (getTerminalMainPowerUnderVoltage()
+            != other.getTerminalMainPowerUnderVoltage()) return false;
+      }
+      if (hasTerminalMainPowerFailure() != other.hasTerminalMainPowerFailure()) return false;
+      if (hasTerminalMainPowerFailure()) {
+        if (getTerminalMainPowerFailure()
+            != other.getTerminalMainPowerFailure()) return false;
+      }
+      if (hasTerminalLCDFault() != other.hasTerminalLCDFault()) return false;
+      if (hasTerminalLCDFault()) {
+        if (getTerminalLCDFault()
+            != other.getTerminalLCDFault()) return false;
+      }
+      if (hasTTSFault() != other.hasTTSFault()) return false;
+      if (hasTTSFault()) {
+        if (getTTSFault()
+            != other.getTTSFault()) return false;
+      }
+      if (hasCameraFault() != other.hasCameraFault()) return false;
+      if (hasCameraFault()) {
+        if (getCameraFault()
+            != other.getCameraFault()) return false;
+      }
+      if (hasICCardFault() != other.hasICCardFault()) return false;
+      if (hasICCardFault()) {
+        if (getICCardFault()
+            != other.getICCardFault()) return false;
+      }
+      if (hasSpeeding() != other.hasSpeeding()) return false;
+      if (hasSpeeding()) {
+        if (getSpeeding()
+            != other.getSpeeding()) return false;
+      }
+      if (hasTired() != other.hasTired()) return false;
+      if (hasTired()) {
+        if (getTired()
+            != other.getTired()) return false;
+      }
+      if (hasDriveTimeout() != other.hasDriveTimeout()) return false;
+      if (hasDriveTimeout()) {
+        if (getDriveTimeout()
+            != other.getDriveTimeout()) return false;
+      }
+      if (hasParkingOvertime() != other.hasParkingOvertime()) return false;
+      if (hasParkingOvertime()) {
+        if (getParkingOvertime()
+            != other.getParkingOvertime()) return false;
+      }
+      if (hasThroughArea() != other.hasThroughArea()) return false;
+      if (hasThroughArea()) {
+        if (getThroughArea()
+            != other.getThroughArea()) return false;
+      }
+      if (hasThroughRoad() != other.hasThroughRoad()) return false;
+      if (hasThroughRoad()) {
+        if (getThroughRoad()
+            != other.getThroughRoad()) return false;
+      }
+      if (hasRoadTimeout() != other.hasRoadTimeout()) return false;
+      if (hasRoadTimeout()) {
+        if (getRoadTimeout()
+            != other.getRoadTimeout()) return false;
+      }
+      if (hasRoadFault() != other.hasRoadFault()) return false;
+      if (hasRoadFault()) {
+        if (getRoadFault()
+            != other.getRoadFault()) return false;
+      }
+      if (hasVSSFault() != other.hasVSSFault()) return false;
+      if (hasVSSFault()) {
+        if (getVSSFault()
+            != other.getVSSFault()) return false;
+      }
+      if (hasVehicleOilException() != other.hasVehicleOilException()) return false;
+      if (hasVehicleOilException()) {
+        if (getVehicleOilException()
+            != other.getVehicleOilException()) return false;
+      }
+      if (hasVehicleTheft() != other.hasVehicleTheft()) return false;
+      if (hasVehicleTheft()) {
+        if (getVehicleTheft()
+            != other.getVehicleTheft()) return false;
+      }
+      if (hasVehicleIllegalIgnition() != other.hasVehicleIllegalIgnition()) return false;
+      if (hasVehicleIllegalIgnition()) {
+        if (getVehicleIllegalIgnition()
+            != other.getVehicleIllegalIgnition()) return false;
+      }
+      if (hasVehicleIllegalShift() != other.hasVehicleIllegalShift()) return false;
+      if (hasVehicleIllegalShift()) {
+        if (getVehicleIllegalShift()
+            != other.getVehicleIllegalShift()) return false;
+      }
+      if (hasCollisionWarning() != other.hasCollisionWarning()) return false;
+      if (hasCollisionWarning()) {
+        if (getCollisionWarning()
+            != other.getCollisionWarning()) return false;
+      }
+      if (hasRolloverWarning() != other.hasRolloverWarning()) return false;
+      if (hasRolloverWarning()) {
+        if (getRolloverWarning()
+            != other.getRolloverWarning()) return false;
+      }
+      if (hasIllegalOpenDoor() != other.hasIllegalOpenDoor()) return false;
+      if (hasIllegalOpenDoor()) {
+        if (getIllegalOpenDoor()
+            != other.getIllegalOpenDoor()) return false;
+      }
+      if (hasACC() != other.hasACC()) return false;
+      if (hasACC()) {
+        if (getACC()
+            != other.getACC()) return false;
+      }
+      if (hasIsLocation() != other.hasIsLocation()) return false;
+      if (hasIsLocation()) {
+        if (getIsLocation()
+            != other.getIsLocation()) return false;
+      }
+      if (hasHasLatitude() != other.hasHasLatitude()) return false;
+      if (hasHasLatitude()) {
+        if (getHasLatitude()
+            != other.getHasLatitude()) return false;
+      }
+      if (hasHasLongitude() != other.hasHasLongitude()) return false;
+      if (hasHasLongitude()) {
+        if (getHasLongitude()
+            != other.getHasLongitude()) return false;
+      }
+      if (hasIsRunning() != other.hasIsRunning()) return false;
+      if (hasIsRunning()) {
+        if (getIsRunning()
+            != other.getIsRunning()) return false;
+      }
+      if (hasEncrypt() != other.hasEncrypt()) return false;
+      if (hasEncrypt()) {
+        if (getEncrypt()
+            != other.getEncrypt()) return false;
+      }
+      if (hasGoodsStatus() != other.hasGoodsStatus()) return false;
+      if (hasGoodsStatus()) {
+        if (getGoodsStatus()
+            != other.getGoodsStatus()) return false;
+      }
+      if (hasVehicleOil() != other.hasVehicleOil()) return false;
+      if (hasVehicleOil()) {
+        if (getVehicleOil()
+            != other.getVehicleOil()) return false;
+      }
+      if (hasVehicleCircut() != other.hasVehicleCircut()) return false;
+      if (hasVehicleCircut()) {
+        if (getVehicleCircut()
+            != other.getVehicleCircut()) return false;
+      }
+      if (hasDoorLock() != other.hasDoorLock()) return false;
+      if (hasDoorLock()) {
+        if (getDoorLock()
+            != other.getDoorLock()) return false;
+      }
+      if (hasFrontDoorOpen() != other.hasFrontDoorOpen()) return false;
+      if (hasFrontDoorOpen()) {
+        if (getFrontDoorOpen()
+            != other.getFrontDoorOpen()) return false;
+      }
+      if (hasMiddleDoorOpen() != other.hasMiddleDoorOpen()) return false;
+      if (hasMiddleDoorOpen()) {
+        if (getMiddleDoorOpen()
+            != other.getMiddleDoorOpen()) return false;
+      }
+      if (hasEndDoorOpen() != other.hasEndDoorOpen()) return false;
+      if (hasEndDoorOpen()) {
+        if (getEndDoorOpen()
+            != other.getEndDoorOpen()) return false;
+      }
+      if (hasDriverDoorOpen() != other.hasDriverDoorOpen()) return false;
+      if (hasDriverDoorOpen()) {
+        if (getDriverDoorOpen()
+            != other.getDriverDoorOpen()) return false;
+      }
+      if (hasOtherDoorOpen() != other.hasOtherDoorOpen()) return false;
+      if (hasOtherDoorOpen()) {
+        if (getOtherDoorOpen()
+            != other.getOtherDoorOpen()) return false;
+      }
+      if (hasGPS() != other.hasGPS()) return false;
+      if (hasGPS()) {
+        if (getGPS()
+            != other.getGPS()) return false;
+      }
+      if (hasBeidou() != other.hasBeidou()) return false;
+      if (hasBeidou()) {
+        if (getBeidou()
+            != other.getBeidou()) return false;
+      }
+      if (hasGLONASS() != other.hasGLONASS()) return false;
+      if (hasGLONASS()) {
+        if (getGLONASS()
+            != other.getGLONASS()) return false;
+      }
+      if (hasGalileo() != other.hasGalileo()) return false;
+      if (hasGalileo()) {
+        if (getGalileo()
+            != other.getGalileo()) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -72313,9 +63834,248 @@ public final class ServerData {
         hash = (37 * hash) + TIME_FIELD_NUMBER;
         hash = (53 * hash) + getTime().hashCode();
       }
-      if (hasTerminalExtraLocationMsg()) {
-        hash = (37 * hash) + TERMINALEXTRALOCATIONMSG_FIELD_NUMBER;
-        hash = (53 * hash) + getTerminalExtraLocationMsg().hashCode();
+      if (getExtraLocationsCount() > 0) {
+        hash = (37 * hash) + EXTRALOCATIONS_FIELD_NUMBER;
+        hash = (53 * hash) + getExtraLocationsList().hashCode();
+      }
+      if (hasFlag()) {
+        hash = (37 * hash) + FLAG_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getFlag());
+      }
+      if (hasOverSpeeding()) {
+        hash = (37 * hash) + OVERSPEEDING_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getOverSpeeding());
+      }
+      if (hasOverTired()) {
+        hash = (37 * hash) + OVERTIRED_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getOverTired());
+      }
+      if (hasDangerous()) {
+        hash = (37 * hash) + DANGEROUS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getDangerous());
+      }
+      if (hasGNSSFault()) {
+        hash = (37 * hash) + GNSSFAULT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getGNSSFault());
+      }
+      if (hasGNSSAntennaFault()) {
+        hash = (37 * hash) + GNSSANTENNAFAULT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getGNSSAntennaFault());
+      }
+      if (hasGNSSAntennaShortCircuit()) {
+        hash = (37 * hash) + GNSSANTENNASHORTCIRCUIT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getGNSSAntennaShortCircuit());
+      }
+      if (hasTerminalMainPowerUnderVoltage()) {
+        hash = (37 * hash) + TERMINALMAINPOWERUNDERVOLTAGE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getTerminalMainPowerUnderVoltage());
+      }
+      if (hasTerminalMainPowerFailure()) {
+        hash = (37 * hash) + TERMINALMAINPOWERFAILURE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getTerminalMainPowerFailure());
+      }
+      if (hasTerminalLCDFault()) {
+        hash = (37 * hash) + TERMINALLCDFAULT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getTerminalLCDFault());
+      }
+      if (hasTTSFault()) {
+        hash = (37 * hash) + TTSFAULT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getTTSFault());
+      }
+      if (hasCameraFault()) {
+        hash = (37 * hash) + CAMERAFAULT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getCameraFault());
+      }
+      if (hasICCardFault()) {
+        hash = (37 * hash) + ICCARDFAULT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getICCardFault());
+      }
+      if (hasSpeeding()) {
+        hash = (37 * hash) + SPEEDING_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getSpeeding());
+      }
+      if (hasTired()) {
+        hash = (37 * hash) + TIRED_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getTired());
+      }
+      if (hasDriveTimeout()) {
+        hash = (37 * hash) + DRIVETIMEOUT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getDriveTimeout());
+      }
+      if (hasParkingOvertime()) {
+        hash = (37 * hash) + PARKINGOVERTIME_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getParkingOvertime());
+      }
+      if (hasThroughArea()) {
+        hash = (37 * hash) + THROUGHAREA_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getThroughArea());
+      }
+      if (hasThroughRoad()) {
+        hash = (37 * hash) + THROUGHROAD_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getThroughRoad());
+      }
+      if (hasRoadTimeout()) {
+        hash = (37 * hash) + ROADTIMEOUT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getRoadTimeout());
+      }
+      if (hasRoadFault()) {
+        hash = (37 * hash) + ROADFAULT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getRoadFault());
+      }
+      if (hasVSSFault()) {
+        hash = (37 * hash) + VSSFAULT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getVSSFault());
+      }
+      if (hasVehicleOilException()) {
+        hash = (37 * hash) + VEHICLEOILEXCEPTION_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getVehicleOilException());
+      }
+      if (hasVehicleTheft()) {
+        hash = (37 * hash) + VEHICLETHEFT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getVehicleTheft());
+      }
+      if (hasVehicleIllegalIgnition()) {
+        hash = (37 * hash) + VEHICLEILLEGALIGNITION_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getVehicleIllegalIgnition());
+      }
+      if (hasVehicleIllegalShift()) {
+        hash = (37 * hash) + VEHICLEILLEGALSHIFT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getVehicleIllegalShift());
+      }
+      if (hasCollisionWarning()) {
+        hash = (37 * hash) + COLLISIONWARNING_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getCollisionWarning());
+      }
+      if (hasRolloverWarning()) {
+        hash = (37 * hash) + ROLLOVERWARNING_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getRolloverWarning());
+      }
+      if (hasIllegalOpenDoor()) {
+        hash = (37 * hash) + ILLEGALOPENDOOR_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getIllegalOpenDoor());
+      }
+      if (hasACC()) {
+        hash = (37 * hash) + ACC_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getACC());
+      }
+      if (hasIsLocation()) {
+        hash = (37 * hash) + ISLOCATION_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getIsLocation());
+      }
+      if (hasHasLatitude()) {
+        hash = (37 * hash) + HASLATITUDE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getHasLatitude());
+      }
+      if (hasHasLongitude()) {
+        hash = (37 * hash) + HASLONGITUDE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getHasLongitude());
+      }
+      if (hasIsRunning()) {
+        hash = (37 * hash) + ISRUNNING_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getIsRunning());
+      }
+      if (hasEncrypt()) {
+        hash = (37 * hash) + ENCRYPT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getEncrypt());
+      }
+      if (hasGoodsStatus()) {
+        hash = (37 * hash) + GOODSSTATUS_FIELD_NUMBER;
+        hash = (53 * hash) + getGoodsStatus();
+      }
+      if (hasVehicleOil()) {
+        hash = (37 * hash) + VEHICLEOIL_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getVehicleOil());
+      }
+      if (hasVehicleCircut()) {
+        hash = (37 * hash) + VEHICLECIRCUT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getVehicleCircut());
+      }
+      if (hasDoorLock()) {
+        hash = (37 * hash) + DOORLOCK_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getDoorLock());
+      }
+      if (hasFrontDoorOpen()) {
+        hash = (37 * hash) + FRONTDOOROPEN_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getFrontDoorOpen());
+      }
+      if (hasMiddleDoorOpen()) {
+        hash = (37 * hash) + MIDDLEDOOROPEN_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getMiddleDoorOpen());
+      }
+      if (hasEndDoorOpen()) {
+        hash = (37 * hash) + ENDDOOROPEN_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getEndDoorOpen());
+      }
+      if (hasDriverDoorOpen()) {
+        hash = (37 * hash) + DRIVERDOOROPEN_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getDriverDoorOpen());
+      }
+      if (hasOtherDoorOpen()) {
+        hash = (37 * hash) + OTHERDOOROPEN_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getOtherDoorOpen());
+      }
+      if (hasGPS()) {
+        hash = (37 * hash) + GPS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getGPS());
+      }
+      if (hasBeidou()) {
+        hash = (37 * hash) + BEIDOU_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getBeidou());
+      }
+      if (hasGLONASS()) {
+        hash = (37 * hash) + GLONASS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getGLONASS());
+      }
+      if (hasGalileo()) {
+        hash = (37 * hash) + GALILEO_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getGalileo());
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -72445,7 +64205,7 @@ public final class ServerData {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getTerminalExtraLocationMsgFieldBuilder();
+          getExtraLocationsFieldBuilder();
         }
       }
       @java.lang.Override
@@ -72467,12 +64227,108 @@ public final class ServerData {
         bitField0_ = (bitField0_ & ~0x00000040);
         time_ = "";
         bitField0_ = (bitField0_ & ~0x00000080);
-        if (terminalExtraLocationMsgBuilder_ == null) {
-          terminalExtraLocationMsg_ = null;
+        if (extraLocationsBuilder_ == null) {
+          extraLocations_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
         } else {
-          terminalExtraLocationMsgBuilder_.clear();
+          extraLocationsBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000100);
+        flag_ = false;
+        bitField0_ = (bitField0_ & ~0x00000200);
+        overSpeeding_ = false;
+        bitField0_ = (bitField0_ & ~0x00000400);
+        overTired_ = false;
+        bitField0_ = (bitField0_ & ~0x00000800);
+        dangerous_ = false;
+        bitField0_ = (bitField0_ & ~0x00001000);
+        gNSSFault_ = false;
+        bitField0_ = (bitField0_ & ~0x00002000);
+        gNSSAntennaFault_ = false;
+        bitField0_ = (bitField0_ & ~0x00004000);
+        gNSSAntennaShortCircuit_ = false;
+        bitField0_ = (bitField0_ & ~0x00008000);
+        terminalMainPowerUnderVoltage_ = false;
+        bitField0_ = (bitField0_ & ~0x00010000);
+        terminalMainPowerFailure_ = false;
+        bitField0_ = (bitField0_ & ~0x00020000);
+        terminalLCDFault_ = false;
+        bitField0_ = (bitField0_ & ~0x00040000);
+        tTSFault_ = false;
+        bitField0_ = (bitField0_ & ~0x00080000);
+        cameraFault_ = false;
+        bitField0_ = (bitField0_ & ~0x00100000);
+        iCCardFault_ = false;
+        bitField0_ = (bitField0_ & ~0x00200000);
+        speeding_ = false;
+        bitField0_ = (bitField0_ & ~0x00400000);
+        tired_ = false;
+        bitField0_ = (bitField0_ & ~0x00800000);
+        driveTimeout_ = false;
+        bitField0_ = (bitField0_ & ~0x01000000);
+        parkingOvertime_ = false;
+        bitField0_ = (bitField0_ & ~0x02000000);
+        throughArea_ = false;
+        bitField0_ = (bitField0_ & ~0x04000000);
+        throughRoad_ = false;
+        bitField0_ = (bitField0_ & ~0x08000000);
+        roadTimeout_ = false;
+        bitField0_ = (bitField0_ & ~0x10000000);
+        roadFault_ = false;
+        bitField0_ = (bitField0_ & ~0x20000000);
+        vSSFault_ = false;
+        bitField0_ = (bitField0_ & ~0x40000000);
+        vehicleOilException_ = false;
+        bitField0_ = (bitField0_ & ~0x80000000);
+        vehicleTheft_ = false;
+        bitField1_ = (bitField1_ & ~0x00000001);
+        vehicleIllegalIgnition_ = false;
+        bitField1_ = (bitField1_ & ~0x00000002);
+        vehicleIllegalShift_ = false;
+        bitField1_ = (bitField1_ & ~0x00000004);
+        collisionWarning_ = false;
+        bitField1_ = (bitField1_ & ~0x00000008);
+        rolloverWarning_ = false;
+        bitField1_ = (bitField1_ & ~0x00000010);
+        illegalOpenDoor_ = false;
+        bitField1_ = (bitField1_ & ~0x00000020);
+        aCC_ = false;
+        bitField1_ = (bitField1_ & ~0x00000040);
+        isLocation_ = false;
+        bitField1_ = (bitField1_ & ~0x00000080);
+        hasLatitude_ = false;
+        bitField1_ = (bitField1_ & ~0x00000100);
+        hasLongitude_ = false;
+        bitField1_ = (bitField1_ & ~0x00000200);
+        isRunning_ = false;
+        bitField1_ = (bitField1_ & ~0x00000400);
+        encrypt_ = false;
+        bitField1_ = (bitField1_ & ~0x00000800);
+        goodsStatus_ = 0;
+        bitField1_ = (bitField1_ & ~0x00001000);
+        vehicleOil_ = false;
+        bitField1_ = (bitField1_ & ~0x00002000);
+        vehicleCircut_ = false;
+        bitField1_ = (bitField1_ & ~0x00004000);
+        doorLock_ = false;
+        bitField1_ = (bitField1_ & ~0x00008000);
+        frontDoorOpen_ = false;
+        bitField1_ = (bitField1_ & ~0x00010000);
+        middleDoorOpen_ = false;
+        bitField1_ = (bitField1_ & ~0x00020000);
+        endDoorOpen_ = false;
+        bitField1_ = (bitField1_ & ~0x00040000);
+        driverDoorOpen_ = false;
+        bitField1_ = (bitField1_ & ~0x00080000);
+        otherDoorOpen_ = false;
+        bitField1_ = (bitField1_ & ~0x00100000);
+        gPS_ = false;
+        bitField1_ = (bitField1_ & ~0x00200000);
+        beidou_ = false;
+        bitField1_ = (bitField1_ & ~0x00400000);
+        gLONASS_ = false;
+        bitField1_ = (bitField1_ & ~0x00800000);
+        galileo_ = false;
+        bitField1_ = (bitField1_ & ~0x01000000);
         return this;
       }
 
@@ -72500,7 +64356,9 @@ public final class ServerData {
       public cn.edu.sdu.jt808.protobuf.ServerData.Location buildPartial() {
         cn.edu.sdu.jt808.protobuf.ServerData.Location result = new cn.edu.sdu.jt808.protobuf.ServerData.Location(this);
         int from_bitField0_ = bitField0_;
+        int from_bitField1_ = bitField1_;
         int to_bitField0_ = 0;
+        int to_bitField1_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.warningFlag_ = warningFlag_;
           to_bitField0_ |= 0x00000001;
@@ -72533,15 +64391,209 @@ public final class ServerData {
           to_bitField0_ |= 0x00000080;
         }
         result.time_ = time_;
-        if (((from_bitField0_ & 0x00000100) != 0)) {
-          if (terminalExtraLocationMsgBuilder_ == null) {
-            result.terminalExtraLocationMsg_ = terminalExtraLocationMsg_;
-          } else {
-            result.terminalExtraLocationMsg_ = terminalExtraLocationMsgBuilder_.build();
+        if (extraLocationsBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) != 0)) {
+            extraLocations_ = java.util.Collections.unmodifiableList(extraLocations_);
+            bitField0_ = (bitField0_ & ~0x00000100);
           }
+          result.extraLocations_ = extraLocations_;
+        } else {
+          result.extraLocations_ = extraLocationsBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000200) != 0)) {
+          result.flag_ = flag_;
           to_bitField0_ |= 0x00000100;
         }
+        if (((from_bitField0_ & 0x00000400) != 0)) {
+          result.overSpeeding_ = overSpeeding_;
+          to_bitField0_ |= 0x00000200;
+        }
+        if (((from_bitField0_ & 0x00000800) != 0)) {
+          result.overTired_ = overTired_;
+          to_bitField0_ |= 0x00000400;
+        }
+        if (((from_bitField0_ & 0x00001000) != 0)) {
+          result.dangerous_ = dangerous_;
+          to_bitField0_ |= 0x00000800;
+        }
+        if (((from_bitField0_ & 0x00002000) != 0)) {
+          result.gNSSFault_ = gNSSFault_;
+          to_bitField0_ |= 0x00001000;
+        }
+        if (((from_bitField0_ & 0x00004000) != 0)) {
+          result.gNSSAntennaFault_ = gNSSAntennaFault_;
+          to_bitField0_ |= 0x00002000;
+        }
+        if (((from_bitField0_ & 0x00008000) != 0)) {
+          result.gNSSAntennaShortCircuit_ = gNSSAntennaShortCircuit_;
+          to_bitField0_ |= 0x00004000;
+        }
+        if (((from_bitField0_ & 0x00010000) != 0)) {
+          result.terminalMainPowerUnderVoltage_ = terminalMainPowerUnderVoltage_;
+          to_bitField0_ |= 0x00008000;
+        }
+        if (((from_bitField0_ & 0x00020000) != 0)) {
+          result.terminalMainPowerFailure_ = terminalMainPowerFailure_;
+          to_bitField0_ |= 0x00010000;
+        }
+        if (((from_bitField0_ & 0x00040000) != 0)) {
+          result.terminalLCDFault_ = terminalLCDFault_;
+          to_bitField0_ |= 0x00020000;
+        }
+        if (((from_bitField0_ & 0x00080000) != 0)) {
+          result.tTSFault_ = tTSFault_;
+          to_bitField0_ |= 0x00040000;
+        }
+        if (((from_bitField0_ & 0x00100000) != 0)) {
+          result.cameraFault_ = cameraFault_;
+          to_bitField0_ |= 0x00080000;
+        }
+        if (((from_bitField0_ & 0x00200000) != 0)) {
+          result.iCCardFault_ = iCCardFault_;
+          to_bitField0_ |= 0x00100000;
+        }
+        if (((from_bitField0_ & 0x00400000) != 0)) {
+          result.speeding_ = speeding_;
+          to_bitField0_ |= 0x00200000;
+        }
+        if (((from_bitField0_ & 0x00800000) != 0)) {
+          result.tired_ = tired_;
+          to_bitField0_ |= 0x00400000;
+        }
+        if (((from_bitField0_ & 0x01000000) != 0)) {
+          result.driveTimeout_ = driveTimeout_;
+          to_bitField0_ |= 0x00800000;
+        }
+        if (((from_bitField0_ & 0x02000000) != 0)) {
+          result.parkingOvertime_ = parkingOvertime_;
+          to_bitField0_ |= 0x01000000;
+        }
+        if (((from_bitField0_ & 0x04000000) != 0)) {
+          result.throughArea_ = throughArea_;
+          to_bitField0_ |= 0x02000000;
+        }
+        if (((from_bitField0_ & 0x08000000) != 0)) {
+          result.throughRoad_ = throughRoad_;
+          to_bitField0_ |= 0x04000000;
+        }
+        if (((from_bitField0_ & 0x10000000) != 0)) {
+          result.roadTimeout_ = roadTimeout_;
+          to_bitField0_ |= 0x08000000;
+        }
+        if (((from_bitField0_ & 0x20000000) != 0)) {
+          result.roadFault_ = roadFault_;
+          to_bitField0_ |= 0x10000000;
+        }
+        if (((from_bitField0_ & 0x40000000) != 0)) {
+          result.vSSFault_ = vSSFault_;
+          to_bitField0_ |= 0x20000000;
+        }
+        if (((from_bitField0_ & 0x80000000) != 0)) {
+          result.vehicleOilException_ = vehicleOilException_;
+          to_bitField0_ |= 0x40000000;
+        }
+        if (((from_bitField1_ & 0x00000001) != 0)) {
+          result.vehicleTheft_ = vehicleTheft_;
+          to_bitField0_ |= 0x80000000;
+        }
+        if (((from_bitField1_ & 0x00000002) != 0)) {
+          result.vehicleIllegalIgnition_ = vehicleIllegalIgnition_;
+          to_bitField1_ |= 0x00000001;
+        }
+        if (((from_bitField1_ & 0x00000004) != 0)) {
+          result.vehicleIllegalShift_ = vehicleIllegalShift_;
+          to_bitField1_ |= 0x00000002;
+        }
+        if (((from_bitField1_ & 0x00000008) != 0)) {
+          result.collisionWarning_ = collisionWarning_;
+          to_bitField1_ |= 0x00000004;
+        }
+        if (((from_bitField1_ & 0x00000010) != 0)) {
+          result.rolloverWarning_ = rolloverWarning_;
+          to_bitField1_ |= 0x00000008;
+        }
+        if (((from_bitField1_ & 0x00000020) != 0)) {
+          result.illegalOpenDoor_ = illegalOpenDoor_;
+          to_bitField1_ |= 0x00000010;
+        }
+        if (((from_bitField1_ & 0x00000040) != 0)) {
+          result.aCC_ = aCC_;
+          to_bitField1_ |= 0x00000020;
+        }
+        if (((from_bitField1_ & 0x00000080) != 0)) {
+          result.isLocation_ = isLocation_;
+          to_bitField1_ |= 0x00000040;
+        }
+        if (((from_bitField1_ & 0x00000100) != 0)) {
+          result.hasLatitude_ = hasLatitude_;
+          to_bitField1_ |= 0x00000080;
+        }
+        if (((from_bitField1_ & 0x00000200) != 0)) {
+          result.hasLongitude_ = hasLongitude_;
+          to_bitField1_ |= 0x00000100;
+        }
+        if (((from_bitField1_ & 0x00000400) != 0)) {
+          result.isRunning_ = isRunning_;
+          to_bitField1_ |= 0x00000200;
+        }
+        if (((from_bitField1_ & 0x00000800) != 0)) {
+          result.encrypt_ = encrypt_;
+          to_bitField1_ |= 0x00000400;
+        }
+        if (((from_bitField1_ & 0x00001000) != 0)) {
+          result.goodsStatus_ = goodsStatus_;
+          to_bitField1_ |= 0x00000800;
+        }
+        if (((from_bitField1_ & 0x00002000) != 0)) {
+          result.vehicleOil_ = vehicleOil_;
+          to_bitField1_ |= 0x00001000;
+        }
+        if (((from_bitField1_ & 0x00004000) != 0)) {
+          result.vehicleCircut_ = vehicleCircut_;
+          to_bitField1_ |= 0x00002000;
+        }
+        if (((from_bitField1_ & 0x00008000) != 0)) {
+          result.doorLock_ = doorLock_;
+          to_bitField1_ |= 0x00004000;
+        }
+        if (((from_bitField1_ & 0x00010000) != 0)) {
+          result.frontDoorOpen_ = frontDoorOpen_;
+          to_bitField1_ |= 0x00008000;
+        }
+        if (((from_bitField1_ & 0x00020000) != 0)) {
+          result.middleDoorOpen_ = middleDoorOpen_;
+          to_bitField1_ |= 0x00010000;
+        }
+        if (((from_bitField1_ & 0x00040000) != 0)) {
+          result.endDoorOpen_ = endDoorOpen_;
+          to_bitField1_ |= 0x00020000;
+        }
+        if (((from_bitField1_ & 0x00080000) != 0)) {
+          result.driverDoorOpen_ = driverDoorOpen_;
+          to_bitField1_ |= 0x00040000;
+        }
+        if (((from_bitField1_ & 0x00100000) != 0)) {
+          result.otherDoorOpen_ = otherDoorOpen_;
+          to_bitField1_ |= 0x00080000;
+        }
+        if (((from_bitField1_ & 0x00200000) != 0)) {
+          result.gPS_ = gPS_;
+          to_bitField1_ |= 0x00100000;
+        }
+        if (((from_bitField1_ & 0x00400000) != 0)) {
+          result.beidou_ = beidou_;
+          to_bitField1_ |= 0x00200000;
+        }
+        if (((from_bitField1_ & 0x00800000) != 0)) {
+          result.gLONASS_ = gLONASS_;
+          to_bitField1_ |= 0x00400000;
+        }
+        if (((from_bitField1_ & 0x01000000) != 0)) {
+          result.galileo_ = galileo_;
+          to_bitField1_ |= 0x00800000;
+        }
         result.bitField0_ = to_bitField0_;
+        result.bitField1_ = to_bitField1_;
         onBuilt();
         return result;
       }
@@ -72616,8 +64668,175 @@ public final class ServerData {
           time_ = other.time_;
           onChanged();
         }
-        if (other.hasTerminalExtraLocationMsg()) {
-          mergeTerminalExtraLocationMsg(other.getTerminalExtraLocationMsg());
+        if (extraLocationsBuilder_ == null) {
+          if (!other.extraLocations_.isEmpty()) {
+            if (extraLocations_.isEmpty()) {
+              extraLocations_ = other.extraLocations_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+            } else {
+              ensureExtraLocationsIsMutable();
+              extraLocations_.addAll(other.extraLocations_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.extraLocations_.isEmpty()) {
+            if (extraLocationsBuilder_.isEmpty()) {
+              extraLocationsBuilder_.dispose();
+              extraLocationsBuilder_ = null;
+              extraLocations_ = other.extraLocations_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+              extraLocationsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getExtraLocationsFieldBuilder() : null;
+            } else {
+              extraLocationsBuilder_.addAllMessages(other.extraLocations_);
+            }
+          }
+        }
+        if (other.hasFlag()) {
+          setFlag(other.getFlag());
+        }
+        if (other.hasOverSpeeding()) {
+          setOverSpeeding(other.getOverSpeeding());
+        }
+        if (other.hasOverTired()) {
+          setOverTired(other.getOverTired());
+        }
+        if (other.hasDangerous()) {
+          setDangerous(other.getDangerous());
+        }
+        if (other.hasGNSSFault()) {
+          setGNSSFault(other.getGNSSFault());
+        }
+        if (other.hasGNSSAntennaFault()) {
+          setGNSSAntennaFault(other.getGNSSAntennaFault());
+        }
+        if (other.hasGNSSAntennaShortCircuit()) {
+          setGNSSAntennaShortCircuit(other.getGNSSAntennaShortCircuit());
+        }
+        if (other.hasTerminalMainPowerUnderVoltage()) {
+          setTerminalMainPowerUnderVoltage(other.getTerminalMainPowerUnderVoltage());
+        }
+        if (other.hasTerminalMainPowerFailure()) {
+          setTerminalMainPowerFailure(other.getTerminalMainPowerFailure());
+        }
+        if (other.hasTerminalLCDFault()) {
+          setTerminalLCDFault(other.getTerminalLCDFault());
+        }
+        if (other.hasTTSFault()) {
+          setTTSFault(other.getTTSFault());
+        }
+        if (other.hasCameraFault()) {
+          setCameraFault(other.getCameraFault());
+        }
+        if (other.hasICCardFault()) {
+          setICCardFault(other.getICCardFault());
+        }
+        if (other.hasSpeeding()) {
+          setSpeeding(other.getSpeeding());
+        }
+        if (other.hasTired()) {
+          setTired(other.getTired());
+        }
+        if (other.hasDriveTimeout()) {
+          setDriveTimeout(other.getDriveTimeout());
+        }
+        if (other.hasParkingOvertime()) {
+          setParkingOvertime(other.getParkingOvertime());
+        }
+        if (other.hasThroughArea()) {
+          setThroughArea(other.getThroughArea());
+        }
+        if (other.hasThroughRoad()) {
+          setThroughRoad(other.getThroughRoad());
+        }
+        if (other.hasRoadTimeout()) {
+          setRoadTimeout(other.getRoadTimeout());
+        }
+        if (other.hasRoadFault()) {
+          setRoadFault(other.getRoadFault());
+        }
+        if (other.hasVSSFault()) {
+          setVSSFault(other.getVSSFault());
+        }
+        if (other.hasVehicleOilException()) {
+          setVehicleOilException(other.getVehicleOilException());
+        }
+        if (other.hasVehicleTheft()) {
+          setVehicleTheft(other.getVehicleTheft());
+        }
+        if (other.hasVehicleIllegalIgnition()) {
+          setVehicleIllegalIgnition(other.getVehicleIllegalIgnition());
+        }
+        if (other.hasVehicleIllegalShift()) {
+          setVehicleIllegalShift(other.getVehicleIllegalShift());
+        }
+        if (other.hasCollisionWarning()) {
+          setCollisionWarning(other.getCollisionWarning());
+        }
+        if (other.hasRolloverWarning()) {
+          setRolloverWarning(other.getRolloverWarning());
+        }
+        if (other.hasIllegalOpenDoor()) {
+          setIllegalOpenDoor(other.getIllegalOpenDoor());
+        }
+        if (other.hasACC()) {
+          setACC(other.getACC());
+        }
+        if (other.hasIsLocation()) {
+          setIsLocation(other.getIsLocation());
+        }
+        if (other.hasHasLatitude()) {
+          setHasLatitude(other.getHasLatitude());
+        }
+        if (other.hasHasLongitude()) {
+          setHasLongitude(other.getHasLongitude());
+        }
+        if (other.hasIsRunning()) {
+          setIsRunning(other.getIsRunning());
+        }
+        if (other.hasEncrypt()) {
+          setEncrypt(other.getEncrypt());
+        }
+        if (other.hasGoodsStatus()) {
+          setGoodsStatus(other.getGoodsStatus());
+        }
+        if (other.hasVehicleOil()) {
+          setVehicleOil(other.getVehicleOil());
+        }
+        if (other.hasVehicleCircut()) {
+          setVehicleCircut(other.getVehicleCircut());
+        }
+        if (other.hasDoorLock()) {
+          setDoorLock(other.getDoorLock());
+        }
+        if (other.hasFrontDoorOpen()) {
+          setFrontDoorOpen(other.getFrontDoorOpen());
+        }
+        if (other.hasMiddleDoorOpen()) {
+          setMiddleDoorOpen(other.getMiddleDoorOpen());
+        }
+        if (other.hasEndDoorOpen()) {
+          setEndDoorOpen(other.getEndDoorOpen());
+        }
+        if (other.hasDriverDoorOpen()) {
+          setDriverDoorOpen(other.getDriverDoorOpen());
+        }
+        if (other.hasOtherDoorOpen()) {
+          setOtherDoorOpen(other.getOtherDoorOpen());
+        }
+        if (other.hasGPS()) {
+          setGPS(other.getGPS());
+        }
+        if (other.hasBeidou()) {
+          setBeidou(other.getBeidou());
+        }
+        if (other.hasGLONASS()) {
+          setGLONASS(other.getGLONASS());
+        }
+        if (other.hasGalileo()) {
+          setGalileo(other.getGalileo());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -72648,6 +64867,7 @@ public final class ServerData {
         return this;
       }
       private int bitField0_;
+      private int bitField1_;
 
       private int warningFlag_ ;
       /**
@@ -72949,122 +65169,1780 @@ public final class ServerData {
         return this;
       }
 
-      private cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg terminalExtraLocationMsg_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsgOrBuilder> terminalExtraLocationMsgBuilder_;
-      /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
-       */
-      public boolean hasTerminalExtraLocationMsg() {
-        return ((bitField0_ & 0x00000100) != 0);
+      private java.util.List<cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation> extraLocations_ =
+        java.util.Collections.emptyList();
+      private void ensureExtraLocationsIsMutable() {
+        if (!((bitField0_ & 0x00000100) != 0)) {
+          extraLocations_ = new java.util.ArrayList<cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation>(extraLocations_);
+          bitField0_ |= 0x00000100;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder> extraLocationsBuilder_;
+
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg getTerminalExtraLocationMsg() {
-        if (terminalExtraLocationMsgBuilder_ == null) {
-          return terminalExtraLocationMsg_ == null ? cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.getDefaultInstance() : terminalExtraLocationMsg_;
+      public java.util.List<cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation> getExtraLocationsList() {
+        if (extraLocationsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(extraLocations_);
         } else {
-          return terminalExtraLocationMsgBuilder_.getMessage();
+          return extraLocationsBuilder_.getMessageList();
         }
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
        */
-      public Builder setTerminalExtraLocationMsg(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg value) {
-        if (terminalExtraLocationMsgBuilder_ == null) {
+      public int getExtraLocationsCount() {
+        if (extraLocationsBuilder_ == null) {
+          return extraLocations_.size();
+        } else {
+          return extraLocationsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation getExtraLocations(int index) {
+        if (extraLocationsBuilder_ == null) {
+          return extraLocations_.get(index);
+        } else {
+          return extraLocationsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public Builder setExtraLocations(
+          int index, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation value) {
+        if (extraLocationsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          terminalExtraLocationMsg_ = value;
+          ensureExtraLocationsIsMutable();
+          extraLocations_.set(index, value);
           onChanged();
         } else {
-          terminalExtraLocationMsgBuilder_.setMessage(value);
+          extraLocationsBuilder_.setMessage(index, value);
         }
-        bitField0_ |= 0x00000100;
         return this;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
        */
-      public Builder setTerminalExtraLocationMsg(
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.Builder builderForValue) {
-        if (terminalExtraLocationMsgBuilder_ == null) {
-          terminalExtraLocationMsg_ = builderForValue.build();
+      public Builder setExtraLocations(
+          int index, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder builderForValue) {
+        if (extraLocationsBuilder_ == null) {
+          ensureExtraLocationsIsMutable();
+          extraLocations_.set(index, builderForValue.build());
           onChanged();
         } else {
-          terminalExtraLocationMsgBuilder_.setMessage(builderForValue.build());
+          extraLocationsBuilder_.setMessage(index, builderForValue.build());
         }
-        bitField0_ |= 0x00000100;
         return this;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
        */
-      public Builder mergeTerminalExtraLocationMsg(cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg value) {
-        if (terminalExtraLocationMsgBuilder_ == null) {
-          if (((bitField0_ & 0x00000100) != 0) &&
-              terminalExtraLocationMsg_ != null &&
-              terminalExtraLocationMsg_ != cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.getDefaultInstance()) {
-            terminalExtraLocationMsg_ =
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.newBuilder(terminalExtraLocationMsg_).mergeFrom(value).buildPartial();
-          } else {
-            terminalExtraLocationMsg_ = value;
+      public Builder addExtraLocations(cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation value) {
+        if (extraLocationsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
           }
+          ensureExtraLocationsIsMutable();
+          extraLocations_.add(value);
           onChanged();
         } else {
-          terminalExtraLocationMsgBuilder_.mergeFrom(value);
+          extraLocationsBuilder_.addMessage(value);
         }
-        bitField0_ |= 0x00000100;
         return this;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
        */
-      public Builder clearTerminalExtraLocationMsg() {
-        if (terminalExtraLocationMsgBuilder_ == null) {
-          terminalExtraLocationMsg_ = null;
+      public Builder addExtraLocations(
+          int index, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation value) {
+        if (extraLocationsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureExtraLocationsIsMutable();
+          extraLocations_.add(index, value);
           onChanged();
         } else {
-          terminalExtraLocationMsgBuilder_.clear();
+          extraLocationsBuilder_.addMessage(index, value);
         }
-        bitField0_ = (bitField0_ & ~0x00000100);
         return this;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.Builder getTerminalExtraLocationMsgBuilder() {
-        bitField0_ |= 0x00000100;
-        onChanged();
-        return getTerminalExtraLocationMsgFieldBuilder().getBuilder();
+      public Builder addExtraLocations(
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder builderForValue) {
+        if (extraLocationsBuilder_ == null) {
+          ensureExtraLocationsIsMutable();
+          extraLocations_.add(builderForValue.build());
+          onChanged();
+        } else {
+          extraLocationsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
        */
-      public cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsgOrBuilder getTerminalExtraLocationMsgOrBuilder() {
-        if (terminalExtraLocationMsgBuilder_ != null) {
-          return terminalExtraLocationMsgBuilder_.getMessageOrBuilder();
+      public Builder addExtraLocations(
+          int index, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder builderForValue) {
+        if (extraLocationsBuilder_ == null) {
+          ensureExtraLocationsIsMutable();
+          extraLocations_.add(index, builderForValue.build());
+          onChanged();
         } else {
-          return terminalExtraLocationMsg_ == null ?
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.getDefaultInstance() : terminalExtraLocationMsg_;
+          extraLocationsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public Builder addAllExtraLocations(
+          java.lang.Iterable<? extends cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation> values) {
+        if (extraLocationsBuilder_ == null) {
+          ensureExtraLocationsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, extraLocations_);
+          onChanged();
+        } else {
+          extraLocationsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public Builder clearExtraLocations() {
+        if (extraLocationsBuilder_ == null) {
+          extraLocations_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+          onChanged();
+        } else {
+          extraLocationsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public Builder removeExtraLocations(int index) {
+        if (extraLocationsBuilder_ == null) {
+          ensureExtraLocationsIsMutable();
+          extraLocations_.remove(index);
+          onChanged();
+        } else {
+          extraLocationsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder getExtraLocationsBuilder(
+          int index) {
+        return getExtraLocationsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder getExtraLocationsOrBuilder(
+          int index) {
+        if (extraLocationsBuilder_ == null) {
+          return extraLocations_.get(index);  } else {
+          return extraLocationsBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>optional .protobuf.Location.TerminalExtraLocationMsg terminalExtraLocationMsg = 9;</code>
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsgOrBuilder> 
-          getTerminalExtraLocationMsgFieldBuilder() {
-        if (terminalExtraLocationMsgBuilder_ == null) {
-          terminalExtraLocationMsgBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsg.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.TerminalExtraLocationMsgOrBuilder>(
-                  getTerminalExtraLocationMsg(),
+      public java.util.List<? extends cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder> 
+           getExtraLocationsOrBuilderList() {
+        if (extraLocationsBuilder_ != null) {
+          return extraLocationsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(extraLocations_);
+        }
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder addExtraLocationsBuilder() {
+        return getExtraLocationsFieldBuilder().addBuilder(
+            cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder addExtraLocationsBuilder(
+          int index) {
+        return getExtraLocationsFieldBuilder().addBuilder(
+            index, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .protobuf.Location.ExtraLocation extraLocations = 9;</code>
+       */
+      public java.util.List<cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder> 
+           getExtraLocationsBuilderList() {
+        return getExtraLocationsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder> 
+          getExtraLocationsFieldBuilder() {
+        if (extraLocationsBuilder_ == null) {
+          extraLocationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocation.Builder, cn.edu.sdu.jt808.protobuf.ServerData.Location.ExtraLocationOrBuilder>(
+                  extraLocations_,
+                  ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
                   isClean());
-          terminalExtraLocationMsg_ = null;
+          extraLocations_ = null;
         }
-        return terminalExtraLocationMsgBuilder_;
+        return extraLocationsBuilder_;
+      }
+
+      private boolean flag_ ;
+      /**
+       * <code>optional bool flag = 10;</code>
+       */
+      public boolean hasFlag() {
+        return ((bitField0_ & 0x00000200) != 0);
+      }
+      /**
+       * <code>optional bool flag = 10;</code>
+       */
+      public boolean getFlag() {
+        return flag_;
+      }
+      /**
+       * <code>optional bool flag = 10;</code>
+       */
+      public Builder setFlag(boolean value) {
+        bitField0_ |= 0x00000200;
+        flag_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool flag = 10;</code>
+       */
+      public Builder clearFlag() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        flag_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean overSpeeding_ ;
+      /**
+       * <code>optional bool overSpeeding = 11;</code>
+       */
+      public boolean hasOverSpeeding() {
+        return ((bitField0_ & 0x00000400) != 0);
+      }
+      /**
+       * <code>optional bool overSpeeding = 11;</code>
+       */
+      public boolean getOverSpeeding() {
+        return overSpeeding_;
+      }
+      /**
+       * <code>optional bool overSpeeding = 11;</code>
+       */
+      public Builder setOverSpeeding(boolean value) {
+        bitField0_ |= 0x00000400;
+        overSpeeding_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool overSpeeding = 11;</code>
+       */
+      public Builder clearOverSpeeding() {
+        bitField0_ = (bitField0_ & ~0x00000400);
+        overSpeeding_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean overTired_ ;
+      /**
+       * <code>optional bool overTired = 12;</code>
+       */
+      public boolean hasOverTired() {
+        return ((bitField0_ & 0x00000800) != 0);
+      }
+      /**
+       * <code>optional bool overTired = 12;</code>
+       */
+      public boolean getOverTired() {
+        return overTired_;
+      }
+      /**
+       * <code>optional bool overTired = 12;</code>
+       */
+      public Builder setOverTired(boolean value) {
+        bitField0_ |= 0x00000800;
+        overTired_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool overTired = 12;</code>
+       */
+      public Builder clearOverTired() {
+        bitField0_ = (bitField0_ & ~0x00000800);
+        overTired_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean dangerous_ ;
+      /**
+       * <code>optional bool dangerous = 13;</code>
+       */
+      public boolean hasDangerous() {
+        return ((bitField0_ & 0x00001000) != 0);
+      }
+      /**
+       * <code>optional bool dangerous = 13;</code>
+       */
+      public boolean getDangerous() {
+        return dangerous_;
+      }
+      /**
+       * <code>optional bool dangerous = 13;</code>
+       */
+      public Builder setDangerous(boolean value) {
+        bitField0_ |= 0x00001000;
+        dangerous_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool dangerous = 13;</code>
+       */
+      public Builder clearDangerous() {
+        bitField0_ = (bitField0_ & ~0x00001000);
+        dangerous_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean gNSSFault_ ;
+      /**
+       * <code>optional bool GNSSFault = 14;</code>
+       */
+      public boolean hasGNSSFault() {
+        return ((bitField0_ & 0x00002000) != 0);
+      }
+      /**
+       * <code>optional bool GNSSFault = 14;</code>
+       */
+      public boolean getGNSSFault() {
+        return gNSSFault_;
+      }
+      /**
+       * <code>optional bool GNSSFault = 14;</code>
+       */
+      public Builder setGNSSFault(boolean value) {
+        bitField0_ |= 0x00002000;
+        gNSSFault_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool GNSSFault = 14;</code>
+       */
+      public Builder clearGNSSFault() {
+        bitField0_ = (bitField0_ & ~0x00002000);
+        gNSSFault_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean gNSSAntennaFault_ ;
+      /**
+       * <code>optional bool GNSSAntennaFault = 15;</code>
+       */
+      public boolean hasGNSSAntennaFault() {
+        return ((bitField0_ & 0x00004000) != 0);
+      }
+      /**
+       * <code>optional bool GNSSAntennaFault = 15;</code>
+       */
+      public boolean getGNSSAntennaFault() {
+        return gNSSAntennaFault_;
+      }
+      /**
+       * <code>optional bool GNSSAntennaFault = 15;</code>
+       */
+      public Builder setGNSSAntennaFault(boolean value) {
+        bitField0_ |= 0x00004000;
+        gNSSAntennaFault_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool GNSSAntennaFault = 15;</code>
+       */
+      public Builder clearGNSSAntennaFault() {
+        bitField0_ = (bitField0_ & ~0x00004000);
+        gNSSAntennaFault_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean gNSSAntennaShortCircuit_ ;
+      /**
+       * <code>optional bool GNSSAntennaShortCircuit = 16;</code>
+       */
+      public boolean hasGNSSAntennaShortCircuit() {
+        return ((bitField0_ & 0x00008000) != 0);
+      }
+      /**
+       * <code>optional bool GNSSAntennaShortCircuit = 16;</code>
+       */
+      public boolean getGNSSAntennaShortCircuit() {
+        return gNSSAntennaShortCircuit_;
+      }
+      /**
+       * <code>optional bool GNSSAntennaShortCircuit = 16;</code>
+       */
+      public Builder setGNSSAntennaShortCircuit(boolean value) {
+        bitField0_ |= 0x00008000;
+        gNSSAntennaShortCircuit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool GNSSAntennaShortCircuit = 16;</code>
+       */
+      public Builder clearGNSSAntennaShortCircuit() {
+        bitField0_ = (bitField0_ & ~0x00008000);
+        gNSSAntennaShortCircuit_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean terminalMainPowerUnderVoltage_ ;
+      /**
+       * <code>optional bool terminalMainPowerUnderVoltage = 17;</code>
+       */
+      public boolean hasTerminalMainPowerUnderVoltage() {
+        return ((bitField0_ & 0x00010000) != 0);
+      }
+      /**
+       * <code>optional bool terminalMainPowerUnderVoltage = 17;</code>
+       */
+      public boolean getTerminalMainPowerUnderVoltage() {
+        return terminalMainPowerUnderVoltage_;
+      }
+      /**
+       * <code>optional bool terminalMainPowerUnderVoltage = 17;</code>
+       */
+      public Builder setTerminalMainPowerUnderVoltage(boolean value) {
+        bitField0_ |= 0x00010000;
+        terminalMainPowerUnderVoltage_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool terminalMainPowerUnderVoltage = 17;</code>
+       */
+      public Builder clearTerminalMainPowerUnderVoltage() {
+        bitField0_ = (bitField0_ & ~0x00010000);
+        terminalMainPowerUnderVoltage_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean terminalMainPowerFailure_ ;
+      /**
+       * <code>optional bool terminalMainPowerFailure = 18;</code>
+       */
+      public boolean hasTerminalMainPowerFailure() {
+        return ((bitField0_ & 0x00020000) != 0);
+      }
+      /**
+       * <code>optional bool terminalMainPowerFailure = 18;</code>
+       */
+      public boolean getTerminalMainPowerFailure() {
+        return terminalMainPowerFailure_;
+      }
+      /**
+       * <code>optional bool terminalMainPowerFailure = 18;</code>
+       */
+      public Builder setTerminalMainPowerFailure(boolean value) {
+        bitField0_ |= 0x00020000;
+        terminalMainPowerFailure_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool terminalMainPowerFailure = 18;</code>
+       */
+      public Builder clearTerminalMainPowerFailure() {
+        bitField0_ = (bitField0_ & ~0x00020000);
+        terminalMainPowerFailure_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean terminalLCDFault_ ;
+      /**
+       * <code>optional bool TerminalLCDFault = 19;</code>
+       */
+      public boolean hasTerminalLCDFault() {
+        return ((bitField0_ & 0x00040000) != 0);
+      }
+      /**
+       * <code>optional bool TerminalLCDFault = 19;</code>
+       */
+      public boolean getTerminalLCDFault() {
+        return terminalLCDFault_;
+      }
+      /**
+       * <code>optional bool TerminalLCDFault = 19;</code>
+       */
+      public Builder setTerminalLCDFault(boolean value) {
+        bitField0_ |= 0x00040000;
+        terminalLCDFault_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool TerminalLCDFault = 19;</code>
+       */
+      public Builder clearTerminalLCDFault() {
+        bitField0_ = (bitField0_ & ~0x00040000);
+        terminalLCDFault_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean tTSFault_ ;
+      /**
+       * <code>optional bool TTSFault = 20;</code>
+       */
+      public boolean hasTTSFault() {
+        return ((bitField0_ & 0x00080000) != 0);
+      }
+      /**
+       * <code>optional bool TTSFault = 20;</code>
+       */
+      public boolean getTTSFault() {
+        return tTSFault_;
+      }
+      /**
+       * <code>optional bool TTSFault = 20;</code>
+       */
+      public Builder setTTSFault(boolean value) {
+        bitField0_ |= 0x00080000;
+        tTSFault_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool TTSFault = 20;</code>
+       */
+      public Builder clearTTSFault() {
+        bitField0_ = (bitField0_ & ~0x00080000);
+        tTSFault_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean cameraFault_ ;
+      /**
+       * <code>optional bool cameraFault = 21;</code>
+       */
+      public boolean hasCameraFault() {
+        return ((bitField0_ & 0x00100000) != 0);
+      }
+      /**
+       * <code>optional bool cameraFault = 21;</code>
+       */
+      public boolean getCameraFault() {
+        return cameraFault_;
+      }
+      /**
+       * <code>optional bool cameraFault = 21;</code>
+       */
+      public Builder setCameraFault(boolean value) {
+        bitField0_ |= 0x00100000;
+        cameraFault_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool cameraFault = 21;</code>
+       */
+      public Builder clearCameraFault() {
+        bitField0_ = (bitField0_ & ~0x00100000);
+        cameraFault_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean iCCardFault_ ;
+      /**
+       * <code>optional bool ICCardFault = 22;</code>
+       */
+      public boolean hasICCardFault() {
+        return ((bitField0_ & 0x00200000) != 0);
+      }
+      /**
+       * <code>optional bool ICCardFault = 22;</code>
+       */
+      public boolean getICCardFault() {
+        return iCCardFault_;
+      }
+      /**
+       * <code>optional bool ICCardFault = 22;</code>
+       */
+      public Builder setICCardFault(boolean value) {
+        bitField0_ |= 0x00200000;
+        iCCardFault_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool ICCardFault = 22;</code>
+       */
+      public Builder clearICCardFault() {
+        bitField0_ = (bitField0_ & ~0x00200000);
+        iCCardFault_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean speeding_ ;
+      /**
+       * <code>optional bool speeding = 23;</code>
+       */
+      public boolean hasSpeeding() {
+        return ((bitField0_ & 0x00400000) != 0);
+      }
+      /**
+       * <code>optional bool speeding = 23;</code>
+       */
+      public boolean getSpeeding() {
+        return speeding_;
+      }
+      /**
+       * <code>optional bool speeding = 23;</code>
+       */
+      public Builder setSpeeding(boolean value) {
+        bitField0_ |= 0x00400000;
+        speeding_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool speeding = 23;</code>
+       */
+      public Builder clearSpeeding() {
+        bitField0_ = (bitField0_ & ~0x00400000);
+        speeding_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean tired_ ;
+      /**
+       * <code>optional bool tired = 24;</code>
+       */
+      public boolean hasTired() {
+        return ((bitField0_ & 0x00800000) != 0);
+      }
+      /**
+       * <code>optional bool tired = 24;</code>
+       */
+      public boolean getTired() {
+        return tired_;
+      }
+      /**
+       * <code>optional bool tired = 24;</code>
+       */
+      public Builder setTired(boolean value) {
+        bitField0_ |= 0x00800000;
+        tired_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool tired = 24;</code>
+       */
+      public Builder clearTired() {
+        bitField0_ = (bitField0_ & ~0x00800000);
+        tired_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean driveTimeout_ ;
+      /**
+       * <code>optional bool driveTimeout = 25;</code>
+       */
+      public boolean hasDriveTimeout() {
+        return ((bitField0_ & 0x01000000) != 0);
+      }
+      /**
+       * <code>optional bool driveTimeout = 25;</code>
+       */
+      public boolean getDriveTimeout() {
+        return driveTimeout_;
+      }
+      /**
+       * <code>optional bool driveTimeout = 25;</code>
+       */
+      public Builder setDriveTimeout(boolean value) {
+        bitField0_ |= 0x01000000;
+        driveTimeout_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool driveTimeout = 25;</code>
+       */
+      public Builder clearDriveTimeout() {
+        bitField0_ = (bitField0_ & ~0x01000000);
+        driveTimeout_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean parkingOvertime_ ;
+      /**
+       * <code>optional bool parkingOvertime = 26;</code>
+       */
+      public boolean hasParkingOvertime() {
+        return ((bitField0_ & 0x02000000) != 0);
+      }
+      /**
+       * <code>optional bool parkingOvertime = 26;</code>
+       */
+      public boolean getParkingOvertime() {
+        return parkingOvertime_;
+      }
+      /**
+       * <code>optional bool parkingOvertime = 26;</code>
+       */
+      public Builder setParkingOvertime(boolean value) {
+        bitField0_ |= 0x02000000;
+        parkingOvertime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool parkingOvertime = 26;</code>
+       */
+      public Builder clearParkingOvertime() {
+        bitField0_ = (bitField0_ & ~0x02000000);
+        parkingOvertime_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean throughArea_ ;
+      /**
+       * <code>optional bool throughArea = 27;</code>
+       */
+      public boolean hasThroughArea() {
+        return ((bitField0_ & 0x04000000) != 0);
+      }
+      /**
+       * <code>optional bool throughArea = 27;</code>
+       */
+      public boolean getThroughArea() {
+        return throughArea_;
+      }
+      /**
+       * <code>optional bool throughArea = 27;</code>
+       */
+      public Builder setThroughArea(boolean value) {
+        bitField0_ |= 0x04000000;
+        throughArea_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool throughArea = 27;</code>
+       */
+      public Builder clearThroughArea() {
+        bitField0_ = (bitField0_ & ~0x04000000);
+        throughArea_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean throughRoad_ ;
+      /**
+       * <code>optional bool throughRoad = 28;</code>
+       */
+      public boolean hasThroughRoad() {
+        return ((bitField0_ & 0x08000000) != 0);
+      }
+      /**
+       * <code>optional bool throughRoad = 28;</code>
+       */
+      public boolean getThroughRoad() {
+        return throughRoad_;
+      }
+      /**
+       * <code>optional bool throughRoad = 28;</code>
+       */
+      public Builder setThroughRoad(boolean value) {
+        bitField0_ |= 0x08000000;
+        throughRoad_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool throughRoad = 28;</code>
+       */
+      public Builder clearThroughRoad() {
+        bitField0_ = (bitField0_ & ~0x08000000);
+        throughRoad_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean roadTimeout_ ;
+      /**
+       * <code>optional bool roadTimeout = 29;</code>
+       */
+      public boolean hasRoadTimeout() {
+        return ((bitField0_ & 0x10000000) != 0);
+      }
+      /**
+       * <code>optional bool roadTimeout = 29;</code>
+       */
+      public boolean getRoadTimeout() {
+        return roadTimeout_;
+      }
+      /**
+       * <code>optional bool roadTimeout = 29;</code>
+       */
+      public Builder setRoadTimeout(boolean value) {
+        bitField0_ |= 0x10000000;
+        roadTimeout_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool roadTimeout = 29;</code>
+       */
+      public Builder clearRoadTimeout() {
+        bitField0_ = (bitField0_ & ~0x10000000);
+        roadTimeout_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean roadFault_ ;
+      /**
+       * <code>optional bool roadFault = 30;</code>
+       */
+      public boolean hasRoadFault() {
+        return ((bitField0_ & 0x20000000) != 0);
+      }
+      /**
+       * <code>optional bool roadFault = 30;</code>
+       */
+      public boolean getRoadFault() {
+        return roadFault_;
+      }
+      /**
+       * <code>optional bool roadFault = 30;</code>
+       */
+      public Builder setRoadFault(boolean value) {
+        bitField0_ |= 0x20000000;
+        roadFault_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool roadFault = 30;</code>
+       */
+      public Builder clearRoadFault() {
+        bitField0_ = (bitField0_ & ~0x20000000);
+        roadFault_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean vSSFault_ ;
+      /**
+       * <code>optional bool VSSFault = 31;</code>
+       */
+      public boolean hasVSSFault() {
+        return ((bitField0_ & 0x40000000) != 0);
+      }
+      /**
+       * <code>optional bool VSSFault = 31;</code>
+       */
+      public boolean getVSSFault() {
+        return vSSFault_;
+      }
+      /**
+       * <code>optional bool VSSFault = 31;</code>
+       */
+      public Builder setVSSFault(boolean value) {
+        bitField0_ |= 0x40000000;
+        vSSFault_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool VSSFault = 31;</code>
+       */
+      public Builder clearVSSFault() {
+        bitField0_ = (bitField0_ & ~0x40000000);
+        vSSFault_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean vehicleOilException_ ;
+      /**
+       * <code>optional bool vehicleOilException = 32;</code>
+       */
+      public boolean hasVehicleOilException() {
+        return ((bitField0_ & 0x80000000) != 0);
+      }
+      /**
+       * <code>optional bool vehicleOilException = 32;</code>
+       */
+      public boolean getVehicleOilException() {
+        return vehicleOilException_;
+      }
+      /**
+       * <code>optional bool vehicleOilException = 32;</code>
+       */
+      public Builder setVehicleOilException(boolean value) {
+        bitField0_ |= 0x80000000;
+        vehicleOilException_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool vehicleOilException = 32;</code>
+       */
+      public Builder clearVehicleOilException() {
+        bitField0_ = (bitField0_ & ~0x80000000);
+        vehicleOilException_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean vehicleTheft_ ;
+      /**
+       * <code>optional bool vehicleTheft = 33;</code>
+       */
+      public boolean hasVehicleTheft() {
+        return ((bitField1_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>optional bool vehicleTheft = 33;</code>
+       */
+      public boolean getVehicleTheft() {
+        return vehicleTheft_;
+      }
+      /**
+       * <code>optional bool vehicleTheft = 33;</code>
+       */
+      public Builder setVehicleTheft(boolean value) {
+        bitField1_ |= 0x00000001;
+        vehicleTheft_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool vehicleTheft = 33;</code>
+       */
+      public Builder clearVehicleTheft() {
+        bitField1_ = (bitField1_ & ~0x00000001);
+        vehicleTheft_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean vehicleIllegalIgnition_ ;
+      /**
+       * <code>optional bool vehicleIllegalIgnition = 34;</code>
+       */
+      public boolean hasVehicleIllegalIgnition() {
+        return ((bitField1_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>optional bool vehicleIllegalIgnition = 34;</code>
+       */
+      public boolean getVehicleIllegalIgnition() {
+        return vehicleIllegalIgnition_;
+      }
+      /**
+       * <code>optional bool vehicleIllegalIgnition = 34;</code>
+       */
+      public Builder setVehicleIllegalIgnition(boolean value) {
+        bitField1_ |= 0x00000002;
+        vehicleIllegalIgnition_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool vehicleIllegalIgnition = 34;</code>
+       */
+      public Builder clearVehicleIllegalIgnition() {
+        bitField1_ = (bitField1_ & ~0x00000002);
+        vehicleIllegalIgnition_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean vehicleIllegalShift_ ;
+      /**
+       * <code>optional bool vehicleIllegalShift = 35;</code>
+       */
+      public boolean hasVehicleIllegalShift() {
+        return ((bitField1_ & 0x00000004) != 0);
+      }
+      /**
+       * <code>optional bool vehicleIllegalShift = 35;</code>
+       */
+      public boolean getVehicleIllegalShift() {
+        return vehicleIllegalShift_;
+      }
+      /**
+       * <code>optional bool vehicleIllegalShift = 35;</code>
+       */
+      public Builder setVehicleIllegalShift(boolean value) {
+        bitField1_ |= 0x00000004;
+        vehicleIllegalShift_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool vehicleIllegalShift = 35;</code>
+       */
+      public Builder clearVehicleIllegalShift() {
+        bitField1_ = (bitField1_ & ~0x00000004);
+        vehicleIllegalShift_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean collisionWarning_ ;
+      /**
+       * <code>optional bool collisionWarning = 36;</code>
+       */
+      public boolean hasCollisionWarning() {
+        return ((bitField1_ & 0x00000008) != 0);
+      }
+      /**
+       * <code>optional bool collisionWarning = 36;</code>
+       */
+      public boolean getCollisionWarning() {
+        return collisionWarning_;
+      }
+      /**
+       * <code>optional bool collisionWarning = 36;</code>
+       */
+      public Builder setCollisionWarning(boolean value) {
+        bitField1_ |= 0x00000008;
+        collisionWarning_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool collisionWarning = 36;</code>
+       */
+      public Builder clearCollisionWarning() {
+        bitField1_ = (bitField1_ & ~0x00000008);
+        collisionWarning_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean rolloverWarning_ ;
+      /**
+       * <code>optional bool rolloverWarning = 37;</code>
+       */
+      public boolean hasRolloverWarning() {
+        return ((bitField1_ & 0x00000010) != 0);
+      }
+      /**
+       * <code>optional bool rolloverWarning = 37;</code>
+       */
+      public boolean getRolloverWarning() {
+        return rolloverWarning_;
+      }
+      /**
+       * <code>optional bool rolloverWarning = 37;</code>
+       */
+      public Builder setRolloverWarning(boolean value) {
+        bitField1_ |= 0x00000010;
+        rolloverWarning_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool rolloverWarning = 37;</code>
+       */
+      public Builder clearRolloverWarning() {
+        bitField1_ = (bitField1_ & ~0x00000010);
+        rolloverWarning_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean illegalOpenDoor_ ;
+      /**
+       * <code>optional bool illegalOpenDoor = 38;</code>
+       */
+      public boolean hasIllegalOpenDoor() {
+        return ((bitField1_ & 0x00000020) != 0);
+      }
+      /**
+       * <code>optional bool illegalOpenDoor = 38;</code>
+       */
+      public boolean getIllegalOpenDoor() {
+        return illegalOpenDoor_;
+      }
+      /**
+       * <code>optional bool illegalOpenDoor = 38;</code>
+       */
+      public Builder setIllegalOpenDoor(boolean value) {
+        bitField1_ |= 0x00000020;
+        illegalOpenDoor_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool illegalOpenDoor = 38;</code>
+       */
+      public Builder clearIllegalOpenDoor() {
+        bitField1_ = (bitField1_ & ~0x00000020);
+        illegalOpenDoor_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean aCC_ ;
+      /**
+       * <code>optional bool ACC = 39;</code>
+       */
+      public boolean hasACC() {
+        return ((bitField1_ & 0x00000040) != 0);
+      }
+      /**
+       * <code>optional bool ACC = 39;</code>
+       */
+      public boolean getACC() {
+        return aCC_;
+      }
+      /**
+       * <code>optional bool ACC = 39;</code>
+       */
+      public Builder setACC(boolean value) {
+        bitField1_ |= 0x00000040;
+        aCC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool ACC = 39;</code>
+       */
+      public Builder clearACC() {
+        bitField1_ = (bitField1_ & ~0x00000040);
+        aCC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isLocation_ ;
+      /**
+       * <code>optional bool isLocation = 40;</code>
+       */
+      public boolean hasIsLocation() {
+        return ((bitField1_ & 0x00000080) != 0);
+      }
+      /**
+       * <code>optional bool isLocation = 40;</code>
+       */
+      public boolean getIsLocation() {
+        return isLocation_;
+      }
+      /**
+       * <code>optional bool isLocation = 40;</code>
+       */
+      public Builder setIsLocation(boolean value) {
+        bitField1_ |= 0x00000080;
+        isLocation_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool isLocation = 40;</code>
+       */
+      public Builder clearIsLocation() {
+        bitField1_ = (bitField1_ & ~0x00000080);
+        isLocation_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean hasLatitude_ ;
+      /**
+       * <code>optional bool hasLatitude = 41;</code>
+       */
+      public boolean hasHasLatitude() {
+        return ((bitField1_ & 0x00000100) != 0);
+      }
+      /**
+       * <code>optional bool hasLatitude = 41;</code>
+       */
+      public boolean getHasLatitude() {
+        return hasLatitude_;
+      }
+      /**
+       * <code>optional bool hasLatitude = 41;</code>
+       */
+      public Builder setHasLatitude(boolean value) {
+        bitField1_ |= 0x00000100;
+        hasLatitude_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool hasLatitude = 41;</code>
+       */
+      public Builder clearHasLatitude() {
+        bitField1_ = (bitField1_ & ~0x00000100);
+        hasLatitude_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean hasLongitude_ ;
+      /**
+       * <code>optional bool hasLongitude = 42;</code>
+       */
+      public boolean hasHasLongitude() {
+        return ((bitField1_ & 0x00000200) != 0);
+      }
+      /**
+       * <code>optional bool hasLongitude = 42;</code>
+       */
+      public boolean getHasLongitude() {
+        return hasLongitude_;
+      }
+      /**
+       * <code>optional bool hasLongitude = 42;</code>
+       */
+      public Builder setHasLongitude(boolean value) {
+        bitField1_ |= 0x00000200;
+        hasLongitude_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool hasLongitude = 42;</code>
+       */
+      public Builder clearHasLongitude() {
+        bitField1_ = (bitField1_ & ~0x00000200);
+        hasLongitude_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isRunning_ ;
+      /**
+       * <code>optional bool isRunning = 43;</code>
+       */
+      public boolean hasIsRunning() {
+        return ((bitField1_ & 0x00000400) != 0);
+      }
+      /**
+       * <code>optional bool isRunning = 43;</code>
+       */
+      public boolean getIsRunning() {
+        return isRunning_;
+      }
+      /**
+       * <code>optional bool isRunning = 43;</code>
+       */
+      public Builder setIsRunning(boolean value) {
+        bitField1_ |= 0x00000400;
+        isRunning_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool isRunning = 43;</code>
+       */
+      public Builder clearIsRunning() {
+        bitField1_ = (bitField1_ & ~0x00000400);
+        isRunning_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean encrypt_ ;
+      /**
+       * <code>optional bool encrypt = 44;</code>
+       */
+      public boolean hasEncrypt() {
+        return ((bitField1_ & 0x00000800) != 0);
+      }
+      /**
+       * <code>optional bool encrypt = 44;</code>
+       */
+      public boolean getEncrypt() {
+        return encrypt_;
+      }
+      /**
+       * <code>optional bool encrypt = 44;</code>
+       */
+      public Builder setEncrypt(boolean value) {
+        bitField1_ |= 0x00000800;
+        encrypt_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool encrypt = 44;</code>
+       */
+      public Builder clearEncrypt() {
+        bitField1_ = (bitField1_ & ~0x00000800);
+        encrypt_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int goodsStatus_ ;
+      /**
+       * <code>optional int32 goodsStatus = 45;</code>
+       */
+      public boolean hasGoodsStatus() {
+        return ((bitField1_ & 0x00001000) != 0);
+      }
+      /**
+       * <code>optional int32 goodsStatus = 45;</code>
+       */
+      public int getGoodsStatus() {
+        return goodsStatus_;
+      }
+      /**
+       * <code>optional int32 goodsStatus = 45;</code>
+       */
+      public Builder setGoodsStatus(int value) {
+        bitField1_ |= 0x00001000;
+        goodsStatus_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 goodsStatus = 45;</code>
+       */
+      public Builder clearGoodsStatus() {
+        bitField1_ = (bitField1_ & ~0x00001000);
+        goodsStatus_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean vehicleOil_ ;
+      /**
+       * <code>optional bool vehicleOil = 46;</code>
+       */
+      public boolean hasVehicleOil() {
+        return ((bitField1_ & 0x00002000) != 0);
+      }
+      /**
+       * <code>optional bool vehicleOil = 46;</code>
+       */
+      public boolean getVehicleOil() {
+        return vehicleOil_;
+      }
+      /**
+       * <code>optional bool vehicleOil = 46;</code>
+       */
+      public Builder setVehicleOil(boolean value) {
+        bitField1_ |= 0x00002000;
+        vehicleOil_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool vehicleOil = 46;</code>
+       */
+      public Builder clearVehicleOil() {
+        bitField1_ = (bitField1_ & ~0x00002000);
+        vehicleOil_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean vehicleCircut_ ;
+      /**
+       * <code>optional bool vehicleCircut = 47;</code>
+       */
+      public boolean hasVehicleCircut() {
+        return ((bitField1_ & 0x00004000) != 0);
+      }
+      /**
+       * <code>optional bool vehicleCircut = 47;</code>
+       */
+      public boolean getVehicleCircut() {
+        return vehicleCircut_;
+      }
+      /**
+       * <code>optional bool vehicleCircut = 47;</code>
+       */
+      public Builder setVehicleCircut(boolean value) {
+        bitField1_ |= 0x00004000;
+        vehicleCircut_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool vehicleCircut = 47;</code>
+       */
+      public Builder clearVehicleCircut() {
+        bitField1_ = (bitField1_ & ~0x00004000);
+        vehicleCircut_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean doorLock_ ;
+      /**
+       * <code>optional bool doorLock = 48;</code>
+       */
+      public boolean hasDoorLock() {
+        return ((bitField1_ & 0x00008000) != 0);
+      }
+      /**
+       * <code>optional bool doorLock = 48;</code>
+       */
+      public boolean getDoorLock() {
+        return doorLock_;
+      }
+      /**
+       * <code>optional bool doorLock = 48;</code>
+       */
+      public Builder setDoorLock(boolean value) {
+        bitField1_ |= 0x00008000;
+        doorLock_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool doorLock = 48;</code>
+       */
+      public Builder clearDoorLock() {
+        bitField1_ = (bitField1_ & ~0x00008000);
+        doorLock_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean frontDoorOpen_ ;
+      /**
+       * <code>optional bool frontDoorOpen = 49;</code>
+       */
+      public boolean hasFrontDoorOpen() {
+        return ((bitField1_ & 0x00010000) != 0);
+      }
+      /**
+       * <code>optional bool frontDoorOpen = 49;</code>
+       */
+      public boolean getFrontDoorOpen() {
+        return frontDoorOpen_;
+      }
+      /**
+       * <code>optional bool frontDoorOpen = 49;</code>
+       */
+      public Builder setFrontDoorOpen(boolean value) {
+        bitField1_ |= 0x00010000;
+        frontDoorOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool frontDoorOpen = 49;</code>
+       */
+      public Builder clearFrontDoorOpen() {
+        bitField1_ = (bitField1_ & ~0x00010000);
+        frontDoorOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean middleDoorOpen_ ;
+      /**
+       * <code>optional bool middleDoorOpen = 50;</code>
+       */
+      public boolean hasMiddleDoorOpen() {
+        return ((bitField1_ & 0x00020000) != 0);
+      }
+      /**
+       * <code>optional bool middleDoorOpen = 50;</code>
+       */
+      public boolean getMiddleDoorOpen() {
+        return middleDoorOpen_;
+      }
+      /**
+       * <code>optional bool middleDoorOpen = 50;</code>
+       */
+      public Builder setMiddleDoorOpen(boolean value) {
+        bitField1_ |= 0x00020000;
+        middleDoorOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool middleDoorOpen = 50;</code>
+       */
+      public Builder clearMiddleDoorOpen() {
+        bitField1_ = (bitField1_ & ~0x00020000);
+        middleDoorOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean endDoorOpen_ ;
+      /**
+       * <code>optional bool endDoorOpen = 51;</code>
+       */
+      public boolean hasEndDoorOpen() {
+        return ((bitField1_ & 0x00040000) != 0);
+      }
+      /**
+       * <code>optional bool endDoorOpen = 51;</code>
+       */
+      public boolean getEndDoorOpen() {
+        return endDoorOpen_;
+      }
+      /**
+       * <code>optional bool endDoorOpen = 51;</code>
+       */
+      public Builder setEndDoorOpen(boolean value) {
+        bitField1_ |= 0x00040000;
+        endDoorOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool endDoorOpen = 51;</code>
+       */
+      public Builder clearEndDoorOpen() {
+        bitField1_ = (bitField1_ & ~0x00040000);
+        endDoorOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean driverDoorOpen_ ;
+      /**
+       * <code>optional bool driverDoorOpen = 52;</code>
+       */
+      public boolean hasDriverDoorOpen() {
+        return ((bitField1_ & 0x00080000) != 0);
+      }
+      /**
+       * <code>optional bool driverDoorOpen = 52;</code>
+       */
+      public boolean getDriverDoorOpen() {
+        return driverDoorOpen_;
+      }
+      /**
+       * <code>optional bool driverDoorOpen = 52;</code>
+       */
+      public Builder setDriverDoorOpen(boolean value) {
+        bitField1_ |= 0x00080000;
+        driverDoorOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool driverDoorOpen = 52;</code>
+       */
+      public Builder clearDriverDoorOpen() {
+        bitField1_ = (bitField1_ & ~0x00080000);
+        driverDoorOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean otherDoorOpen_ ;
+      /**
+       * <code>optional bool otherDoorOpen = 53;</code>
+       */
+      public boolean hasOtherDoorOpen() {
+        return ((bitField1_ & 0x00100000) != 0);
+      }
+      /**
+       * <code>optional bool otherDoorOpen = 53;</code>
+       */
+      public boolean getOtherDoorOpen() {
+        return otherDoorOpen_;
+      }
+      /**
+       * <code>optional bool otherDoorOpen = 53;</code>
+       */
+      public Builder setOtherDoorOpen(boolean value) {
+        bitField1_ |= 0x00100000;
+        otherDoorOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool otherDoorOpen = 53;</code>
+       */
+      public Builder clearOtherDoorOpen() {
+        bitField1_ = (bitField1_ & ~0x00100000);
+        otherDoorOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean gPS_ ;
+      /**
+       * <code>optional bool GPS = 54;</code>
+       */
+      public boolean hasGPS() {
+        return ((bitField1_ & 0x00200000) != 0);
+      }
+      /**
+       * <code>optional bool GPS = 54;</code>
+       */
+      public boolean getGPS() {
+        return gPS_;
+      }
+      /**
+       * <code>optional bool GPS = 54;</code>
+       */
+      public Builder setGPS(boolean value) {
+        bitField1_ |= 0x00200000;
+        gPS_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool GPS = 54;</code>
+       */
+      public Builder clearGPS() {
+        bitField1_ = (bitField1_ & ~0x00200000);
+        gPS_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean beidou_ ;
+      /**
+       * <code>optional bool beidou = 55;</code>
+       */
+      public boolean hasBeidou() {
+        return ((bitField1_ & 0x00400000) != 0);
+      }
+      /**
+       * <code>optional bool beidou = 55;</code>
+       */
+      public boolean getBeidou() {
+        return beidou_;
+      }
+      /**
+       * <code>optional bool beidou = 55;</code>
+       */
+      public Builder setBeidou(boolean value) {
+        bitField1_ |= 0x00400000;
+        beidou_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool beidou = 55;</code>
+       */
+      public Builder clearBeidou() {
+        bitField1_ = (bitField1_ & ~0x00400000);
+        beidou_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean gLONASS_ ;
+      /**
+       * <code>optional bool GLONASS = 56;</code>
+       */
+      public boolean hasGLONASS() {
+        return ((bitField1_ & 0x00800000) != 0);
+      }
+      /**
+       * <code>optional bool GLONASS = 56;</code>
+       */
+      public boolean getGLONASS() {
+        return gLONASS_;
+      }
+      /**
+       * <code>optional bool GLONASS = 56;</code>
+       */
+      public Builder setGLONASS(boolean value) {
+        bitField1_ |= 0x00800000;
+        gLONASS_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool GLONASS = 56;</code>
+       */
+      public Builder clearGLONASS() {
+        bitField1_ = (bitField1_ & ~0x00800000);
+        gLONASS_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean galileo_ ;
+      /**
+       * <code>optional bool Galileo = 57;</code>
+       */
+      public boolean hasGalileo() {
+        return ((bitField1_ & 0x01000000) != 0);
+      }
+      /**
+       * <code>optional bool Galileo = 57;</code>
+       */
+      public boolean getGalileo() {
+        return galileo_;
+      }
+      /**
+       * <code>optional bool Galileo = 57;</code>
+       */
+      public Builder setGalileo(boolean value) {
+        bitField1_ |= 0x01000000;
+        galileo_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool Galileo = 57;</code>
+       */
+      public Builder clearGalileo() {
+        bitField1_ = (bitField1_ & ~0x01000000);
+        galileo_ = false;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -80664,75 +74542,55 @@ public final class ServerData {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_protobuf_Location_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_WarningFlag_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_WarningFlag_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_Status_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_Status_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_LocationExtraData_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_LocationExtraData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_ExtraCarState_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_ExtraCarState_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_IOState_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_IOState_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_VideoAlarm_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_VideoAlarm_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_descriptor;
+    internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_fieldAccessorTable;
+      internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_protobuf_BulkLocation_descriptor;
   private static final 
@@ -81052,170 +74910,132 @@ public final class ServerData {
       "reshold\030\t \001(\005\022\034\n\024timingUploadInterval\030\n " +
       "\001(\005\032l\n\023BlindAreaMonitoring\022&\n\036rearApproa" +
       "chAlarmTimeThreshold\030\001 \001(\005\022-\n%lateralRea" +
-      "rApproachAlarmTimeThreshold\030\002 \001(\005\"\376(\n\010Lo" +
+      "rApproachAlarmTimeThreshold\030\002 \001(\005\"\252\035\n\010Lo" +
       "cation\022\023\n\013warningFlag\030\001 \001(\005\022\016\n\006status\030\002 " +
       "\001(\005\022\020\n\010latitude\030\003 \001(\001\022\021\n\tlongitude\030\004 \001(\001" +
       "\022\021\n\televation\030\005 \001(\005\022\r\n\005speed\030\006 \001(\001\022\021\n\tdi" +
-      "rection\030\007 \001(\005\022\014\n\004time\030\010 \001(\t\022M\n\030terminalE" +
-      "xtraLocationMsg\030\t \001(\0132+.protobuf.Locatio" +
-      "n.TerminalExtraLocationMsg\032\273\005\n\013WarningFl" +
-      "ag\022\023\n\013warningFlag\030\001 \001(\010\022\024\n\014overSpeeding\030" +
-      "\002 \001(\010\022\021\n\toverTired\030\003 \001(\010\022\021\n\tdangerous\030\004 " +
-      "\001(\010\022\021\n\tGNSSFault\030\005 \001(\010\022\030\n\020GNSSAntennaFau" +
-      "lt\030\006 \001(\010\022\037\n\027GNSSAntennaShortCircuit\030\007 \001(" +
-      "\010\022%\n\035terminalMainPowerUnderVoltage\030\010 \001(\010" +
-      "\022 \n\030terminalMainPowerFailure\030\t \001(\010\022\030\n\020Te" +
-      "rminalLCDFault\030\n \001(\010\022\020\n\010TTSFault\030\013 \001(\010\022\023" +
-      "\n\013cameraFault\030\014 \001(\010\022\023\n\013ICCardFault\030\r \001(\010" +
-      "\022\020\n\010speeding\030\016 \001(\010\022\r\n\005tired\030\017 \001(\010\022\024\n\014dri" +
-      "veTimeout\030\020 \001(\010\022\027\n\017parkingOvertime\030\021 \001(\010" +
-      "\022\023\n\013throughArea\030\022 \001(\010\022\023\n\013throughRoad\030\023 \001" +
-      "(\010\022\023\n\013roadTimeout\030\024 \001(\010\022\021\n\troadFault\030\025 \001" +
-      "(\010\022\020\n\010VSSFault\030\026 \001(\010\022\033\n\023vehicleOilExcept" +
-      "ion\030\027 \001(\010\022\024\n\014vehicleTheft\030\030 \001(\010\022\036\n\026vehic" +
-      "leIllegalIgnition\030\031 \001(\010\022\033\n\023vehicleIllega" +
-      "lShift\030\032 \001(\010\022\030\n\020collisionWarning\030\033 \001(\010\022\027" +
-      "\n\017rolloverWarning\030\034 \001(\010\022\027\n\017illegalOpenDo" +
-      "or\030\035 \001(\010\032\366\002\n\006Status\022\013\n\003ACC\030\001 \001(\010\022\022\n\nisLo" +
-      "cation\030\002 \001(\010\022\020\n\010latitude\030\003 \001(\010\022\021\n\tlongit" +
-      "ude\030\004 \001(\010\022\021\n\tisRunning\030\005 \001(\010\022\017\n\007encrypt\030" +
-      "\006 \001(\010\022\023\n\013goodsStatus\030\007 \001(\005\022\022\n\nvehicleOil" +
-      "\030\010 \001(\010\022\025\n\rvehicleCircut\030\t \001(\010\022\020\n\010doorLoc" +
-      "k\030\n \001(\010\022\025\n\rfrontDoorOpen\030\013 \001(\010\022\026\n\016middle" +
-      "DoorOpen\030\014 \001(\010\022\023\n\013endDoorOpen\030\r \001(\010\022\026\n\016d" +
-      "riverDoorOpen\030\016 \001(\010\022\025\n\rotherDoorOpen\030\017 \001" +
-      "(\010\022\013\n\003GPS\030\020 \001(\010\022\016\n\006beidou\030\021 \001(\010\022\017\n\007GLONA" +
-      "SS\030\022 \001(\010\022\017\n\007Galileo\030\023 \001(\010\032\336\036\n\030TerminalEx" +
-      "traLocationMsg\022\017\n\007mileage\030\001 \001(\005\022\023\n\013oilQu" +
-      "antity\030\002 \001(\005\022\020\n\010carSpeed\030\003 \001(\005\022\021\n\twarnin" +
-      "gId\030\004 \001(\005\022X\n\021speedingExtraData\030\005 \001(\0132=.p" +
-      "rotobuf.Location.TerminalExtraLocationMs" +
-      "g.SpeedingExtraData\022X\n\021locationExtraData" +
-      "\030\006 \001(\0132=.protobuf.Location.TerminalExtra" +
-      "LocationMsg.LocationExtraData\022`\n\025locatio" +
-      "nInfoExtraData\030\007 \001(\0132A.protobuf.Location" +
-      ".TerminalExtraLocationMsg.LocationInfoEx" +
-      "traData\022P\n\rextraCarState\030\010 \001(\01329.protobu" +
-      "f.Location.TerminalExtraLocationMsg.Extr" +
-      "aCarState\022D\n\007ioState\030\t \001(\01323.protobuf.Lo" +
-      "cation.TerminalExtraLocationMsg.IOState\022" +
-      "\022\n\nsimulation\030\n \001(\005\022\031\n\021wirelessIntensity" +
-      "\030\013 \001(\005\022\025\n\rsatellitesNum\030\014 \001(\005\022J\n\nvideoAl" +
-      "arm\030\r \001(\01326.protobuf.Location.TerminalEx" +
-      "traLocationMsg.VideoAlarm\022P\n\rvideoLostFl" +
-      "ag\030\016 \001(\01329.protobuf.Location.TerminalExt" +
-      "raLocationMsg.VideoLostFlag\022V\n\020videoShel" +
-      "terFlag\030\017 \001(\0132<.protobuf.Location.Termin" +
-      "alExtraLocationMsg.VideoShelterFlag\022V\n\020s" +
-      "torageFaultFlag\030\020 \001(\0132<.protobuf.Locatio" +
-      "n.TerminalExtraLocationMsg.StorageFaultF" +
-      "lag\022R\n\016exceptBehavior\030\021 \001(\0132:.protobuf.L" +
-      "ocation.TerminalExtraLocationMsg.ExceptB" +
-      "ehavior\032=\n\021SpeedingExtraData\022\024\n\014location" +
-      "Type\030\001 \001(\005\022\022\n\nlocationId\030\002 \001(\t\032P\n\021Locati" +
-      "onExtraData\022\024\n\014locationType\030\001 \001(\005\022\022\n\nloc" +
-      "ationId\030\002 \001(\t\022\021\n\tdirection\030\003 \001(\005\032H\n\025Loca" +
-      "tionInfoExtraData\022\016\n\006roadId\030\001 \001(\t\022\017\n\007run" +
-      "Time\030\002 \001(\005\022\016\n\006result\030\003 \001(\005\032\354\002\n\rExtraCarS" +
-      "tate\022\026\n\016lowLightSignal\030\001 \001(\010\022\026\n\016farLight" +
-      "Signal\030\002 \001(\010\022\030\n\020rightLightSignal\030\003 \001(\010\022\027" +
-      "\n\017leftLightSignal\030\004 \001(\010\022\025\n\rbrakingSignal" +
-      "\030\005 \001(\010\022\025\n\rreverseSignal\030\006 \001(\010\022\025\n\rfogLamp" +
-      "Signal\030\007 \001(\010\022\023\n\013outlineLamp\030\010 \001(\010\022\022\n\nhor" +
-      "nSignal\030\t \001(\010\022\024\n\014airCondition\030\n \001(\010\022\025\n\rn" +
-      "eutralSignal\030\013 \001(\010\022\031\n\021retarderOperation\030" +
-      "\014 \001(\010\022\024\n\014ABSOperation\030\r \001(\010\022\027\n\017heaterOpe" +
-      "ration\030\016 \001(\010\022\023\n\013clutchState\030\017 \001(\010\0321\n\007IOS" +
-      "tate\022\024\n\014deepDormancy\030\001 \001(\010\022\020\n\010dormancy\030\002" +
-      " \001(\010\032\247\001\n\nVideoAlarm\022\021\n\tvideoLost\030\001 \001(\010\022\024" +
-      "\n\014videoShelter\030\002 \001(\010\022\024\n\014storageFault\030\003 \001" +
-      "(\010\022\022\n\notherFault\030\004 \001(\010\022\024\n\014overcrowding\030\005" +
-      " \001(\010\022\026\n\016exceptBehavior\030\006 \001(\010\022\030\n\020videoSto" +
-      "rageOver\030\007 \001(\010\032\206\006\n\rVideoLostFlag\022\025\n\rlogi" +
-      "cChannel1\030\001 \001(\010\022\025\n\rlogicChannel2\030\002 \001(\010\022\025" +
-      "\n\rlogicChannel3\030\003 \001(\010\022\025\n\rlogicChannel4\030\004" +
-      " \001(\010\022\025\n\rlogicChannel5\030\005 \001(\010\022\025\n\rlogicChan" +
-      "nel6\030\006 \001(\010\022\025\n\rlogicChannel7\030\007 \001(\010\022\025\n\rlog" +
-      "icChannel8\030\010 \001(\010\022\025\n\rlogicChannel9\030\t \001(\010\022" +
-      "\026\n\016logicChannel10\030\n \001(\010\022\026\n\016logicChannel1" +
-      "1\030\013 \001(\010\022\026\n\016logicChannel12\030\014 \001(\010\022\026\n\016logic" +
-      "Channel13\030\r \001(\010\022\026\n\016logicChannel14\030\016 \001(\010\022" +
-      "\026\n\016logicChannel15\030\017 \001(\010\022\026\n\016logicChannel1" +
-      "6\030\020 \001(\010\022\026\n\016logicChannel17\030\021 \001(\010\022\026\n\016logic" +
-      "Channel18\030\022 \001(\010\022\026\n\016logicChannel19\030\023 \001(\010\022" +
-      "\026\n\016logicChannel20\030\024 \001(\010\022\026\n\016logicChannel2" +
-      "1\030\025 \001(\010\022\026\n\016logicChannel22\030\026 \001(\010\022\026\n\016logic" +
-      "Channel23\030\027 \001(\010\022\026\n\016logicChannel24\030\030 \001(\010\022" +
-      "\026\n\016logicChannel25\030\031 \001(\010\022\026\n\016logicChannel2" +
-      "6\030\032 \001(\010\022\026\n\016logicChannel27\030\033 \001(\010\022\026\n\016logic" +
-      "Channel28\030\034 \001(\010\022\026\n\016logicChannel29\030\035 \001(\010\022" +
-      "\026\n\016logicChannel30\030\036 \001(\010\022\026\n\016logicChannel3" +
-      "1\030\037 \001(\010\022\026\n\016logicChannel32\030  \001(\010\032\211\006\n\020Vide" +
-      "oShelterFlag\022\025\n\rlogicChannel1\030\001 \001(\010\022\025\n\rl" +
-      "ogicChannel2\030\002 \001(\010\022\025\n\rlogicChannel3\030\003 \001(" +
-      "\010\022\025\n\rlogicChannel4\030\004 \001(\010\022\025\n\rlogicChannel" +
-      "5\030\005 \001(\010\022\025\n\rlogicChannel6\030\006 \001(\010\022\025\n\rlogicC" +
-      "hannel7\030\007 \001(\010\022\025\n\rlogicChannel8\030\010 \001(\010\022\025\n\r" +
-      "logicChannel9\030\t \001(\010\022\026\n\016logicChannel10\030\n " +
-      "\001(\010\022\026\n\016logicChannel11\030\013 \001(\010\022\026\n\016logicChan" +
-      "nel12\030\014 \001(\010\022\026\n\016logicChannel13\030\r \001(\010\022\026\n\016l" +
-      "ogicChannel14\030\016 \001(\010\022\026\n\016logicChannel15\030\017 " +
-      "\001(\010\022\026\n\016logicChannel16\030\020 \001(\010\022\026\n\016logicChan" +
-      "nel17\030\021 \001(\010\022\026\n\016logicChannel18\030\022 \001(\010\022\026\n\016l" +
-      "ogicChannel19\030\023 \001(\010\022\026\n\016logicChannel20\030\024 " +
-      "\001(\010\022\026\n\016logicChannel21\030\025 \001(\010\022\026\n\016logicChan" +
-      "nel22\030\026 \001(\010\022\026\n\016logicChannel23\030\027 \001(\010\022\026\n\016l" +
-      "ogicChannel24\030\030 \001(\010\022\026\n\016logicChannel25\030\031 " +
-      "\001(\010\022\026\n\016logicChannel26\030\032 \001(\010\022\026\n\016logicChan" +
-      "nel27\030\033 \001(\010\022\026\n\016logicChannel28\030\034 \001(\010\022\026\n\016l" +
-      "ogicChannel29\030\035 \001(\010\022\026\n\016logicChannel30\030\036 " +
-      "\001(\010\022\026\n\016logicChannel31\030\037 \001(\010\022\026\n\016logicChan" +
-      "nel32\030  \001(\010\032\315\002\n\020StorageFaultFlag\022\020\n\010stor" +
-      "age1\030\001 \001(\010\022\020\n\010storage2\030\002 \001(\010\022\020\n\010storage3" +
-      "\030\003 \001(\010\022\020\n\010storage4\030\004 \001(\010\022\020\n\010storage5\030\005 \001" +
-      "(\010\022\020\n\010storage6\030\006 \001(\010\022\020\n\010storage7\030\007 \001(\010\022\020" +
-      "\n\010storage8\030\010 \001(\010\022\020\n\010storage9\030\t \001(\010\022\021\n\tst" +
-      "orage10\030\n \001(\010\022\021\n\tstorage11\030\013 \001(\010\022\021\n\tstor" +
-      "age12\030\014 \001(\010\022\026\n\016backupStorage1\030\r \001(\010\022\026\n\016b",
-      "ackupStorage2\030\016 \001(\010\022\026\n\016backupStorage3\030\017 " +
-      "\001(\010\022\026\n\016backupStorage4\030\020 \001(\010\032\324\001\n\016ExceptBe" +
-      "havior\022i\n\022exceptBehaviorType\030\001 \001(\0132M.pro" +
-      "tobuf.Location.TerminalExtraLocationMsg." +
-      "ExceptBehavior.ExceptBehaviorType\022\022\n\ntir" +
-      "edLevel\030\002 \001(\005\032C\n\022ExceptBehaviorType\022\r\n\005t" +
-      "ired\030\001 \001(\010\022\r\n\005phone\030\002 \001(\010\022\017\n\007smoking\030\003 \001" +
-      "(\010\"W\n\014BulkLocation\022\017\n\007dataNum\030\001 \001(\005\022\020\n\010d" +
-      "ataType\030\002 \001(\005\022$\n\010location\030\003 \003(\0132\022.protob" +
-      "uf.Location\"\234\001\n\tMediaData\022\017\n\007mediaId\030\001 \001" +
-      "(\005\022\021\n\tmediaType\030\002 \001(\005\022\021\n\tmediaCode\030\003 \001(\005" +
-      "\022\021\n\teventCode\030\004 \001(\005\022\021\n\tchannelId\030\005 \001(\005\022$" +
-      "\n\010location\030\006 \001(\0132\022.protobuf.Location\022\014\n\004" +
-      "data\030\007 \001(\014\"\374\001\n\037TerminalUploadMediaAttrib" +
-      "uteMsg\022\021\n\tvoiceCode\030\001 \001(\005\022\027\n\017voiceChanne" +
-      "lNum\030\002 \001(\005\022\031\n\021voiceSamplingRate\030\003 \001(\005\022\030\n" +
-      "\020voiceSamplingBit\030\004 \001(\005\022\030\n\020voiceFrameLen" +
-      "gth\030\005 \001(\005\022\023\n\013voiceOutput\030\006 \001(\005\022\021\n\tvideoC" +
-      "ode\030\007 \001(\005\022\032\n\022maxVoiceChannelNum\030\010 \001(\005\022\032\n" +
-      "\022maxVideoChannelNum\030\t \001(\005\"\340\002\n\037TerminalUp" +
-      "loadMediaResourcesMsg\022\023\n\013replyFlowId\030\001 \001" +
-      "(\005\022\031\n\021mediaResourcesNum\030\002 \001(\005\022P\n\016mediaRe" +
-      "sources\030\003 \003(\01328.protobuf.TerminalUploadM" +
-      "ediaResourcesMsg.MediaResources\032\272\001\n\016Medi" +
-      "aResources\022\027\n\017logicChannelNum\030\001 \001(\005\022\021\n\ts" +
-      "tartTime\030\002 \001(\t\022\017\n\007endTime\030\003 \001(\t\022\021\n\talarm" +
-      "Flag\030\004 \001(\003\022\032\n\022mediaResourcesType\030\005 \001(\005\022\025" +
-      "\n\rbitStreamType\030\006 \001(\005\022\023\n\013storageTYpe\030\007 \001" +
-      "(\005\022\020\n\010fileSize\030\010 \001(\005\"\325\002\n&TerminalSavedMe" +
-      "diaRetrievalResponseMsg\022\023\n\013replyFlowId\030\001" +
-      " \001(\005\022\031\n\021mediaRetrievalNum\030\002 \001(\005\022k\n\030termi" +
-      "nalRetrievalDataMsg\030\003 \003(\0132I.protobuf.Ter" +
-      "minalSavedMediaRetrievalResponseMsg.Term" +
-      "inalRetrievalDataMsg\032\215\001\n\030TerminalRetriev" +
-      "alDataMsg\022\017\n\007mediaId\030\001 \001(\005\022\021\n\tmediaType\030" +
-      "\002 \001(\005\022\021\n\teventCode\030\003 \001(\005\022\024\n\014passagewayId" +
-      "\030\004 \001(\005\022$\n\010location\030\005 \001(\0132\022.protobuf.Loca" +
-      "tionB)\n\031cn.edu.sdu.jt808.protobufB\nServe" +
-      "rDataH\001"
+      "rection\030\007 \001(\005\022\014\n\004time\030\010 \001(\t\0228\n\016extraLoca" +
+      "tions\030\t \003(\0132 .protobuf.Location.ExtraLoc" +
+      "ation\022\014\n\004flag\030\n \001(\010\022\024\n\014overSpeeding\030\013 \001(" +
+      "\010\022\021\n\toverTired\030\014 \001(\010\022\021\n\tdangerous\030\r \001(\010\022" +
+      "\021\n\tGNSSFault\030\016 \001(\010\022\030\n\020GNSSAntennaFault\030\017" +
+      " \001(\010\022\037\n\027GNSSAntennaShortCircuit\030\020 \001(\010\022%\n" +
+      "\035terminalMainPowerUnderVoltage\030\021 \001(\010\022 \n\030" +
+      "terminalMainPowerFailure\030\022 \001(\010\022\030\n\020Termin" +
+      "alLCDFault\030\023 \001(\010\022\020\n\010TTSFault\030\024 \001(\010\022\023\n\013ca" +
+      "meraFault\030\025 \001(\010\022\023\n\013ICCardFault\030\026 \001(\010\022\020\n\010" +
+      "speeding\030\027 \001(\010\022\r\n\005tired\030\030 \001(\010\022\024\n\014driveTi" +
+      "meout\030\031 \001(\010\022\027\n\017parkingOvertime\030\032 \001(\010\022\023\n\013" +
+      "throughArea\030\033 \001(\010\022\023\n\013throughRoad\030\034 \001(\010\022\023" +
+      "\n\013roadTimeout\030\035 \001(\010\022\021\n\troadFault\030\036 \001(\010\022\020" +
+      "\n\010VSSFault\030\037 \001(\010\022\033\n\023vehicleOilException\030" +
+      "  \001(\010\022\024\n\014vehicleTheft\030! \001(\010\022\036\n\026vehicleIl" +
+      "legalIgnition\030\" \001(\010\022\033\n\023vehicleIllegalShi" +
+      "ft\030# \001(\010\022\030\n\020collisionWarning\030$ \001(\010\022\027\n\017ro" +
+      "lloverWarning\030% \001(\010\022\027\n\017illegalOpenDoor\030&" +
+      " \001(\010\022\013\n\003ACC\030\' \001(\010\022\022\n\nisLocation\030( \001(\010\022\023\n" +
+      "\013hasLatitude\030) \001(\010\022\024\n\014hasLongitude\030* \001(\010" +
+      "\022\021\n\tisRunning\030+ \001(\010\022\017\n\007encrypt\030, \001(\010\022\023\n\013" +
+      "goodsStatus\030- \001(\005\022\022\n\nvehicleOil\030. \001(\010\022\025\n" +
+      "\rvehicleCircut\030/ \001(\010\022\020\n\010doorLock\0300 \001(\010\022\025" +
+      "\n\rfrontDoorOpen\0301 \001(\010\022\026\n\016middleDoorOpen\030" +
+      "2 \001(\010\022\023\n\013endDoorOpen\0303 \001(\010\022\026\n\016driverDoor" +
+      "Open\0304 \001(\010\022\025\n\rotherDoorOpen\0305 \001(\010\022\013\n\003GPS" +
+      "\0306 \001(\010\022\016\n\006beidou\0307 \001(\010\022\017\n\007GLONASS\0308 \001(\010\022" +
+      "\017\n\007Galileo\0309 \001(\010\032\273\023\n\rExtraLocation\022\017\n\007mi" +
+      "leage\030\001 \001(\005\022\023\n\013oilQuantity\030\002 \001(\005\022\020\n\010carS" +
+      "peed\030\003 \001(\005\022\021\n\twarningId\030\004 \001(\005\022M\n\021speedin" +
+      "gExtraData\030\005 \001(\01322.protobuf.Location.Ext" +
+      "raLocation.SpeedingExtraData\022M\n\021location" +
+      "ExtraData\030\006 \001(\01322.protobuf.Location.Extr" +
+      "aLocation.LocationExtraData\022U\n\025locationI" +
+      "nfoExtraData\030\007 \001(\01326.protobuf.Location.E" +
+      "xtraLocation.LocationInfoExtraData\022E\n\rex" +
+      "traCarState\030\010 \001(\0132..protobuf.Location.Ex" +
+      "traLocation.ExtraCarState\0229\n\007ioState\030\t \001" +
+      "(\0132(.protobuf.Location.ExtraLocation.IOS" +
+      "tate\022\022\n\nsimulation\030\n \001(\005\022\031\n\021wirelessInte" +
+      "nsity\030\013 \001(\005\022\025\n\rsatellitesNum\030\014 \001(\005\022\022\n\nvi" +
+      "deoAlarm\030\r \001(\005\022\025\n\rvideoLostFlag\030\016 \001(\005\022\030\n" +
+      "\020videoShelterFlag\030\017 \001(\005\022\030\n\020storageFaultF" +
+      "lag\030\020 \001(\005\022G\n\016exceptBehavior\030\021 \001(\0132/.prot" +
+      "obuf.Location.ExtraLocation.ExceptBehavi" +
+      "or\032=\n\021SpeedingExtraData\022\024\n\014locationType\030" +
+      "\001 \001(\005\022\022\n\nlocationId\030\002 \001(\t\032P\n\021LocationExt" +
+      "raData\022\024\n\014locationType\030\001 \001(\005\022\022\n\nlocation" +
+      "Id\030\002 \001(\t\022\021\n\tdirection\030\003 \001(\005\032H\n\025LocationI" +
+      "nfoExtraData\022\016\n\006roadId\030\001 \001(\t\022\017\n\007runTime\030" +
+      "\002 \001(\005\022\016\n\006result\030\003 \001(\005\032\354\002\n\rExtraCarState\022" +
+      "\026\n\016lowLightSignal\030\001 \001(\010\022\026\n\016farLightSigna" +
+      "l\030\002 \001(\010\022\030\n\020rightLightSignal\030\003 \001(\010\022\027\n\017lef" +
+      "tLightSignal\030\004 \001(\010\022\025\n\rbrakingSignal\030\005 \001(" +
+      "\010\022\025\n\rreverseSignal\030\006 \001(\010\022\025\n\rfogLampSigna" +
+      "l\030\007 \001(\010\022\023\n\013outlineLamp\030\010 \001(\010\022\022\n\nhornSign" +
+      "al\030\t \001(\010\022\024\n\014airCondition\030\n \001(\010\022\025\n\rneutra" +
+      "lSignal\030\013 \001(\010\022\031\n\021retarderOperation\030\014 \001(\010" +
+      "\022\024\n\014ABSOperation\030\r \001(\010\022\027\n\017heaterOperatio" +
+      "n\030\016 \001(\010\022\023\n\013clutchState\030\017 \001(\010\0321\n\007IOState\022" +
+      "\024\n\014deepDormancy\030\001 \001(\010\022\020\n\010dormancy\030\002 \001(\010\032" +
+      "\247\001\n\nVideoAlarm\022\021\n\tvideoLost\030\001 \001(\010\022\024\n\014vid" +
+      "eoShelter\030\002 \001(\010\022\024\n\014storageFault\030\003 \001(\010\022\022\n" +
+      "\notherFault\030\004 \001(\010\022\024\n\014overcrowding\030\005 \001(\010\022" +
+      "\026\n\016exceptBehavior\030\006 \001(\010\022\030\n\020videoStorageO" +
+      "ver\030\007 \001(\010\032\206\006\n\rVideoLostFlag\022\025\n\rlogicChan" +
+      "nel1\030\001 \001(\010\022\025\n\rlogicChannel2\030\002 \001(\010\022\025\n\rlog" +
+      "icChannel3\030\003 \001(\010\022\025\n\rlogicChannel4\030\004 \001(\010\022" +
+      "\025\n\rlogicChannel5\030\005 \001(\010\022\025\n\rlogicChannel6\030" +
+      "\006 \001(\010\022\025\n\rlogicChannel7\030\007 \001(\010\022\025\n\rlogicCha" +
+      "nnel8\030\010 \001(\010\022\025\n\rlogicChannel9\030\t \001(\010\022\026\n\016lo" +
+      "gicChannel10\030\n \001(\010\022\026\n\016logicChannel11\030\013 \001" +
+      "(\010\022\026\n\016logicChannel12\030\014 \001(\010\022\026\n\016logicChann" +
+      "el13\030\r \001(\010\022\026\n\016logicChannel14\030\016 \001(\010\022\026\n\016lo" +
+      "gicChannel15\030\017 \001(\010\022\026\n\016logicChannel16\030\020 \001" +
+      "(\010\022\026\n\016logicChannel17\030\021 \001(\010\022\026\n\016logicChann" +
+      "el18\030\022 \001(\010\022\026\n\016logicChannel19\030\023 \001(\010\022\026\n\016lo" +
+      "gicChannel20\030\024 \001(\010\022\026\n\016logicChannel21\030\025 \001" +
+      "(\010\022\026\n\016logicChannel22\030\026 \001(\010\022\026\n\016logicChann" +
+      "el23\030\027 \001(\010\022\026\n\016logicChannel24\030\030 \001(\010\022\026\n\016lo" +
+      "gicChannel25\030\031 \001(\010\022\026\n\016logicChannel26\030\032 \001" +
+      "(\010\022\026\n\016logicChannel27\030\033 \001(\010\022\026\n\016logicChann" +
+      "el28\030\034 \001(\010\022\026\n\016logicChannel29\030\035 \001(\010\022\026\n\016lo" +
+      "gicChannel30\030\036 \001(\010\022\026\n\016logicChannel31\030\037 \001" +
+      "(\010\022\026\n\016logicChannel32\030  \001(\010\032\311\001\n\016ExceptBeh" +
+      "avior\022^\n\022exceptBehaviorType\030\001 \001(\0132B.prot" +
+      "obuf.Location.ExtraLocation.ExceptBehavi" +
+      "or.ExceptBehaviorType\022\022\n\ntiredLevel\030\002 \001(" +
+      "\005\032C\n\022ExceptBehaviorType\022\r\n\005tired\030\001 \001(\010\022\r" +
+      "\n\005phone\030\002 \001(\010\022\017\n\007smoking\030\003 \001(\010\"W\n\014BulkLo" +
+      "cation\022\017\n\007dataNum\030\001 \001(\005\022\020\n\010dataType\030\002 \001(" +
+      "\005\022$\n\010location\030\003 \003(\0132\022.protobuf.Location\"" +
+      "\234\001\n\tMediaData\022\017\n\007mediaId\030\001 \001(\005\022\021\n\tmediaT" +
+      "ype\030\002 \001(\005\022\021\n\tmediaCode\030\003 \001(\005\022\021\n\teventCod" +
+      "e\030\004 \001(\005\022\021\n\tchannelId\030\005 \001(\005\022$\n\010location\030\006" +
+      " \001(\0132\022.protobuf.Location\022\014\n\004data\030\007 \001(\014\"\374" +
+      "\001\n\037TerminalUploadMediaAttributeMsg\022\021\n\tvo" +
+      "iceCode\030\001 \001(\005\022\027\n\017voiceChannelNum\030\002 \001(\005\022\031" +
+      "\n\021voiceSamplingRate\030\003 \001(\005\022\030\n\020voiceSampli" +
+      "ngBit\030\004 \001(\005\022\030\n\020voiceFrameLength\030\005 \001(\005\022\023\n" +
+      "\013voiceOutput\030\006 \001(\005\022\021\n\tvideoCode\030\007 \001(\005\022\032\n" +
+      "\022maxVoiceChannelNum\030\010 \001(\005\022\032\n\022maxVideoCha" +
+      "nnelNum\030\t \001(\005\"\340\002\n\037TerminalUploadMediaRes" +
+      "ourcesMsg\022\023\n\013replyFlowId\030\001 \001(\005\022\031\n\021mediaR" +
+      "esourcesNum\030\002 \001(\005\022P\n\016mediaResources\030\003 \003(" +
+      "\01328.protobuf.TerminalUploadMediaResource" +
+      "sMsg.MediaResources\032\272\001\n\016MediaResources\022\027" +
+      "\n\017logicChannelNum\030\001 \001(\005\022\021\n\tstartTime\030\002 \001" +
+      "(\t\022\017\n\007endTime\030\003 \001(\t\022\021\n\talarmFlag\030\004 \001(\003\022\032" +
+      "\n\022mediaResourcesType\030\005 \001(\005\022\025\n\rbitStreamT" +
+      "ype\030\006 \001(\005\022\023\n\013storageTYpe\030\007 \001(\005\022\020\n\010fileSi" +
+      "ze\030\010 \001(\005\"\325\002\n&TerminalSavedMediaRetrieval" +
+      "ResponseMsg\022\023\n\013replyFlowId\030\001 \001(\005\022\031\n\021medi" +
+      "aRetrievalNum\030\002 \001(\005\022k\n\030terminalRetrieval" +
+      "DataMsg\030\003 \003(\0132I.protobuf.TerminalSavedMe" +
+      "diaRetrievalResponseMsg.TerminalRetrieva" +
+      "lDataMsg\032\215\001\n\030TerminalRetrievalDataMsg\022\017\n" +
+      "\007mediaId\030\001 \001(\005\022\021\n\tmediaType\030\002 \001(\005\022\021\n\teve" +
+      "ntCode\030\003 \001(\005\022\024\n\014passagewayId\030\004 \001(\005\022$\n\010lo" +
+      "cation\030\005 \001(\0132\022.protobuf.LocationB)\n\031cn.e",
+      "du.sdu.jt808.protobufB\nServerDataH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -81378,90 +75198,66 @@ public final class ServerData {
     internal_static_protobuf_Location_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_protobuf_Location_descriptor,
-        new java.lang.String[] { "WarningFlag", "Status", "Latitude", "Longitude", "Elevation", "Speed", "Direction", "Time", "TerminalExtraLocationMsg", });
-    internal_static_protobuf_Location_WarningFlag_descriptor =
+        new java.lang.String[] { "WarningFlag", "Status", "Latitude", "Longitude", "Elevation", "Speed", "Direction", "Time", "ExtraLocations", "Flag", "OverSpeeding", "OverTired", "Dangerous", "GNSSFault", "GNSSAntennaFault", "GNSSAntennaShortCircuit", "TerminalMainPowerUnderVoltage", "TerminalMainPowerFailure", "TerminalLCDFault", "TTSFault", "CameraFault", "ICCardFault", "Speeding", "Tired", "DriveTimeout", "ParkingOvertime", "ThroughArea", "ThroughRoad", "RoadTimeout", "RoadFault", "VSSFault", "VehicleOilException", "VehicleTheft", "VehicleIllegalIgnition", "VehicleIllegalShift", "CollisionWarning", "RolloverWarning", "IllegalOpenDoor", "ACC", "IsLocation", "HasLatitude", "HasLongitude", "IsRunning", "Encrypt", "GoodsStatus", "VehicleOil", "VehicleCircut", "DoorLock", "FrontDoorOpen", "MiddleDoorOpen", "EndDoorOpen", "DriverDoorOpen", "OtherDoorOpen", "GPS", "Beidou", "GLONASS", "Galileo", });
+    internal_static_protobuf_Location_ExtraLocation_descriptor =
       internal_static_protobuf_Location_descriptor.getNestedTypes().get(0);
-    internal_static_protobuf_Location_WarningFlag_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_WarningFlag_descriptor,
-        new java.lang.String[] { "WarningFlag", "OverSpeeding", "OverTired", "Dangerous", "GNSSFault", "GNSSAntennaFault", "GNSSAntennaShortCircuit", "TerminalMainPowerUnderVoltage", "TerminalMainPowerFailure", "TerminalLCDFault", "TTSFault", "CameraFault", "ICCardFault", "Speeding", "Tired", "DriveTimeout", "ParkingOvertime", "ThroughArea", "ThroughRoad", "RoadTimeout", "RoadFault", "VSSFault", "VehicleOilException", "VehicleTheft", "VehicleIllegalIgnition", "VehicleIllegalShift", "CollisionWarning", "RolloverWarning", "IllegalOpenDoor", });
-    internal_static_protobuf_Location_Status_descriptor =
-      internal_static_protobuf_Location_descriptor.getNestedTypes().get(1);
-    internal_static_protobuf_Location_Status_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_Status_descriptor,
-        new java.lang.String[] { "ACC", "IsLocation", "Latitude", "Longitude", "IsRunning", "Encrypt", "GoodsStatus", "VehicleOil", "VehicleCircut", "DoorLock", "FrontDoorOpen", "MiddleDoorOpen", "EndDoorOpen", "DriverDoorOpen", "OtherDoorOpen", "GPS", "Beidou", "GLONASS", "Galileo", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor =
-      internal_static_protobuf_Location_descriptor.getNestedTypes().get(2);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_descriptor,
         new java.lang.String[] { "Mileage", "OilQuantity", "CarSpeed", "WarningId", "SpeedingExtraData", "LocationExtraData", "LocationInfoExtraData", "ExtraCarState", "IoState", "Simulation", "WirelessIntensity", "SatellitesNum", "VideoAlarm", "VideoLostFlag", "VideoShelterFlag", "StorageFaultFlag", "ExceptBehavior", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(0);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_descriptor =
+      internal_static_protobuf_Location_ExtraLocation_descriptor.getNestedTypes().get(0);
+    internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_SpeedingExtraData_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_SpeedingExtraData_descriptor,
         new java.lang.String[] { "LocationType", "LocationId", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(1);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_LocationExtraData_descriptor =
+      internal_static_protobuf_Location_ExtraLocation_descriptor.getNestedTypes().get(1);
+    internal_static_protobuf_Location_ExtraLocation_LocationExtraData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationExtraData_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_LocationExtraData_descriptor,
         new java.lang.String[] { "LocationType", "LocationId", "Direction", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(2);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_descriptor =
+      internal_static_protobuf_Location_ExtraLocation_descriptor.getNestedTypes().get(2);
+    internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_LocationInfoExtraData_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_LocationInfoExtraData_descriptor,
         new java.lang.String[] { "RoadId", "RunTime", "Result", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(3);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_ExtraCarState_descriptor =
+      internal_static_protobuf_Location_ExtraLocation_descriptor.getNestedTypes().get(3);
+    internal_static_protobuf_Location_ExtraLocation_ExtraCarState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_ExtraCarState_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_ExtraCarState_descriptor,
         new java.lang.String[] { "LowLightSignal", "FarLightSignal", "RightLightSignal", "LeftLightSignal", "BrakingSignal", "ReverseSignal", "FogLampSignal", "OutlineLamp", "HornSignal", "AirCondition", "NeutralSignal", "RetarderOperation", "ABSOperation", "HeaterOperation", "ClutchState", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(4);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_IOState_descriptor =
+      internal_static_protobuf_Location_ExtraLocation_descriptor.getNestedTypes().get(4);
+    internal_static_protobuf_Location_ExtraLocation_IOState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_IOState_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_IOState_descriptor,
         new java.lang.String[] { "DeepDormancy", "Dormancy", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(5);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_VideoAlarm_descriptor =
+      internal_static_protobuf_Location_ExtraLocation_descriptor.getNestedTypes().get(5);
+    internal_static_protobuf_Location_ExtraLocation_VideoAlarm_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoAlarm_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_VideoAlarm_descriptor,
         new java.lang.String[] { "VideoLost", "VideoShelter", "StorageFault", "OtherFault", "Overcrowding", "ExceptBehavior", "VideoStorageOver", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(6);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_descriptor =
+      internal_static_protobuf_Location_ExtraLocation_descriptor.getNestedTypes().get(6);
+    internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoLostFlag_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_VideoLostFlag_descriptor,
         new java.lang.String[] { "LogicChannel1", "LogicChannel2", "LogicChannel3", "LogicChannel4", "LogicChannel5", "LogicChannel6", "LogicChannel7", "LogicChannel8", "LogicChannel9", "LogicChannel10", "LogicChannel11", "LogicChannel12", "LogicChannel13", "LogicChannel14", "LogicChannel15", "LogicChannel16", "LogicChannel17", "LogicChannel18", "LogicChannel19", "LogicChannel20", "LogicChannel21", "LogicChannel22", "LogicChannel23", "LogicChannel24", "LogicChannel25", "LogicChannel26", "LogicChannel27", "LogicChannel28", "LogicChannel29", "LogicChannel30", "LogicChannel31", "LogicChannel32", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(7);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_descriptor =
+      internal_static_protobuf_Location_ExtraLocation_descriptor.getNestedTypes().get(7);
+    internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_VideoShelterFlag_descriptor,
-        new java.lang.String[] { "LogicChannel1", "LogicChannel2", "LogicChannel3", "LogicChannel4", "LogicChannel5", "LogicChannel6", "LogicChannel7", "LogicChannel8", "LogicChannel9", "LogicChannel10", "LogicChannel11", "LogicChannel12", "LogicChannel13", "LogicChannel14", "LogicChannel15", "LogicChannel16", "LogicChannel17", "LogicChannel18", "LogicChannel19", "LogicChannel20", "LogicChannel21", "LogicChannel22", "LogicChannel23", "LogicChannel24", "LogicChannel25", "LogicChannel26", "LogicChannel27", "LogicChannel28", "LogicChannel29", "LogicChannel30", "LogicChannel31", "LogicChannel32", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(8);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_StorageFaultFlag_descriptor,
-        new java.lang.String[] { "Storage1", "Storage2", "Storage3", "Storage4", "Storage5", "Storage6", "Storage7", "Storage8", "Storage9", "Storage10", "Storage11", "Storage12", "BackupStorage1", "BackupStorage2", "BackupStorage3", "BackupStorage4", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_descriptor.getNestedTypes().get(9);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_descriptor,
         new java.lang.String[] { "ExceptBehaviorType", "TiredLevel", });
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_descriptor =
-      internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_descriptor.getNestedTypes().get(0);
-    internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_fieldAccessorTable = new
+    internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_descriptor =
+      internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_descriptor.getNestedTypes().get(0);
+    internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_protobuf_Location_TerminalExtraLocationMsg_ExceptBehavior_ExceptBehaviorType_descriptor,
+        internal_static_protobuf_Location_ExtraLocation_ExceptBehavior_ExceptBehaviorType_descriptor,
         new java.lang.String[] { "Tired", "Phone", "Smoking", });
     internal_static_protobuf_BulkLocation_descriptor =
       getDescriptor().getMessageTypes().get(8);

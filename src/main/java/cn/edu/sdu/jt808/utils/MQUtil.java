@@ -11,11 +11,9 @@ public class MQUtil {
     public static String virtualHost;
     public static String username;
     public static String password;
+    private static ConnectionFactory factory = new ConnectionFactory();
 
-    public final static String JT808Server_OriginData_Queue = "JT808Server_OriginData_Queue";
-
-    public static ConnectionFactory getConnectionFactory() {
-        ConnectionFactory factory = new ConnectionFactory();
+    private static ConnectionFactory getConnectionFactory() {
         factory.setHost(host);
         factory.setVirtualHost(virtualHost);
         factory.setUsername(username);

@@ -18,10 +18,13 @@ import cn.edu.sdu.jt808.protocol.upMsg.*;
 import cn.edu.sdu.jt808.server.manager.SessionManager;
 import cn.edu.sdu.jt808.service.codec.JT808MessageEncoder;
 import cn.edu.sdu.jt808.utils.JT808ProtocolUtil;
+import cn.edu.sdu.jt808.utils.JedisPoolUtil;
 import cn.edu.sdu.jt808.utils.MQUtil;
+import com.google.gson.Gson;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import lombok.extern.slf4j.Slf4j;
+import redis.clients.jedis.Jedis;
 
 import java.nio.charset.Charset;
 import java.util.UUID;
@@ -43,7 +46,7 @@ public class JT808EndPoint {
     private final static String DRIVER_IDENTITY = "driverIdentity";
     private final static String PHOTO = "jt808_photo";
 
-    @Mapping(types = msg_id_terminal_common_resp, desc = "1.终端通用应答")
+    @Mapping(types = msg_id_terminal_common_resp, desc = "终端通用应答")
     public void commonResponse(CommonResponse packageData) {
         Header header = packageData.getHeader();
         String terminalPhone = header.getTerminalPhone();
@@ -62,7 +65,7 @@ public class JT808EndPoint {
         messageManager.put(terminalPhone + replyId, protocol);
     }
 
-    @Mapping(types = msg_id_terminal_heart_beat, desc = "3.终端心跳")
+    @Mapping(types = msg_id_terminal_heart_beat, desc = "终端心跳")
     public CommonResponse heartBeat(HeartBeat packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -70,7 +73,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_terminal_heart_beat, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_terminal_register, desc = "5.终端注册")
+    @Mapping(types = msg_id_terminal_register, desc = "终端注册")
     public RegisterResponse terminalRegister(Register packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_terminal_register_resp,
@@ -131,7 +134,7 @@ public class JT808EndPoint {
         return registerResponse;
     }
 
-    @Mapping(types = msg_id_terminal_log_out, desc = "7.终端注销")
+    @Mapping(types = msg_id_terminal_log_out, desc = "终端注销")
     public CommonResponse terminalLogOut(Unregister packageData, Session session) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -140,7 +143,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_terminal_log_out, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_terminal_authentication, desc = "8.终端鉴权")
+    @Mapping(types = msg_id_terminal_authentication, desc = "终端鉴权")
     public CommonResponse authentication(Authentication packageData, Session session) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -151,7 +154,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_terminal_authentication, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_terminal_param_query_resp, desc = "11.查询终端参数应答")
+    @Mapping(types = msg_id_terminal_param_query_resp, desc = "查询终端参数应答")
     public void paramQuery(ParamQueryResponse packageData) {
         String terminalPhone = packageData.getHeader().getTerminalPhone();
         Integer replyId = packageData.getReplyFlowId();
@@ -169,7 +172,7 @@ public class JT808EndPoint {
         messageManager.put(terminalPhone + replyId, protocol);
     }
 
-    @Mapping(types = msg_id_terminal_attribute_query_resp, desc = "15.查询终端属性应答")
+    @Mapping(types = msg_id_terminal_attribute_query_resp, desc = "查询终端属性应答")
     public void attributeQuery(AttributeQueryResponse packageData) {
         String terminalPhone = packageData.getHeader().getTerminalPhone();
         ServerData.Protocol.Builder protocol = ServerData.Protocol.newBuilder();
@@ -186,7 +189,7 @@ public class JT808EndPoint {
         messageManager.put(terminalPhone + msg_id_terminal_attribute_query_resp, protocol);
     }
 
-    @Mapping(types = msg_id_terminal_upgrade_result, desc = "17.终端升级结果通知")
+    @Mapping(types = msg_id_terminal_upgrade_result, desc = "终端升级结果通知")
     public CommonResponse upgradeResult(UpgradeResponse packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -213,7 +216,7 @@ public class JT808EndPoint {
         session.getChannel().writeAndFlush(allResultBuf.retain());
     }
 
-    @Mapping(types = msg_id_terminal_location, desc = "18.位置信息汇报")
+    @Mapping(types = msg_id_terminal_location, desc = "位置信息汇报")
     public CommonResponse location(Location packageData, Session session) {
 
         Header header = packageData.getHeader();
@@ -246,14 +249,18 @@ public class JT808EndPoint {
 
         });
 
-        ServerData.Location.Builder builder = ServerData.Location.newBuilder();
-        try {
+        try (Jedis jedis = JedisPoolUtil.getInstance().getJedisPool().getResource()) {
+            ServerData.Location.Builder builder = ServerData.Location.newBuilder();
             ServerData.Location data = (ServerData.Location)
                     ProtoBufCodec.javaBeanToProtoBean(packageData, builder);
             protocol.setLocation(data);
+
+            if (data != null) jedis.set(("location" + terminalPhone).getBytes(), data.toByteArray());
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         StringBuilder data = new StringBuilder("{ \"terminalPhone\" : " + terminalPhone + "," + packageData.toString());
         for (ExtraLocation extraLocation : packageData.getExtraLocations()) {
             data.append(extraLocation.toString());
@@ -264,7 +271,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_terminal_location, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = {msg_id_terminal_location_query_resp, msg_id_car_control_resp}, desc = "20.位置信息查询应答/34.车辆控制应答")
+    @Mapping(types = {msg_id_terminal_location_query_resp, msg_id_car_control_resp}, desc = "位置信息查询应答/34.车辆控制应答")
     public void locationReply(LocationReply packageData) {
         String terminalPhone = packageData.getHeader().getTerminalPhone();
         Integer replyId = packageData.getReplyFlowId();
@@ -282,7 +289,7 @@ public class JT808EndPoint {
         messageManager.put(terminalPhone + replyId, protocol);
     }
 
-    @Mapping(types = msg_id_event_report, desc = "25.事件报告")
+    @Mapping(types = msg_id_event_report, desc = "事件报告")
     public CommonResponse eventReport(EventReport packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -291,7 +298,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_event_report, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_ask_answer, desc = "27.提问应答")
+    @Mapping(types = msg_id_ask_answer, desc = "提问应答")
     public CommonResponse askAnswer(QuestionMsgResponse packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -299,7 +306,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_ask_answer, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_message_request_cancel, desc = "29.信息点播/取消")
+    @Mapping(types = msg_id_message_request_cancel, desc = "信息点播/取消")
     public CommonResponse messageRequestCancel(MessageSubOperate packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -307,7 +314,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_message_request_cancel, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_recorder_data_upload, desc = "44.行驶记录仪数据上传")
+    @Mapping(types = msg_id_recorder_data_upload, desc = "行驶记录仪数据上传")
     public CommonResponse recorderDataUpload(PackageData<Header> packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -317,7 +324,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_recorder_data_upload, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_digital_data_upload, desc = "46.电子运单上报")
+    @Mapping(types = msg_id_digital_data_upload, desc = "电子运单上报")
     public CommonResponse digitalDataUpload(DigitWaybill packageData) {
         Header header = packageData.getHeader();
         String terminalPhone = header.getTerminalPhone();
@@ -338,7 +345,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_digital_data_upload, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_Identity_information_upload, desc = "47.驾驶员身份信息采集上报")
+    @Mapping(types = msg_id_Identity_information_upload, desc = "驾驶员身份信息采集上报")
     public CommonResponse driverIdentityInformationUpload(DriverIdentity packageData) {
         Header header = packageData.getHeader();
         String terminalPhone = header.getTerminalPhone();
@@ -348,19 +355,22 @@ public class JT808EndPoint {
         protocol.setProtoType(msg_id_Identity_information_upload);
         protocol.setTerminalPhone(terminalPhone);
         ServerData.DriverIdentity.Builder builder = ServerData.DriverIdentity.newBuilder();
-        try {
+        try (Jedis jedis = JedisPoolUtil.getInstance().getJedisPool().getResource()) {
             ServerData.DriverIdentity data = (ServerData.DriverIdentity)
                     ProtoBufCodec.javaBeanToProtoBean(packageData, builder);
             protocol.setDriverIdentity(data);
+            if (data != null) jedis.set(("identity" + terminalPhone).getBytes(), data.toByteArray());
         } catch (Exception e) {
             e.printStackTrace();
         }
-        MQUtil.topic(JT808, DRIVER_IDENTITY, packageData.toString().getBytes(Charset.forName("GBK")));
+        // TODO test
+        Gson gson = new Gson();
+        MQUtil.topic(JT808, DRIVER_IDENTITY, gson.toJson(packageData).getBytes(Charset.forName("GBK")));
         messageManager.put(header.getTerminalPhone() + msg_id_Identity_information_upload, packageData);
         return new CommonResponse(resultHeader, msg_id_digital_data_upload, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_bulk_location_upload, desc = "49.定位数据批量上传")
+    @Mapping(types = msg_id_bulk_location_upload, desc = "定位数据批量上传")
     public CommonResponse bulkLocationUpload(PackageData<Header> packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -369,7 +379,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_digital_data_upload, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_CAN_data_upload, desc = "50.CAN总线数据上传")
+    @Mapping(types = msg_id_CAN_data_upload, desc = "CAN总线数据上传")
     public CommonResponse CANDataUpload(CANBusReport packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -377,7 +387,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_CAN_data_upload, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_media_event_upload, desc = "51.多媒体事件信息上传")
+    @Mapping(types = msg_id_media_event_upload, desc = "多媒体事件信息上传")
     public CommonResponse mediaEventUpload(MediaEvent packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -385,7 +395,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_media_event_upload, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_media_upload, desc = "52.多媒体数据上传")
+    @Mapping(types = msg_id_media_upload, desc = "多媒体数据上传")
     public MediaDataResponse mediaUpload(MediaData packageData) {
         Header header = packageData.getHeader();
         if (header.getSubPackageSeq() == 1) {
@@ -414,21 +424,6 @@ public class JT808EndPoint {
                     }
                     MQUtil.toQueue(PHOTO, protocol.build().toByteArray());
                     photoManager.remove(terminalPhone);
-
-                    /*File dir = new File("photos/" + header.getTerminalPhone());
-                    if (!dir.exists()) {
-                        if (!dir.mkdirs()) {
-                            log.error("【创建图片文件夹失败】");
-                            return;
-                        }
-                    }
-                    File file = new File("photos/" + header.getTerminalPhone() + "/" +
-                            packageData.getLocationMsg().getTime() + ".jpg");
-                    DataOutputStream fos = new DataOutputStream(new FileOutputStream(file));
-                    fos.write(res);
-                    fos.flush();
-                    fos.close();*/
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -440,7 +435,7 @@ public class JT808EndPoint {
         return null;
     }
 
-    @Mapping(types = msg_id_camera_photo_response, desc = "55.摄像头立即拍摄命令应答")
+    @Mapping(types = msg_id_camera_photo_response, desc = "摄像头立即拍摄命令应答")
     public void cameraPhotoResponse(CameraPhotoResponse packageData) {
         Header header = packageData.getHeader();
         String mobileNumber = header.getTerminalPhone();
@@ -459,7 +454,7 @@ public class JT808EndPoint {
         messageManager.put(mobileNumber + replyId, protocol);
     }
 
-    @Mapping(types = msg_id_saved_media_response, desc = "57.存储多媒体数据检索应答")
+    @Mapping(types = msg_id_saved_media_response, desc = "存储多媒体数据检索应答")
     public void savedMediaResponse(MediaDataQueryResponse packageData) {
         Header header = packageData.getHeader();
         String mobileNumber = header.getTerminalPhone();
@@ -467,7 +462,7 @@ public class JT808EndPoint {
         messageManager.put(mobileNumber + replyId, packageData);
     }
 
-    @Mapping(types = msg_id_data_upload, desc = "62.数据上行透传")
+    @Mapping(types = msg_id_data_upload, desc = "数据上行透传")
     public CommonResponse passThrough(PassThroughUpload packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,
@@ -478,7 +473,7 @@ public class JT808EndPoint {
         return new CommonResponse(resultHeader, msg_id_data_upload, header.getFlowId(), CommonResponse.success);
     }
 
-    @Mapping(types = msg_id_data_zip_upload, desc = "63.数据压缩上报")
+    @Mapping(types = msg_id_data_zip_upload, desc = "数据压缩上报")
     public CommonResponse gzipPack(GZIPPack packageData) {
         Header header = packageData.getHeader();
         Header resultHeader = new Header(cmd_common_resp,

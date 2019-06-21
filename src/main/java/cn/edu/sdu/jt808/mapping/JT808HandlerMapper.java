@@ -7,21 +7,18 @@ import cn.edu.sdu.jt808.jtframework.commons.ClassUtils;
 import cn.edu.sdu.jt808.jtframework.commons.lru.LRUMap;
 import cn.edu.sdu.jt808.jtframework.mapping.Handler;
 import cn.edu.sdu.jt808.jtframework.mapping.HandlerMapper;
-import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-@Slf4j
 public class JT808HandlerMapper implements HandlerMapper {
 
     private Map<Integer, Handler> handlerMap = new LRUMap<>(64);
 
     public JT808HandlerMapper(String... packageNames) {
         for (String packageName : packageNames) {
-            log.info("{}", packageName);
             addPackage(packageName);
         }
     }
@@ -33,7 +30,6 @@ public class JT808HandlerMapper implements HandlerMapper {
             Method[] methods = handlerClass.getDeclaredMethods();
             Arrays.asList(methods).forEach(method -> {
                 if (method.isAnnotationPresent(Mapping.class)) {
-                    log.info("{}", method.getName());
                     Mapping annotation = method.getAnnotation(Mapping.class);
                     String desc = annotation.desc();
                     int[] types = annotation.types();

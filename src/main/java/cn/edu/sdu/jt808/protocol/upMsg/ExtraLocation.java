@@ -58,6 +58,7 @@ public class ExtraLocation {
         // 区域或路段 ID
         private String locationId;
 
+        @Property(index = 0, type = DataType.BYTE)
         public Integer getLocationType() {
             return locationType;
         }
@@ -66,6 +67,7 @@ public class ExtraLocation {
             this.locationType = locationType;
         }
 
+        // @Property(index = 1, type = DataType.DWORD) TODO
         public String getLocationId() {
             return locationId;
         }
@@ -76,7 +78,10 @@ public class ExtraLocation {
 
         @Override
         public String toString() {
-            return "{ \"locationType=\" : " + locationType + ", \"locationId=\" : " + locationId + " }";
+            return "{" +
+                    " \"locationType\" : " + locationType +
+                    /*", \"locationId=\" : " + locationId +*/
+                    " }";
         }
     }
 
@@ -89,6 +94,7 @@ public class ExtraLocation {
         // 方向
         private Integer direction;
 
+        @Property(index = 0, type = DataType.BYTE)
         public Integer getLocationType() {
             return locationType;
         }
@@ -97,6 +103,7 @@ public class ExtraLocation {
             this.locationType = locationType;
         }
 
+        @Property(index = 1, type = DataType.DWORD)
         public String getLocationId() {
             return locationId;
         }
@@ -105,6 +112,7 @@ public class ExtraLocation {
             this.locationId = locationId;
         }
 
+        @Property(index = 5, type = DataType.BYTE)
         public Integer getDirection() {
             return direction;
         }
@@ -115,7 +123,11 @@ public class ExtraLocation {
 
         @Override
         public String toString() {
-            return "{ \"locationType=\" : " + locationType + ", \"locationId=\" : " + locationId + ", \"direction=\" : " + direction+ " }";
+            return "{" +
+                    " \"locationType\" : " + locationType +
+                    ", \"locationId=\" : " + locationId +
+                    ", \"direction=\" : " + direction +
+                    " }";
         }
     }
 
@@ -128,6 +140,7 @@ public class ExtraLocation {
         // 结果
         private Integer result;
 
+        @Property(index =0, type = DataType.DWORD)
         public String getRoadId() {
             return roadId;
         }
@@ -136,6 +149,7 @@ public class ExtraLocation {
             this.roadId = roadId;
         }
 
+        @Property(index = 4, type = DataType.WORD)
         public Integer getRunTime() {
             return runTime;
         }
@@ -144,6 +158,7 @@ public class ExtraLocation {
             this.runTime = runTime;
         }
 
+        @Property(index = 6, type = DataType.BYTE)
         public Integer getResult() {
             return result;
         }
@@ -154,8 +169,11 @@ public class ExtraLocation {
 
         @Override
         public String toString() {
-            return "{ \"roadId=\" : " + roadId + ", \"runTime=\" : " + runTime + ", \"result=\" : "
-                    + result + " }";
+            return "{" +
+                    " \"roadId\" : " + roadId +
+                    ", \"runTime\" : " + runTime +
+                    ", \"result\" : " + result +
+                    " }";
         }
     }
 
@@ -376,7 +394,7 @@ public class ExtraLocation {
             return "{" +
                     " \"Etype\" : " + type +
                     ", \"tiredDegree\" : " + tiredDegree +
-                    " } ";
+                    " }";
         }
     }
 
@@ -649,8 +667,8 @@ public class ExtraLocation {
                     ", \"longitude\" : " + longitude +
                     ", \"time\" : " + time +
                     ", \"status\" : " + status +
-                    ", \"alarmFlag\" : " + alarmFlag.toString() +
-                    '}';
+                    ", \"alarmFlag\" : " + new String(alarmFlag) +
+                    " }";
         }
     }
 
@@ -814,8 +832,8 @@ public class ExtraLocation {
                     ", \"longitude\" : " + longitude +
                     ", \"time\" : " + time +
                     ", \"status\" : " + status +
-                    /* ", \"alarmFlag\" : " + alarmFlag.toString() + */
-                    '}';
+                    ", \"alarmFlag\" : " + new String(alarmFlag) +
+                    " }";
         }
     }
 
@@ -908,7 +926,7 @@ public class ExtraLocation {
                         ", \"tirePressure\" : " + tirePressure +
                         ", \"tireTemperature\" : " + tireTemperature +
                         ", \"battery\" : " + battery +
-                        '}';
+                        " }";
             }
         }
 
@@ -1022,10 +1040,10 @@ public class ExtraLocation {
                     ", \"longitude\" : " + longitude +
                     ", \"time\" : " + time +
                     ", \"status\" : " + status +
-                    ", \"alarmFlag\" : " + alarmFlag.toString() +
+                    ", \"alarmFlag\" : " + new String(alarmFlag) +
                     ", \"alarmEventNum\" : " + alarmEventNum +
                     ", \"alarmEvents\" : " + alarmEvents.toString() +
-                    '}';
+                    " }";
         }
     }
 
@@ -1154,7 +1172,7 @@ public class ExtraLocation {
                     ", \"time\" : " + time +
                     ", \"status\" : " + status +
                     ", \"alarmFlag\" : " + new String(alarmFlag) +
-                    "}";
+                    " }";
         }
     }
 
@@ -1232,35 +1250,35 @@ public class ExtraLocation {
         this.extraCarState = extraCarState;
 
         // 1:近光灯信号
-        this.lowLightSignal = ((extraCarState >>> 31) & 0x01) == 1;
+        this.lowLightSignal = ((extraCarState) & 0x01) == 1;
         // 1:远光灯信号
-        this.farLightSignal = ((extraCarState >>> 30) & 0x01) == 1;
+        this.farLightSignal = ((extraCarState >>> 1) & 0x01) == 1;
         //　1:右转向灯信号
-        this.rightLightSignal = ((extraCarState >>> 29) & 0x01) == 1;
+        this.rightLightSignal = ((extraCarState >>> 2) & 0x01) == 1;
         //　1:左转向灯信号
-        this.leftLightSignal = ((extraCarState >>> 28) & 0x01) == 1;
+        this.leftLightSignal = ((extraCarState >>> 3) & 0x01) == 1;
         //　1:制动信号
-        this.brakingSignal = ((extraCarState >>> 27) & 0x01) == 1;
+        this.brakingSignal = ((extraCarState >>> 4) & 0x01) == 1;
         //　1:倒档信号
-        this.reverseSignal = ((extraCarState >>> 26) & 0x01) == 1;
+        this.reverseSignal = ((extraCarState >>> 5) & 0x01) == 1;
         //　1:雾灯信号
-        this.fogLampSignal = ((extraCarState >>> 25) & 0x01) == 1;
+        this.fogLampSignal = ((extraCarState >>> 6) & 0x01) == 1;
         //　1:示廓灯
-        this.outlineLamp = ((extraCarState >>> 24) & 0x01) == 1;
+        this.outlineLamp = ((extraCarState >>> 7) & 0x01) == 1;
         //　1:喇叭信号
-        this.hornSignal = ((extraCarState >>> 23) & 0x01) == 1;
+        this.hornSignal = ((extraCarState >>> 8) & 0x01) == 1;
         //　1:空调状态
-        this.airCondition = ((extraCarState >>> 22) & 0x01) == 1;
+        this.airCondition = ((extraCarState >>> 9) & 0x01) == 1;
         //　1:空挡信号
-        this.neutralSignal = ((extraCarState >>> 21) & 0x01) == 1;
+        this.neutralSignal = ((extraCarState >>> 10) & 0x01) == 1;
         //　1:缓速器工作
-        this.retarderOperation = ((extraCarState >>> 20) & 0x01) == 1;
+        this.retarderOperation = ((extraCarState >>> 11) & 0x01) == 1;
         //　1:ABS 工作
-        this.ABSOperation = ((extraCarState >>> 19) & 0x01) == 1;
+        this.ABSOperation = ((extraCarState >>> 12) & 0x01) == 1;
         //　1:加热器工作
-        this.heaterOperation = ((extraCarState >>> 18) & 0x01) == 1;
+        this.heaterOperation = ((extraCarState >>> 13) & 0x01) == 1;
         //　1:离合器状态
-        this.clutchState = ((extraCarState >>> 17) & 0x01) == 1;
+        this.clutchState = ((extraCarState >>> 14) & 0x01) == 1;
     }
 
     @Property(index = 2, type = DataType.WORD, enumType = 0x2A)

@@ -80,7 +80,7 @@ public class DriverIdentity extends PackageData<Header> {
         this.driverNameLength = driverNameLength;
     }
 
-    @Property(index = 9, type = DataType.STRING, lengthName = "nameLen", desc = "驾驶员姓名")
+    @Property(index = 9, type = DataType.STRING, lengthName = "driverNameLength", desc = "驾驶员姓名")
     public String getDriverName() {
         return driverName;
     }
@@ -89,7 +89,7 @@ public class DriverIdentity extends PackageData<Header> {
         this.driverName = driverName;
     }
 
-    @Property(index = 9, indexOfName = "nameLen", type = DataType.STRING, length = 20, desc = "从业资格证编码")
+    @Property(index = 9, indexOfName = "driverNameLength", type = DataType.STRING, length = 20, desc = "从业资格证编码")
     public String getQualificationCode() {
         return qualificationCode;
     }
@@ -98,7 +98,7 @@ public class DriverIdentity extends PackageData<Header> {
         this.qualificationCode = qualificationCode;
     }
 
-    @Property(index = 29, indexOfName = "nameLen", type = DataType.BYTE, desc = "发证机构名称长度")
+    @Property(index = 29, indexOfName = "driverNameLength", type = DataType.BYTE, desc = "发证机构名称长度")
     public Integer getAuthorityNameLength() {
         return authorityNameLength;
     }
@@ -107,7 +107,7 @@ public class DriverIdentity extends PackageData<Header> {
         this.authorityNameLength = authorityNameLength;
     }
 
-    @Property(index = 30, indexOfName = "nameLen", type = DataType.STRING, lengthName = "institutionLen", desc = "发证机构名称")
+    @Property(index = 30, indexOfName = "driverNameLength", type = DataType.STRING, lengthName = "authorityNameLength", desc = "发证机构名称")
     public String getAuthorityName() {
         return authorityName;
     }
@@ -116,7 +116,7 @@ public class DriverIdentity extends PackageData<Header> {
         this.authorityName = authorityName;
     }
 
-    @Property(index = 30, indexOfName = {"nameLen", "institutionLen"}, type = DataType.BCD8421, length = 4, desc = "证件有效期")
+    @Property(index = 30, indexOfName = {"driverNameLength", "authorityNameLength"}, type = DataType.BCD8421, length = 4, desc = "证件有效期")
     public String getCardValidityTerm() {
         return cardValidityTerm;
     }
