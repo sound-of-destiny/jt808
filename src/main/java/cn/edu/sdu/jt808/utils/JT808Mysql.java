@@ -11,9 +11,8 @@ public class JT808Mysql {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 conn = DriverManager.getConnection(
-                        "jdbc:mysql://202.194.14.145:3306/jt808server?useSSL=true",
-                        "root",
-                        "qlscadmin"
+                        "jdbc:mysql://202.194.14.145:3306/jt808server?useSSL=true"
+
                 );
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();

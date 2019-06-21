@@ -20,7 +20,6 @@ import cn.edu.sdu.jt808.service.codec.JT808MessageEncoder;
 import cn.edu.sdu.jt808.utils.JT808ProtocolUtil;
 import cn.edu.sdu.jt808.utils.JedisPoolUtil;
 import cn.edu.sdu.jt808.utils.MQUtil;
-import com.google.gson.Gson;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import lombok.extern.slf4j.Slf4j;
@@ -364,8 +363,8 @@ public class JT808EndPoint {
             e.printStackTrace();
         }
         // TODO test
-        Gson gson = new Gson();
-        MQUtil.topic(JT808, DRIVER_IDENTITY, gson.toJson(packageData).getBytes(Charset.forName("GBK")));
+        // Gson gson = new Gson();
+        MQUtil.topic(JT808, DRIVER_IDENTITY, packageData.toString().getBytes(Charset.forName("GBK")));
         messageManager.put(header.getTerminalPhone() + msg_id_Identity_information_upload, packageData);
         return new CommonResponse(resultHeader, msg_id_digital_data_upload, header.getFlowId(), CommonResponse.success);
     }
