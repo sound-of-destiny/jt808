@@ -1,13 +1,15 @@
 package cn.edu.sdu.jt808.service.handler.terminal;
 
+import cn.edu.sdu.jt808.jtframework.codec.MessageDecoder;
+import cn.edu.sdu.jt808.jtframework.codec.MessageEncoder;
+import cn.edu.sdu.jt808.jtframework.mapping.Handler;
+import cn.edu.sdu.jt808.jtframework.message.PackageData;
 import cn.edu.sdu.jt808.mapping.JT808HandlerMapper;
 import cn.edu.sdu.jt808.protocol.Header;
 import cn.edu.sdu.jt808.protocol.Session;
 import cn.edu.sdu.jt808.server.manager.SessionManager;
 import cn.edu.sdu.jt808.service.codec.JT808MessageDecoder;
 import cn.edu.sdu.jt808.service.codec.JT808MessageEncoder;
-import cn.edu.sdu.jt808.jtframework.mapping.Handler;
-import cn.edu.sdu.jt808.jtframework.message.PackageData;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandler;
@@ -18,7 +20,6 @@ import io.netty.handler.timeout.IdleStateEvent;
 import io.netty.util.ReferenceCountUtil;
 import lombok.extern.slf4j.Slf4j;
 
-import java.nio.charset.Charset;
 import java.time.LocalDateTime;
 
 
@@ -26,8 +27,8 @@ import java.time.LocalDateTime;
 @ChannelHandler.Sharable
 public class TerminalHandler extends ChannelInboundHandlerAdapter {
 
-    private JT808MessageDecoder decoder = new JT808MessageDecoder(Charset.forName("GBK"));
-    private JT808MessageEncoder encoder = new JT808MessageEncoder(Charset.forName("GBK"));
+    private MessageDecoder decoder = new JT808MessageDecoder();
+    private MessageEncoder encoder = new JT808MessageEncoder();
     private SessionManager sessionManager = SessionManager.getInstance();
     private static JT808HandlerMapper handlerMapper = new JT808HandlerMapper("cn.edu.sdu.jt808.mapping");
     @Override
@@ -49,7 +50,7 @@ public class TerminalHandler extends ChannelInboundHandlerAdapter {
             Class<?>[] types = handler.getTargetParameterTypes();
             Class<? extends PackageData> targetClass = (Class<? extends PackageData>) types[0];
 
-            PackageData packageData = decoder.decode(byteBuf, targetClass);
+            PackageData packageData = decoder.decode(byteBuf, Header.class, targetClass);
 
 
             PackageData<Header> result;

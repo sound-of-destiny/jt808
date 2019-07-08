@@ -1,8 +1,8 @@
-package cn.edu.sdu.jt808.jtframework.commons;
+package cn.edu.sdu.jt808.jtframework.commons.codec;
 
 import io.netty.buffer.ByteBuf;
 
-public class ByteBufUtils {
+public class XOR {
 
     public static byte xor(ByteBuf byteBuf) {
         byte cs = 0;

@@ -1,5 +1,6 @@
 package cn.edu.sdu.jt808.service.handler.client;
 
+import cn.edu.sdu.jt808.jtframework.codec.MessageEncoder;
 import cn.edu.sdu.jt808.jtframework.codec.ProtoBufCodec;
 import cn.edu.sdu.jt808.jtframework.manager.MessageManager;
 import cn.edu.sdu.jt808.jtframework.message.PackageData;
@@ -20,7 +21,6 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import lombok.extern.slf4j.Slf4j;
 
-import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
 
 import static cn.edu.sdu.jt808.commons.MessageId.*;
@@ -29,7 +29,7 @@ import static cn.edu.sdu.jt808.commons.MessageId.*;
 @ChannelHandler.Sharable
 public class ClientHandler extends SimpleChannelInboundHandler<ClientData.Protocol> {
 
-    private JT808MessageEncoder encoder = new JT808MessageEncoder(Charset.forName("GBK"));
+    private MessageEncoder encoder = new JT808MessageEncoder();
     private SessionManager sessionManager = SessionManager.getInstance();
     private static JT808DownMsgMapper downMessageMapper = new JT808DownMsgMapper("cn.edu.sdu.jt808.protocol.downMsg");
 

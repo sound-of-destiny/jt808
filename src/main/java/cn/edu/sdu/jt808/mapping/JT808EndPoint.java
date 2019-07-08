@@ -2,6 +2,7 @@ package cn.edu.sdu.jt808.mapping;
 
 import cn.edu.sdu.jt808.jtframework.annotation.Endpoint;
 import cn.edu.sdu.jt808.jtframework.annotation.Mapping;
+import cn.edu.sdu.jt808.jtframework.codec.MessageEncoder;
 import cn.edu.sdu.jt808.jtframework.codec.ProtoBufCodec;
 import cn.edu.sdu.jt808.jtframework.manager.MessageManager;
 import cn.edu.sdu.jt808.jtframework.manager.PhotoManager;
@@ -34,7 +35,7 @@ import static cn.edu.sdu.jt808.commons.MessageId.*;
 @Endpoint
 public class JT808EndPoint {
 
-    private JT808MessageEncoder encoder = new JT808MessageEncoder(Charset.forName("GBK"));
+    private MessageEncoder encoder = new JT808MessageEncoder();
     private MessageManager messageManager = MessageManager.INSTANCE;
     private PhotoManager photoManager = PhotoManager.INSTANCE;
     private SessionManager sessionManager = SessionManager.getInstance();

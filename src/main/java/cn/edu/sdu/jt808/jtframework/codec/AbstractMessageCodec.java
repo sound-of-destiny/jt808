@@ -6,19 +6,13 @@ import cn.edu.sdu.jt808.jtframework.commons.lru.Cache;
 
 import java.beans.BeanInfo;
 import java.beans.PropertyDescriptor;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
 public abstract class AbstractMessageCodec {
 
-    protected Charset charset;
-
-    public AbstractMessageCodec(Charset charset) {
-        this.charset = charset;
-    }
-
+    public AbstractMessageCodec() {}
     private final Cache<Class<?>, PropertyDescriptor[]> propertyDescriptorCache = new Cache<>(32);
 
     public PropertyDescriptor[] getPropertyDescriptor(Class<?> key) {
