@@ -1,8 +1,7 @@
-package cn.edu.sdu.jt808.server;
+package cn.edu.sdu.jt808.jtframework.server;
 
-import cn.edu.sdu.jt808.server.initializer.BrowserInitializer;
-import cn.edu.sdu.jt808.server.initializer.ClientInitializer;
-import cn.edu.sdu.jt808.server.initializer.TerminalInitializer;
+import cn.edu.sdu.jt808.jtframework.server.initializer.ProtoBufClientInitializer;
+import cn.edu.sdu.jt808.jtframework.server.initializer.TerminalInitializer;
 import cn.edu.sdu.jt808.utils.JT808Config;
 import cn.edu.sdu.jt808.utils.MQUtil;
 import cn.edu.sdu.jt808.utils.MongoUtil;
@@ -19,8 +18,7 @@ import org.yaml.snakeyaml.Yaml;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 @Slf4j
 public class JT808Server {
@@ -29,22 +27,17 @@ public class JT808Server {
 
     private int terminalPort;
     private int clientPort;
-    private int testPort;
 
     private final EventLoopGroup bossGroup;
     private final EventLoopGroup terminalWorkerGroup;
     private final EventLoopGroup clientWorkerGroup;
-    private final EventLoopGroup webSocketWorkerGroup;
 
     public JT808Server(JT808Config config) {
         this.conf = config;
-        bossGroup = new EpollEventLoopGroup(3);
+        bossGroup = new EpollEventLoopGroup(2);
         terminalWorkerGroup = new EpollEventLoopGroup();
         clientWorkerGroup = new EpollEventLoopGroup();
-        webSocketWorkerGroup = new EpollEventLoopGroup();
     }
-
-
 
     static JT808Config loadProperties(Path config) {
         Yaml yaml = new Yaml();
@@ -76,30 +69,11 @@ public class JT808Server {
 
     }
 
-    private void bindBrowser() {
-        try {
-            ServerBootstrap b = new ServerBootstrap();
-            b.group(bossGroup, webSocketWorkerGroup).channel(EpollServerSocketChannel.class)
-                    .childHandler(new BrowserInitializer())
-                    .childOption(ChannelOption.SO_KEEPALIVE, true);
-            ChannelFuture channelFuture = b.bind(testPort).sync();
-            channelFuture.addListener(future -> {
-                if (future.isSuccess()) {
-                    log.info("---> JT808WebSocket服务器启动成功, 端口号: " + testPort);
-                } else {
-                    log.info("---> JT808WebSocket服务器启动失败");
-                }
-            });
-        } catch (Exception e) {
-            log.error("JT808WebSocket服务器启动出错", e);
-        }
-    }
-
     private void bindClient() {
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, clientWorkerGroup).channel(EpollServerSocketChannel.class)
-                    .childHandler(new ClientInitializer())
+                    .childHandler(new ProtoBufClientInitializer())
                     .childOption(ChannelOption.SO_KEEPALIVE, true);
             ChannelFuture channelFuture = b.bind(clientPort).sync();
             channelFuture.addListener(future -> {
@@ -114,18 +88,20 @@ public class JT808Server {
         }
     }
 
-    private final ExecutorService executorService = Executors.newFixedThreadPool(3);
+    private final ExecutorService executorService = new ThreadPoolExecutor(2, 2,
+            0L, TimeUnit.MILLISECONDS,
+            new ArrayBlockingQueue<Runnable>(1),
+            Executors.defaultThreadFactory(),
+            new ThreadPoolExecutor.DiscardPolicy());
 
     synchronized void startServer() {
         executorService.submit(this::bindTerminal);
-        executorService.submit(this::bindBrowser);
         executorService.submit(this::bindClient);
     }
 
     JT808Server setup() {
         terminalPort = conf.getTerminalPort();
         clientPort = conf.getClientPort();
-        testPort = conf.getTestPort();
 
         MQUtil.host = conf.getMqHost();
         MQUtil.virtualHost = conf.getMqVirtualHost();
@@ -143,7 +119,6 @@ public class JT808Server {
     private synchronized void stopServer() {
         terminalWorkerGroup.shutdownGracefully();
         clientWorkerGroup.shutdownGracefully();
-        webSocketWorkerGroup.shutdownGracefully();
         bossGroup.shutdownGracefully();
         executorService.shutdown();
     }

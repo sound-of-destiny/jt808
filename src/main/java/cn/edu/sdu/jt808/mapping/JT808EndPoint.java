@@ -16,7 +16,7 @@ import cn.edu.sdu.jt808.protocol.Session;
 import cn.edu.sdu.jt808.protocol.downMsg.AlarmFileUpload;
 import cn.edu.sdu.jt808.protocol.downMsg.RegisterResponse;
 import cn.edu.sdu.jt808.protocol.upMsg.*;
-import cn.edu.sdu.jt808.server.manager.SessionManager;
+import cn.edu.sdu.jt808.jtframework.server.manager.SessionManager;
 import cn.edu.sdu.jt808.service.codec.JT808MessageEncoder;
 import cn.edu.sdu.jt808.utils.JT808ProtocolUtil;
 import cn.edu.sdu.jt808.utils.JedisPoolUtil;

@@ -7,7 +7,7 @@ import cn.edu.sdu.jt808.jtframework.message.AbstractHeader;
 import cn.edu.sdu.jt808.jtframework.message.PackageData;
 import io.netty.buffer.ByteBuf;
 
-public abstract class MessageEncoder<T extends AbstractHeader> extends AbstractMessageCodec {
+public abstract class MessageEncoder<T extends AbstractHeader> {
 
     public MessageEncoder() {}
 

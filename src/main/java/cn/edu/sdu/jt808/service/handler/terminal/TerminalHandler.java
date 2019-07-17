@@ -7,7 +7,7 @@ import cn.edu.sdu.jt808.jtframework.message.PackageData;
 import cn.edu.sdu.jt808.mapping.JT808HandlerMapper;
 import cn.edu.sdu.jt808.protocol.Header;
 import cn.edu.sdu.jt808.protocol.Session;
-import cn.edu.sdu.jt808.server.manager.SessionManager;
+import cn.edu.sdu.jt808.jtframework.server.manager.SessionManager;
 import cn.edu.sdu.jt808.service.codec.JT808MessageDecoder;
 import cn.edu.sdu.jt808.service.codec.JT808MessageEncoder;
 import io.netty.buffer.ByteBuf;

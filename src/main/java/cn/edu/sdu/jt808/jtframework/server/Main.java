@@ -1,5 +1,7 @@
-package cn.edu.sdu.jt808.server;
+package cn.edu.sdu.jt808.jtframework.server;
 
+import cn.edu.sdu.jt808.jtframework.monitor.CurrentConditions;
+import cn.edu.sdu.jt808.service.handler.client.JT808ClientHandler;
 import cn.edu.sdu.jt808.utils.JT808Config;
 import com.beust.jcommander.JCommander;
 
@@ -9,6 +11,7 @@ import java.nio.file.Paths;
 
 public class Main {
 
+    // todo 写进 shell 里
     private static void init(String config) {
         if (config == null) {
             config = "conf.yml";
@@ -56,5 +59,11 @@ public class Main {
             return;
         }
         init(args.config);
+
+        // test todo 加上 http 接口创建 monitor 模式
+        new Thread(() -> {
+            CurrentConditions currentConditions = new CurrentConditions();
+            JT808ClientHandler.monitorData.registerObserver(currentConditions);
+        }).start();
     }
 }

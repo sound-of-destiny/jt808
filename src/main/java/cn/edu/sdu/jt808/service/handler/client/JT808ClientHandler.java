@@ -5,13 +5,14 @@ import cn.edu.sdu.jt808.jtframework.codec.ProtoBufCodec;
 import cn.edu.sdu.jt808.jtframework.manager.MessageManager;
 import cn.edu.sdu.jt808.jtframework.message.PackageData;
 import cn.edu.sdu.jt808.jtframework.message.SyncFuture;
+import cn.edu.sdu.jt808.jtframework.monitor.MonitorData;
+import cn.edu.sdu.jt808.jtframework.server.manager.SessionManager;
 import cn.edu.sdu.jt808.mapping.JT808DownMsgMapper;
 import cn.edu.sdu.jt808.protobuf.ClientData;
 import cn.edu.sdu.jt808.protobuf.ServerData;
 import cn.edu.sdu.jt808.protocol.Header;
 import cn.edu.sdu.jt808.protocol.Session;
 import cn.edu.sdu.jt808.protocol.downMsg.NoBody;
-import cn.edu.sdu.jt808.server.manager.SessionManager;
 import cn.edu.sdu.jt808.service.codec.JT808MessageEncoder;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -27,14 +28,19 @@ import static cn.edu.sdu.jt808.commons.MessageId.*;
 
 @Slf4j
 @ChannelHandler.Sharable
-public class ClientHandler extends SimpleChannelInboundHandler<ClientData.Protocol> {
-
+public class JT808ClientHandler extends SimpleChannelInboundHandler<ClientData.Protocol> {
+    public static MonitorData monitorData = new MonitorData();
     private MessageEncoder encoder = new JT808MessageEncoder();
     private SessionManager sessionManager = SessionManager.getInstance();
     private static JT808DownMsgMapper downMessageMapper = new JT808DownMsgMapper("cn.edu.sdu.jt808.protocol.downMsg");
 
     @Override
     public void channelRead0(ChannelHandlerContext ctx, ClientData.Protocol protocol) throws Exception {
+
+        // todo 加上代理模式
+        monitorData.getCount().incrementAndGet();
+        monitorData.dataChange();
+
         int type = protocol.getProtoType();
         String terminalPhone = protocol.getTerminalPhone();
         int flowId = protocol.getFlowId();
@@ -85,6 +91,8 @@ public class ClientHandler extends SimpleChannelInboundHandler<ClientData.Protoc
             MessageManager.INSTANCE.remove(key);
         }
 
+        monitorData.getCountSuccess().incrementAndGet();
+        monitorData.dataChange();
     }
 
     @Override

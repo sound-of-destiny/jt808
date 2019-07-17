@@ -1,4 +1,4 @@
-package cn.edu.sdu.jt808.server.manager;
+package cn.edu.sdu.jt808.jtframework.server.manager;
 
 import cn.edu.sdu.jt808.protocol.Session;
 

@@ -1,4 +1,4 @@
-package cn.edu.sdu.jt808.server;
+package cn.edu.sdu.jt808.jtframework.server;
 
 import com.beust.jcommander.Parameter;
 

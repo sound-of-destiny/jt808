@@ -1,7 +1,7 @@
 package cn.edu.sdu.jt808.utils;
 
 import cn.edu.sdu.jt808.protocol.Session;
-import cn.edu.sdu.jt808.server.manager.SessionManager;
+import cn.edu.sdu.jt808.jtframework.server.manager.SessionManager;
 
 public class JT808ProtocolUtil {
     public static void updateSession(Session session, String terminalPhone, String AuthCode) {

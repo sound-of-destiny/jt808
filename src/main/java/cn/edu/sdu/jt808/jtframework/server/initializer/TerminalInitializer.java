@@ -1,4 +1,4 @@
-package cn.edu.sdu.jt808.server.initializer;
+package cn.edu.sdu.jt808.jtframework.server.initializer;
 
 import cn.edu.sdu.jt808.service.handler.terminal.TerminalHandler;
 import io.netty.buffer.Unpooled;
@@ -21,7 +21,7 @@ public class TerminalInitializer extends ChannelInitializer {
                 Unpooled.wrappedBuffer(new byte[]{ 0x7e }),
                 Unpooled.wrappedBuffer(new byte[]{ 0x7e }, new byte[]{ 0x7e })));
 
-        pipeline.addLast(new TerminalHandler());
+        pipeline.addLast("terminalHandler", new TerminalHandler());
 
     }
 }
