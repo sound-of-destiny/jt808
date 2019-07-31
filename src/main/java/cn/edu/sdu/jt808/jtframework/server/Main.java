@@ -27,7 +27,7 @@ public class Main {
             return;
         }
 
-        File file = new File("jt808OriginData");
+        File file = new File("/home/jt808/data/jt808OriginData");
         if (!file.exists()) {
             if (file.mkdir()) {
                 System.out.println("创建原始数据文件夹成功");
@@ -36,7 +36,7 @@ public class Main {
             }
         }
 
-        File pid = new File("jt808.pid");
+        File pid = new File("/home/jt808/jt808.pid");
         try (FileWriter fos = new FileWriter(pid)) {
             fos.write("" + ProcessHandle.current().pid());
             fos.flush();

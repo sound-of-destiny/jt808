@@ -1,0 +1,15 @@
+
+terminalPort: 6608
+clientPort: 10002
+testPort: 10001
+
+
+mqHost: "202.194.14.72"
+mqVirtualHost: "jt808"
+mqUsername: "admin"
+mqPassword: "123"
+
+redisHost: "202.194.14.71"
+
+mongoServer: "mongodb://202.194.14.72:27017"
+mongodb: "jt808"

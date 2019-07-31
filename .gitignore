@@ -11,3 +11,4 @@ logs/
 out/
 jt808OriginData/
 jt808.pid
+conf.yml
